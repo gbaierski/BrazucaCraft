@@ -1,0 +1,163 @@
+
+/* ---- classes ---- */
+
+.header {
+
+    position: fixed;
+}
+
+.nav-menu {
+
+    width: 100%;
+    margin-left: 23vw;
+}
+
+.opcao-menu {
+
+    float: left;
+    margin-left: 2vw;
+    
+}
+
+.link-menu {
+
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0.05vw 0.11vw rgba(0, 0, 0, 0.651);
+}
+
+.botao-menu {
+    
+    border-radius: 0.3vw;
+    border-bottom: 0.2vw solid rgba(10, 10, 10, 0.4);
+    border-right: 0.2vw solid rgba(10, 10, 10, 0.4);
+    border-left: none;
+    border-top: none;
+    margin-top: 1vw;
+    width: 8vw;
+    height: 2.8vw;
+}
+
+.botao-menu:hover {
+
+    transform: scale(1.1);
+    transition: transform .28s
+}
+
+.background-home {
+
+    background-image: url("../img/background.png");
+    width: 102%;
+    height: 47vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -0.6vw;
+    margin-left: -1vw;
+
+}
+
+.logo {
+
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    width: 25vw;
+    height: 25vw;
+    margin-left: 37vw;
+    margin-top: 10vw;
+    transition: transform .30s
+}
+
+.logo:hover {
+
+    transform: scale(1.2) rotate(-5deg);
+}
+
+.header-texto {
+
+    float: left; 
+    color: white; 
+    font-size: 2vw; 
+    font-weight: 700; 
+    font-family: monospace;
+    text-shadow: 0.08vw 0.15vw rgba(0, 0, 0, 0.651);
+}
+
+.header-texto:hover {
+
+    transform: scale(1.1);
+    transition: transform .25s
+}
+
+/* ---- ids ---- */
+
+#texto-brazuca {
+
+    margin-left: -20vw;
+    margin-top: -0.1vw;
+}
+
+#texto-craft {
+
+    margin-left: -19vw;
+    margin-top: 1.3vw;
+}
+
+#botao-home {
+
+    background-color: rgb(22, 163, 69);
+}
+
+#botao-loja {
+
+    background-color: rgb(224, 44, 20);
+}
+
+#botao-forum {
+
+    background-color: rgb(17, 75, 182);
+}
+
+#botao-sobre {
+    
+    background-color: rgb(255, 166, 0);
+}
+
+#botao-ajuda {
+    
+    background-color: rgb(93, 44, 172);
+}
+
+#head-player {
+
+    background-image: url("../img/head-steve.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+    width: 2.4vw;
+    height: 2.4vw;
+    margin-left: -1.2vw;
+    margin-top: 1.5vw;
+    transition: transform .30s
+}
+
+#head-player:hover {
+
+    transform: scale(1.1)  rotate(5deg);
+}
+
+#ip-home {
+
+    color: white;
+    font-family: monospace;
+    text-decoration: none;
+    font-size: 2.5vw;
+    font-weight: 700;
+    float: left;
+    margin-left: 36vw;
+    margin-top: -9vw;
+    text-shadow: 0.2vw 0.18vw rgba(0, 0, 0, 0.651);
+}
