@@ -13,7 +13,9 @@
 
 }
 
-.logo {
+/* ---- ids ---- */
+
+#logo {
 
     background-image: url("../img/logo.png");
     background-repeat: no-repeat;
@@ -22,26 +24,78 @@
     width: 25vw;
     height: 25vw;
     margin-left: 37vw;
-    margin-top: 10vw;
+    margin-top: 8vw;
     transition: transform .30s
 }
 
-.logo:hover {
+#logo:hover {
 
     transform: scale(1.2) rotate(-5deg);
 }
-
-/* ---- ids ---- */
 
 #ip-home {
 
     color: white;
     font-family: monospace;
     text-decoration: none;
+    text-align: center;
     font-size: 2.5vw;
     font-weight: 700;
-    float: left;
-    margin-left: 36vw;
-    margin-top: -9vw;
     text-shadow: 0.2vw 0.18vw rgba(0, 0, 0, 0.651);
+    
+}
+
+#botao-ip {
+
+    width: 30%;
+    background-color: rgba(10, 10, 10, 0.6);
+    border-radius: 0.3vw;
+    margin-top: -11vw;
+    margin-left: 34.5vw;
+    border-bottom: 0.3vw solid rgba(10, 10, 10, 0.4);
+    border-right: 0.3vw solid rgba(10, 10, 10, 0.4);
+    border-left: none;
+    border-top: none;
+    transition: transform .30s
+}
+
+#botao-ip:hover {
+
+    background-color: rgba(27, 122, 27, 1);
+    cursor: pointer;
+    transform: scale(0.96)  rotate(0.2deg);
+
+}
+
+#div-players {
+
+    color: white;
+    font-size: 2.5vw;
+    font-weight: 700;
+    font-family: monospace;
+    text-decoration: none;
+    text-shadow: 0.2vw 0.2vw rgba(0, 0, 0, 0.651);
+    text-align: center;
+    margin-top: 1vw;
+    margin-left: 2vw;
+}
+
+#icon-players {
+
+    margin-left: 1vw;
+    margin-bottom: -0.3vw;
+    width: 2vw;
+}
+
+#div-jogadoresOnline {
+
+    color: white;
+    font-size: 1.4vw;
+    font-weight: 700;
+    font-family: monospace;
+    text-decoration: none;
+    text-shadow: 0.2vw 0.2vw rgba(0, 0, 0, 0.651);
+    text-align: center;
+    margin-top: 0.2vw;
+    margin-left: 1.2vw;
 }
