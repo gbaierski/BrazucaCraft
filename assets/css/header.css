@@ -1,0 +1,171 @@
+/* ---- classes ---- */
+
+.header {
+
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.651);
+    width: 101%;
+    margin-left: -1vw;
+}
+
+.nav-menu {
+
+    width: 100%;
+    margin-left: 23vw;
+}
+
+.opcao-menu {
+
+    float: left;
+    margin-left: 2vw;
+    
+}
+
+.link-menu {
+
+    text-decoration: none;
+    font-size: 1.3vw;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0.05vw 0.11vw rgba(0, 0, 0, 0.651);
+}
+
+.botao-menu {
+    
+    border: none;
+    border-radius: 0.3vw;
+    margin-top: 0.5vw;
+    width: 8vw;
+    height: 3.8vw;
+}
+
+.botao-menu:hover {
+
+    transform: scale(1.1);
+    transition: transform .28s
+}
+
+.icon-linkMenu {
+
+    width:1.4vw; 
+    margin-right: 0.3vw;
+    margin-bottom: -0.2vw;
+}
+/* ---- ids ---- */
+
+#texto-brazuca {
+
+    margin-top: -0.01vw;
+}
+
+#texto-brazuca:hover {
+
+    transform: scale(1.1);
+    transition: transform .30s
+}
+
+#link-brazuca-menu {
+
+    float: left; 
+    color: white; 
+    font-size: 2vw; 
+    font-weight: 700; 
+    font-family: monospace;
+    text-shadow: 0.08vw 0.15vw rgba(0, 0, 0, 0.651);
+    text-decoration: none;
+    text-align: center;
+    width: 10vw;
+    height: 5vw;
+    margin-left: -20vw;
+}
+
+#botao-home {
+
+    background-color: transparent;
+    transition: transform .35s
+}
+
+#botao-home:hover {
+
+    background-color: rgb(22, 163, 69);
+    border-bottom: 0.2vw solid rgba(10, 10, 10, 0.4);
+    border-right: 0.2vw solid rgba(10, 10, 10, 0.4);
+    border-left: none;
+    border-top: none;
+}
+
+#botao-forum {
+
+    background-color: transparent;
+}
+
+#botao-forum:hover {
+
+    background-color: rgb(17, 75, 182);
+    border-bottom: 0.2vw solid rgba(10, 10, 10, 0.4);
+    border-right: 0.2vw solid rgba(10, 10, 10, 0.4);
+    border-left: none;
+    border-top: none;
+}
+
+#botao-sobre {
+
+    background-color: transparent;
+}
+
+#botao-sobre:hover {
+    
+    background-color: rgb(255, 166, 0);
+    border-bottom: 0.2vw solid rgba(10, 10, 10, 0.4);
+    border-right: 0.2vw solid rgba(10, 10, 10, 0.4);
+    border-left: none;
+    border-top: none;
+}
+
+#botao-ajuda {
+
+    background-color: transparent;
+}
+
+#botao-ajuda:hover {
+    
+    background-color: rgb(93, 44, 172);
+    border-bottom: 0.2vw solid rgba(10, 10, 10, 0.4);
+    border-right: 0.2vw solid rgba(10, 10, 10, 0.4);
+    border-left: none;
+    border-top: none;
+}
+
+#botao-loja {
+
+    background-color: rgb(224, 44, 20);
+    border-bottom: 0.2vw solid rgba(10, 10, 10, 0.4);
+    border-right: 0.2vw solid rgba(10, 10, 10, 0.4);
+    border-left: none;
+    border-top: none;
+    transition: transform .25s
+}
+
+#head-player {
+
+    background-image: url("../img/head-steve.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    width: 2.4vw;
+    height: 2.4vw;
+    margin-left: 3.5vw;
+    margin-top: 1.5vw;
+    transition: transform .30s
+}
+
+#head-player:hover {
+
+    transform: scale(1.1)  rotate(5deg);
+}
+
+#div-loja {
+
+    float: left;
+    margin-left: 20vw;
+}
