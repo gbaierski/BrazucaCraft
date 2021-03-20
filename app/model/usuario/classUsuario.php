@@ -9,9 +9,10 @@ class Usuario {
 
     //função que verifica se existe no banco algum usuario com mesmo nome
     public function usuarioUnico($login) {
-        $unico = "SELECT * FROM usuarios WHERE usuarioLogin = '$login'";
-        
+
+        $unico = "SELECT * FROM usuarios WHERE usuarioLogin = '$login'";        
         $exec = mysqli_query($this->conexao->getConnection(), $unico);
+
         if(mysqli_num_rows($exec) > 0) {
             return false;
         } else {
@@ -23,7 +24,6 @@ class Usuario {
     public function cadastraUsuario($login,$senha) {
 
         $sql = "INSERT INTO usuarios (usuarioLogin, usuarioSenha) VALUES ('$login','$senha')";
-
         $executa = mysqli_query($this->conexao->getConnection(), $sql);
 
         if(mysqli_affected_rows($this->conexao->getConnection()) > 0) {
@@ -35,9 +35,8 @@ class Usuario {
 
     //função que loga o usuario
     public function loginUsuario($login, $senha) {
-
+        
         $sql = "SELECT * FROM usuarios WHERE usuarioLogin = '$login' AND usuarioSenha = '$senha'";
-  
         $executa = mysqli_query($this->conexao->getConnection(), $sql);
   
         if(mysqli_num_rows($executa) > 0) {

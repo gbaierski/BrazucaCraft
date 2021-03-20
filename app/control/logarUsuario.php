@@ -2,7 +2,7 @@
 
 if($_POST) {
     include ('..\..\infra\connection.php');
-    include ('classUsuario.php');
+    include ('..\model\usuario\classUsuario.php');
   
     $usuario = new Usuario();
   
@@ -15,9 +15,9 @@ if($_POST) {
       session_start();
       $_SESSION['login'] = $login;
       $_SESSION['senha'] = $senha;
-      header('location:..\view\home.php');
+      header('location: ..\view\home.php');
     } else {
-      header('location:..\view\paginaLogin.php?erro=senha');
+      header('location: ..\view\paginaLogin.php?erro=senha');
     }
   
   }

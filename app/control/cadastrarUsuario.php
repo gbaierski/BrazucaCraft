@@ -2,7 +2,7 @@
 
 if(isset($_POST['cadastrar'])) {
     include ('..\..\infra\connection.php');
-    include ('classUsuario.php');
+    include ('..\model\usuario\classUsuario.php');
 
     $cadastrar = new Usuario();
 
