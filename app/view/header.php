@@ -21,8 +21,8 @@
 				<div class="opcao-menu"><button class="botao-menu" id="botao-home"><a href="" class="link-menu" >HOME</a></button></div>
 				<div class="opcao-menu"><button class="botao-menu" id="botao-loja"><a href="" class="link-menu" >LOJA</a></button></div>
 				<div class="opcao-menu"><button class="botao-menu" id="botao-forum"><a href="" class="link-menu" >FÓRUM</a></button></div>
-				<div class="opcao-menu"><button class="botao-menu" id="botao-sobre"><a href="" class="link-menu" >SOBRE</a></button></div>
-				<div class="opcao-menu"><button class="botao-menu" id="botao-ajuda"><a href="" class="link-menu" >AJUDA</a></button></div>
+				<div class="opcao-menu"><button class="botao-menu" id="botao-sobre"><a href="paginaLogin.php" class="link-menu" >SOBRE</a></button></div>
+				<div class="opcao-menu"><button class="botao-menu" id="botao-ajuda"><a href="paginaCadastro.php" class="link-menu" >AJUDA</a></button></div>
 
 				<div id="head-player"></div>
 			</nav>

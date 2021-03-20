@@ -2,12 +2,17 @@
 
 class Connection {
 
+    private $usuario = 'root';
+    private $senha = '';
+    private $caminho = 'localhost';
+    private $banco = 'u885379061_db_brazuca';
     private $connection;
 
-    function __construct() {
+    public function __construct() {
+      $this->connection = mysqli_connect($this->caminho, $this->usuario, $this->senha) or die("falhou" . mysqli_error($this->connection));
 
-        $this->connection = new PDO('mysql:host=localhost;dbname=u885379061_db_brazuca', 'root', '');
-        $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+      mysqli_select_db($this->connection, $this->banco) or die("falhou" . mysqli_error($this->connection));
+
     }
 
     public function getConnection(){
