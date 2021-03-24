@@ -7,8 +7,8 @@ class Usuario {
         $this->conexao = new Connection();  
     }
 
-    //função que verifica se existe no banco algum usuario com mesmo nome
-    public function usuarioUnico($login) {
+    //função que verifica se existe no banco algum usuário com mesmo login
+    public function pesquisaUsuario($login) {
 
         $unico = "SELECT * FROM usuarios WHERE usuarioLogin = '$login'";        
         $exec = mysqli_query($this->conexao->getConnection(), $unico);
@@ -20,7 +20,7 @@ class Usuario {
         }
     }
 
-    //função que cadastra o usuario no banco
+    //função que cadastra o usuário no banco
     public function cadastraUsuario($login,$senha) {
 
         $sql = "INSERT INTO usuarios (usuarioLogin, usuarioSenha) VALUES ('$login','$senha')";
@@ -44,6 +44,14 @@ class Usuario {
         } else {
           return false;
         }
+    }
+
+    //função que desloga o usuário
+    public function deslogarUsuario() {
+
+        session_start();
+        unset($_SESSION['login']);
+        unset($_SESSION['senha']);
     }
 }
 

@@ -27,7 +27,7 @@
   ?>
   <h2>Login</h2>
   <hr>
-    <form action="..\control\logarUsuario.php" method="post">
+    <form action="..\control\usuario.php?action=logar" method="post">
 
       <div class="form-group">
         <label for="login">Login</label>

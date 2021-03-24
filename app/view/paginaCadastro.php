@@ -30,7 +30,7 @@
     ?>
     <h2>Cadastro</h2>
     <hr>
-    <form action="..\control\cadastrarUsuario.php" method="post">
+    <form action="..\control\usuario.php?action=cadastrar" method="post">
 
       <div>
         <label for="login">Login</label>
