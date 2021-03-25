@@ -1,3 +1,4 @@
+</body>
 <footer class="rodape">
 	<div class="info-rodape">
 		<p>Brazuca Craft - Todos os direitos reservados</p>

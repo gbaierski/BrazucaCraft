@@ -30,6 +30,6 @@
 				<div class="opcao-menu"><a href=""><button class="botao-menu" id="botao-ajuda"><img src="../../assets/img/icons/ajuda.png" class="icon-linkMenu">AJUDA</button></a></div>
 				
 				<div id="div-loja"><a href="" ><button class="botao-menu" id="botao-loja"><img src="../../assets/img/icons/loja.png" class="icon-linkMenu">LOJA</button></a></div>
-				<?= isset($_SESSION['login']) ? '<a href="../control/usuario.php?action=deslogar"><div id="head-player"></div></a>' : '<a href="paginaLogin.php"><button class="botao-menu">LOGIN</button></a>'; ?>
+				<?= isset($_SESSION['login']) ? '<a href="../control/usuario.php?action=deslogar"><div id="head-player"></div></a>' : '<a href="paginaLogin.php"><button id="botao-login">LOGIN</button></a>'; ?>
 			</nav>
         </header>
