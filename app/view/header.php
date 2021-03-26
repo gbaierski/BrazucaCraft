@@ -12,6 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="../../assets/css/geral.css"/>
 		<link rel="stylesheet" type="text/css" href="../../assets/css/header.css"/>
 		<link rel="stylesheet" type="text/css" href="../../assets/css/home.css"/>
+		<link rel="stylesheet" type="text/css" href="../../assets/css/rodape.css"/>
 		
     </head>
 

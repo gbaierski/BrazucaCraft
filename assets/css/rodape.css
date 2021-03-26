@@ -1,0 +1,145 @@
+/* ---- classes ---- */
+
+.rodape {
+
+    width: 101.6%;
+    margin-left: -0.6vw;
+    height: 18vw;
+    background-color: rgb(24, 22, 22);
+    color: white;
+}
+
+.sub-rodape {
+
+    width: 100%;
+    height: 14vw;
+    background-color: rgb(43, 40, 40);
+    float: left;
+    text-align: center;
+}
+
+.colunas-rodape {
+
+    width: 70vw;
+    float: left;
+    margin-left: 16.5vw;
+    text-align: center;
+}
+
+.coluna-rodape {
+
+    width: 12vw;
+    float: left;
+    margin-left: 1vw;
+    text-align: center;
+}
+
+.info-rodape {
+    
+    margin-top: 1vw;
+    text-align: center;
+}
+
+.link-rodape {
+
+    text-decoration: none;
+    color: white;
+}
+
+.item-rodape {
+
+    font-size: 1vw;
+    transition: transform .30s
+}
+
+.item-rodape:hover {
+
+    transform: scale(1.1);
+}
+
+.itens-rodape {
+
+    width: 10vw;
+    text-align: left;
+}
+
+.titulo-rodape {
+
+    font-size: 1.3vw;
+    margin-left: 1vw;
+    text-align: center;
+    font-weight: 500;
+    transition: transform .30s
+}
+
+.titulo-rodape:hover {
+
+    transform: scale(1.1);
+}
+
+.link-itens {
+
+    text-decoration: none;
+    color: white;
+}
+
+.redeSocial-rodape {
+
+    width: 3vw;
+    margin-left: 0.5vw;
+}
+
+/* ---- ids ---- */
+
+#final-rodape {
+
+    float: left;
+    width: 7vw;
+    margin-left: 47.4vw;
+}
+
+#ano-rodape {
+    
+    float: left;
+}
+
+#bandeira-rodape {
+
+    width: 1.5vw;
+    margin-top: 0.2vw;
+    margin-left: 0.5vw;
+    float: left;
+}
+
+#home-rodape {
+    
+    margin-left: 4.5vw;
+}
+
+#ajuda-rodape {
+
+    margin-left: 4vw;
+}
+
+#sobre-rodape {
+
+    margin-left: 4.3vw;
+}
+
+#regulamentos-rodape {
+
+    margin-left: 1.2vw;
+}
+
+#contatos-rodape {
+
+    margin-left: 3vw;
+}
+
+#redesSociais-rodape {
+
+    float: left;
+    margin-left: 34.5vw;
+    margin-top: 1.5vw;
+    width: 30vw;
+}
