@@ -16,6 +16,9 @@
     background-color: rgb(43, 40, 40);
     float: left;
     text-align: center;
+    background-image: url('../img/rodape.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .colunas-rodape {
@@ -87,6 +90,12 @@
 
     width: 3vw;
     margin-left: 0.5vw;
+}
+
+.redeSocial-rodape:hover {
+
+    transform: scale(0.95);
+    transition: transform .28s;
 }
 
 /* ---- ids ---- */
