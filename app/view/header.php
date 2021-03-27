@@ -30,6 +30,61 @@
 				<div class="opcao-menu"><a href=""><button class="botao-menu" id="botao-ajuda"><img src="../../assets/img/icons/ajuda.png" class="icon-linkMenu">AJUDA</button></a></div>
 				
 				<div id="div-loja"><a href="" ><button class="botao-menu" id="botao-loja"><img src="../../assets/img/icons/loja.png" class="icon-linkMenu">LOJA</button></a></div>
-				<?= isset($_SESSION['login']) ? '<a href="../control/usuario.php?action=deslogar"><div id="head-player"></div></a>' : '<a href="paginaLogin.php"><button class="botao-menu">LOGIN</button></a>'; ?>
+				<?= isset($_SESSION['login']) ? '<a href="../control/usuario.php?action=deslogar"><div id="head-player"></div></a>' : '<button class="botao-menu" id="botaoModal">LOGIN</button></a>'; ?>
 			</nav>
+
+<div id="modal" class="modal">
+
+  <div class="modalConteudo">
+    <span class="fechar">&times;</span>
+    <h2>Login</h2>
+  <hr>
+    <form action="..\control\usuario.php?action=logar" method="post">
+
+      <div>
+        <label for="login">Login</label>
+        <input type="text" id="login" name="login">
+      </div>
+
+      <div>
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha">
+      </div>
+
+      <input type="submit" name="logar" value="Logar">
+
+    </form>
+
+    <a href="paginaCadastro.php">Cadastre-se</a>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+
+var modal = document.getElementById("modal");
+
+var btn = document.getElementById("botaoModal");
+
+var span = document.getElementsByClassName("fechar")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+
         </header>
