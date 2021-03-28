@@ -120,3 +120,69 @@
     margin-top: 0.2vw;
     margin-left: 1.2vw;
 }
+
+#div-discord {
+
+    width: 102%;
+    height:40vw;
+    background-image: url("../img/div_discord.jpg");
+    background-size: cover;
+    margin-left: -1vw;
+    margin-top: -6vw;
+}
+
+#link-discord {
+
+    color:white;
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+#iframe-discord {
+
+    width:23vw; 
+    height:28vw; 
+    margin-top: -23.5vw;
+    float: left;
+    margin-left: 75vw;
+}
+
+#frase-discord {
+
+    width: 30vw;
+    height: 4vw;
+    margin-left: -35vw;
+    margin-top: 33.6vw;
+    float: left;
+    font-family: monospace;
+    font-weight:bolder;
+    background-color: #00000094;
+    color: white;
+    border: none;
+    border-radius: 0.3vw;
+    transition: transform .30s
+}
+
+#frase-discord:hover {
+
+    background-color: #7289da;
+    transform: scale(0.98)  rotate(-0.2deg);
+}
+
+#imagem-discord {
+
+    width: 52vw;
+    height: 32vw;
+    margin-left: 3vw;
+    margin-top: 2vw;
+    float: left;
+    background-image: url("../img/imagem_discord.png");
+    background-size: cover;
+    transition: transform .30s;
+}
+
+#imagem-discord:hover {
+
+    transform: scale(0.98)  rotate(-0.2deg);
+    cursor: pointer;
+}
