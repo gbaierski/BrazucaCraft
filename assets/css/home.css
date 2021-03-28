@@ -154,6 +154,7 @@
     margin-left: -35vw;
     margin-top: 33.6vw;
     float: left;
+    font-size: 1.6vw;
     font-family: monospace;
     font-weight:bolder;
     background-color: #00000094;
@@ -165,6 +166,7 @@
 
 #frase-discord:hover {
 
+    cursor: pointer;
     background-color: #7289da;
     transform: scale(0.98)  rotate(-0.2deg);
 }

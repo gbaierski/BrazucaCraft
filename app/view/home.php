@@ -19,7 +19,7 @@
 <div class="clear"></div>
 <div id="div-discord">
 	<a href="https://discord.com/"><div id="imagem-discord"></div></a>
-	<button id="frase-discord"><a href="https://discord.com/" id="link-discord">JÁ CONHECE NOSSO DISCORD!?</a></button>
+	<a href="https://discord.com/" id="link-discord"><button id="frase-discord">JÁ CONHECE NOSSO DISCORD!?</button></a>
 	<iframe id="iframe-discord" src="https://discord.com/widget?id=704695441677221898&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 </div>
 <?php require 'footer.php'; ?>
