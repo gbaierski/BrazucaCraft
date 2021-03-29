@@ -18,6 +18,12 @@ function cadastroProduto(){
 
 }
 
+function deletarProduto(){
+    $idProduto =  trim(strip_tags($_POST['ai_produto']));
+    $produto = new Produto();
+    $exclui = $produto->deletaProduto($idProduto);
+    header('location: redirecionamento.php?action=paginaLoja');
+}
 
 //Gerenciador de Rotas
 if (isset($_GET['action']) and function_exists($_GET['action']) ) {

@@ -36,4 +36,10 @@ class Produto {
 
     }
 
+    function deletaProduto($idProduto){
+        $slq = "DELETE FROM produtos WHERE ai_produto = $idproduto ";
+        $executa = mysqli_query($this->conexao->getConnection(), $sql);
+
+    }
+
 }
