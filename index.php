@@ -1,5 +1,5 @@
 <?php
 
-header("location: app/view/home.php");
+header("location: app/control/redirecionamento.php?action=index");
 
 ?>

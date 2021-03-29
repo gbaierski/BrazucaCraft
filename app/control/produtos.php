@@ -1,14 +1,19 @@
 <?php 
 require ('..\model\usuario\produto.php');
 
-function mostrarProdutos(){
-    
-    
-    $produto = new Produto;
+function cadastroProduto(){
 
     
-    $produtos = $produto->pegarProdutos();
-    require ('../view/loja.php');
+    $nomeProduto = trim(strip_tags($_POST['nomeProduto']));
+    $precoProduto = trim(strip_tags($_POST['precoProduto']));
+    $decricaoProduto = trim(strip_tags($_POST['descricaoProduto']));
+
+    $produto = new Produto();
+
+    $cadastra = $produto->cadastraProdutos($nomeProduto,$precoProduto,$decricaoProduto);
+
+   header('../../index.php');
+
 }
 
 

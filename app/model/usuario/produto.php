@@ -27,5 +27,15 @@ class Produto {
         }
     }
 
+    function cadastraProdutos($nomeProduto, $precoProduto , $descricaoProduto){
+        $sql = "INSERT INTO produtos (nomeProduto, precoProduto, decricaoProduto) VALUES ('$nomeProduto','$precoProduto', '$descricaoProduto')";
+        $executa = mysqli_query($this->conexao->getConnection(), $sql);
+
+        if(mysqli_affected_rows($this->conexao->getConnection()) > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 }
