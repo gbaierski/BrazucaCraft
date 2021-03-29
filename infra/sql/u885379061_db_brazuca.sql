@@ -37,6 +37,16 @@ CREATE TABLE `usuarios` (
   `usuarioSenha` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+CREATE TABLE `produtos` (
+  `ai_produto` int(5) NOT NULL,
+  `idProduto` int(5) NOT NULL,
+  `nomeProduto` varchar(255) NOT NULL,
+  `precoProduto` varchar(255) NOT NULL,
+  `imagemProduto` varchar(255) NOT NULL,
+  `promocao` varchar(255) NOT NULL,
+  `precoPromocao` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 --
 -- Extraindo dados da tabela `usuarios`
 --

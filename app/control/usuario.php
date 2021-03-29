@@ -18,6 +18,7 @@ function logar() {
         session_start();
         $_SESSION['login'] = $login;
         $_SESSION['senha'] = $senha;
+        $_SESSION['permissao'] = $permissao;
         header('location: ..\view\home.php');
       } else {
         header('location: ..\view\paginaLogin.php?erro=senha');

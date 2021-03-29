@@ -1,23 +1,11 @@
-<?php require'header.php'?>
-  <div>
-
-  <?php
-
-if(isset($_GET['erro'])) {
-  echo '<div class="alert alert-danger">O soethe é gay</div>';
-}
-
-if(isset($_GET['success'])) {
-  echo '<div class="alert alert-success">Logout efetuado com sucesso</div>';
-}
-
-?>
-  <h2>Login</h2>
+<?php require 'header.php' ?>
+<br>
+<h2>Cadastrar o Produto</h2>
   <hr>
-    <form action="..\control\usuario.php?action=logar" method="post">
+    <form action="..\control\produtos.php?action=cadastroproduto" method="post">
 
       <div class="form-group">
-        <label for="login">Login</label>
+        <label for="login">Nome do Produto</label>
         <input type="text" class="form-control" id="login" name="login">
       </div>
 
@@ -35,4 +23,7 @@ if(isset($_GET['success'])) {
     <a href="paginaCadastro.php">Cadastre-se</a>
 
     </div>
-    <?php require'footer.php'?>
+
+
+
+<?php require 'footer.php' ?>
