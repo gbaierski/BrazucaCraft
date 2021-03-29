@@ -4,15 +4,17 @@ require ('..\model\usuario\produto.php');
 function cadastroProduto(){
 
     
-    $nomeProduto = trim(strip_tags($_POST['nomeProduto']));
+   $nomeProduto = trim(strip_tags($_POST['nomeProduto']));
     $precoProduto = trim(strip_tags($_POST['precoProduto']));
     $decricaoProduto = trim(strip_tags($_POST['descricaoProduto']));
 
     $produto = new Produto();
 
+    
     $cadastra = $produto->cadastraProdutos($nomeProduto,$precoProduto,$decricaoProduto);
 
-   header('../../index.php');
+    header('location: redirecionamento.php?action=paginaLoja');
+  
 
 }
 
