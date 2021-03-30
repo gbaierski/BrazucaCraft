@@ -9,6 +9,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta charset="utf-8">
 
+    <!--- Esses dois scripts servem para puxar as bibliotecas de Jquery e bootstrap do google, no momento são necessarias para o funcionamento do modal.
+    Obs: Não está sendo usada nenhuma classe bootstrap porém a biblioteca é necessaria pro Jquery conseguir funcionar.
+     --->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 		<link rel="stylesheet" type="text/css" href="../../assets/css/geral.css"/>
 		<link rel="stylesheet" type="text/css" href="../../assets/css/header.css"/>
 		<link rel="stylesheet" type="text/css" href="../../assets/css/home.css"/>
@@ -31,6 +37,73 @@
 				<div class="opcao-menu"><a href=""><button class="botao-menu" id="botao-ajuda"><img src="../../assets/img/icons/ajuda.png" class="icon-linkMenu">AJUDA</button></a></div>
 				
 				<div id="div-loja"><a href="" ><button class="botao-menu" id="botao-loja"><img src="../../assets/img/icons/loja.png" class="icon-linkMenu">LOJA</button></a></div>
-				<?= isset($_SESSION['login']) ? '<a href="../control/usuario.php?action=deslogar"><div id="head-player"></div></a>' : '<a href="paginaLogin.php"><button id="botao-login">LOGIN</button></a>'; ?>
+				<?= isset($_SESSION['login']) ? '<a href="../control/usuario.php?action=deslogar"><div id="head-player"></div></a>' : '<button id="botao-login">LOGIN</button>'; ?>
 			</nav>
-        </header>
+
+<div id="modal" class="modal">
+
+  <div class="modalConteudo">
+    <span class="fechar">&times;</span>
+    <h2>Login</h2>
+  <hr>
+    <form action="..\control\usuario.php?action=logar" method="post">
+
+      <div>
+        <label for="login">Login</label>
+        <input type="text" id="login" name="login">
+      </div>
+
+      <div>
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha">
+      </div>
+
+<?php
+  if (isset($_GET['erro'])) {
+
+    echo '<h>Senha/Usuario incorretos</h1>';
+
+    echo "<script>
+      $(document).ready(function(){
+        $('#modal').modal('show');
+      }); </script>";
+  }
+?>
+
+      <input type="submit" name="logar" value="Logar">
+
+    </form>
+
+    <a href="paginaCadastro.php">Cadastre-se</a>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+
+var modal = document.getElementById("modal");
+
+var btn = document.getElementById("botao-login");
+
+var span = document.getElementsByClassName("fechar")[0];
+
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+     modal.style.display = "none";
+   }
+  }
+  
+</script>
+
+      </header>

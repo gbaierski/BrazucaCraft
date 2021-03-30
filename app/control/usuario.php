@@ -20,7 +20,7 @@ function logar() {
         $_SESSION['senha'] = $senha;
         header('location: ..\view\home.php');
       } else {
-        header('location: ..\view\paginaLogin.php?erro=senha');
+        header('location: ..\view\home.php?erro=senha');
       }
   }
 }
