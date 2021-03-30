@@ -6,18 +6,16 @@
 	<html lang="zxx" class="no-js">
 	
 	<head>
-		<title><?=$nomePagina ?></title>
-		<link rel="sortcut icon" href="../../assets/img/logo.png" type="image/x-icon" />;
+		<title><?= $nomePagina ?></title>
+		
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta charset="utf-8">
-
+		
+		<link rel="sortcut icon" href="../../assets/img/logo.png" type="image/x-icon" />
 		<link rel="stylesheet" type="text/css" href="../../assets/css/geral.css"/>
 		<link rel="stylesheet" type="text/css" href="../../assets/css/header.css"/>
 		<link rel="stylesheet" type="text/css" href="../../assets/css/home.css"/>
 		<link rel="stylesheet" type="text/css" href="../../assets/css/footer.css"/>
-
-		<!-- Bootstrap para fazer a pagina da loja dps tira quando vc for fazer Bersk -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		
     </head>
 

@@ -13,7 +13,7 @@
 <!-- Div da compra -->
 <div class="row text-center">
 <div class="col-lg-3 col-md-6 mb-4">
-<?php foreach ($produtos as $produto): ?>
+<?php foreach ($produtos as $produto) { ?>
 
       <div class="card h-100">
       <img class="card-img-top" src="../../assets/img/vips/<?=$produto['imagemProduto']?> " alt="">
@@ -28,8 +28,7 @@
       </div>
     </div>
   </div>
-} 
- <?php endforeach ?>
+ <?php } ?>
 
     
 
