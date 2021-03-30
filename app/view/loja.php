@@ -1,42 +1,27 @@
-<?php require 'header.php' ?>
-<br>
-<br>
-<br>
-<br>
-<br>
+<?php require 'header.php' ?> 
 
-<?php
-// Teste de Banco
-// print_r($produtos)?>
-<div class="container">
+<div id="produtos-loja">
+    <?php foreach ($produtos as $produto) { ?>
 
-<!-- Div da compra -->
-<div class="row text-center">
-<div class="col-lg-3 col-md-6 mb-4">
-<?php foreach ($produtos as $produto) { ?>
+    <div class="div-produto">
+        <img class="imagem-produto" src="../../assets/img/vips/<?=$produto['imagemProduto']?>">
+        <div class="atributos-produto">
+            <div class="nome-produto"><?= $produto['nomeProduto'] ?></div>
+            <div class="preco-produto"><?= $produto['precoProduto'] ?></div>
+            <div class="descricao-produto"><?=  $produto['descricaoProduto'] ?></div>
+        </div>
 
-      <div class="card h-100">
-      <img class="card-img-top" src="../../assets/img/vips/<?=$produto['imagemProduto']?> " alt="">
-      <div class="card-body">
-        <h4 class="card-title"> <?=$produto['nomeProduto']?></h4>
-        <p class="card-text">  <?=$produto['precoProduto']?> </p>
-        <p class="card-text">  <?=$produto['descricaoProduto'] ?> </p>
-      </div>
-      <div class="card-footer">
-        <a href="#" class="btn btn-success">Comprar</a>
-     <a href="../control/produtos.php?action=deletarProduto" class="btn btn-danger">Editar</a>
-      </div>
+        <button class="produto-comprar">Comprar</button>
+
+        <div class="botoesAdmin-produto">
+            <button class="produto-editar">Editar</button>
+            <button class="produto-deletar">Deletar</button>
+        </div>
     </div>
-  </div>
- <?php } ?>
 
-    
-
-
-</div> 
+    <?php } ?>
 </div>
 
-
-
-
+<div class="clear"></div>
 <?php require 'footer.php'; ?>
+   
