@@ -1,30 +1,29 @@
 <?php require 'header.php' ?>
+<body>
+<div id="div-cadastroProduto">
+    <h2 id="cadastroProduto-titulo"> Cadastro de Produto </h2>
+        <form action="..\control\produtos.php?action=cadastroProduto" method="post" id="form-cadastroProdutos">
 
-<h2 id="cadastroProduto-titulo"> Cadastro de Produto </h2>
-    <form action="..\control\produtos.php?action=cadastroProduto" method="post" id="form-cadastroProdutos">
+            <label for="nomeproduto" class="itemForm-produto">Nome do Produto</label>
+            <input type="text" name="nomeProduto" id="nomeProduto">
 
-        <label for="nomeproduto">Nome do Produto</label>
-        <input type="text" name="nomeProduto" id="nomeProduto" class="itemForm-produto">
+            <br>
 
-        <br>
+            <label for="precoProduto" class="itemForm-produto">Preço</label>
+            <input type="decimal" name="precoProduto" id="precoProduto">
 
-        <label for="precoProduto">Preço</label>
-        <input type="decimal" name="precoProduto" id="precoProduto" class="itemForm-produto">
+            <br>
 
-        <br>
+            <label for="descricaoProduto" class="itemForm-produto">Descrição</label>
+            <textarea name="descricaoProduto" id="descricaoProduto" rows="5" ></textarea>
 
-        <label for="descricaoProduto">Descrição</label>
-        <textarea name="descricaoProduto" id="descricaoProduto" class="itemForm-produto" rows="5" ></textarea>
+            <br>
+            
+            <input type="submit" name="cadastrarProduto" value="Cadastrar Produto">
 
-        <br>
-        
-        <input type="submit" name="cadastrarProduto" value="Cadastrar Produto">
+        </form>
+</div>
 
-    </form>
-
-    <br>
-
-
-
+</body>
 
 <?php require 'footer.php' ?>

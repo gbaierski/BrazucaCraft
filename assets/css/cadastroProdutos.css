@@ -1,5 +1,24 @@
 /* ---- classes ---- */
 
+.itemForm-produto {
 
+    margin-left: 20%;
+}
 
 /* ---- ids ---- */
+
+#div-cadastroProduto {
+
+    width: 50%;
+    height: 30vw;
+    margin-left: 25%;
+    background-color: red;
+}
+
+#cadastroProduto-titulo {
+
+    margin-top: 10vw;
+    margin-left: 35%;
+    margin-top: 0px;
+    padding-top: 10vw;
+}

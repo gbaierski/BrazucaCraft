@@ -8,7 +8,6 @@
     height: 47vw;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: -0.6vw;
     margin-left: -1vw;
 
 }
@@ -128,7 +127,7 @@
     background-image: url("../img/div_discord.jpg");
     background-size: cover;
     margin-left: -1vw;
-    margin-top: -6vw;
+    margin-top: -6.01vw;
 }
 
 #link-discord {
