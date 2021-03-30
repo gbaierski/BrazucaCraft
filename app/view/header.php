@@ -12,7 +12,6 @@
 		<link rel="stylesheet" type="text/css" href="../../assets/css/geral.css"/>
 		<link rel="stylesheet" type="text/css" href="../../assets/css/header.css"/>
 		<link rel="stylesheet" type="text/css" href="../../assets/css/home.css"/>
-		
     </head>
 
     <body>
@@ -50,7 +49,19 @@
         <label for="senha">Senha</label>
         <input type="password" id="senha" name="senha">
       </div>
+<?php
+if (isset($_GET['erro'])) {
 
+echo '<h>Senha/Usuario incorretos</h1>';
+?>
+<script>
+ $(window).load(function(){        
+   $('#modal').modal('show');
+    }); 
+</script>
+<?php
+}
+?>
       <input type="submit" name="logar" value="Logar">
 
     </form>
@@ -64,6 +75,7 @@
 </div>
 
 <script>
+
 
 var modal = document.getElementById("modal");
 
@@ -84,7 +96,6 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
 </script>
 
         </header>

@@ -21,12 +21,3 @@
 <br>
 
 <?php require 'footer.php'; ?>
-
-<?php
-
-if (isset($_GET['erro'])) {
-
-      echo '<script>alert("Falhou")</script>';
-
-    }
-?>
