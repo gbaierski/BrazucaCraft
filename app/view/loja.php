@@ -14,8 +14,8 @@
         <button class="produto-comprar">Comprar</button>
 
         <div class="botoesAdmin-produto">
-            <button class="produto-editar">Editar</button>
-            <button class="produto-deletar">Deletar</button>
+            <button  class="produto-editar"><a href="../control/redirecionamento.php?action=paginaEditarproduto&ai_produto=<?= $produto['ai_produto']?>">Editar</a></button>
+            <button  class="produto-deletar"><a href="../control/produtos.php?action=deletarProduto&ai_produto=<?= $produto['ai_produto']?>">Deletar</a></button>
         </div>
     </div>
 

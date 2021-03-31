@@ -19,10 +19,20 @@ function cadastroProduto(){
 }
 
 function deletarProduto(){
-    $idProduto =  trim(strip_tags($_POST['ai_produto']));
+    $idProduto = $_GET['ai_produto'];
     $produto = new Produto();
     $exclui = $produto->deletaProduto($idProduto);
     header('location: redirecionamento.php?action=paginaLoja');
+}
+
+function editarProduto(){
+  $idProduto = $_GET['ai_produto'];
+  $nomeProduto = trim(strip_tags($_POST['nomeProduto']));
+  $precoProduto = trim(strip_tags($_POST['precoProduto']));
+  $descricaoProduto = trim(strip_tags($_POST['descricaoProduto']));
+  $produto = new Produto();
+  $exclui = $produto->editarProduto($idProduto, $nomeProduto, $precoProduto , $descricaoProduto);
+  header('location: redirecionamento.php?action=paginaLoja');
 }
 
 //Gerenciador de Rotas

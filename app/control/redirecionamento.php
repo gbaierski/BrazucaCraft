@@ -6,8 +6,24 @@ function index(){
     require '../view/home.php';
 }
 function paginaCadastroprodutos(){
-
+    
     $nomePagina = "Casdatro Produtos | BrazucaCraft";
+    $nomeForm = "Cadastro de Produto";
+    $edicao = false;
+    require '../view/cadastroProdutos.php';
+}
+
+function paginaEditarproduto(){
+
+    $idProduto = $_GET['ai_produto'];
+    //Consulta no Banco
+    require ('..\model\usuario\produto.php');          
+    $produto = new Produto;    
+    $produtos = $produto->pegaProduto($idProduto);
+    //Consulta no Banco Fim
+    $nomePagina = "Editar Produto | BrazucaCraft";
+    $nomeForm = "Edição do Produto";
+    $edicao = true;
     require '../view/cadastroProdutos.php';
 }
 
