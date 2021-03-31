@@ -21,7 +21,7 @@
                 <input value="<?= $produto['precoProduto'] ?>" placeholder="<?= $produto['precoProduto'] ?>"  type="text" name="precoProduto" class="cadastroProduto" id="precoProduto">
 
                 <label   for="descricaoProduto" class="label-cadastroProduto" id="label-descricaoProduto">Descrição:</label>
-                <textarea type="text" value="<?= $produto['descricaoProduto'] ?>" placeholder="<?= $produto['descricaoProduto'] ?> "  name="descricaoProduto" class="cadastroProduto" id="descricaoProduto" rows="5" ></textarea>
+                <textarea required type="text" value="<?= $produto['descricaoProduto'] ?>" placeholder="<?= $produto['descricaoProduto'] ?> "  name="descricaoProduto" class="cadastroProduto" id="descricaoProduto" rows="5" ></textarea>
 
                 <div class="clear"></div>
 
