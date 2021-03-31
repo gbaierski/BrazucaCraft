@@ -3,6 +3,7 @@
 .header {
 
     position: fixed;
+    z-index: 1;
     padding-top: 0; 
     background-color: rgba(0, 0, 0, 0.651);
     width: 100%;
@@ -80,7 +81,7 @@
 #botao-home {
 
     background-color: transparent;
-    transition: transform .35s
+    transition: transform .35s;
 }
 
 #botao-home:hover {
@@ -141,12 +142,12 @@
     border-right: 0.2vw solid rgba(10, 10, 10, 0.4);
     border-left: none;
     border-top: none;
-    transition: transform .25s
+    transition: transform .25s;
 }
 
 #head-player {
 
-    background-image: url("../img/head-steve.jpg");
+    background-image: url("../img/paginas/header/head-steve.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     float: left;
@@ -154,7 +155,7 @@
     height: 2.4vw;
     margin-left: 3.5vw;
     margin-top: 1.5vw;
-    transition: transform .30s
+    transition: transform .30s;
 }
 
 #head-player:hover {

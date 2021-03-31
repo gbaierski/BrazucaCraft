@@ -3,11 +3,12 @@
 
 .background-home {
 
-    background-image: url("../img/background.png");
+    background-image: url("../img/paginas/home/backgroundHome.png");
     width: 102%;
     height: 47vw;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     margin-left: -1vw;
 
 }
@@ -37,7 +38,7 @@
 
 #logo {
 
-    background-image: url("../img/logo.png");
+    background-image: url("../img/paginas/home/logo.png");
     background-repeat: no-repeat;
     background-size: cover;
     float: left;
@@ -124,7 +125,7 @@
 
     width: 102%;
     height:40vw;
-    background-image: url("../img/div_discord.jpg");
+    background-image: url("../img/paginas/home/div_discord.jpg");
     background-size: cover;
     margin-left: -1vw;
     margin-top: -6.01vw;
@@ -177,7 +178,7 @@
     margin-left: 3vw;
     margin-top: 2vw;
     float: left;
-    background-image: url("../img/imagem_discord.png");
+    background-image: url("../img/paginas/home/imagem_discord.png");
     background-size: cover;
     transition: transform .30s;
 }

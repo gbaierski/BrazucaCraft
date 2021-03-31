@@ -2,19 +2,13 @@
 
 function index(){
 
-    $nomePagina = "Brazuca Craft";
+    $nomePagina = "Home | BrazucaCraft";
     require '../view/home.php';
 }
 function paginaCadastroprodutos(){
 
-    $nomePagina = "Casdatro Produtos - Brazuca craft";
+    $nomePagina = "Casdatro Produtos | BrazucaCraft";
     require '../view/cadastroProdutos.php';
-}
-
-function paginaLogin(){
-
-    $nomePagina = "Login - Brazuca craft";
-    require '../view/paginaLogin.php';
 }
 
 function paginaLoja(){
@@ -25,7 +19,7 @@ function paginaLoja(){
     $produtos = $produto->pegarProdutos();
     //Consulta no Banco Fim
 
-    $nomePagina = "Loja - Brazuca craft";
+    $nomePagina = "Loja | BrazucaCraft";
    
     require ('../view/loja.php');
 

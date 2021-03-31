@@ -1,29 +1,26 @@
 <?php require 'header.php' ?>
-<body>
-<div id="div-cadastroProduto">
-    <h2 id="cadastroProduto-titulo"> Cadastro de Produto </h2>
-        <form action="..\control\produtos.php?action=cadastroProduto" method="post" id="form-cadastroProdutos">
 
-            <label for="nomeproduto" class="itemForm-produto">Nome do Produto</label>
-            <input type="text" name="nomeProduto" id="nomeProduto">
+<div class="clear"></div>
+<div id="background-cadastroProduto">
+    <div id="div-cadastroProduto">
+        <h2 id="cadastroProduto-titulo"> Cadastro de Produto </h2>
+            <form action="..\control\produtos.php?action=cadastroProduto" method="post" id="form-cadastroProdutos">
 
-            <br>
+                <label for="nomeproduto" class="label-cadastroProduto">Nome do Produto:</label>
+                <input type="text" name="nomeProduto"  class="cadastroProduto" id="nomeProduto">
 
-            <label for="precoProduto" class="itemForm-produto">Preço</label>
-            <input type="decimal" name="precoProduto" id="precoProduto">
+                <label for="precoProduto" class="label-cadastroProduto">Preço:</label>
+                <input type="text" name="precoProduto" class="cadastroProduto" id="precoProduto">
 
-            <br>
+                <label   for="descricaoProduto" class="label-cadastroProduto" id="label-descricaoProduto">Descrição:</label>
+                <textarea name="descricaoProduto" class="cadastroProduto" id="descricaoProduto" rows="5" ></textarea>
 
-            <label for="descricaoProduto" class="itemForm-produto">Descrição</label>
-            <textarea name="descricaoProduto" id="descricaoProduto" rows="5" ></textarea>
+                <div class="clear"></div>
 
-            <br>
-            
-            <input type="submit" name="cadastrarProduto" value="Cadastrar Produto">
+                <input type="submit" name="cadastrarProduto" value="CADASTRAR" id="botao-cadastrarProduto">
 
-        </form>
+            </form>
+    </div>
 </div>
-
-</body>
 
 <?php require 'footer.php' ?>

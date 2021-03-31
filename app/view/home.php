@@ -10,7 +10,7 @@
 
 <div id="div-players">5297<img src="../../assets/img/icons/players.png" id="icon-players"></div>
 <div id="div-jogadoresOnline">JOGADORES ONLINE</div>
-<div class="informacao-home" style="float: right">
+<div class="informacao-home">
 	<a href="https://discord.com/" ><img src="../../assets/img/icons/discord.png" class="redeSocial-home"></a>
 	<a href="https://www.facebook.com/" ><img src="../../assets/img/icons/facebook.png" class="redeSocial-home"></a>
 	<a href="https://twitter.com/" ><img src="../../assets/img/icons/twitter.png" class="redeSocial-home"></a>

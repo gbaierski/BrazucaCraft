@@ -13,7 +13,7 @@
 
 		<!-- Css de páginas main -->
 		
-		<link rel="sortcut icon" href="../../assets/img/logo.png" type="image/x-icon" />
+		<link rel="sortcut icon" href="../../assets/img/paginas/home/logo.png" type="image/x-icon" />
 		<link rel="stylesheet" type="text/css" href="../../assets/css/geral.css"/>
 		<link rel="stylesheet" type="text/css" href="../../assets/css/header.css"/>
 		<link rel="stylesheet" type="text/css" href="../../assets/css/home.css"/>
