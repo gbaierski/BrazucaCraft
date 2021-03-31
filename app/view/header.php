@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-	<html lang="zxx" class="no-js">
+	<html lang="pt-br" class="no-js" content="pt-br">
 
 	<head>
 		<title> <?= $nomePagina ?> </title>
@@ -20,9 +20,14 @@
 		<link rel="stylesheet" type="text/css" href="../../assets/css/footer.css"/>
 
 		<!-- Css das outras páginas -->
+
 		<link rel="stylesheet" type="text/css" href="../../assets/css/loja.css"/>
     <link rel="stylesheet" type="text/css" href="../../assets/css/cadastroProdutos.css"/>
-		
+
+    <!-- Scripts -->
+    
+    <script src="../view/home.js"></script>
+
     </head>
 
     <body>
