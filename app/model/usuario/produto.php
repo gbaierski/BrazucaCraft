@@ -29,10 +29,17 @@ class Produto {
 
     function cadastraProdutos($nomeProduto, $precoProduto , $descricaoProduto){
 
+        $imagemProduto = "";
+        if($imagemProduto == ""){
+            $sql = "INSERT INTO produtos (nomeProduto, precoProduto, descricaoProduto , imagemProduto) VALUES ('$nomeProduto','$precoProduto', '$descricaoProduto', 'padrao.png' )";
+            $executa = mysqli_query($this->conexao->getConnection(), $sql);
+        }else{
+            $sql = "INSERT INTO produtos (nomeProduto, precoProduto, descricaoProduto , imagemProduto) VALUES ('$nomeProduto','$precoProduto', '$descricaoProduto', '$imagemProduto' )";
+            $executa = mysqli_query($this->conexao->getConnection(), $sql);;
+        }
 
-
-        $sql = "INSERT INTO produtos (nomeProduto, precoProduto, descricaoProduto) VALUES ('$nomeProduto','$precoProduto', '$descricaoProduto')";
-        $executa = mysqli_query($this->conexao->getConnection(), $sql);
+        //$sql = "INSERT INTO produtos (nomeProduto, precoProduto, descricaoProduto , imagemProduto) VALUES ('$nomeProduto','$precoProduto', '$descricaoProduto', 'padrao.png' )";
+        //$executa = mysqli_query($this->conexao->getConnection(), $sql);
 
     }
 
