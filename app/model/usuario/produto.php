@@ -27,9 +27,8 @@ class Produto {
         }
     }
 
-    function cadastraProdutos($nomeProduto, $precoProduto , $descricaoProduto){
+    function cadastraProdutos($nomeProduto, $precoProduto , $descricaoProduto, $imagemProduto){
 
-        $imagemProduto = "";
         if($imagemProduto == ""){
             $sql = "INSERT INTO produtos (nomeProduto, precoProduto, descricaoProduto , imagemProduto) VALUES ('$nomeProduto','$precoProduto', '$descricaoProduto', 'padrao.png' )";
             $executa = mysqli_query($this->conexao->getConnection(), $sql);
@@ -68,10 +67,15 @@ class Produto {
             return false;
         }
     }
-    function editarProduto($idProduto, $nomeProduto, $precoProduto , $descricaoProduto){
+    function editarProduto($idProduto, $nomeProduto, $precoProduto , $descricaoProduto , $imagemProduto){
 
+        if($imagemProduto == ""){
         $sql = "UPDATE produtos SET nomeProduto = '$nomeProduto' , descricaoProduto = '$descricaoProduto', precoProduto = '$precoProduto' WHERE produtos.ai_produto = $idProduto";
         $executa = mysqli_query($this->conexao->getConnection(), $sql);
+        }else{
+            $sql = "UPDATE produtos SET nomeProduto = '$nomeProduto' , descricaoProduto = '$descricaoProduto', precoProduto = '$precoProduto' , imagemProduto = '$imagemProduto' WHERE produtos.ai_produto = $idProduto";
+        $executa = mysqli_query($this->conexao->getConnection(), $sql);
+        }
         
     }
 
