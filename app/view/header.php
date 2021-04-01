@@ -89,7 +89,7 @@
               </a>
             </div>
 
-            <?= isset($_SESSION['login']) ? '<a href="../control/usuario.php?action=deslogar"><div id="head-player"></div></a>' : '<a href="../control/redirecionamento.php?action=paginaLogin"><button id="botao-login">LOGIN</button></a>'; ?>
+            <?= isset($_SESSION['login']) ? '<a href="../control/usuario.php?action=deslogar"><div id="head-player"></div></a>' : '<button id="botao-login">LOGIN</button>'; ?>
           </nav>
 
 <div id="modal" class="modal">
@@ -126,7 +126,7 @@
 
     </form>
 
-    <a href="paginaCadastro.php">Cadastre-se</a>
+    <a href="../view/usuario/cadastroUsuario.php">Cadastre-se</a>
 
     </div>
 

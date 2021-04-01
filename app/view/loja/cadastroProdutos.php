@@ -1,4 +1,4 @@
-<?php require 'header.php' ?>
+<?php require '../view/header.php' ?>
 
 <div class="clear"></div>
 <div id="background-cadastroProduto">
@@ -56,4 +56,4 @@
     </div>
 </div>
 
-<?php require 'footer.php' ?>
+<?php require '../view/footer.php' ?>

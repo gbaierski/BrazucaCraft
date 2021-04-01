@@ -56,7 +56,7 @@ function cadastrar() {
 
       if ($consulta == false) {
 
-        header('location: ..\view\paginaCadastro.php?repetido=senha');
+        header('location: ..\view\usuario\cadastroUsuario.php?repetido=senha');
       
       } else {
         
@@ -64,13 +64,13 @@ function cadastrar() {
         
         if ($insere == true) {
         
-          header('location: ..\view\paginaCadastro.php?success=cadastrado');
+          header('location: ..\view\usuario\cadastroUsuario.php?success=cadastrado');
            
         }
       }
     } else {
 
-      header('location: ..\view\paginaCadastro.php?erro=senha');
+      header('location: ..\view\usuario\cadastroUsuario.php?erro=senha');
       
     }
   }

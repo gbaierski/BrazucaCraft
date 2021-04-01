@@ -10,7 +10,7 @@ function paginaCadastroprodutos(){
     $nomePagina = "Casdatro Produtos | BrazucaCraft";
     $nomeForm = "Cadastro de Produto";
     $edicao = false;
-    require '../view/cadastroProdutos.php';
+    require '../view/loja/cadastroProdutos.php';
 }
 
 function paginaEditarproduto(){
@@ -24,7 +24,7 @@ function paginaEditarproduto(){
     $nomePagina = "Editar Produto | BrazucaCraft";
     $nomeForm = "Edição do Produto";
     $edicao = true;
-    require '../view/cadastroProdutos.php';
+    require '../view/loja/cadastroProdutos.php';
 }
 
 function paginaLoja(){
@@ -36,8 +36,7 @@ function paginaLoja(){
     //Consulta no Banco Fim
 
     $nomePagina = "Loja | BrazucaCraft";
-   
-    require ('../view/loja.php');
+    require ('../view/loja/loja.php');
 
 }
 

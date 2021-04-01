@@ -30,7 +30,7 @@
     ?>
     <h2>Cadastro</h2>
     <hr>
-    <form action="..\control\usuario.php?action=cadastrar" method="post">
+    <form action="..\..\control\usuario.php?action=cadastrar" method="post">
 
       <div>
         <label for="login">Login</label>
@@ -50,7 +50,7 @@
 
     </form>
     
-    <a href="home.php">Voltar</a>
+    <a href="../home.php">Voltar</a>
 
   </div>
 </body>

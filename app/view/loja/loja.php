@@ -1,4 +1,4 @@
-<?php require 'header.php' ?> 
+<?php require "../view/header.php" ?> 
 <br>
 <br>
 <br>
@@ -28,5 +28,5 @@
 </div>
 
 <div class="clear"></div>
-<?php require 'footer.php'; ?>
+<?php require '../view/footer.php'; ?>
    
