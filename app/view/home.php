@@ -20,7 +20,7 @@
 	<div class="informacao-home">
 		<a href="https://discord.com/" ><img src="../../assets/img/icons/discord.png" class="redeSocial-home"></a>
 		<a href="https://www.facebook.com/" ><img src="../../assets/img/icons/facebook.png" class="redeSocial-home"></a>
-		<a href="https://twitter.com/" ><img src="../../assets/img/icons/twitter.png" class="redeSocial-home"></a>
+		<a href="https://twitter.com/brazucamc" ><img src="../../assets/img/icons/twitter.png" class="redeSocial-home"></a>
 		<a href="https://www.instagram.com/" ><img src="../../assets/img/icons/instagram.png" class="redeSocial-home"></a>
 	</div>
 </div>

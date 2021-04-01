@@ -16,5 +16,5 @@ function tirouMouse() {
 
     var tooltip = document.getElementById("myTooltip");
     tooltip.innerHTML = "Clique para copiar o IP!";
-  }
+}
 
