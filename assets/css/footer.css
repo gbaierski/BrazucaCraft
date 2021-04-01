@@ -7,7 +7,7 @@
     height: 18vw;
     background-color: rgb(24, 22, 22);
     color: white;
-    background-image: url("../img/rodape_final.jpg");
+    background-image: url("../img/paginas/footer/rodape_final.jpg");
     background-size: cover;
 }
 
@@ -18,7 +18,7 @@
     background-color: rgb(43, 40, 40);
     float: left;
     text-align: center;
-    background-image: url('../img/rodape.jpg');
+    background-image: url('../img/paginas/footer/rodape.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }

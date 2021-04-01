@@ -1,5 +1,6 @@
 <?php
 
+
 private $idUsuario;
 private $nomeUsuario;
 private $login;

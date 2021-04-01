@@ -59,7 +59,7 @@
 			<div id="ano-rodape">
 				2021 - 
 			</div>
-			<img src="../../assets/img/bandeira.png" id="bandeira-rodape">
+			<img src="../../assets/img/paginas/footer/bandeira.png" id="bandeira-rodape">
 		</div>
 	</div>
 </footer>

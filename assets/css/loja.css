@@ -1,0 +1,71 @@
+/* ---- classes ---- */
+
+.div-produto {
+
+    width:25%; 
+    float:left; 
+    margin-left:2vw; 
+    margin-bottom:2vw;
+}
+
+.imagem-produto {
+
+    height:15vw; 
+    margin-left:20%;
+}
+
+.nome-produto {
+
+    text-align:center;
+}
+
+.preco-produto {
+
+    text-align:center;
+}
+
+.descricao-produto {
+    
+    text-align:center;
+}
+
+.botoesAdmin-produto {
+
+    width: 100%;
+    margin-top: 1vw;
+}
+
+.produto-comprar {
+
+    width: 50%;
+    height: 3vw;
+    border: none;
+    margin-top: 1vw;
+    background-color: green;
+    margin-left: 25%;
+}
+
+.produto-editar {
+
+    width: 25%;
+    height: 3vw;
+    border: none;
+    background-color: green;
+    margin-left: 25%;
+}
+
+.produto-deletar {
+
+    width: 25%;
+    height: 3vw;
+    border: none;
+    background-color: red;
+}
+
+/* ---- ids ---- */
+
+#produtos-loja {
+
+    width: 100%; 
+    margin-left:8%;
+}
