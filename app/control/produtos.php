@@ -1,5 +1,5 @@
 <?php 
-require ('..\model\usuario\produto.php');
+require ('..\model\produto\produto.php');
 
 function cadastroProduto(){
 

@@ -17,7 +17,7 @@ function paginaEditarproduto(){
 
     $idProduto = $_GET['ai_produto'];
     //Consulta no Banco
-    require ('..\model\usuario\produto.php');          
+    require ('..\model\produto\produto.php');          
     $produto = new Produto;    
     $produtos = $produto->pegaProduto($idProduto);
     //Consulta no Banco Fim
@@ -30,7 +30,7 @@ function paginaEditarproduto(){
 function paginaLoja(){
 
     //Consulta no Banco
-    require ('..\model\usuario\produto.php');          
+    require ('..\model\produto\produto.php');          
     $produto = new Produto;    
     $produtos = $produto->pegarProdutos();
     //Consulta no Banco Fim
