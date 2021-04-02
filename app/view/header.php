@@ -94,7 +94,7 @@
                                               <div id="myDropdown" class="dropdown-content">
                                                 <a href="#">Link 1</a>
                                                 <a href="#">Link 2</a>
-                                                <a href="#">Deslogar</a>
+                                                <a href="../control/usuario.php?action=deslogar">Deslogar</a>
                                               </div>
                                             </div>' : '<button id="botao-login">LOGIN</button>'; ?>
           </nav>
