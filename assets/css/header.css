@@ -37,8 +37,6 @@
     cursor: pointer;
 }
 
-/* Teste modal Inicio*/
-
 .botao-menu:hover {
 
     transform: scale(1.1);
@@ -52,8 +50,10 @@
     margin-bottom: -0.2vw;
 }
 
+/* Modal Inicio*/
 
 .modal {
+
     display: none; 
     position: fixed; 
     z-index: 1; 
@@ -64,33 +64,59 @@
     overflow: auto;
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4);
-  }
-  
- 
-  .modalConteudo {
-    background-color: #fefefe;
-    margin: 15% auto; 
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; 
-  }
-  
-  
-  .fechar {
-    color: #aaa;
+    cursor: pointer;
+}
+
+
+.modalConteudo {
+
+    width: 40%; 
+    height: 15vw;
+    margin:15% 32%; 
+    background-color: #1c1b1b;
+    border-radius: 0.4vw;
+    cursor: auto;
+}
+
+.botao-fechar {
+
+    width: 1.7vw;
+    height: 1.7vw;
+    margin-right: 1%;
+    margin-top: 1%;
+    border-radius: 0.2vw;
+    color: white;
+    background-image: url('../img/icons/fechar.png');
+    background-size: cover;
+    border: none;
+    font-family: monospace;
+    text-align: center;
     float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+    font-weight: 1000;
+    cursor: pointer;
+    transition: transform .25s;
+}
+
+.botao-fechar:hover {
+
+    transform: scale(0.9) rotate(3deg);
+    transition: transform .30s
+}
+
+.botao-fechar:focus {
+
+    outline: none;
+}
+
+.close:hover,
+.close:focus {
+
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
-/* Teste modal fim*/
+/* Modal fim*/
 
 
 /* ---- ids ---- */
@@ -136,14 +162,14 @@
     border-top: none;
 }
 
-#botao-forum {
+#botao-blog {
 
     background-color: transparent;
 }
 
-#botao-forum:hover {
+#botao-blog:hover {
 
-    background-color: rgb(17, 75, 182);
+    background-color: rgb(40, 120, 212);
     border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
     border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
     border-left: none;
@@ -157,7 +183,7 @@
 
 #botao-sobre:hover {
     
-    background-color: rgb(255, 166, 0);
+    background-color: rgb(255, 180, 41);
     border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
     border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
     border-left: none;
@@ -171,7 +197,7 @@
 
 #botao-ajuda:hover {
     
-    background-color: rgb(93, 44, 172);
+    background-color: rgb(119, 74, 190);
     border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
     border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
     border-left: none;
@@ -232,4 +258,19 @@
 
     transform: scale(1.1);
     transition: transform .28s;
+}
+
+#botao-login:focus{
+
+    outline: none;
+}
+
+#modal {
+
+    background-color: rgba(0, 0, 0, 0.550);
+}
+
+#tituloModal {
+
+    text-align: center;
 }

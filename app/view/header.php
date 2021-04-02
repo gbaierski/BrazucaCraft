@@ -24,16 +24,6 @@
 		<link rel="stylesheet" type="text/css" href="../../assets/css/loja.css"/>
     <link rel="stylesheet" type="text/css" href="../../assets/css/cadastroProdutos.css"/>
 
-    <!-- Scripts -->
-    
-        <!--- Esses dois scripts servem para puxar as bibliotecas de Jquery e bootstrap do google, no momento são necessarias para o funcionamento do modal.
-    Obs: Não está sendo usada nenhuma classe bootstrap porém a biblioteca é necessaria pro Jquery conseguir funcionar.
-     --->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="../view/home.js"></script>
-
-
     </head>
 
     <body>
@@ -55,9 +45,9 @@
 
             <div class="opcao-menu">
               <a href="">
-                <button class="botao-menu" id="botao-forum">
-                  <img src="../../assets/img/icons/forum.png" class="icon-linkMenu">
-                  FÓRUM
+                <button class="botao-menu" id="botao-blog">
+                  <img src="../../assets/img/icons/blog.png" class="icon-linkMenu">
+                  BLOG
                 </button>
               </a>
             </div>
@@ -92,70 +82,56 @@
             <?= isset($_SESSION['login']) ? '<a href="../control/usuario.php?action=deslogar"><div id="head-player"></div></a>' : '<button id="botao-login">LOGIN</button>'; ?>
           </nav>
 
-<div id="modal" class="modal">
+          <div id="modal" class="modal">
 
-  <div class="modalConteudo">
-    <span class="fechar">&times;</span>
-    <h2>Login</h2>
-  <hr>
-    <form action="..\control\usuario.php?action=logar" method="post">
+            <div class="modalConteudo">
+              <span class="fechar"><button class="botao-fechar"></button></span>
+              <h2 id="tituloModal">Login</h2>
+            <hr>
+              <form action="..\control\usuario.php?action=logar" method="post">
 
-      <div>
-        <label for="login">Login</label>
-        <input type="text" id="login" name="login">
-      </div>
+                <div>
+                  <label for="login">Login</label>
+                  <input type="text" id="login" name="login">
+                </div>
 
-      <div>
-        <label for="senha">Senha</label>
-        <input type="password" id="senha" name="senha">
-      </div>
+                <div>
+                  <label for="senha">Senha</label>
+                  <input type="password" id="senha" name="senha">
+                </div>
 
-<?php
-  if (isset($_GET['erro'])) {
+                <?php
+                  if (isset($_GET['erro'])) {
 
-    echo '<h>Senha/Usuario incorretos</h1>';
+                    echo '<h>Senha/Usuario incorretos</h1>';
 
-    echo "<script>
-      $(document).ready(function(){
-        $('#modal').modal('show');
-      }); </script>";
-  }
-?>
+                    echo "<script>
+                      $(document).ready(function(){
+                        $('#modal').modal('show');
+                      }); </script>";
+                  }
+                ?>
 
-      <input type="submit" name="logar" value="Logar">
+                <input type="submit" name="logar" value="Logar">
 
-    </form>
+              </form>
 
-    <a href="../view/usuario/cadastroUsuario.php">Cadastre-se</a>
+              <a href="../view/usuario/cadastroUsuario.php">Cadastre-se</a>
 
-    </div>
+              </div>
 
-  </div>
+            </div>
 
-</div>
-
-<script>
-
-var modal = document.getElementById("modal");
-
-var btn = document.getElementById("botao-login");
-
-var span = document.getElementsByClassName("fechar")[0];
-
-  btn.onclick = function() {
-    modal.style.display = "block";
-  }
-
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-
-  window.onclick = function(event) {
-    if (event.target == modal) {
-     modal.style.display = "none";
-   }
-  }
-  
-</script>
-
-      </header>
+          </div>
+          
+          <!-- Scripts -->
+    
+          <!--- 
+          Esses dois scripts servem para puxar as bibliotecas de Jquery e bootstrap do google, no momento são necessarias para o funcionamento do modal.
+          Obs: Não está sendo usada nenhuma classe bootstrap porém a biblioteca é necessaria pro Jquery conseguir funcionar.
+          --->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+          <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+          <script src="../view/home.js"></script>
+          <script src="../view/header.js"></script>
+</header>
