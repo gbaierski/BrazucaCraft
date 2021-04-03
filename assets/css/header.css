@@ -1,36 +1,291 @@
-/* ---- classes ---- */
+
+/* --------------------------------------- tela mobile --------------------------------------- */
+@media screen and (max-width:900px) {
+
+    
+
+    .header {
+
+        height: 22vw;
+    }
+
+    .opcao-menuMobile {
+
+        float: left;
+    }
+
+    .nav-desktop {
+
+        display: none;
+    }
+
+    .botao-menuMobile {
+
+        width: 20vw;
+        height: 20vw;
+        border: none;
+        border-radius: 0.1vw;
+        text-decoration: none;
+        font-weight: 700;
+        color: white;
+        text-shadow: 0.05vw 0.11vw rgba(0, 0, 0, 0.651);
+        cursor: pointer;
+
+    }
+
+    .botao-menuMobile:hover {
+
+        transform: scale(1.1);
+        transition: transform .28s
+    }
+
+    .icon-linkMenuMobile {
+
+        width:8vw; 
+    }
+
+    .texto-linkMenuMobile {
+        display: none;
+    }
+
+    #botao-homeMobile {
+
+        background-color: transparent;
+        transition: transform .35s;
+    }
+    
+    #botao-homeMobile:hover {
+    
+        background-color: rgb(22, 163, 69);
+        border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
+        border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
+        border-left: none;
+        border-top: none;
+    }
+    
+    #botao-blogMobile {
+        
+        display: none;
+        background-color: transparent;
+    }
+    
+    #botao-blogMobile:hover {
+    
+        background-color: rgb(40, 120, 212);
+        border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
+        border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
+        border-left: none;
+        border-top: none;
+    }
+    
+    #botao-sobreMobile {
+        
+        display: none;
+        background-color: transparent;
+    }
+    
+    #botao-sobreMobile:hover {
+        
+        background-color: rgb(255, 180, 41);
+        border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
+        border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
+        border-left: none;
+        border-top: none;
+    }
+    
+    #botao-ajudaMobile {
+        
+        display: none;
+        background-color: transparent;
+    }
+    
+    #botao-ajudaMobile:hover {
+        
+        background-color: rgb(119, 74, 190);
+        border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
+        border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
+        border-left: none;
+        border-top: none;
+    }
+    
+    #botao-lojaMobile {
+        
+        display: none;
+        background-color: rgb(224, 44, 20);
+        border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
+        border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
+        border-left: none;
+        border-top: none;
+        transition: transform .25s;
+    }
+
+    #texto-brazuca {
+
+        font-size: 5vw;
+    }
+
+    #head-player {
+
+        width: 10vw;
+        height: 10vw;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------- tela tablet --------------------------------------- */
+@media screen and (min-width:901px) and (max-width:1200px) {
+
+    .icon-linkMenu {
+
+        width:2vw; 
+    }
+
+    .nav-mobile {
+
+        display: none;
+    }
+
+    .botao-menu {
+
+        width: 8vw;
+        height: 3.8vw;
+        font-size: 2vw;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------- tela monitor 1366x768 ---------------------------------------*/
+@media screen and (min-width:1201px) {
+
+    .nav-desktop {
+
+        margin-left: 23vw;
+    }
+
+    .nav-mobile {
+
+        display: none;
+    }
+
+    .botao-menu {
+
+        width: 8vw;
+        height: 3.8vw;
+        font-size: 1.3vw;
+        margin-top: 0.5vw;
+    }
+
+    .icon-linkMenu {
+
+        width:1.4vw; 
+        margin-right: 0.3vw;
+        margin-bottom: -0.2vw;
+    }
+
+    .texto-linkMenu {
+
+        margin-right: 5%;
+    }
+
+    .opcao-menu {
+
+        margin-left: 2vw;
+        
+    }
+
+    #texto-brazuca {
+
+        margin-top: -0.01vw;
+        font-size: 2vw;
+    }
+
+    #link-brazuca-menu {
+
+        width: 10vw;
+        height: 5vw;
+        margin-left: -20vw;
+    }
+
+    #head-player {
+
+        width: 2.4vw;
+        height: 2.4vw;
+        margin-left: 3.5vw;
+        margin-top: 1.5vw;
+    }
+
+    #div-loja {
+
+        margin-left: 20vw;
+    }
+
+    #botao-login {
+
+        width: 8vw;
+        height: 3.8vw;
+        margin-top: 0.5vw;
+        font-size: 1.3vw;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------- geral ---------------------------------------*/
 
 .header {
 
+    width: 100%;
     position: fixed;
     z-index: 1;
     padding-top: 0; 
     background-color: rgba(0, 0, 0, 0.651);
-    width: 100%;
+    
 }
 
-.nav-menu {
+.nav-desktop {
 
     width: 100%;
-    margin-left: 23vw;
 }
 
 .opcao-menu {
 
     float: left;
-    margin-left: 2vw;
     
 }
 
 .botao-menu {
-    
+
     border: none;
     border-radius: 0.1vw;
-    margin-top: 0.5vw;
-    width: 8vw;
-    height: 3.8vw;
     text-decoration: none;
-    font-size: 1.3vw;
     font-weight: 700;
     color: white;
     text-shadow: 0.05vw 0.11vw rgba(0, 0, 0, 0.651);
@@ -43,11 +298,9 @@
     transition: transform .28s
 }
 
-.icon-linkMenu {
+.texto-linkMenu {
 
-    width:1.4vw; 
-    margin-right: 0.3vw;
-    margin-bottom: -0.2vw;
+    float: right;
 }
 
 /* Modal Inicio*/
@@ -118,7 +371,7 @@
 
 /* Modal fim*/
 
-/* Teste dropdown inicio */
+/* Dropdown inicio */
 
 .dropbtn {
   border: none;
@@ -150,15 +403,7 @@
 .show {display:block;}
 
 
-/* Teste dropdown fim/*
-
-
-/* ---- ids ---- */
-
-#texto-brazuca {
-
-    margin-top: -0.01vw;
-}
+/* Dropdown fim */
 
 #texto-brazuca:hover {
 
@@ -170,15 +415,11 @@
 
     float: left; 
     color: white; 
-    font-size: 2vw; 
     font-weight: 700; 
     font-family: monospace;
     text-shadow: 0.08vw 0.15vw rgba(0, 0, 0, 0.651);
     text-decoration: none;
     text-align: center;
-    width: 10vw;
-    height: 5vw;
-    margin-left: -20vw;
 }
 
 #botao-home {
@@ -254,10 +495,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     float: left;
-    width: 2.4vw;
-    height: 2.4vw;
-    margin-left: 3.5vw;
-    margin-top: 1.5vw;
     transition: transform .30s;
 }
 
@@ -269,18 +506,13 @@
 #div-loja {
 
     float: left;
-    margin-left: 20vw;
 }
 
 #botao-login {
     
     border: none;
     border-radius: 0.3vw;
-    margin-top: 0.5vw;
-    width: 8vw;
-    height: 3.8vw;
     text-decoration: none;
-    font-size: 1.3vw;
     font-weight: 700;
     color: white;
     background-color: transparent;
