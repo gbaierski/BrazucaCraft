@@ -78,8 +78,15 @@
                 </button>
               </a>
             </div>
-
-            <?= isset($_SESSION['login']) ? '<a href="../control/usuario.php?action=deslogar"><div id="head-player"></div></a>' : '<button id="botao-login">LOGIN</button>'; ?>
+                                          <!-- id="head-player" -->
+            <?= isset($_SESSION['login']) ?'<div  class="dropdown">
+                                              <button onclick="myFunction()" id="head-player" class="dropbtn"></button>
+                                              <div id="myDropdown" class="dropdown-content">
+                                                <a href="#">Link 1</a>
+                                                <a href="#">Link 2</a>
+                                                <a href="../control/usuario.php?action=deslogar">Deslogar</a>
+                                              </div>
+                                            </div>' : '<button id="botao-login">LOGIN</button>'; ?>
           </nav>
 
           <div id="modal" class="modal">
@@ -121,6 +128,48 @@
               </div>
 
             </div>
+            
+<script>
+// Funções Dropdown
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+// Funçoes Modal
+var modal = document.getElementById("modal");
+
+var btn = document.getElementById("botao-login");
+
+var span = document.getElementsByClassName("fechar")[0];
+
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+     modal.style.display = "none";
+   }
+  }
+  
+</script>
 
           </div>
           
