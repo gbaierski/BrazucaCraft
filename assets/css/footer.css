@@ -103,6 +103,12 @@
 
 /* ---- ids ---- */
 
+#footer {
+    
+    transition-property: all;
+    transition-duration: 2s;
+}
+
 #final-rodape {
 
     float: left;

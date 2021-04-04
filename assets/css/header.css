@@ -1,5 +1,5 @@
 
-/* --------------------------------------- tela mobile --------------------------------------- */
+/* --------------------------------------- tela celular / tablet --------------------------------------- */
 @media screen and (max-width:900px) {
 
     
@@ -7,6 +7,8 @@
     .header {
 
         height: 22vw;
+        background-color: rgba(0, 0, 0, 0.651);
+        transition-duration: 4s;
     }
 
     .opcao-menuMobile {
@@ -46,6 +48,22 @@
 
     .texto-linkMenuMobile {
         display: none;
+    }
+
+    #botaoFecharMenu {
+
+        opacity: 0;
+        transition-property: all;
+        z-index: 3;
+        position: absolute;
+        float: left;
+        margin-top: 1vw;
+    }
+    
+    #secondBody {
+
+        transition-property: all;
+        transition-duration: 2s;
     }
 
     #botao-homeMobile {
@@ -142,8 +160,13 @@
 
 
 
-/* --------------------------------------- tela tablet --------------------------------------- */
+/* --------------------------------------- tela monitores menores --------------------------------------- */
 @media screen and (min-width:901px) and (max-width:1200px) {
+
+    .header {
+
+        background-color: rgba(0, 0, 0, 0.651);
+    }
 
     .icon-linkMenu {
 
@@ -162,6 +185,11 @@
         font-size: 2vw;
 
     }
+
+    #secondBody {
+
+        display: none;
+    }
 }
 
 
@@ -177,6 +205,11 @@
 /* --------------------------------------- tela monitor 1366x768 ---------------------------------------*/
 @media screen and (min-width:1201px) {
 
+    .header {
+
+        background-color: rgba(0, 0, 0, 0.651);
+    }
+    
     .nav-desktop {
 
         margin-left: 23vw;
@@ -211,6 +244,11 @@
 
         margin-left: 2vw;
         
+    }
+
+    #secondBody {
+
+        display: none;
     }
 
     #texto-brazuca {
@@ -266,7 +304,6 @@
     position: fixed;
     z-index: 1;
     padding-top: 0; 
-    background-color: rgba(0, 0, 0, 0.651);
     
 }
 
@@ -404,6 +441,11 @@
 
 
 /* Dropdown fim */
+
+#bodyID {
+
+    background-color: black;
+}
 
 #texto-brazuca:hover {
 

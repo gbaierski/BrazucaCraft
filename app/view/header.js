@@ -36,3 +36,12 @@ window.onclick = function(event) {
     modal.style.display = "none";
     }
 }
+
+function menuMobile () {
+  
+  document.getElementById("botaoFecharMenu").style = 'opacity: 1; transition-duration: 2s;';
+  document.getElementById("secondBody").style = 'filter: blur(8px); pointer-events: none;';
+  document.querySelector('.nav-mobile').style = 'display:none;';
+  document.querySelector('.header').style = 'background-color:transparent';
+  document.getElementById("footer").style = 'filter: blur(8px); pointer-events: none;';
+}

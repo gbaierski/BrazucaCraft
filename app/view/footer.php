@@ -1,5 +1,6 @@
+	</section> <!--secondBody-->
 </body>
-<footer class="rodape">
+<footer class="rodape" id="footer">
 	<div class="sub-rodape">
 		<div class="colunas-rodape">
 			<div class="coluna-rodape">
