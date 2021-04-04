@@ -186,10 +186,11 @@
 
     }
 
-    #secondBody {
+    #botaoFecharMenu {
 
         display: none;
     }
+
 }
 
 
@@ -246,10 +247,6 @@
         
     }
 
-    #secondBody {
-
-        display: none;
-    }
 
     #texto-brazuca {
 
@@ -283,6 +280,11 @@
         height: 3.8vw;
         margin-top: 0.5vw;
         font-size: 1.3vw;
+    }
+
+    #botaoFecharMenu {
+
+        display: none;
     }
 
 }
