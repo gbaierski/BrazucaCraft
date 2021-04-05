@@ -7,6 +7,7 @@
            
 
             <?php
+
                 // Parte Edição      
             if($edicao == true){
 

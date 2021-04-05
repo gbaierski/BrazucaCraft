@@ -53,6 +53,24 @@ class Usuario {
         unset($_SESSION['login']);
         unset($_SESSION['senha']);
     }
+    
+    function getInformacoesUsuario($login) {
+        $getNome = "SELECT nomeUsuario FROM usuarios WHERE usuarioLogin = '$login'";        
+        $getNomeExec = mysqli_query($this->conexao->getConnection(), $getNome);
+
+        if(mysqli_num_rows($getNomeExec) != 0 ) {
+        while( $row = mysqli_fetch_array($getNomeExec) ){
+            $usuario = $row; 
+        }
+        return $usuario;
+
+        } else {
+
+        return false;
+        }
+
+    }
+
 }
 
 ?>

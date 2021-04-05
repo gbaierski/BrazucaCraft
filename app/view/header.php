@@ -72,7 +72,7 @@
             </div>
 
             <div class="opcao-menu">
-              <a href="">
+              <a href="../view/usuario/perfil.php">
                 <button class="botao-menu" id="botao-ajuda">
                   <img src="../../assets/img/icons/ajuda.png" class="icon-linkMenu">
                   AJUDA
@@ -92,7 +92,7 @@
             <?= isset($_SESSION['login']) ?'<div  class="dropdown">
                                               <button onclick="myFunction()" id="head-player" class="dropbtn"></button>
                                               <div id="myDropdown" class="dropdown-content">
-                                                <a href="#">Link 1</a>
+                                                <a href="../control/usuario.php?action=deslogar">Link 1</a>
                                                 <a href="#">Link 2</a>
                                                 <a href="../control/usuario.php?action=deslogar">Deslogar</a>
                                               </div>
