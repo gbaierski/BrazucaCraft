@@ -54,7 +54,7 @@ class Usuario {
         unset($_SESSION['senha']);
     }
     
-    function getInformacoesUsuario($login) {
+    function getNomeUsuario($login) {
         $getNome = "SELECT nomeUsuario FROM usuarios WHERE usuarioLogin = '$login'";        
         $getNomeExec = mysqli_query($this->conexao->getConnection(), $getNome);
 
@@ -70,6 +70,59 @@ class Usuario {
         }
 
     }
+
+    function getIdUsuario($login) {
+        $getNome = "SELECT idUsuario FROM usuarios WHERE usuarioLogin = '$login'";        
+        $getNomeExec = mysqli_query($this->conexao->getConnection(), $getNome);
+
+        if(mysqli_num_rows($getNomeExec) != 0 ) {
+        while( $row = mysqli_fetch_array($getNomeExec) ){
+            $usuario = $row; 
+        }
+        return $usuario;
+
+        } else {
+
+        return false;
+        }
+
+    }
+
+    function getSenhaUsuario($login) {
+        $getNome = "SELECT usuarioSenha FROM usuarios WHERE usuarioLogin = '$login'";        
+        $getNomeExec = mysqli_query($this->conexao->getConnection(), $getNome);
+
+        if(mysqli_num_rows($getNomeExec) != 0 ) {
+        while( $row = mysqli_fetch_array($getNomeExec) ){
+            $usuario = $row; 
+        }
+        return $usuario;
+
+        } else {
+
+        return false;
+        }
+
+    }
+
+    function getPermissaoUsuario($login) {
+        $getNome = "SELECT permissao FROM usuarios WHERE usuarioLogin = '$login'";        
+        $getNomeExec = mysqli_query($this->conexao->getConnection(), $getNome);
+
+        if(mysqli_num_rows($getNomeExec) != 0 ) {
+        while( $row = mysqli_fetch_array($getNomeExec) ){
+            $usuario = $row; 
+        }
+        return $usuario;
+
+        } else {
+
+        return false;
+        }
+
+    }
+    
+
 
 }
 
