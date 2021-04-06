@@ -21,26 +21,6 @@
         display: none;
     }
 
-    .botao-menuMobile {
-
-        width: 20vw;
-        height: 20vw;
-        border: none;
-        border-radius: 0.1vw;
-        text-decoration: none;
-        font-weight: 700;
-        color: white;
-        text-shadow: 0.05vw 0.11vw rgba(0, 0, 0, 0.651);
-        cursor: pointer;
-
-    }
-
-    .botao-menuMobile:hover {
-
-        transform: scale(1.1);
-        transition: transform .28s
-    }
-
     .icon-linkMenuMobile {
 
         width:8vw; 
@@ -54,16 +34,37 @@
 
         opacity: 0;
         transition-property: all;
-        z-index: 3;
+        z-index: 1;
         position: absolute;
         float: left;
-        margin-top: 1vw;
+        margin-top: 6vw;
+        margin-left: 6%;
+        background-color: transparent;
+        border: none;
+        outline: none;
     }
     
     #secondBody {
 
         transition-property: all;
         transition-duration: 2s;
+    }
+
+    #imagem-menuMobile {
+
+        width:8vw; 
+    }
+
+    #botao-menuMobile {
+
+        width: 20vw;
+        height: 20vw;
+        transition-property: all;
+        background-color: transparent;
+        outline: none;
+        z-index: 0;
+        border: none;
+
     }
 
     #botao-homeMobile {

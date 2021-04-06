@@ -38,10 +38,32 @@ window.onclick = function(event) {
 }
 
 function menuMobile () {
-  
-  document.getElementById("botaoFecharMenu").style = 'opacity: 1; transition-duration: 2s;';
+
+  document.getElementById("botaoFecharMenu").setAttribute("disabled", true); //disable para evitar duplo clique
+  document.getElementById("botaoFecharMenu").style = 'opacity: 1; transition-duration: 1s;';
   document.getElementById("secondBody").style = 'filter: blur(8px); pointer-events: none;';
-  document.querySelector('.nav-mobile').style = 'display:none;';
+  document.querySelector('.nav-mobile').style = 'opacity:0;transition-duration: 1s;';
   document.querySelector('.header').style = 'background-color:transparent';
   document.getElementById("footer").style = 'filter: blur(8px); pointer-events: none;';
+  document.getElementById("imagem-menuMobile").style = 'display:block;'
+
+  setTimeout(function(){  // Sleep para evitar duplo clique (erro)
+    document.getElementById("botaoFecharMenu").removeAttribute("disabled");
+   }, 2000);
+}
+
+function fecharMenu () {
+
+  document.getElementById("botao-menuMobile").setAttribute("disabled", true); //disable para evitar duplo clique
+  document.getElementById("imagem-menuMobile").style = 'opacity:0; transition-duration: 1s;';
+  document.getElementById("botaoFecharMenu").style = 'opacity: 0; transition-duration: 1s;';
+  document.getElementById("footer").style = 'filter: blur(0px); pointer-events: auto;';
+  document.querySelector('.nav-mobile').style = 'opacity:1;transition-duration: 1s;';
+  document.querySelector('.header').style = 'background-color: rgba(0, 0, 0, 0.651);';
+  document.getElementById("secondBody").style = 'filter: blur(0px); pointer-events: auto;';
+
+  setTimeout(function(){ document.getElementById("imagem-menuMobile").style = 'display:none;'; }, 1000);
+  setTimeout(function(){  // Sleep para evitar duplo clique (erro)
+    document.getElementById("botao-menuMobile").removeAttribute("disabled");
+   }, 2000);
 }

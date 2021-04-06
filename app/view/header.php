@@ -25,7 +25,9 @@
     <link rel="stylesheet" type="text/css" href="../../assets/css/cadastroProdutos.css"/>
     </head>
     <body id="bodyID">
-      <button id="botaoFecharMenu">fechar</button>
+      <button id="botaoFecharMenu" onclick="fecharMenu()">
+        <img src="../../assets/img/icons/fecharMobile.png" id="imagem-menuMobile">
+      </button>
         <section id="secondBody">
           <header class="header">
             <nav class="nav-desktop">
@@ -90,9 +92,8 @@
             </nav>
             <nav class="nav-mobile">
               <div class="opcao-menuMobile">
-                  <button class="botao-menuMobile" id="botao-homeMobile" onclick="menuMobile()">
-                    <img src="../../assets/img/icons/home.png" class="icon-linkMenuMobile">
-                    <div class="texto-linkMenuMobile">HOME</div>
+                  <button class="botao-menuMobile" id="botao-menuMobile" onclick="menuMobile()">
+                    <img src="../../assets/img/icons/menu.png" id="imagem-menuMobile">
                   </button>
               </div>
 
@@ -100,41 +101,6 @@
                 <p class="header-texto" id="texto-brazuca"> BRAZUCA <br> CRAFT</p>
               </a>
 
-              <div class="opcao-menuMobile">
-                <a href="">
-                  <button class="botao-menuMobile" id="botao-blogMobile">
-                    <img src="../../assets/img/icons/blog.png" class="icon-linkMenuMobile">
-                    <div class="texto-linkMenuMobile"> BLOG </div>
-                  </button>
-                </a>
-              </div>
-
-              <div class="opcao-menuMobile">
-                <a href="../control/redirecionamento.php?action=paginacadastroprodutos">
-                  <button class="botao-menuMobile" id="botao-sobreMobile">
-                    <img src="../../assets/img/icons/sobre.png" class="icon-linkMenuMobile">
-                    <div class="texto-linkMenuMobile"> SOBRE </div>
-                  </button>
-                </a>
-              </div>
-
-              <div class="opcao-menuMobile">
-                <a href="">
-                  <button class="botao-menuMobile" id="botao-ajudaMobile">
-                    <img src="../../assets/img/icons/ajuda.png" class="icon-linkMenuMobile">
-                    <div class="texto-linkMenuMobile"> AJUDA </div>
-                  </button>
-                </a>
-              </div>
-
-              <div id="div-loja">
-                <a href="../control/redirecionamento.php?action=paginaLoja" >
-                  <button class="botao-menuMobile" id="botao-lojaMobile">
-                    <img src="../../assets/img/icons/loja.png" class="icon-linkMenuMobile">
-                    <div class="texto-linkMenuMobile"> LOJA </div>
-                  </button>
-                </a>
-              </div>
                                             <!-- id="head-player" -->
               <?= isset($_SESSION['login']) ?'<div  class="dropdown">
                                                 <button onclick="abrirDropdown()" id="head-player" class="dropbtn"></button>
