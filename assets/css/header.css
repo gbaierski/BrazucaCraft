@@ -1,19 +1,13 @@
-
 /* --------------------------------------- tela celular / tablet --------------------------------------- */
-@media screen and (max-width:900px) {
+@media screen and (max-width:750px) {
 
     
 
     .header {
 
-        height: 22vw;
+        height: 25vw;
         background-color: rgba(0, 0, 0, 0.651);
         transition-duration: 4s;
-    }
-
-    .opcao-menuMobile {
-
-        float: left;
     }
 
     .nav-desktop {
@@ -21,27 +15,37 @@
         display: none;
     }
 
-    .icon-linkMenuMobile {
+    .menuMobile {
 
-        width:8vw; 
+        float: left;
+        position:relative;
     }
 
-    .texto-linkMenuMobile {
-        display: none;
-    }
+    .opcao-menuMobile {
 
-    #botaoFecharMenu {
-
-        opacity: 0;
+        opacity: 1;
+        position: absolute;
         transition-property: all;
         z-index: 1;
-        position: absolute;
-        float: left;
-        margin-top: 6vw;
-        margin-left: 6%;
+        right: 0;
+    }
+
+    .botao-menuMobile {
+
         background-color: transparent;
         border: none;
         outline: none;
+    }
+
+    .icon-linkMenuMobile {
+
+        width:23vw; 
+    }
+
+    .texto-linkMenuMobile {
+
+        font-size: 5vw;
+        color: white;
     }
     
     #secondBody {
@@ -49,16 +53,30 @@
         transition-property: all;
         transition-duration: 2s;
     }
+    
+    #botaoFecharMenu {
+
+        opacity: 0;
+        position: absolute;
+        transition-property: all;
+        z-index: 1;
+        float: left;
+        margin-top: 8vw;
+        margin-left: 8%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
 
     #imagem-menuMobile {
 
         width:8vw; 
     }
 
-    #botao-menuMobile {
+    #menuMobile {
 
-        width: 20vw;
-        height: 20vw;
+        width: 25vw;
+        height: 25vw;
         transition-property: all;
         background-color: transparent;
         outline: none;
@@ -67,79 +85,24 @@
 
     }
 
-    #botao-homeMobile {
+    #link-brazuca-menu {
 
-        background-color: transparent;
-        transition: transform .35s;
-    }
-    
-    #botao-homeMobile:hover {
-    
-        background-color: rgb(22, 163, 69);
-        border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-left: none;
-        border-top: none;
-    }
-    
-    #botao-blogMobile {
-        
-        display: none;
-        background-color: transparent;
-    }
-    
-    #botao-blogMobile:hover {
-    
-        background-color: rgb(40, 120, 212);
-        border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-left: none;
-        border-top: none;
-    }
-    
-    #botao-sobreMobile {
-        
-        display: none;
-        background-color: transparent;
-    }
-    
-    #botao-sobreMobile:hover {
-        
-        background-color: rgb(255, 180, 41);
-        border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-left: none;
-        border-top: none;
-    }
-    
-    #botao-ajudaMobile {
-        
-        display: none;
-        background-color: transparent;
-    }
-    
-    #botao-ajudaMobile:hover {
-        
-        background-color: rgb(119, 74, 190);
-        border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-left: none;
-        border-top: none;
-    }
-    
-    #botao-lojaMobile {
-        
-        display: none;
-        background-color: rgb(224, 44, 20);
-        border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-left: none;
-        border-top: none;
-        transition: transform .25s;
+        margin-left: 11%;
+        font-size: 10vw;
+        margin-top: 4vw;
     }
 
     #texto-brazuca {
 
+        font-size: 7vw;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+    }
+
+    #botao-login {
+
+        margin-top: 8.5vw;
+        margin-left: 13%;
         font-size: 5vw;
     }
 
@@ -147,6 +110,53 @@
 
         width: 10vw;
         height: 10vw;
+    }
+
+    #botao-homeMobile {
+
+        margin-top: 30vw;
+        margin-left: -70%;
+    }
+
+    #botao-blogMobile {
+
+        margin-top: 30vw;
+        margin-left: -210%;
+    }
+
+    #botao-sobreMobile {
+
+        margin-top: 70vw;
+        margin-left: -70%;
+    }
+
+    #botao-ajudaMobile {
+
+        margin-top: 70vw;
+        margin-left: -210%;
+    }
+
+
+    #div-lojaMobile {
+
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        margin-top: 105vw;
+        margin-right: 63%;
+    }
+
+    #botao-lojaMobile {
+
+        transition-property: all;
+        width: 360%;
+        height: 15vw;
+        background-color: rgb(248, 29, 14);
+        border-radius: 3px;
+        border-bottom: 1.8vw solid rgba(10, 10, 10, 0.4);
+        border-right: 1.8vw solid rgba(10, 10, 10, 0.4);
+        border-left: none;
+        border-top: none;
     }
 
 }
@@ -161,22 +171,27 @@
 
 
 
-/* --------------------------------------- tela monitores menores --------------------------------------- */
-@media screen and (min-width:901px) and (max-width:1200px) {
+/* --------------------------------------- ipad / telas menores --------------------------------------- */
+@media screen and (min-width:751px) and (max-width:1200px) {
 
     .header {
 
         background-color: rgba(0, 0, 0, 0.651);
     }
 
-    .icon-linkMenu {
-
-        width:2vw; 
-    }
-
     .nav-mobile {
 
         display: none;
+    }
+
+    .opcao-menuMobile {
+
+        display: none;
+    }
+
+    .icon-linkMenu {
+
+        width:2vw; 
     }
 
     .botao-menu {
@@ -188,6 +203,11 @@
     }
 
     #botaoFecharMenu {
+
+        display: none;
+    }
+
+    #div-lojaMobile {
 
         display: none;
     }
@@ -211,15 +231,20 @@
 
         background-color: rgba(0, 0, 0, 0.651);
     }
-    
-    .nav-desktop {
-
-        margin-left: 23vw;
-    }
 
     .nav-mobile {
 
         display: none;
+    }
+
+    .opcao-menuMobile {
+
+        display: none;
+    }
+
+    .nav-desktop {
+
+        margin-left: 23vw;
     }
 
     .botao-menu {
@@ -248,6 +273,17 @@
         
     }
 
+    
+    #div-lojaMobile {
+
+        display: none;
+    }
+
+    
+    #botaoFecharMenu {
+
+        display: none;
+    }
 
     #texto-brazuca {
 
@@ -281,11 +317,6 @@
         height: 3.8vw;
         margin-top: 0.5vw;
         font-size: 1.3vw;
-    }
-
-    #botaoFecharMenu {
-
-        display: none;
     }
 
 }

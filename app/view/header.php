@@ -23,13 +23,65 @@
 
 		<link rel="stylesheet" type="text/css" href="../../assets/css/loja.css"/>
     <link rel="stylesheet" type="text/css" href="../../assets/css/cadastroProdutos.css"/>
+
     </head>
     <body id="bodyID">
+
+    <!-- Parte externa do secondBody (Mobile) -->
+
       <button id="botaoFecharMenu" onclick="fecharMenu()">
         <img src="../../assets/img/icons/fecharMobile.png" id="imagem-menuMobile">
       </button>
+
+      <div class="opcao-menuMobile">
+          <a href="../control/redirecionamento.php?action=index">
+            <button class="botao-menuMobile" id="botao-homeMobile">
+              <img src="../../assets/img/icons/home.png" class="icon-linkMenuMobile">
+              <div class="texto-linkMenuMobile">HOME</div>
+            </button>
+          </a>
+        </div>
+
+        <div class="opcao-menuMobile">
+          <a href="">
+            <button class="botao-menuMobile" id="botao-blogMobile">
+              <img src="../../assets/img/icons/blog.png" class="icon-linkMenuMobile">
+              <div class="texto-linkMenuMobile"> BLOG </div>
+            </button>
+          </a>
+        </div>
+
+        <div class="opcao-menuMobile">
+          <a href="../control/redirecionamento.php?action=paginacadastroprodutos">
+            <button class="botao-menuMobile" id="botao-sobreMobile">
+              <img src="../../assets/img/icons/sobre.png" class="icon-linkMenuMobile">
+              <div class="texto-linkMenuMobile"> SOBRE </div>
+            </button>
+          </a>
+        </div>
+
+        <div class="opcao-menuMobile">
+          <a href="">
+            <button class="botao-menuMobile" id="botao-ajudaMobile">
+              <img src="../../assets/img/icons/ajuda.png" class="icon-linkMenuMobile">
+              <div class="texto-linkMenuMobile"> AJUDA </div>
+            </button>
+          </a>
+        </div>
+
+        <div id="div-lojaMobile">
+          <a href="../control/redirecionamento.php?action=paginaLoja" >
+            <button class="botao-menuMobile" id="botao-lojaMobile">
+              <div class="texto-linkMenuMobile"> LOJA </div>
+            </button>
+          </a>
+        </div>
+
         <section id="secondBody">
           <header class="header">
+
+            <!-- Barra do menu desktop -->
+
             <nav class="nav-desktop">
 
               <a href="../control/redirecionamento.php?action=index" id="link-brazuca-menu">
@@ -90,9 +142,12 @@
                                                 </div>
                                               </div>' : '<button id="botao-login">LOGIN</button>'; ?>
             </nav>
+
+            <!-- Barra do menu mobile -->
+
             <nav class="nav-mobile">
-              <div class="opcao-menuMobile">
-                  <button class="botao-menuMobile" id="botao-menuMobile" onclick="menuMobile()">
+              <div class="menuMobile">
+                  <button class="botao-menuMobile" id="menuMobile" onclick="menuMobile()">
                     <img src="../../assets/img/icons/menu.png" id="imagem-menuMobile">
                   </button>
               </div>

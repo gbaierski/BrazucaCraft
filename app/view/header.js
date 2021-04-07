@@ -54,7 +54,7 @@ function menuMobile () {
 
 function fecharMenu () {
 
-  document.getElementById("botao-menuMobile").setAttribute("disabled", true); //disable para evitar duplo clique
+  document.getElementById("menuMobile").setAttribute("disabled", true); //disable para evitar duplo clique
   document.getElementById("imagem-menuMobile").style = 'opacity:0; transition-duration: 1s;';
   document.getElementById("botaoFecharMenu").style = 'opacity: 0; transition-duration: 1s;';
   document.getElementById("footer").style = 'filter: blur(0px); pointer-events: auto;';
@@ -64,6 +64,6 @@ function fecharMenu () {
 
   setTimeout(function(){ document.getElementById("imagem-menuMobile").style = 'display:none;'; }, 1000);
   setTimeout(function(){  // Sleep para evitar duplo clique (erro)
-    document.getElementById("botao-menuMobile").removeAttribute("disabled");
+    document.getElementById("menuMobile").removeAttribute("disabled");
    }, 2000);
 }
