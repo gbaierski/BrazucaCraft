@@ -7,6 +7,8 @@ class Usuario {
         $this->conexao = new Connection();  
     }
 
+    //funções Principais
+
     //função que verifica se existe no banco algum usuário com mesmo login
     public function pesquisaUsuario($login) {
 
@@ -53,7 +55,10 @@ class Usuario {
         unset($_SESSION['login']);
         unset($_SESSION['senha']);
     }
-    
+
+    //Funções Secundarias
+
+    //função que Pega o nome do usuario
     function getNomeUsuario($login) {
         $getNome = "SELECT nomeUsuario FROM usuarios WHERE usuarioLogin = '$login'";        
         $getNomeExec = mysqli_query($this->conexao->getConnection(), $getNome);
@@ -63,64 +68,69 @@ class Usuario {
             $usuario = $row; 
         }
         return $usuario;
-
         } else {
-
         return false;
         }
 
     }
-
+    //função que Pega o Id do Usuario
     function getIdUsuario($login) {
-        $getNome = "SELECT idUsuario FROM usuarios WHERE usuarioLogin = '$login'";        
-        $getNomeExec = mysqli_query($this->conexao->getConnection(), $getNome);
+        $getId = "SELECT idUsuario FROM usuarios WHERE usuarioLogin = '$login'";        
+        $getIdExec = mysqli_query($this->conexao->getConnection(), $getId);
 
-        if(mysqli_num_rows($getNomeExec) != 0 ) {
-        while( $row = mysqli_fetch_array($getNomeExec) ){
+        if(mysqli_num_rows($getIdExec) != 0 ) {
+        while( $row = mysqli_fetch_array($getIdExec) ){
             $usuario = $row; 
         }
         return $usuario;
-
         } else {
-
         return false;
         }
 
     }
-
+    //função que Pega a senha do usuario
     function getSenhaUsuario($login) {
-        $getNome = "SELECT usuarioSenha FROM usuarios WHERE usuarioLogin = '$login'";        
-        $getNomeExec = mysqli_query($this->conexao->getConnection(), $getNome);
+        $getSenha = "SELECT usuarioSenha FROM usuarios WHERE usuarioLogin = '$login'";        
+        $getSenhaExec = mysqli_query($this->conexao->getConnection(), $getSenha);
 
-        if(mysqli_num_rows($getNomeExec) != 0 ) {
-        while( $row = mysqli_fetch_array($getNomeExec) ){
+        if(mysqli_num_rows($getSenhaExec) != 0 ) {
+        while( $row = mysqli_fetch_array($getSenhaExec) ){
             $usuario = $row; 
         }
         return $usuario;
-
         } else {
-
         return false;
         }
 
     }
-
+    //função que Pega o nivel de permissão do usuario
     function getPermissaoUsuario($login) {
-        $getNome = "SELECT permissao FROM usuarios WHERE usuarioLogin = '$login'";        
-        $getNomeExec = mysqli_query($this->conexao->getConnection(), $getNome);
+        $getPermissao = "SELECT permissao FROM usuarios WHERE usuarioLogin = '$login'";        
+        $getPermissaoExec = mysqli_query($this->conexao->getConnection(), $getPermissao);
 
-        if(mysqli_num_rows($getNomeExec) != 0 ) {
-        while( $row = mysqli_fetch_array($getNomeExec) ){
+        if(mysqli_num_rows($getPermissaoExec) != 0 ) {
+        while( $row = mysqli_fetch_array($getPermissaoExec) ){
             $usuario = $row; 
         }
         return $usuario;
-
         } else {
-
         return false;
         }
 
     }
+
+    //função que altera o banco o nome do usuario
+    /*Obs: Como essa é uma função q ultilza um form, diferente das outras que puxei a função direto na pagina do perfil, 
+    nesta achei mais organizado passar os dados para uma função mãe que está no usuario.php, seguindo o padrão das outras
+    funções*/
+    function setNomeUsuario($nome){
+            $login = $_SESSION['login'];
+            $setNomeUsuario = "UPDATE usuarios SET nomeUsuario = '$nome' WHERE usuarioLogin = $login";
+            $executa = mysqli_query($this->conexao->getConnection(), $setNomeUsuario);
+        
+    }
+
+    
     
 
 

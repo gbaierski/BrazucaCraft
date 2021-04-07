@@ -87,4 +87,29 @@ if (isset($_GET['action']) and function_exists($_GET['action']) ) {
 
 }
 
+//Edita o nome
+function editarNome() {
+
+  if(isset($_POST['editarNome'])) {
+
+      require ('..\..\infra\connection.php');
+      require ('..\model\usuario\classUsuario.php');
+    
+      $usuario = new Usuario();
+
+      $nome = addslashes($_POST['editarNome']);
+
+      $usuario->setNomeUsuario($nome);
+      print($nome);
+      if($user == True) {
+        header('location: ..\view\usuario\perfil.php');
+      } else {
+        header('location: ..\view\home.php');
+      }
+
+      
+  }
+}
+
+
 ?>
