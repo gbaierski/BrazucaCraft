@@ -47,6 +47,7 @@ function cadastrar() {
     $usuario = new Usuario();
 
     $login = trim(strip_tags($_POST['login']));
+    $nome = trim(strip_tags($_POST['nome']));
     $senha = trim(strip_tags($_POST['senha']));
     $senha_repetida = trim(strip_tags($_POST['senha_repetida']));
 
@@ -59,8 +60,8 @@ function cadastrar() {
         header('location: ..\view\usuario\cadastroUsuario.php?repetido=senha');
       
       } else {
-        
-        $insere = $usuario->cadastraUsuario($login,$senha);
+        $permissao = "Usuario";
+        $insere = $usuario->cadastraUsuario($login,$senha,$nome,$permissao);
         
         if ($insere == true) {
         

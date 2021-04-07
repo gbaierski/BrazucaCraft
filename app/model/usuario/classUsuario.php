@@ -23,9 +23,9 @@ class Usuario {
     }
 
     //função que cadastra o usuário no banco
-    public function cadastraUsuario($login,$senha) {
+    public function cadastraUsuario($login,$senha,$nome,$permissao) {
 
-        $sql = "INSERT INTO usuarios (usuarioLogin, usuarioSenha) VALUES ('$login','$senha')";
+        $sql = "INSERT INTO usuarios (usuarioLogin, usuarioSenha, nomeUsuario, permissao) VALUES ('$login','$senha','$nome','$permissao')";
         $executa = mysqli_query($this->conexao->getConnection(), $sql);
 
         if(mysqli_affected_rows($this->conexao->getConnection()) > 0) {

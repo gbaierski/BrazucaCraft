@@ -36,7 +36,11 @@
         <label for="login">Login</label>
         <input type="text" id="login" name="login" required autofocus>
         </div>
-
+      <div>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+        </div>
+      <div>
       <div>
         <label for="senha">Senha:</label>
         <input type="password" id="senha" name="senha" required>
