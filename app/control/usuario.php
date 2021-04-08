@@ -18,7 +18,12 @@ function logar() {
         session_start();
         $_SESSION['login'] = $login;
         $_SESSION['senha'] = $senha;
+        $nome = $usuario->getNomeUsuario($login);
+        $_SESSION['nome'] = $nome;
+        $permissao = $usuario->getPermissaoUsuario($login);
         $_SESSION['permissao'] = $permissao;
+        $id = $usuario->getIdUsuario($login);
+        $_SESSION['idUsuario'] = $id;
         header('location: ..\view\home.php');
       } else {
         header('location: ..\view\home.php?erro=senha');
@@ -100,7 +105,7 @@ function editarNome() {
 
       $nome = addslashes($_POST['editarNome']);
 
-      $usuario->setNomeUsuario($nome);
+      $usuario->alteraNomeUsuario($nome);
       print($nome);
       if($user == True) {
         header('location: ..\view\usuario\perfil.php');

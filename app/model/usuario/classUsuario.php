@@ -2,9 +2,24 @@
 
 class Usuario {
     public $conexao;
-    
+    public $login;
+    public $nome;
+    private $senha;
+    private $permissao;
     public function __construct() {
         $this->conexao = new Connection();  
+    }
+
+    //Função definitiva suprema, basicamente ela persiste os dados não só na propria session como agr tb na classe Usuario.
+    public function DeclaraUsuario() {
+        $nome = $_SESSION['nome'];
+        $this->setNome($nome[0]);
+        $senha = $_SESSION['senha'];
+        $this->setSenha($senha);
+        $login = $_SESSION['login'];
+        $this->setLogin($login);
+        $permissao = $_SESSION['permissao'];
+        $this->setPermissao($permissao[0]);
     }
 
     //funções Principais
@@ -62,11 +77,11 @@ class Usuario {
     function getNomeUsuario($login) {
         $getNome = "SELECT nomeUsuario FROM usuarios WHERE usuarioLogin = '$login'";        
         $getNomeExec = mysqli_query($this->conexao->getConnection(), $getNome);
-
         if(mysqli_num_rows($getNomeExec) != 0 ) {
         while( $row = mysqli_fetch_array($getNomeExec) ){
             $usuario = $row; 
         }
+        $this->nome =  $usuario[0];
         return $usuario;
         } else {
         return false;
@@ -119,20 +134,44 @@ class Usuario {
 
     }
 
+    //Funções Get e Set, ambas são a forma suprema da simplicidade quando se trata de transitar dados entre paginas
+
+    public function getNome() {
+        return $this->nome;
+    }
+    public function getSenha() {
+        return $this->senha;
+    }
+    public function getLogin() {
+        return $this->login;
+    }
+    public function getPermissao() {
+        return $this->permissao;
+    }
+    public function setNome($nomeConsulta) {
+        $this->nome = $nomeConsulta;
+    }
+    public function setSenha($senhaConsulta) {
+        $this->senha = $senhaConsulta;
+    }
+    public function setLogin($loginConsulta) {
+        $this->login = $loginConsulta;
+    }
+    public function setPermissao($permissaoConsulta) {
+        $this->permissao = $permissaoConsulta;
+    }
+
     //função que altera o banco o nome do usuario
     /*Obs: Como essa é uma função q ultilza um form, diferente das outras que puxei a função direto na pagina do perfil, 
     nesta achei mais organizado passar os dados para uma função mãe que está no usuario.php, seguindo o padrão das outras
     funções*/
-    function setNomeUsuario($nome){
+    function AlteraNomeUsuario($nome){
             $login = $_SESSION['login'];
             $setNomeUsuario = "UPDATE usuarios SET nomeUsuario = '$nome' WHERE usuarioLogin = $login";
             $executa = mysqli_query($this->conexao->getConnection(), $setNomeUsuario);
         
     }
-
     
-    
-
 
 }
 
