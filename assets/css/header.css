@@ -23,7 +23,7 @@
 
     .opcao-menuMobile {
 
-        opacity: 1;
+        display: none;
         position: absolute;
         transition-property: all;
         z-index: 1;
@@ -40,10 +40,12 @@
     .icon-linkMenuMobile {
 
         width:23vw; 
+        opacity: 0;
     }
 
     .texto-linkMenuMobile {
 
+        opacity: 0;
         font-size: 5vw;
         color: white;
     }
@@ -114,40 +116,42 @@
 
     #botao-homeMobile {
 
-        margin-top: 30vw;
-        margin-left: -70%;
+        margin-top: 40vw;
+        margin-left: -210%;
     }
 
     #botao-blogMobile {
 
-        margin-top: 30vw;
-        margin-left: -210%;
+        margin-top: 40vw;
+        margin-left: -70%;
     }
 
     #botao-sobreMobile {
 
-        margin-top: 70vw;
-        margin-left: -70%;
+        margin-top: 80vw;
+        margin-left: -210%;
     }
 
     #botao-ajudaMobile {
 
-        margin-top: 70vw;
-        margin-left: -210%;
+        margin-top: 80vw;
+        margin-left: -70%;
     }
 
 
     #div-lojaMobile {
 
+        display: none;
         z-index: 1;
         position: absolute;
         right: 0;
-        margin-top: 105vw;
+        margin-top: 115vw;
         margin-right: 63%;
     }
 
     #botao-lojaMobile {
-
+        
+        opacity: 0;
         transition-property: all;
         width: 360%;
         height: 15vw;
