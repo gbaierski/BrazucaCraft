@@ -1,8 +1,6 @@
 /* --------------------------------------- tela celular / tablet --------------------------------------- */
 @media screen and (max-width:750px) {
 
-    
-
     .header {
 
         height: 25vw;
@@ -112,6 +110,8 @@
 
         width: 10vw;
         height: 10vw;
+        margin-left: 200%;
+        margin-top: 7vw;
     }
 
     #botao-homeMobile {
@@ -180,42 +180,166 @@
 
     .header {
 
+        height: 18vw;
         background-color: rgba(0, 0, 0, 0.651);
+        transition-duration: 4s;
     }
 
-    .nav-mobile {
+    .nav-desktop {
 
         display: none;
+    }
+
+    .menuMobile {
+
+        float: left;
+        position:relative;
     }
 
     .opcao-menuMobile {
 
         display: none;
+        position: absolute;
+        transition-property: all;
+        z-index: 1;
+        right: 0;
     }
 
-    .icon-linkMenu {
+    .botao-menuMobile {
 
-        width:2vw; 
+        background-color: transparent;
+        border: none;
+        outline: none;
     }
 
-    .botao-menu {
+    .icon-linkMenuMobile {
 
-        width: 8vw;
-        height: 3.8vw;
-        font-size: 2vw;
-
+        width:13vw;
+        height: 13vw; 
+        opacity: 0;
     }
 
+    .texto-linkMenuMobile {
+
+        opacity: 0;
+        font-size: 5vw;
+        color: white;
+    }
+    
+    #secondBody {
+
+        transition-property: all;
+        transition-duration: 2s;
+    }
+    
     #botaoFecharMenu {
 
-        display: none;
+        opacity: 0;
+        position: absolute;
+        transition-property: all;
+        z-index: 1;
+        float: left;
+        margin-top: 8vw;
+        margin-left: 8%;
+        background-color: transparent;
+        border: none;
+        outline: none;
     }
+
+    #imagem-menuMobile {
+
+        width:7vw; 
+    }
+
+    #menuMobile {
+
+        width: 20vw;
+        height: 20vw;
+        transition-property: all;
+        background-color: transparent;
+        outline: none;
+        z-index: 0;
+        border: none;
+
+    }
+
+    #link-brazuca-menu {
+
+        margin-left: 18%;
+        font-size: 6vw;
+        margin-top: 2vw;
+    }
+
+    #texto-brazuca {
+
+        font-size: 6vw;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+    }
+
+    #botao-login {
+
+        margin-top: 6.7vw;
+        margin-left: 18%;
+        font-size: 5vw;
+    }
+
+    #head-player {
+
+        width: 8vw;
+        height: 8vw;
+        margin-left: 280%;
+        margin-top: 6vw;
+    }
+
+    #botao-homeMobile {
+
+        margin-top: 30vw;
+        margin-left: -340%;
+    }
+
+    #botao-blogMobile {
+
+        margin-top: 30vw;
+        margin-left: -170%;
+    }
+
+    #botao-sobreMobile {
+
+        margin-top: 60vw;
+        margin-left: -290%;
+    }
+
+    #botao-ajudaMobile {
+
+        margin-top: 60vw;
+        margin-left: -140%;
+    }
+
 
     #div-lojaMobile {
 
         display: none;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        margin-top: 90vw;
+        margin-right: 61%;
     }
 
+    #botao-lojaMobile {
+        
+        opacity: 0;
+        transition-property: all;
+        width: 340%;
+        height: 13vw;
+        background-color: rgb(248, 29, 14);
+        border-radius: 3px;
+        border-bottom: 1.8vw solid rgba(10, 10, 10, 0.4);
+        border-right: 1.8vw solid rgba(10, 10, 10, 0.4);
+        border-left: none;
+        border-top: none;
+    }
 }
 
 
