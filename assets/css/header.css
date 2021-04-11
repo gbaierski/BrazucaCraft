@@ -47,6 +47,30 @@
         font-size: 5vw;
         color: white;
     }
+
+    .modalConteudo {
+
+        width: 85%; 
+        height: 65vw;
+        margin:50% 8%; 
+    }
+
+    .modalLogin-input {
+
+        width: 50%;
+        height: 6vw;
+        margin-top: 2%;
+        font-size: 5vw;
+        border: 0.2vw solid #ccc;
+    }
+
+    .botao-fechar {
+
+        width: 6vw;
+        height: 6vw;
+        margin-right: 2%;
+        margin-top: 2%;
+    }
     
     #secondBody {
 
@@ -163,6 +187,50 @@
         border-top: none;
     }
 
+    
+    #tituloModal {
+
+        font-size: 7vw;
+        padding-left: 10%;
+    }
+
+    #loginModal {
+
+        margin-left: 12%;
+        font-size: 4vw;
+    }
+
+    #senhaModal {
+
+        margin-left: 12%;
+        font-size: 4vw;
+    }
+
+    #botaoLogar {
+
+        width: 60%;
+        height: 10vw;
+        font-size: 5vw;
+        margin-top: 4vw;
+        margin-left: 19%;
+    }
+
+    #botaoCadastro {
+
+        width: 40%;
+        height: 7vw;
+        font-size: 3.5vw;
+        margin-top: 2vw;
+        margin-left: 29%;
+        margin-bottom: 2vw;
+    }
+
+    #linkEsqueciSenha {
+
+        font-size: 3.8vw;
+        margin-left: 25%;
+    }
+
 }
 
 
@@ -225,7 +293,31 @@
         font-size: 5vw;
         color: white;
     }
-    
+
+    .modalConteudo {
+
+        width: 70%; 
+        height: 45vw;
+        margin:25% 15%; 
+    }
+
+    .modalLogin-input {
+
+        width: 50%;
+        height: 5vw;
+        margin-top: 2%;
+        font-size: 3vw;
+        border: 0.2vw solid #ccc;
+    }
+
+    .botao-fechar {
+
+        width: 4.5vw;
+        height: 4.5vw;
+        margin-right: 1%;
+        margin-top: 1%;
+    }
+
     #secondBody {
 
         transition-property: all;
@@ -340,6 +432,49 @@
         border-left: none;
         border-top: none;
     }
+
+    #tituloModal {
+
+        font-size: 5vw;
+        padding-left: 5%;
+    }
+
+    #loginModal {
+
+        margin-left: 12%;
+        font-size: 2.5vw;
+    }
+
+    #senhaModal {
+
+        margin-left: 12%;
+        font-size: 2.5vw;
+    }
+
+    #botaoLogar {
+
+        width: 60%;
+        height: 6vw;
+        font-size: 3vw;
+        margin-top: 3vw;
+        margin-left: 19%;
+    }
+
+    #botaoCadastro {
+
+        width: 40%;
+        height: 4.5vw;
+        font-size: 2.5vw;
+        margin-top: 2vw;
+        margin-left: 29%;
+        margin-bottom: 2vw;
+    }
+
+    #linkEsqueciSenha {
+
+        font-size: 2.4vw;
+        margin-left: 31%;
+    }
 }
 
 
@@ -401,7 +536,30 @@
         
     }
 
-    
+    .modalConteudo {
+
+        width: 40%; 
+        height: 18vw;
+        margin:15% 32%; 
+    }
+
+    .modalLogin-input {
+
+        width: 30%;
+        margin-top: 2%;
+        height: 1.5vw;
+        font-size: 1.1vw;
+        border: 0.2vw solid #ccc;
+    }
+
+    .botao-fechar {
+
+        width: 1.7vw;
+        height: 1.7vw;
+        margin-right: 1%;
+        margin-top: 1%;
+    }
+
     #div-lojaMobile {
 
         display: none;
@@ -428,10 +586,10 @@
 
     #head-player {
 
-        width: 2.4vw;
-        height: 2.4vw;
-        margin-left: 3.5vw;
-        margin-top: 1.5vw;
+        width: 2.8vw;
+        height: 2.8vw;
+        margin-left: 2.67vw;
+        margin-top: 1vw;
     }
 
     #div-loja {
@@ -441,10 +599,55 @@
 
     #botao-login {
 
-        width: 8vw;
+        width: 6vw;
         height: 3.8vw;
+        margin-right: 1%;
+        float: right;
         margin-top: 0.5vw;
         font-size: 1.3vw;
+    }
+
+    #tituloModal {
+
+        font-size: 1.6vw;
+        padding-left: 3%;
+    }
+
+    #loginModal {
+
+        margin-left: 26%;
+        font-size: 1.3vw;
+    }
+
+    #senhaModal {
+
+        margin-left: 26%;
+        font-size: 1.3vw;
+    }
+
+    #botaoLogar {
+
+        width: 50%;
+        height: 3vw;
+        font-size: 1.4vw;
+        margin-top: 1.5vw;
+        margin-left: 23%;
+    }
+
+    #botaoCadastro {
+
+        width: 24%;
+        height: 2.2vw;
+        font-size: 1.4vw;
+        margin-top: 0.5vw;
+        margin-left: 36%;
+    }
+
+    #linkEsqueciSenha {
+
+        font-size: 1.2vw;
+        font-weight: 500;
+        margin-left: 32%;
     }
 
 }
@@ -502,8 +705,6 @@
     float: right;
 }
 
-/* Modal Inicio*/
-
 .modal {
 
     display: none; 
@@ -514,28 +715,21 @@
     width: 100%; 
     height: 100%; 
     overflow: auto;
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4);
+    background-color: transparent;
     cursor: pointer;
 }
 
 
 .modalConteudo {
 
-    width: 40%; 
-    height: 15vw;
-    margin:15% 32%; 
-    background-color: #1c1b1b;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0,0,0,0.4);
     border-radius: 0.4vw;
     cursor: auto;
 }
 
 .botao-fechar {
 
-    width: 1.7vw;
-    height: 1.7vw;
-    margin-right: 1%;
-    margin-top: 1%;
     border-radius: 0.2vw;
     color: white;
     background-image: url('../img/icons/fechar.png');
@@ -568,8 +762,6 @@
     cursor: pointer;
 }
 
-/* Modal fim*/
-
 /* Dropdown inicio */
 
 .dropbtn {
@@ -597,12 +789,27 @@
     display: block;
 }
   
-.dropdown-content a:hover {background-color: #ddd}
+.dropdown-content a:hover {
+    
+    background-color: #ddd
+}
   
-.show {display:block;}
+.show {
+
+    display:block;
+}
 
 
 /* Dropdown fim */
+
+.modalLogin-input {
+
+    background-color: transparent;
+    color: white;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    outline: none;
+}
 
 #bodyID {
 
@@ -737,10 +944,58 @@
 
 #modal {
 
-    background-color: rgba(0, 0, 0, 0.550);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 #tituloModal {
 
     text-align: center;
+    color: white;
+    font-family: monospace;
+    font-weight: 550;
+}
+
+#loginModal {
+
+    color: white;
+    font-family: monospace;
+    font-weight: 550;
+}
+
+#senhaModal {
+
+    color: white;
+    font-family: monospace;
+    font-weight: 550;
+}
+
+#botaoLogar {
+
+    font-family: monospace;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(22, 163, 69);
+    border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
+    border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
+    border-left: none;
+    border-top: none;
+}
+
+#botaoCadastro {
+
+    font-family: monospace;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(40, 120, 212);;
+    border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
+    border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
+    border-left: none;
+    border-top: none;
+}
+
+#linkEsqueciSenha {
+
+    color: white;
+    text-decoration: none;
+    font-family: monospace;
 }

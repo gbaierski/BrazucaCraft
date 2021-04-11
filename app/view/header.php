@@ -132,15 +132,6 @@
                   </button>
                 </a>
               </div>
-                                            <!-- id="head-player" -->
-              <?= isset($_SESSION['login']) ?'<div  class="dropdown">
-                                                <button onclick="abrirDropdown()" id="head-player" class="dropbtn"></button>
-                                                <div id="myDropdown" class="dropdown-content">
-                                                  <a href="#">Link 1</a>
-                                                  <a href="#">Link 2</a>
-                                                  <a href="../control/usuario.php?action=deslogar">Deslogar</a>
-                                                </div>
-                                              </div>' : '<button id="botao-login">LOGIN</button>'; ?>
             </nav>
 
             <!-- Barra do menu mobile -->
@@ -155,34 +146,38 @@
               <a href="../control/redirecionamento.php?action=index" id="link-brazuca-menu">
                 <p class="header-texto" id="texto-brazuca"> BRAZUCA <br> CRAFT</p>
               </a>
-
-                                            <!-- id="head-player" -->
-              <?= isset($_SESSION['login']) ?'<div  class="dropdown">
-                                                <button onclick="abrirDropdown()" id="head-player" class="dropbtn"></button>
-                                                <div id="myDropdown" class="dropdown-content">
-                                                  <a href="#">Link 1</a>
-                                                  <a href="#">Link 2</a>
-                                                  <a href="../control/usuario.php?action=deslogar">Deslogar</a>
-                                                </div>
-                                              </div>' : '<button id="botao-login">LOGIN</button>'; ?>
             </nav>
 
+            
+            <!-- id="head-player" -->
+            <?= isset($_SESSION['login']) ?'<div  class="dropdown">
+                <button onclick="abrirDropdown()" id="head-player" class="dropbtn"></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="../control/usuario.php?action=deslogar">Deslogar</a>
+                </div>
+              </div>' : '<button id="botao-login">LOGIN</button>'; ?>
+              
             <div id="modal" class="modal">
 
               <div class="modalConteudo">
+                
+        
                 <span class="fechar"><button class="botao-fechar"></button></span>
-                <h2 id="tituloModal">Login</h2>
-              <hr>
+                <div id="tituloModal">LOGIN</div>
+                <hr>
+
                 <form action="..\control\usuario.php?action=logar" method="post">
 
                   <div>
-                    <label for="login">Login</label>
-                    <input type="text" id="login" name="login">
+                    <label for="login" id="loginModal">LOGIN:</label>
+                    <input type="text" id="login" name="login" class="modalLogin-input">
                   </div>
 
                   <div>
-                    <label for="senha">Senha</label>
-                    <input type="password" id="senha" name="senha">
+                    <label for="senha" id="senhaModal">SENHA:</label>
+                    <input type="password" id="senha" name="senha" class="modalLogin-input" autocomplete="off">
                   </div>
 
                   <?php
@@ -197,18 +192,16 @@
                     }
                   ?>
 
-                  <input type="submit" name="logar" value="Logar">
+                  <input type="submit" name="logar" value="LOGAR" id="botaoLogar">
 
                 </form>
 
-                <a href="../view/usuario/cadastroUsuario.php">Cadastre-se</a>
-
-                </div>
-
+                <a href="../view/usuario/cadastroUsuario.php"><button id="botaoCadastro">CADASTRO</button></a>
+                <br>
+                <a href="" id="linkEsqueciSenha">ESQUECI MINHA SENHA</a>
               </div>
 
             </div>
-            
             <!-- Scripts -->
       
             <!--- 
