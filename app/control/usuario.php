@@ -11,13 +11,18 @@ function logar() {
     
       $login = addslashes($_POST['login']);
       $senha = addslashes($_POST['senha']);
-    
+
       $user = $usuario->loginUsuario($login, $senha);
-    
-      if($user == true) {
+
+      $senhaBanco = $usuario->retornaSenhaUsuario($login);
+      
+      $senhaCripto = password_verify($senha, $senhaBanco[0]);
+
+
+      if($user == true && $senhaCripto == true) {
         session_start();
         $_SESSION['login'] = $login;
-        $_SESSION['senha'] = $senha;
+        $_SESSION['senha'] = $senhaBanco[0];
         $nome = $usuario->getNomeUsuario($login);
         $_SESSION['nome'] = $nome;
         $permissao = $usuario->getPermissaoUsuario($login);
@@ -65,8 +70,10 @@ function cadastrar() {
         header('location: ..\view\usuario\cadastroUsuario.php?repetido=senha');
       
       } else {
+        $valor = ['cost' => 8];
+        $hash = password_hash($senha, PASSWORD_BCRYPT, $valor);
         $permissao = "Usuario";
-        $insere = $usuario->cadastraUsuario($login,$senha,$nome,$permissao);
+        $insere = $usuario->cadastraUsuario($login,$hash,$nome,$permissao);
         
         if ($insere == true) {
         

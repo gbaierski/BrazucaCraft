@@ -118,6 +118,7 @@
       </div>
 
 <?php
+
   if (isset($_GET['erro'])) {
 
     echo '<h>Senha/Usuario incorretos</h1>';

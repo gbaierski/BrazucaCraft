@@ -22,6 +22,21 @@ class Usuario {
         $this->setPermissao($permissao[0]);
     }
 
+    //função que puxa APENAS a senha do usuario do banco
+    public function retornaSenhaUsuario($login) {
+        $sql = "SELECT usuarioSenha FROM usuarios WHERE usuarioLogin = '$login'";
+        $executa = mysqli_query($this->conexao->getConnection(), $sql);
+
+        if(mysqli_num_rows($executa) != 0 ) {
+            while( $row = mysqli_fetch_array($executa) ){
+                $usuario = $row; 
+            }
+            return $usuario;
+        } else {
+            return false;
+            }
+    }
+
     //funções Principais
 
     //função que verifica se existe no banco algum usuário com mesmo login
@@ -51,11 +66,12 @@ class Usuario {
     }
 
     //função que loga o usuario
-    public function loginUsuario($login, $senha) {
+    public function loginUsuario($login) {
         
-        $sql = "SELECT * FROM usuarios WHERE usuarioLogin = '$login' AND usuarioSenha = '$senha'";
+        $sql = "SELECT * FROM usuarios WHERE usuarioLogin = '$login'";
         $executa = mysqli_query($this->conexao->getConnection(), $sql);
-  
+        
+
         if(mysqli_num_rows($executa) > 0) {
           return true;
         } else {

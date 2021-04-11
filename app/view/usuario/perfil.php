@@ -9,10 +9,7 @@ require ('..\..\model\usuario\classUsuario.php');
 
 $usuario = new Usuario();
 $usuario->DeclaraUsuario();
-
 print($usuario->getNome() . " " . $usuario->getSenha() . " " . $usuario->getLogin(). " " . $usuario->getpermissao());
-
-
 ?>
 
 <!---  Essa parte é um teste do editar para o nome do Usuario, ainda não está funcionando mas ja está até q bem encaminhado  --->
