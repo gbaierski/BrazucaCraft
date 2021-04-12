@@ -29,9 +29,9 @@ function logar() {
         $_SESSION['permissao'] = $permissao;
         $id = $usuario->getIdUsuario($login);
         $_SESSION['idUsuario'] = $id;
-        header('location: ..\view\home.php');
+        header('location: ..\control\redirecionamento.php?action=Home');
       } else {
-        header('location: ..\view\home.php?erro=senha');
+        header('location: ..\control\redirecionamento.php?action=Home&erro=senha');
       }
   }
 }
@@ -44,7 +44,7 @@ function deslogar() {
   $usuario = new Usuario();
   $usuario->deslogarUsuario();
   
-  header('location: ..\view\home.php');
+  header('location: ..\control\redirecionamento.php?action=Home');
 }
 
 function cadastrar() {
@@ -67,7 +67,7 @@ function cadastrar() {
 
       if ($consulta == false) {
 
-        header('location: ..\view\usuario\cadastroUsuario.php?repetido=senha');
+        header('location: ../control/redirecionamento.php?action=CadastroUsuario&repetido=senha');
       
       } else {
         $valor = ['cost' => 8];
@@ -77,13 +77,13 @@ function cadastrar() {
         
         if ($insere == true) {
         
-          header('location: ..\view\usuario\cadastroUsuario.php?success=cadastrado');
+          header('location: ../control/redirecionamento.php?action=CadastroUsuario&success=cadastrado');
            
         }
       }
     } else {
 
-      header('location: ..\view\usuario\cadastroUsuario.php?erro=senha');
+      header('location: ../control/redirecionamento.php?action=CadastroUsuario&erro=senha');
       
     }
   }
@@ -96,7 +96,7 @@ if (isset($_GET['action']) and function_exists($_GET['action']) ) {
 
 } else {
 
-  header('location: ..\view\home.php');
+  header('location: ..\index.php');
 
 }
 

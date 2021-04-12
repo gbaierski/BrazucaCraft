@@ -61,7 +61,7 @@ function cadastroProduto(){
     
     $cadastra = $produto->cadastraProdutos($nomeProduto,$precoProduto,$decricaoProduto,$imagemProduto);
 
-   header('location: redirecionamento.php?action=paginaLoja');
+   header('location: redirecionamento.php?action=Loja');
   
 
 }
@@ -70,7 +70,7 @@ function deletarProduto(){
     $idProduto = $_GET['ai_produto'];
     $produto = new Produto();
     $exclui = $produto->deletaProduto($idProduto);
-    header('location: redirecionamento.php?action=paginaLoja');
+    header('location: redirecionamento.php?action=Loja');
 }
 
 function editarProduto(){
@@ -127,7 +127,7 @@ function editarProduto(){
   
   $produto = new Produto();
   $exclui = $produto->editarProduto($idProduto, $nomeProduto, $precoProduto , $descricaoProduto , $imagemProduto);
-  header('location: redirecionamento.php?action=paginaLoja');
+  header('location: redirecionamento.php?action=Loja');
 }
 
 function uploadImagens(){

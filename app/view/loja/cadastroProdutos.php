@@ -25,7 +25,7 @@
                 <input name="imagemProduto" value="" type="file" class="cadastroProduto" id="imagemProduto" >
 
                 <label   for="descricaoProduto" class="label-cadastroProduto" id="label-descricaoProduto">Descrição:</label>
-                <textarea required type="text" value="<?= $produto['descricaoProduto'] ?>" placeholder="<?= $produto['descricaoProduto'] ?> "  name="descricaoProduto" class="cadastroProduto" id="descricaoProduto" rows="5" ></textarea>
+                <textarea required type="text" value="<?= $produto['descricaoProduto'] ?>" placeholder="<?= $produto['descricaoProduto'] ?> "  name="descricaoProduto" class="cadastroProduto" id="descricaoProduto" rows="5" ><?= $produto['descricaoProduto'] ?></textarea>
 
                 <div class="clear"></div>
 
