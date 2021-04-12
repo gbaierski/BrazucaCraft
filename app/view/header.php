@@ -40,12 +40,12 @@
         <header class="header">
           <nav class="nav-menu">
 
-            <a href="../control/redirecionamento.php?action=index" id="link-brazuca-menu">
+            <a href="../control/redirecionamento.php?action=Home" id="link-brazuca-menu">
               <p class="header-texto" id="texto-brazuca"> BRAZUCA <br> CRAFT</p>
             </a>
 
             <div class="opcao-menu">
-              <a href="../control/redirecionamento.php?action=index">
+              <a href="../control/redirecionamento.php?action=Home">
                 <button class="botao-menu" id="botao-home">
                   <img src="../../assets/img/icons/home.png" class="icon-linkMenu">
                   HOME
@@ -81,7 +81,7 @@
             </div>
 
             <div id="div-loja">
-              <a href="../control/redirecionamento.php?action=paginaLoja" >
+              <a href="../control/redirecionamento.php?action=Loja" >
                 <button class="botao-menu" id="botao-loja">
                   <img src="../../assets/img/icons/loja.png" class="icon-linkMenu">
                   LOJA
@@ -133,7 +133,7 @@
 
     </form>
 
-    <a href="../view/usuario/cadastroUsuario.php">Cadastre-se</a>
+    <a href="../control/redirecionamento.php?action=CadastroUsuario">Cadastre-se</a>
 
     </div>
 

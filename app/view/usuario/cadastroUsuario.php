@@ -1,13 +1,11 @@
-<?php
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Cadastro</title>
+    <title><?=$nomePagina?></title>
+    <link rel="sortcut icon" href="../../assets/img/paginas/home/logo.png" type="image/x-icon" />
 
 <body>
 
@@ -30,7 +28,7 @@
     ?>
     <h2>Cadastro</h2>
     <hr>
-    <form action="..\..\control\usuario.php?action=cadastrar" method="post">
+    <form action="..\control\usuario.php?action=cadastrar" method="post">
 
       <div>
         <label for="login">Login</label>
@@ -50,7 +48,7 @@
 
     </form>
     
-    <a href="../home.php">Voltar</a>
+    <a href="../control/redirecionamento.php?action=Home">Voltar</a>
 
   </div>
 </body>
