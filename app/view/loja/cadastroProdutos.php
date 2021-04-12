@@ -17,7 +17,7 @@
                     <input name="imagemProduto" type="file" class="cadastroProduto" id="imagemProduto" >
 
                     <label   for="descricaoProduto" class="label-cadastroProduto" id="label-descricaoProduto" placeholder="<?= isset($produtos['descricaoProduto']) ? $produtos['descricaoProduto'] : ''?>">Descrição:</label>
-                    <textarea value="<?= isset($produtos['descricaoProduto']) ? $produtos['descricaoProduto'] : ''?>" name="descricaoProduto" class="cadastroProduto" id="descricaoProduto" rows="5" ><?=$produtos['descricaoProduto']?></textarea>
+                    <textarea value="<?= isset($produtos['descricaoProduto']) ? $produtos['descricaoProduto'] : ''?>" name="descricaoProduto" class="cadastroProduto" id="descricaoProduto" rows="5" ><?= isset($produtos['descricaoProduto']) ? $produtos['descricaoProduto'] : '' ?></textarea>
 
                     <div class="clear"></div>
 
