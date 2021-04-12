@@ -13,9 +13,9 @@
                     <label for="precoProduto" class="label-cadastroProduto" placeholder="<?= isset($produtos['precoProduto']) ? $produtos['precoProduto'] : ''?>">Preço:</label>
                     <input value="<?= isset($produtos['precoProduto']) ? $produtos['precoProduto'] : ''?>" type="text" name="precoProduto" class="cadastroProduto" id="precoProduto">
 
-                    <label for="imagemProduto" class="label-cadastroProduto">Selecione uma imagem: </label>
-                    <input name="imagemProduto" type="file" class="cadastroProduto" id="imagemProduto" >
-
+                    <label for="imagemProduto" class="label-cadastroProduto" id="imagemLabel">Imagem: </label>
+                    <input name="imagemProduto" type="file" id="imagemProduto">
+            
                     <label   for="descricaoProduto" class="label-cadastroProduto" id="label-descricaoProduto" placeholder="<?= isset($produtos['descricaoProduto']) ? $produtos['descricaoProduto'] : ''?>">Descrição:</label>
                     <textarea value="<?= isset($produtos['descricaoProduto']) ? $produtos['descricaoProduto'] : ''?>" name="descricaoProduto" class="cadastroProduto" id="descricaoProduto" rows="5" ><?= isset($produtos['descricaoProduto']) ? $produtos['descricaoProduto'] : '' ?></textarea>
 

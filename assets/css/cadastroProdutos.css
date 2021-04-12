@@ -1,5 +1,88 @@
 /* --------------------------------------- tela celular / tablet --------------------------------------- */
 @media screen and (max-width:750px) {
+
+    .label-cadastroProduto {
+
+        font-size: 5vw;
+        margin-left: 5%;
+    }
+
+    .cadastroProduto {
+
+        margin-left: 5%;
+        margin-bottom: 1vw;
+        border: 0.28vw solid #ccc;
+    }
+
+    .cadastroProduto:focus {
+
+        border: 3px solid #555;
+    
+    }
+
+    #background-cadastroProduto {
+
+        width: 100%;
+        height: 170vw;
+        background-position-x: 60%;
+    }
+
+    #div-cadastroProduto {
+
+        width: 90%;
+        height: 63vw;
+        margin-left: 5%;
+        margin-top: 60vw;
+    }
+
+    #cadastroProduto-titulo {
+
+        font-size: 6vw;
+        margin-left: 20%;
+    }
+
+    #nomeProduto {
+
+        width: 40%;
+        height: 5vw;
+    }
+    
+    #precoProduto {
+    
+        width: 40%;
+        height: 5vw;
+        margin-left: 31.7%;
+    }
+
+    #descricaoProduto {
+
+        margin-left: 22%;
+        margin-bottom: 1vw;
+        max-width: 40%;
+        min-width: 40%;
+        max-height: 10vw;
+        min-height: 10vw;
+    }
+
+    #botao-cadastrarProduto {
+
+        width: 70%;
+        height: 7vw;
+        font-size: 4vw;
+        margin-left: 15%;
+        border-bottom: 1vw solid rgba(10, 10, 10, 0.4);
+        border-right: 1vw solid rgba(10, 10, 10, 0.4);
+        text-shadow: 0.4vw 0.10vw rgba(0, 0, 0, 0.651);
+    }
+
+    #imagemProduto {
+
+        color: white;
+        width: 41%;
+        margin-left: 26%;
+        margin-bottom: 1vw;
+        border: 0.28vw solid #ccc; 
+    }
 }
 
 
@@ -15,6 +98,89 @@
 
 /* --------------------------------------- ipad / telas menores --------------------------------------- */
 @media screen and (min-width:751px) and (max-width:1200px) {
+
+    .label-cadastroProduto {
+
+        font-size: 4vw;
+        margin-left: 5%;
+    }
+
+    .cadastroProduto {
+
+        margin-left: 5%;
+        margin-bottom: 1vw;
+        border: 0.28vw solid #ccc;
+    }
+
+    .cadastroProduto:focus {
+
+        border: 3px solid #555;
+    
+    }
+
+    #background-cadastroProduto {
+
+        width: 100%;
+        height: 80vw;
+        background-position-x: 5%;
+    }
+
+    #div-cadastroProduto {
+
+        width: 80%;
+        height: 55vw;
+        margin-left: 10%;
+        margin-top: 22vw;
+    }
+
+    #cadastroProduto-titulo {
+
+        font-size: 5vw;
+        margin-left: 23%;
+    }
+
+    #nomeProduto {
+
+        width: 40%;
+        height: 4vw;
+    }
+    
+    #precoProduto {
+    
+        width: 40%;
+        height: 4vw;
+        margin-left: 29%;
+    }
+
+    #descricaoProduto {
+
+        margin-left: 20.6%;
+        margin-bottom: 1vw;
+        max-width: 40%;
+        min-width: 40%;
+        max-height: 10vw;
+        min-height: 10vw;
+    }
+
+    #botao-cadastrarProduto {
+
+        width: 60%;
+        height: 5vw;
+        font-size: 3.5vw;
+        margin-left: 20%;
+        border-bottom: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-right: 0.8vw solid rgba(10, 10, 10, 0.4);
+        text-shadow: 0.4vw 0.10vw rgba(0, 0, 0, 0.651);
+    }
+
+    #imagemProduto {
+
+        color: white;
+        width: 41%;
+        margin-left: 23%;
+        margin-bottom: 1vw;
+        border: 0.28vw solid #ccc; 
+    }
 }
 
 
@@ -85,10 +251,10 @@
     #descricaoProduto {
 
         margin-left: 20.6%;
-        margin-bottom: 2vw;
+        margin-bottom: 1vw;
         max-width: 40%;
         min-width: 30%;
-        max-height: 8vw;
+        max-height: 6.5vw;
         min-height: 3vw;
     }
 
@@ -105,7 +271,11 @@
 
     #imagemProduto {
 
-        width: 35%;
+        color: white;
+        width: 31%;
+        margin-left: 23%;
+        margin-bottom: 1vw;
+        border: 0.28vw solid #ccc; 
     }
 }
 
