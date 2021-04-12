@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 29-Mar-2021 às 04:22
+-- Tempo de geração: 12-Abr-2021 às 05:02
 -- Versão do servidor: 10.4.11-MariaDB
--- versão do PHP: 7.4.6
+-- versão do PHP: 7.2.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -43,8 +44,9 @@ CREATE TABLE `produtos` (
 --
 
 INSERT INTO `produtos` (`ai_produto`, `idProduto`, `nomeProduto`, `descricaoProduto`, `precoProduto`, `imagemProduto`, `promocao`, `precoPromocao`) VALUES
-(1, 0, 'Vip 1', 'Vip basico', 'R$23,50', 'vip1.png', '0', 'R$2,00'),
-(2, 0, 'VIP 2', 'Vip Basico\r\n', 'R$53,50', 'vip2.png', '0', 'R$5,00');
+(1, 0, 'Shampoo de homem', '123213213', '123', 'padrao.png', '', ''),
+(2, 0, 'teste', 'oasdjfosjidsa', 'jldfsajojsdiao', 'padrao.png', '', ''),
+(3, 0, 'ulissezera', 'jjasdjjsadjsdajdsa', '128093190230 quanza', 'padrao.png', '', '');
 
 -- --------------------------------------------------------
 
@@ -67,8 +69,10 @@ CREATE TABLE `usuarios` (
 
 INSERT INTO `usuarios` (`ai_Usuario`, `idUsuario`, `nomeUsuario`, `permissao`, `usuarioLogin`, `usuarioSenha`) VALUES
 (1, 0, '', '', 'teste', '123'),
-(2, 0, '', '', 'felipe', '123'),
-(3, 0, '', '2', 'Soethe', 'soethe321');
+(2, 0, 'admin', '', 'felipe', '123'),
+(3, 0, '', '', 'soethe', '123'),
+(4, 0, '', '', 'joao', '123'),
+(5, 0, 'Jocazera', 'Usuario', 'joca', '$2y$08$JJGF5lgxfOYNq.j6Ozw7LuKLWZbSegprVGbJk01i3/kWSeUxU1vOy');
 
 --
 -- Índices para tabelas despejadas
@@ -94,13 +98,13 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `ai_produto` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ai_produto` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `ai_Usuario` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ai_Usuario` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
