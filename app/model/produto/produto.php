@@ -49,16 +49,15 @@ class Produto {
         
     }
 
-    function pegaproduto($idProduto){
-        $pesquisa = "SELECT * FROM produtos WHERE ai_produto = $idProduto ";
+    function retornaProduto($ai_produto) {
+
+        $pesquisa = "SELECT * FROM produtos WHERE ai_produto = $ai_produto ";
         $exec= mysqli_query($this->conexao->getConnection(), $pesquisa); 
         
 
        if(mysqli_num_rows($exec) != 0 ) {
-            
-            while( $row = mysqli_fetch_array($exec) ){
-                $produtos[] = $row; 
-            }
+ 
+            $produtos = mysqli_fetch_assoc($exec);
             return $produtos;
 
         } else {
