@@ -30,7 +30,7 @@
 			</div>
 			<div class="coluna-rodape">
 				<p class="titulo-rodape"><a href="" class="link-rodape" id="regulamentos-titulo">REGULAMENTOS</a></p>
-				<div class="itens-rodape" id="regulamentos-rodape">
+				<div class="itens-rodape">
 					<a href="" class="link-itens"><div class= "item-rodape">• TERMOS DE USO</div></a>
 					<a href="" class="link-itens"><div class= "item-rodape">• TERMO DOS PAIS</div></a>
 					<a href="" class="link-itens"><div class= "item-rodape">• SEGURANÇA</div></a>
@@ -38,7 +38,7 @@
 			</div>
 			<div class="coluna-rodape">
 				<p class="titulo-rodape"><a href="" class="link-rodape" id="contatos-titulo">CONTATOS</a></p>
-				<div class="itens-rodape" id="contatos-rodape">
+				<div class="itens-rodape">
 					<a href="" class="link-itens"><div class= "item-rodape">• SUPORTE</div></a>
 					<a href="" class="link-itens"><div class= "item-rodape">• COMERCIAL</div></a>
 					<a href="" class="link-itens"><div class= "item-rodape">• EQUIPE DEV</div></a>

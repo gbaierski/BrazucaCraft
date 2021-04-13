@@ -5,65 +5,66 @@
 
         width: 100.6%;
         margin-left: -0.6vw;
-        height: 50vw;
+        height: 30vw;
     }
 
     .sub-rodape {
 
         width: 100%;
-        height: 40vw;
+        height: 23vw;
     }
 
     .colunas-rodape {
 
-        width: 80vw;
-        margin-left: 8vw;
+        width: 100vw;
+        margin-left: 1vw;
     }
 
     .coluna-rodape {
 
-        width: 12vw;
-        margin-left: 10vw;
+        width: 14vw;
+        margin-left: 4vw;
     }
 
     .info-rodape {
     
-        margin-top: 1vw;
-        font-size: 3vw;
+        margin-top: 0.6vw;
+        font-size: 2.7vw;
     }
 
     .item-rodape {
 
-        font-size: 2.2vw;
+        font-size: 1.5vw;
     }
 
     .itens-rodape {
 
-        width: 25vw;
+        width: 12vw;
+        margin-left: 2vw;
     }
 
     .titulo-rodape {
 
-        font-size: 3vw;
-        margin-left: 2vw;
+        font-size: 2vw;
+        margin-left: 0.5vw;
     }
 
     .redeSocial-rodape {
 
-        width: 4vw;
+        width: 5vw;
         margin-left: 1vw;
     }
 
     #final-rodape {
 
-        width: 15vw;
-        margin-left: 44vw;
+        width: 11vw;
+        margin-left: 47.4vw;
     }
 
     #bandeira-rodape {
 
-        width: 3vw;
-        margin-top: 1vw;
+        width: 2.3vw;
+        margin-top: 0.8vw;
         margin-left: 1vw;
     }
 
@@ -84,12 +85,12 @@
     
     #regulamentos-rodape {
     
-        margin-left: -10vw;
+        margin-left: 1vw;
     }
     
     #contatos-rodape {
     
-        margin-left: -3vw;
+        margin-left: 3vw;
     }
 
     #redesSociais-rodape {
@@ -97,16 +98,6 @@
         margin-left: 34.5vw;
         margin-top: 1.5vw;
         width: 30vw;
-    }
-
-    #regulamentos-titulo {
-
-        margin-left: -15vw;
-    }
-
-    #contatos-titulo {
-
-        margin-left: -10vw;
     }
     
 }
@@ -129,65 +120,66 @@
 
         width: 100.6%;
         margin-left: -0.6vw;
-        height: 50vw;
+        height: 30vw;
     }
 
     .sub-rodape {
 
         width: 100%;
-        height: 40vw;
+        height: 23vw;
     }
 
     .colunas-rodape {
 
-        width: 80vw;
-        margin-left: 8vw;
+        width: 100vw;
+        margin-left: 1vw;
     }
 
     .coluna-rodape {
 
-        width: 12vw;
-        margin-left: 10vw;
+        width: 15vw;
+        margin-left: 4vw;
     }
 
     .info-rodape {
     
-        margin-top: 1vw;
-        font-size: 3vw;
+        margin-top: 0.6vw;
+        font-size: 2.7vw;
     }
 
     .item-rodape {
 
-        font-size: 2.2vw;
+        font-size: 1.5vw;
     }
 
     .itens-rodape {
 
-        width: 25vw;
+        width: 12vw;
+        margin-left: 2vw;
     }
 
     .titulo-rodape {
 
-        font-size: 3vw;
-        margin-left: 2vw;
+        font-size: 2vw;
+        margin-left: 0.5vw;
     }
 
     .redeSocial-rodape {
 
-        width: 4vw;
+        width: 5vw;
         margin-left: 1vw;
     }
 
     #final-rodape {
 
-        width: 15vw;
-        margin-left: 44vw;
+        width: 11vw;
+        margin-left: 47.4vw;
     }
 
     #bandeira-rodape {
 
-        width: 3vw;
-        margin-top: 1vw;
+        width: 2.3vw;
+        margin-top: 0.8vw;
         margin-left: 1vw;
     }
 
@@ -208,12 +200,12 @@
     
     #regulamentos-rodape {
     
-        margin-left: -10vw;
+        margin-left: 1vw;
     }
     
     #contatos-rodape {
     
-        margin-left: -3vw;
+        margin-left: 3vw;
     }
 
     #redesSociais-rodape {
@@ -221,16 +213,6 @@
         margin-left: 34.5vw;
         margin-top: 1.5vw;
         width: 30vw;
-    }
-
-    #regulamentos-titulo {
-
-        margin-left: -15vw;
-    }
-
-    #contatos-titulo {
-
-        margin-left: -10vw;
     }
 }   
 
