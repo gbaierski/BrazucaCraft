@@ -153,9 +153,9 @@
             <?= isset($_SESSION['login']) ?'<div  class="dropdown">
                 <button onclick="abrirDropdown()" id="head-player" class="dropbtn"></button>
                 <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="../control/usuario.php?action=deslogar">Deslogar</a>
+                  <a href="#" class="dropdownOpcao">Link 1</a>
+                  <a href="#" class="dropdownOpcao">Link 2</a>
+                  <a href="../control/usuario.php?action=deslogar" class="dropdownOpcao">Deslogar</a>
                 </div>
               </div>' : '<button id="botao-login">LOGIN</button>'; ?>
               
