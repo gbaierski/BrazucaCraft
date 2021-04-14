@@ -1,11 +1,8 @@
 <?php require "../view/header.php" ?> 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div id="produtos-loja">
+
+<div id="backgroundLoja">
+    <div id="produtos-loja">
+        <div id="tituloLoja">LOJA</div>
     <?php foreach ($produtos as $produto) { ?>
 
     <div class="div-produto">
@@ -25,6 +22,7 @@
     </div>
 
     <?php } ?>
+    </div>
 </div>
 
 <div class="clear"></div>
