@@ -20,6 +20,15 @@ class Usuario {
         $this->setLogin($login);
         $permissao = $_SESSION['permissao'];
         $this->setPermissao($permissao[0]);
+
+        $this->DeletaSession();
+    }
+
+    private function DeletaSession() {
+        #unset($_SESSION['nome']);
+        #unset($_SESSION['senha']);
+        #unset($_SESSION['login']);
+        #unset($_SESSION['permissao']);
     }
 
     //função que puxa APENAS a senha do usuario do banco
@@ -181,14 +190,26 @@ class Usuario {
     /*Obs: Como essa é uma função q ultilza um form, diferente das outras que puxei a função direto na pagina do perfil, 
     nesta achei mais organizado passar os dados para uma função mãe que está no usuario.php, seguindo o padrão das outras
     funções*/
-    function AlteraNomeUsuario($nome){
-            $login = $_SESSION['login'];
-            $setNomeUsuario = "UPDATE usuarios SET nomeUsuario = '$nome' WHERE usuarioLogin = $login";
+    function AlteraNomeUsuario($nome, $loginPesquisa){
+            $setNomeUsuario = "UPDATE usuarios SET nomeUsuario = '$nome' WHERE usuarioLogin = '$loginPesquisa'";
             $executa = mysqli_query($this->conexao->getConnection(), $setNomeUsuario);
         
     }
-    
 
+    function getPlayerAtivo() {
+        $data = '';
+
+        $sql = "SELECT jogadores FROM jogadoresativos";
+        $exec = mysqli_query($this->conexao->getConnection(), $sql);
+
+        while ($row = mysqli_fetch_array($exec)) {
+            $data = $data . '"' . $row['jogadores'] . '",';
+        }
+
+        $data = trim($data,",");
+        return $data;
+    }
+    
 }
 
 ?>

@@ -29,6 +29,7 @@ function logar() {
         $_SESSION['permissao'] = $permissao;
         $id = $usuario->getIdUsuario($login);
         $_SESSION['idUsuario'] = $id;
+        
         header('location: ..\control\redirecionamento.php?action=Home');
       } else {
         header('location: ..\control\redirecionamento.php?action=Home&erro=senha');
@@ -110,14 +111,15 @@ function editarNome() {
     
       $usuario = new Usuario();
 
-      $nome = addslashes($_POST['editarNome']);
+      $nomeEditar = trim(addslashes($_POST['editarNome']));
+      $loginPesquisa = $_SESSION['login'];
 
-      $usuario->alteraNomeUsuario($nome);
-      print($nome);
-      if($user == True) {
-        header('location: ..\view\usuario\perfil.php');
-      } else {
+      $edita = $usuario->AlteraNomeUsuario($nomeEditar,$loginPesquisa);
+
+      if($edita == True) {
         header('location: ..\view\home.php');
+      } else {
+        header('location: ..\view\perfil.php');
       }
 
       

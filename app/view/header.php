@@ -12,7 +12,6 @@
 		<meta charset="utf-8">
 
 		<!-- Css de páginas main -->
-		
 		<link rel="sortcut icon" href="../../assets/img/paginas/home/logo.png" type="image/x-icon" />
 		<link rel="stylesheet" type="text/css" href="../../assets/css/geral.css"/>
 		<link rel="stylesheet" type="text/css" href="../../assets/css/header.css"/>
@@ -72,7 +71,7 @@
             </div>
 
             <div class="opcao-menu">
-              <a href="../view/usuario/perfil.php">
+              <a href="">
                 <button class="botao-menu" id="botao-ajuda">
                   <img src="../../assets/img/icons/ajuda.png" class="icon-linkMenu">
                   AJUDA
@@ -93,7 +92,7 @@
                                               <button onclick="myFunction()" id="head-player" class="dropbtn"></button>
                                               <div id="myDropdown" class="dropdown-content">
                                                 <a href="../control/usuario.php?action=deslogar">Link 1</a>
-                                                <a href="#">Link 2</a>
+                                                <a href="../view/perfil.php">Perfil</a>
                                                 <a href="../control/usuario.php?action=deslogar">Deslogar</a>
                                               </div>
                                             </div>' : '<button id="botao-login">LOGIN</button>'; ?>
