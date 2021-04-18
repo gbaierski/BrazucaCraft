@@ -6,7 +6,7 @@ function logar() {
 
       require ('..\..\infra\connection.php');
       require ('..\model\usuario\classUsuario.php');
-    
+
       $usuario = new Usuario();
     
       $login = addslashes($_POST['login']);
@@ -61,7 +61,6 @@ function cadastrar() {
     $nome = trim(strip_tags($_POST['nome']));
     $senha = trim(strip_tags($_POST['senha']));
     $senha_repetida = trim(strip_tags($_POST['senha_repetida']));
-
     if ($senha === $senha_repetida) {
         
       $consulta = $usuario->pesquisaUsuario($login);
@@ -71,10 +70,14 @@ function cadastrar() {
         header('location: ../control/redirecionamento.php?action=CadastroUsuario&repetido=senha');
       
       } else {
+        $permissao = "Usuario";
+
         $valor = ['cost' => 8];
         $hash = password_hash($senha, PASSWORD_BCRYPT, $valor);
-        $permissao = "Usuario";
-        $insere = $usuario->cadastraUsuario($login,$hash,$nome,$permissao);
+
+        $dataCadastro = $usuario->calculoHoraria();
+        
+        $insere = $usuario->cadastraUsuario($login,$hash,$nome,$permissao,$dataCadastro);
         
         if ($insere == true) {
         
@@ -113,14 +116,35 @@ function editarNome() {
     
       $usuario = new Usuario();
 
-      $nome = trim(addslashes($_POST['editaNomeNovo']));
+      $nome = trim(addslashes($_POST['editarNomeNovo']));
       $loginPesquisa = $_SESSION['login'];
 
-      $usuario->AlteraNomeUsuario($nome,$loginPesquisa);
+      $usuario->alteraNomeUsuario($nome,$loginPesquisa);
       
       header('location: ..\control\redirecionamento.php?action=Home');
       
   }
+}
+
+function editarSenha() {
+
+  if(isset($_POST['editarSenha'])) {
+      
+    require ('..\..\infra\connection.php');
+    require ('..\model\usuario\classUsuario.php');
+
+    session_start();
+  
+    $usuario = new Usuario();
+
+    $senha = trim(addslashes($_POST['editarSenhaNova']));
+    $loginPesquisa = $_SESSION['login'];
+
+    $usuario->alteraSenhaUsuario($senha,$loginPesquisa);
+    
+    header('location: ..\control\redirecionamento.php?action=Home');
+    
+}
 }
 
 

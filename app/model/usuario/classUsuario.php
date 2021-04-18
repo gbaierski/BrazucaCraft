@@ -26,7 +26,7 @@ class Usuario {
 
     private function DeletaSession() {
         #unset($_SESSION['nome']);
-        #unset($_SESSION['senha']);
+        unset($_SESSION['senha']);
         #unset($_SESSION['login']);
         #unset($_SESSION['permissao']);
     }
@@ -62,9 +62,9 @@ class Usuario {
     }
 
     //função que cadastra o usuário no banco
-    public function cadastraUsuario($login,$senha,$nome,$permissao) {
+    public function cadastraUsuario($login,$senha,$nome,$permissao,$dataCadastro) {
 
-        $sql = "INSERT INTO usuarios (usuarioLogin, usuarioSenha, nomeUsuario, permissao) VALUES ('$login','$senha','$nome','$permissao')";
+        $sql = "INSERT INTO usuarios (usuarioLogin, usuarioSenha, nomeUsuario, permissao, dataCadastro) VALUES ('$login','$senha','$nome','$permissao','$dataCadastro')";
         $executa = mysqli_query($this->conexao->getConnection(), $sql);
 
         if(mysqli_affected_rows($this->conexao->getConnection()) > 0) {
@@ -186,15 +186,21 @@ class Usuario {
         $this->permissao = $permissaoConsulta;
     }
 
-    //função que altera o banco o nome do usuario
-    /*Obs: Como essa é uma função q ultilza um form, diferente das outras que puxei a função direto na pagina do perfil, 
-    nesta achei mais organizado passar os dados para uma função mãe que está no usuario.php, seguindo o padrão das outras
-    funções*/
-    function AlteraNomeUsuario($nome, $loginPesquisa){
+    //função que altera no banco o nome do usuario
+    function alteraNomeUsuario($nome, $loginPesquisa){
             $setNomeUsuario = "UPDATE usuarios SET nomeUsuario = '$nome' WHERE usuarioLogin = '$loginPesquisa'";
             $executa = mysqli_query($this->conexao->getConnection(), $setNomeUsuario);     
     }
+    //função que altera no banco a senha do usuario
+    function alteraSenhaUsuario($senha, $loginPesquisa){
 
+        $valor = ['cost' => 8];
+        $hash = password_hash($senha, PASSWORD_BCRYPT, $valor);
+
+        $setSenhaUsuario = "UPDATE usuarios SET usuarioSenha = '$hash' WHERE usuarioLogin = '$loginPesquisa'";
+        $executa = mysqli_query($this->conexao->getConnection(), $setSenhaUsuario);     
+}
+    //função que puxa do banco a quantidade de players ativos no mes/dia
     function getPlayerAtivo() {
         $data = '';
 
@@ -208,7 +214,40 @@ class Usuario {
         $data = trim($data,",");
         return $data;
     }
-    
+
+    //Função que pegao horario e o altera para o nosso fuso horario    
+    function calculoHoraria() {
+
+        $data = getdate();
+        $ano = $data['year'];
+        //Array associativo para os messes do ano em português
+        $mesArray = [1 => 'janeiro', 2 => 'Fevereiro', 3 => 'Março', 4 => 'Abril', 5 => 'Maio', 6 => 'Junho', 7 => 'Julho', 8 => 'Agosto', 9 => 'Setembro', 10 => 'Outubro', 11 => 'Novembro', 12 => 'Dezembro'];
+        $mes = "NA";
+        //foreach que troca o mes escrito em ingles para o português
+        foreach($mesArray as $mesNumerico => $mesExtenso) {
+          if($data['mon'] == $mesNumerico) {
+            $mes = $mesExtenso;
+          }  
+        }
+        //Verfica se os muntos são de apenas um digito e se caso forem ele adiciona um "0" antes do valor
+        if($data['minutes'] < 10) {
+          $minutos = "0" . $data['minutes'];
+        } else {
+          $minutos = $data['minutes'];
+        }
+        //Arruma o dia e a hora em relação ao nosso fuso horario
+        $horas = $data['hours'] - 5;
+        $dia = $data['mday'];
+        if($horas < 0) {
+          $dia = $data['mday'] - 1;
+          $horas = 24 + $horas;
+        }
+        // template de como os dadso são enviados ao banco: 18 de Maio de 2021 / 18:36
+        $dataCadastro = $dia . " de " . $mes . " de " . $ano . " / " . $horas . ":" . $minutos;
+
+        return $dataCadastro;
+
+    }
 }
 
 ?>

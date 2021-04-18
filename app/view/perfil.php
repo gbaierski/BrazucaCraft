@@ -10,6 +10,8 @@ $usuario->DeclaraUsuario();
 
 print($usuario->getNome());
 
+
+
 ?>
 
   
@@ -23,6 +25,8 @@ print($usuario->getNome());
 <br>
 <br>
 
+<?php $dia = getdate();
+print_r($dia);?>
 <!--- 
 <canvas id="myChart"></canvas>
 
@@ -71,10 +75,21 @@ var myChart = new Chart(
 <form action="..\control\usuario.php?action=editarNome" method="post">
       <div>
         <label for="nome">Editar Nome</label>
-        <input type="text" id="editaNomeNovo" name="editaNomeNovo">
+        <input type="text" id="editarNomeNovo" name="editarNomeNovo">
       </div>
 
       <input type="submit" name="editarNome"value="editarNome">
+
+
+</form>
+
+<form action="..\control\usuario.php?action=editarSenha" method="post">
+      <div>
+        <label for="senha">Editar Senha</label>
+        <input type="password " id="editarSenhaNova" name="editarSenhaNova">
+      </div>
+
+      <input type="submit" name="editarSenha"value="editarSenha">
 
 
 </form>
