@@ -1,17 +1,11 @@
-<?php
-
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Cadastro</title>
+<?php require '../view/header.php' ?>
 
 <body>
-
-  <div>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+  </head>
+  <div id="backgroundCadastroUsuario">
 
     <?php
       
@@ -28,31 +22,30 @@
       }
 
     ?>
-    <h2>Cadastro</h2>
-    <hr>
-    <form action="..\..\control\usuario.php?action=cadastrar" method="post">
+    <div id="cadastroDiv">
+      <div id="tituloCadastroUsuario">Cadastro</div>
+      <form action="..\..\control\usuario.php?action=cadastrar" method="post">
 
-      <div>
-        <label for="login">Login</label>
-        <input type="text" id="login" name="login" required autofocus>
+        <div>
+          <label for="login" class="cadastroUsuarioLabel">Login</label>
+          <input type="text" id="cadastroUsuarioLogin" name="login" required autofocus class="cadastroUsuario">
         </div>
 
-      <div>
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" required>
-      </div>
+        <div>
+          <label for="senha" class="cadastroUsuarioLabel">Senha:</label>
+          <input type="password" id="cadastroUsuarioSenha" name="senha" required class="cadastroUsuario">
+        </div>
 
-      <div>
-        <label for="senha_repetida">Repita a Senha:</label>
-        <input type="password" id="senha_repetida" name="senha_repetida" required>
-      </div>
-      <button type="submit" name="cadastrar">Cadastrar</button>
+        <div>
+          <label for="senha_repetida" class="cadastroUsuarioLabel">Repetir senha:</label>
+          <input type="password" id="cadastroUsuarioSenhaRepetida" name="senha_repetida" required class="cadastroUsuario">
+        </div>
+        <button type="submit" name="cadastrar" id="cadastroUsuarioContinuar">Continuar</button>
 
-    </form>
-    
-    <a href="../home.php">Voltar</a>
-
+      </form>
+      
+      <a href="../control/redirecionamento.php?action=index"><button id="cadastroUsuarioVoltar">Voltar</button></a>
+    </div>
   </div>
-</body>
 
-</html>
+<?php require '../view/footer.php' ?>

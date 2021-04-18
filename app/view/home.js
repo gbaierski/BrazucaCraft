@@ -1,20 +1,20 @@
 function copiarIp() {
 
     var textoCopiado = document.getElementById("ip-home");
-    var tooltip = document.getElementById("myTooltip");
+    var imgTooltip = document.getElementById("backgroundTooltip");
 
     textoCopiado.select();
     textoCopiado.setSelectionRange(0, 99999); /* mobile */
 
     document.execCommand("copy");
 
-    tooltip.innerHTML = "Copiado!";
+    imgTooltip.src = "../../assets/img/icons/visto.png";
 
 }
 
 function tirouMouse() {
 
-    var tooltip = document.getElementById("myTooltip");
-    tooltip.innerHTML = "Clique para copiar o IP!";
+    var imgTooltip = document.getElementById("backgroundTooltip");
+    imgTooltip.src = "../../assets/img/icons/copiar.png";
 }
 

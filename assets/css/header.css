@@ -512,6 +512,13 @@
 /* --------------------------------------- tela monitor 1366x768 ---------------------------------------*/
 @media screen and (min-width:1201px) {
 
+    body::-webkit-scrollbar {
+        
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        display: none;
+    }
+
     .header {
 
         background-color: rgba(0, 0, 0, 0.651);

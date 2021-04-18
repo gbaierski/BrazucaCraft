@@ -1,0 +1,344 @@
+/* --------------------------------------- tela celular / tablet --------------------------------------- */
+@media screen and (max-width:750px) {
+
+    .cadastroUsuario {
+
+        width: 35%;
+        height: 4.5vw;
+        font-size: 3vw;
+        margin-left: 5%;
+        margin-bottom: 2vw;
+        border: 0.4vw solid #ccc;
+    }
+
+    .cadastroUsuario:focus {
+
+        border: 4px solid #555;
+    
+    }
+
+    .cadastroUsuarioLabel {
+
+        margin-left: 5%;
+        margin-top: 2%;
+        font-size: 4vw;
+    }
+
+    
+    #backgroundCadastroUsuario {
+
+        width: 100%;
+        height: 220vw;
+    }
+
+    #tituloCadastroUsuario {
+
+        font-size: 7vw;
+    }
+
+    #cadastroDiv {
+    
+        width: 70%;
+        height: 70vw;
+        margin-left: 15%;
+        margin-top: 60vw;
+        border-radius: 5px;
+    }
+
+    #cadastroUsuarioLogin {
+
+        margin-top: 7vw;
+        margin-left: 33%;
+    }
+    
+    #cadastroUsuarioSenha {
+    
+        margin-left: 30%;
+    }
+
+    #cadastroUsuarioContinuar {
+
+        width: 32%;
+        height: 6vw;
+        font-size: 4vw;
+        margin-right: 18%;
+        margin-top: 7vw;
+        border-bottom: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-right: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-left: none;
+        border-top: none;
+    }
+
+    #cadastroUsuarioVoltar {
+
+        width: 32%;
+        height: 6vw;
+        float: left;
+        margin-left: 17%;
+        margin-top: 7vw;
+        font-size: 4vw;
+        border-bottom: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-right: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-left: none;
+        border-top: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------- ipad / telas menores --------------------------------------- */
+@media screen and (min-width:751px) and (max-width:1200px) {
+
+    .cadastroUsuario {
+
+        width: 42%;
+        height: 4.5vw;
+        font-size: 3vw;
+        margin-left: 5%;
+        margin-bottom: 2vw;
+        border: 0.4vw solid #ccc;
+    }
+
+    .cadastroUsuario:focus {
+
+        border: 4px solid #555;
+    
+    }
+
+    .cadastroUsuarioLabel {
+
+        margin-left: 12%;
+        margin-top: 2%;
+        font-size: 3vw;
+    }
+
+    
+    #backgroundCadastroUsuario {
+
+        width: 100%;
+        height: 135vw;
+    }
+
+    #tituloCadastroUsuario {
+
+        font-size: 5vw;
+    }
+
+    #cadastroDiv {
+    
+        width: 70%;
+        height: 60vw;
+        margin-left: 15%;
+        margin-top: 35vw;
+        border-radius: 5px;
+    }
+
+    #cadastroUsuarioLogin {
+
+        margin-top: 7vw;
+        margin-left: 27%;
+    }
+    
+    #cadastroUsuarioSenha {
+    
+        margin-left: 24%;
+    }
+
+    #cadastroUsuarioContinuar {
+
+        width: 30%;
+        height: 5vw;
+        font-size: 3vw;
+        margin-right: 18%;
+        margin-top: 5vw;
+        border-bottom: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-right: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-left: none;
+        border-top: none;
+    }
+
+    #cadastroUsuarioVoltar {
+
+        width: 30%;
+        height: 5vw;
+        float: left;
+        margin-left: 17%;
+        margin-top: 5vw;
+        font-size: 3vw;
+        border-bottom: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-right: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-left: none;
+        border-top: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------- tela monitor 1366x768 ---------------------------------------*/
+@media screen and (min-width:1201px) {
+
+    .cadastroUsuario {
+
+        width: 30%;
+        margin-left: 5%;
+        margin-bottom: 1vw;
+        border: 0.28vw solid #ccc;
+    }
+
+    .cadastroUsuario:focus {
+
+        border: 3px solid #555;
+    
+    }
+
+    .cadastroUsuarioLabel {
+
+        margin-left: 12%;
+        margin-top: 2%;
+        font-size: 1.7vw;
+    }
+
+    
+    #backgroundCadastroUsuario {
+
+        width: 100%;
+        height: 50vw;
+    }
+
+    #tituloCadastroUsuario {
+
+        font-size: 3vw;
+    }
+
+    #cadastroDiv {
+    
+        width: 50%;
+        height: 25vw;
+        margin-left: 25%;
+        margin-top: 15vw;
+        border-radius: 5px;
+    }
+
+    #cadastroUsuarioLogin {
+
+        margin-top: 3vw;
+        margin-left: 21.7%;
+    }
+    
+    #cadastroUsuarioSenha {
+    
+        margin-left: 20%;
+    }
+
+    #cadastroUsuarioContinuar {
+
+        width: 25%;
+        height: 2.7vw;
+        font-size: 1.5vw;
+        margin-right: 18%;
+        margin-top: 1.5vw;
+        border-bottom: 0.3vw solid rgba(10, 10, 10, 0.4);
+        border-right: 0.3vw solid rgba(10, 10, 10, 0.4);
+        border-left: none;
+        border-top: none;
+    }
+
+    #cadastroUsuarioVoltar {
+
+        width: 25%;
+        height: 2.7vw;
+        float: left;
+        margin-left: 17%;
+        margin-top: 1.5vw;
+        font-size: 1.5vw;
+        border-bottom: 0.3vw solid rgba(10, 10, 10, 0.4);
+        border-right: 0.3vw solid rgba(10, 10, 10, 0.4);
+        border-left: none;
+        border-top: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------- geral ---------------------------------------*/
+
+.cadastroUsuario {
+
+    background-color: transparent;
+    color: white; 
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    outline: none;
+}
+
+.cadastroUsuarioLabel {
+
+    font-weight: 600;
+    color: white;
+    font-family: monospace;
+}
+
+#backgroundCadastroUsuario {
+
+    background-size: cover;
+    background-image: url("../img/paginas/cadastroUsuario/backgroundCadastroUsuario.jpg");
+
+}
+
+#cadastroDiv {
+    
+    float: left;
+    background-color:rgba(0, 0, 0, 0.795);
+}
+
+#tituloCadastroUsuario {
+
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    font-family: monospace;
+}
+
+#cadastroUsuarioContinuar {
+
+    float: right;
+    font-family: monospace;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(22, 163, 69);
+}
+
+#cadastroUsuarioVoltar {
+
+    text-align: center;
+    font-family: monospace;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(224, 44, 20);
+
+}

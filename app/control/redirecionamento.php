@@ -38,6 +38,12 @@ function paginaLoja(){
 
 }
 
+function cadastroUsuario(){
+
+    $nomePagina = "Cadastro | BrazucaCraft";
+    require '../view/usuario/cadastroUsuario.php';
+}
+
 
 
 //Gerenciador de Rotas

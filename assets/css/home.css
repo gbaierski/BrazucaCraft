@@ -29,7 +29,6 @@
     .tooltip .tooltiptext {
 
         width: 40%;
-        font-size: 110%;
         left: 58%;
         border-radius: 5%;
         padding: 1.4%;
@@ -304,9 +303,9 @@
 
     .tooltip .tooltiptext {
 
-        width: 40%;
-        font-size: 110%;
-        left: 58%;
+        width: 25%;
+        height: 2vw;
+        left: 85%;
         border-radius: 5%;
         padding: 1.4%;
         bottom: 120%;
@@ -405,6 +404,11 @@
     }
 
     #backgroundTooltip {
+
+        width: 40%;
+    }
+
+    #myTooltip {
 
         width: 15%;
     }
