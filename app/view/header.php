@@ -108,7 +108,7 @@
 
       <div>
         <label for="login">Login</label>
-        <input type="text" id="login" name="login">
+        <input type="text" id="login" name="login" pattern="[a-zA-Z0-9]+">
       </div>
 
       <div>

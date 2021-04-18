@@ -32,11 +32,11 @@
 
       <div>
         <label for="login">Login</label>
-        <input type="text" id="login" name="login" required autofocus>
+        <input type="text" id="login" name="login" pattern="[a-zA-Z0-9]+" required autofocus>
         </div>
       <div>
         <label for="nome">Nome</label>
-        <input type="text" id="nome" name="nome" required>
+        <input type="text" id="nome" name="nome" pattern="[a-zA-Z0-9]+" required>
         </div>
       <div>
       <div>
