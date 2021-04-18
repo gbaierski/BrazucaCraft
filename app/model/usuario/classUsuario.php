@@ -192,8 +192,7 @@ class Usuario {
     funções*/
     function AlteraNomeUsuario($nome, $loginPesquisa){
             $setNomeUsuario = "UPDATE usuarios SET nomeUsuario = '$nome' WHERE usuarioLogin = '$loginPesquisa'";
-            $executa = mysqli_query($this->conexao->getConnection(), $setNomeUsuario);
-        
+            $executa = mysqli_query($this->conexao->getConnection(), $setNomeUsuario);     
     }
 
     function getPlayerAtivo() {

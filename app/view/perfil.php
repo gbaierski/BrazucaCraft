@@ -6,8 +6,9 @@ require ('..\model\usuario\classUsuario.php');
 
 $usuario = new Usuario();
 $usuario->DeclaraUsuario();
+#$data = $usuario->getPlayerAtivo();
 
-$data = $usuario->getPlayerAtivo();
+print($usuario->getNome());
 
 ?>
 
@@ -21,8 +22,6 @@ $data = $usuario->getPlayerAtivo();
 <br>
 <br>
 <br>
-
-
 
 <!--- 
 <canvas id="myChart"></canvas>
@@ -69,33 +68,17 @@ var myChart = new Chart(
 </script>
 --->
 
-
-
-
-
-
-
-
-
-
-
-
-
-<!---
-
-
-
 <form action="..\control\usuario.php?action=editarNome" method="post">
       <div>
-        <label for="nome">editarNome</label>
-        <input type="text" id="nome" name="nome">
+        <label for="nome">Editar Nome</label>
+        <input type="text" id="editaNomeNovo" name="editaNomeNovo">
       </div>
 
-      <input type="submit" name="editarNome" value="editarNome">
+      <input type="submit" name="editarNome"value="editarNome">
 
 
 </form>
---->
+
 </body>
 
 </html>

@@ -126,7 +126,7 @@ function editarProduto(){
    $imagemProduto = $novoNome;
   
   $produto = new Produto();
-  $exclui = $produto->editarProduto($idProduto, $nomeProduto, $precoProduto , $descricaoProduto , $imagemProduto);
+  $exclui = $produto->buscaEditaProduto($idProduto, $nomeProduto, $precoProduto , $descricaoProduto , $imagemProduto);
   header('location: redirecionamento.php?action=Loja');
 }
 

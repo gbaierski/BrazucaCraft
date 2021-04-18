@@ -67,7 +67,7 @@ class Produto {
             return false;
         }
     }
-    function editarProduto($idProduto, $nomeProduto, $precoProduto , $descricaoProduto , $imagemProduto){
+    function buscaEditaProduto($idProduto, $nomeProduto, $precoProduto , $descricaoProduto , $imagemProduto){
 
         if($imagemProduto == ""){
         $sql = "UPDATE produtos SET nomeProduto = '$nomeProduto' , descricaoProduto = '$descricaoProduto', precoProduto = '$precoProduto' WHERE produtos.ai_produto = $idProduto";

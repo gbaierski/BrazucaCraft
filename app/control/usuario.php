@@ -105,23 +105,20 @@ if (isset($_GET['action']) and function_exists($_GET['action']) ) {
 function editarNome() {
 
   if(isset($_POST['editarNome'])) {
-
+      
       require ('..\..\infra\connection.php');
       require ('..\model\usuario\classUsuario.php');
+
+      session_start();
     
       $usuario = new Usuario();
 
-      $nomeEditar = trim(addslashes($_POST['editarNome']));
+      $nome = trim(addslashes($_POST['editaNomeNovo']));
       $loginPesquisa = $_SESSION['login'];
 
-      $edita = $usuario->AlteraNomeUsuario($nomeEditar,$loginPesquisa);
-
-      if($edita == True) {
-        header('location: ..\view\home.php');
-      } else {
-        header('location: ..\view\perfil.php');
-      }
-
+      $usuario->AlteraNomeUsuario($nome,$loginPesquisa);
+      
+      header('location: ..\control\redirecionamento.php?action=Home');
       
   }
 }
