@@ -44,6 +44,12 @@ function cadastroUsuario(){
     require '../view/usuario/cadastroUsuario.php';
 }
 
+function manutencao () {
+
+    $nomePagina = "Manutenção | BrazucaCraft";
+    require '../view/telaManutencao.php';
+
+}
 
 
 //Gerenciador de Rotas

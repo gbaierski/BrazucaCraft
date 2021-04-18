@@ -1,0 +1,57 @@
+body {
+    border: none;
+    margin: 0px;
+}
+
+#backgroundManutencao {
+
+    background-image: url(../img/paginas/telaManutencao.jpg);
+    width: 100%;
+    height: 48.1vw
+}
+
+#botaoManutencaoVoltar {
+
+    width: 35%;
+    height: 2.5vw;
+    margin-top: 5vw;
+    margin-left: 33%;
+    color: white;
+    font-family: monospace;
+    font-size: 1.5vw;
+    text-shadow: 0.1vw 0.13vw rgba(0, 0, 0, 0.651);
+    background-color: #6f6f6f;
+    border-bottom: 0.2vw solid rgba(10, 10, 10, 0.26);
+    border-right: 0.2vw solid rgba(10, 10, 10, 0.26);
+    outline: none;
+    border-left: none;
+    border-top: none;
+    transition: transform .30s;
+    cursor: pointer;
+}
+
+#botaoManutencaoVoltar:hover {
+
+    transform: scale(0.98)  rotate(0.1deg);
+}
+
+#textoManutencao {
+
+    font-size: 1.5vw;
+    text-align: center;
+    padding-top: 15vw;
+    text-shadow: 0.1vw 0.13vw rgba(0, 0, 0, 0.651);
+    color: rgb(175, 175, 175); 
+    font-family: monospace;
+}
+
+#textoVoltarHome {
+
+    font-size: 1.5vw;
+    padding-top: 1vw;
+    text-shadow: 0.1vw 0.13vw rgba(0, 0, 0, 0.651);
+    text-align: center;
+    color: white; 
+    font-family: monospace;
+
+}

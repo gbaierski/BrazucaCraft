@@ -99,7 +99,7 @@
               </div>
 
               <div class="opcao-menu">
-                <a href="">
+                <a href="../control/redirecionamento.php?action=manutencao">
                   <button class="botao-menu" id="botao-blog">
                     <img src="../../assets/img/icons/blog.png" class="icon-linkMenu">
                     <div class="texto-linkMenu"> BLOG </div>
