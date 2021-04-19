@@ -23,8 +23,8 @@ function logar() {
         session_start();
         $_SESSION['login'] = $login;
         $_SESSION['senha'] = $senhaBanco[0];
-        $nome = $usuario->getNomeUsuario($login);
-        $_SESSION['nome'] = $nome;
+        //$nome = $usuario->getNomeUsuario($login);
+        //$_SESSION['nome'] = $nome;
         $permissao = $usuario->getPermissaoUsuario($login);
         $_SESSION['permissao'] = $permissao;
         $id = $usuario->getIdUsuario($login);

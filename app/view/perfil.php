@@ -8,9 +8,7 @@ $usuario = new Usuario();
 $usuario->DeclaraUsuario();
 #$data = $usuario->getPlayerAtivo();
 
-print($usuario->getNome());
-
-
+print($usuario->getSenha());
 
 ?>
 
@@ -25,8 +23,6 @@ print($usuario->getNome());
 <br>
 <br>
 
-<?php $dia = getdate();
-print_r($dia);?>
 <!--- 
 <canvas id="myChart"></canvas>
 

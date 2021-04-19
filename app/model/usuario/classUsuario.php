@@ -3,7 +3,7 @@
 class Usuario {
     public $conexao;
     public $login;
-    public $nome;
+    //public $nome;
     private $senha;
     private $permissao;
     public function __construct() {
@@ -25,10 +25,10 @@ class Usuario {
     }
 
     private function DeletaSession() {
-        #unset($_SESSION['nome']);
+        //unset($_SESSION['nome']);
         unset($_SESSION['senha']);
-        #unset($_SESSION['login']);
-        #unset($_SESSION['permissao']);
+        //unset($_SESSION['login']);
+        //unset($_SESSION['permissao']);
     }
 
     //função que puxa APENAS a senha do usuario do banco
@@ -161,9 +161,9 @@ class Usuario {
 
     //Funções Get e Set, ambas são a forma suprema da simplicidade quando se trata de transitar dados entre paginas
 
-    public function getNome() {
-        return $this->nome;
-    }
+    //public function getNome() {
+    //    return $this->nome;
+    //}
     public function getSenha() {
         return $this->senha;
     }
@@ -173,9 +173,9 @@ class Usuario {
     public function getPermissao() {
         return $this->permissao;
     }
-    public function setNome($nomeConsulta) {
-        $this->nome = $nomeConsulta;
-    }
+    //public function setNome($nomeConsulta) {
+    //    $this->nome = $nomeConsulta;
+    //}
     public function setSenha($senhaConsulta) {
         $this->senha = $senhaConsulta;
     }
