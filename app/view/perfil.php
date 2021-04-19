@@ -5,26 +5,65 @@ require ('..\..\infra\connection.php');
 require ('..\model\usuario\classUsuario.php');
 
 $usuario = new Usuario();
+
 $usuario->DeclaraUsuario();
-#$data = $usuario->getPlayerAtivo();
 
-print($usuario->getSenha());
-
-?>
-
-  
+if($usuario->getPermissao() == "Usuario") {
+  ?>
 <!DOCTYPE html>
 <html>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
-<!--- 
-<canvas id="myChart"></canvas>
+  <form action="..\control\usuario.php?action=editarNome" method="post">
+      <div>
+        <label for="nome">Editar Nome</label>
+        <input type="text" id="editarNomeNovo" name="editarNomeNovo">
+      </div>
+
+      <input type="submit" name="editarNome"value="editarNome">
+
+
+</form>
+
+<form action="..\control\usuario.php?action=editarSenha" method="post">
+      <div>
+        <label for="senha">Editar Senha</label>
+        <input type="password " id="editarSenhaNova" name="editarSenhaNova">
+      </div>
+
+      <input type="submit" name="editarSenha"value="editarSenha">
+
+
+</form>
+
+</body>
+
+</html>
+  <?php 
+
+} elseif($usuario->getPermissao() == "Administrador") {
+  
+  $data = $usuario->getPlayerAtivo();
+
+  ?>
+
+<html >
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+<canvas id="myChart" style="background-color: white;"></canvas>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -50,7 +89,7 @@ const data = {
     label: 'Jogadores Ativos',
     backgroundColor: 'rgb(255, 99, 132)',
     borderColor: 'rgb(255, 99, 132)',
-    data: [ <?php ##echo $data; ?> ],
+    data: [ <?php echo $data; ?> ],
   }]
 };
 
@@ -66,30 +105,7 @@ var myChart = new Chart(
   );
 
 </script>
---->
+<?php
+}
+?>
 
-<form action="..\control\usuario.php?action=editarNome" method="post">
-      <div>
-        <label for="nome">Editar Nome</label>
-        <input type="text" id="editarNomeNovo" name="editarNomeNovo">
-      </div>
-
-      <input type="submit" name="editarNome"value="editarNome">
-
-
-</form>
-
-<form action="..\control\usuario.php?action=editarSenha" method="post">
-      <div>
-        <label for="senha">Editar Senha</label>
-        <input type="password " id="editarSenhaNova" name="editarSenhaNova">
-      </div>
-
-      <input type="submit" name="editarSenha"value="editarSenha">
-
-
-</form>
-
-</body>
-
-</html>

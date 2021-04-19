@@ -12,17 +12,20 @@ class Usuario {
 
     //Função definitiva suprema, basicamente ela persiste os dados não só na propria session como agr tb na classe Usuario.
     public function DeclaraUsuario() {
-        //$nome = $_SESSION['nome'];
-        //$this->setNome($nome[0]);
-        $senha = $_SESSION['senha'];
-        $this->setSenha($senha);
-        $login = $_SESSION['login'];
-        $this->setLogin($login);
-        $permissao = $_SESSION['permissao'];
-        $this->setPermissao($permissao[0]);
 
-        $this->DeletaSession();
-    }
+            //$nome = $_SESSION['nome'];
+            //$this->setNome($nome[0]);
+            $senha = $_SESSION['senha'];
+            $this->setSenha($senha);
+            $login = $_SESSION['login'];
+            $this->setLogin($login);
+            $permissao = $_SESSION['permissao'];
+            $this->setPermissao($permissao[0]);
+
+            #$this->DeletaSession();
+        
+}
+
 
     private function DeletaSession() {
         //unset($_SESSION['nome']);

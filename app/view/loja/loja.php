@@ -1,6 +1,12 @@
-<?php require "../view/header.php" ?> 
+<?php 
+require "../view/header.php"; 
+require ('..\model\usuario\classUsuario.php');
+$usuario = new Usuario();
+$usuario->DeclaraUsuario();
+?> 
 
 <div id="backgroundLoja">
+  <?php if($usuario->getPermissao() == "Administrador") { ?>
     <div id="botaoNovoProdutoDiv">
       <a href="../control/redirecionamento.php?action=CadastroProdutos">
         <button id="botaoNovoProduto">
@@ -9,6 +15,7 @@
         </button>
       </a>
     </div>
+    <?php } ?>
     <div id="produtos-loja">
         <div id="tituloLoja">LOJA</div>
     <?php foreach ($produtos as $produto) { ?>
@@ -21,12 +28,17 @@
             <div class="descricao-produto"><?=  $produto['descricaoProduto'] ?></div>
         </div>
 
-        <button class="produto-comprar">Comprar</button>
+        
+        <?php if($usuario->getPermissao() == "Administrador") { ?>
 
-        <div class="botoesAdmin-produto">
-        <a href="../control/redirecionamento.php?action=EditarProduto&ai_produto=<?= $produto['ai_produto']?>"><button  class="produto-editar">Editar</button></a>
-            <a href="../control/produtos.php?action=deletarProduto&ai_produto=<?= $produto['ai_produto']?>"><button  class="produto-deletar">Deletar</button></a>
-        </div>
+          <div class="botoesAdmin-produto">
+          <a href="../control/redirecionamento.php?action=EditarProduto&ai_produto=<?= $produto['ai_produto']?>"><button  class="produto-editar">Editar</button></a>
+          <a href="../control/produtos.php?action=deletarProduto&ai_produto=<?= $produto['ai_produto']?>"><button  class="produto-deletar">Deletar</button></a>
+          </div>
+
+        <?php } else { ?>
+          <button class="produto-comprar">Comprar</button>
+        <?php } ?>
     </div>
 
     <?php } ?>
@@ -34,5 +46,6 @@
 </div>
 
 <div class="clear"></div>
+
 <?php require '../view/footer.php'; ?>
    

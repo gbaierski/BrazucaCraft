@@ -1,5 +1,7 @@
 <?php
-	session_start();
+  if(session_id() == '') {
+    session_start();
+  }
 ?>
 
 <!DOCTYPE html>
@@ -53,7 +55,7 @@
         </div>
 
         <div class="opcao-menuMobile">
-          <a href="../control/redirecionamento.php?action=CadastroProdutos">
+          <a href="#">
             <button class="botao-menuMobile" id="botao-sobreMobile">
               <img src="../../assets/img/icons/sobre.png" class="icon-linkMenuMobile">
               <div class="texto-linkMenuMobile"> SOBRE </div>
@@ -108,7 +110,7 @@
               </div>
 
               <div class="opcao-menu">
-                <a href="../control/redirecionamento.php?action=CadastroProdutos">
+                <a href="../control/redirecionamento.php?action=manutencao">
                   <button class="botao-menu" id="botao-sobre">
                     <img src="../../assets/img/icons/sobre.png" class="icon-linkMenu">
                     <div class="texto-linkMenu"> SOBRE </div>
@@ -117,7 +119,7 @@
               </div>
 
               <div class="opcao-menu">
-                <a href="">
+                <a href="../control/redirecionamento.php?action=manutencao">
                   <button class="botao-menu" id="botao-ajuda">
                     <img src="../../assets/img/icons/ajuda.png" class="icon-linkMenu">
                     <div class="texto-linkMenu"> AJUDA </div>
