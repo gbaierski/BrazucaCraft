@@ -10,7 +10,8 @@
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<!-- Css de páginas main -->
 		<link rel="sortcut icon" href="../../assets/img/paginas/home/logo.png" type="image/x-icon" />
 		<link rel="stylesheet" type="text/css" href="../../assets/css/geral.css"/>
@@ -207,8 +208,7 @@
             Esses dois scripts servem para puxar as bibliotecas de Jquery e bootstrap do google, no momento são necessarias para o funcionamento do modal.
             Obs: Não está sendo usada nenhuma classe bootstrap porém a biblioteca é necessaria pro Jquery conseguir funcionar.
             --->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
             <script src="../view/home.js"></script>
             <script src="../view/header.js"></script>
           </header>
