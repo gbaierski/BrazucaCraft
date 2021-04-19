@@ -5,25 +5,25 @@
     .background-home {
 
         width: 100%;
-        height: 110vw;
-        background-position-x: 60%;
-        background-size:190%;
+        height: 221vw;
+        background-position-x: 55%;
+        background-size:388%;
         background-image: url("../img/paginas/home/backgroundHome.png");
     }
 
     .informacao-home {
 
-        width: 50%;
+        width: 60%;
         height: 6vw;
-        margin-top: 2vw;
+        margin-top: 5vw;
         margin-left: 15%;
         float: left;
     }
 
     .redeSocial-home {
 
-        width: 6.5vw;
-        margin-left: 1.5vw;
+        width: 11vw;
+        margin-left: 2vw;
     }
 
     .tooltip .tooltiptext {
@@ -45,41 +45,41 @@
 
     #logo {
 
-        width: 45vw;
-        height: 45vw;
-        margin-left: 30%;
-        margin-top: 28vw;
+        width: 60vw;
+        height: 60vw;
+        margin-left: 23%;
+        margin-top: 50vw;
     }
 
     #ip-home {
 
-        font-size: 5vw;
+        font-size: 5.5vw;
     }
 
     #botao-ip {
 
-        width: 60%;
-        height: 10vw;
-        margin-left: 20%;
-        margin-top: 2.5%;
+        width: 70%;
+        height: 15vw;
+        margin-left: 17%;
+        margin-top: 5%;
         background-color: rgb(22, 163, 69);
-        border-bottom: 1.2vw solid rgba(10, 10, 10, 0.4);
-        border-right: 1.2vw solid rgba(10, 10, 10, 0.4);
+        border-bottom: 1.5vw solid rgba(10, 10, 10, 0.4);
+        border-right: 1.5vw solid rgba(10, 10, 10, 0.4);
     }
 
     #div-players {
 
-        margin-top: 1vw;
-        margin-left: 2vw;
-        font-size: 6vw;
-        text-shadow: 0.4vw 0.4vw rgba(0, 0, 0, 0.651);
+        margin-top: 2vw;
+        margin-left: 3vw;
+        font-size: 8vw;
+        text-shadow: 0.8vw 0.8vw rgba(0, 0, 0, 0.651);
     }
 
     #icon-players {
 
-        margin-left: 1vw;
-        margin-bottom: -0.3vw;
-        width: 5vw;
+        margin-left: 1.5vw;
+        margin-bottom: -1.2vw;
+        width: 7vw;
     }
 
     #div-jogadoresOnline {
@@ -144,25 +144,25 @@
     .background-home {
 
         width: 100%;
-        height: 90vw;
+        height: 148vw;
         background-position-x: 60%;
-        background-size:150%;
+        background-size:240%;
         background-image: url("../img/paginas/home/backgroundHome.png");
     }
 
     .informacao-home {
 
-        width: 40%;
+        width: 50%;
         height: 10vw;
         margin-top: 3vw;
-        margin-left: 21%;
+        margin-left: 18%;
         float: left;
     }
 
     .redeSocial-home {
 
-        width: 5vw;
-        margin-left: 0.7vw;
+        width: 8vw;
+        margin-left: 1vw;
     }
 
     .tooltip .tooltiptext {
@@ -185,10 +185,10 @@
 
     #logo {
 
-        width: 37vw;
-        height: 37vw;
-        margin-left: 32%;
-        margin-top: 20vw;
+        width: 45vw;
+        height: 45vw;
+        margin-left: 30%;
+        margin-top: 35vw;
     }
 
     #ip-home {
@@ -199,8 +199,9 @@
     #botao-ip {
 
         width: 55%;
-        margin-left: 22%;
-        margin-top: 2.5%;
+        height: 10vw;
+        margin-left: 24%;
+        margin-top: 3%;
         background-color: rgb(22, 163, 69);
         border-bottom: 1vw solid rgba(10, 10, 10, 0.4);
         border-right: 1vw solid rgba(10, 10, 10, 0.4);
@@ -209,15 +210,16 @@
     #div-players {
 
         margin-top: 1vw;
-        font-size: 5vw;
-        text-shadow: 0.5vw 0.5vw rgba(0, 0, 0, 0.651);
+        margin-left: 5%;
+        font-size: 6vw;
+        text-shadow: 0.8vw 0.8vw rgba(0, 0, 0, 0.651);
     }
 
     #icon-players {
 
         margin-left: 1vw;
-        margin-bottom: -0.6vw;
-        width: 4vw;
+        margin-bottom: -0.8vw;
+        width: 5vw;
     }
 
     #div-jogadoresOnline {
