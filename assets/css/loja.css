@@ -96,7 +96,30 @@
         margin-top: -3vw;
         margin-bottom: 2vw;
     }
+    
+    #botaoNovoProdutoDiv {
 
+        margin-top: 8vw;
+        margin-right: 1%;
+    }
+
+    #botaoNovoProduto {
+
+        height: 3vw;
+        font-size: 1vw;
+        background-color: rgb(40, 120, 212);
+        border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
+        border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
+        border-left: none;
+        border-top: none;
+    }
+
+    #icon-NovoProduto {
+
+        width:1.5vw; 
+        margin-right: 0.3vw;
+        margin-bottom: -0.5vw;
+    }
 }
 
 
@@ -208,6 +231,30 @@
         margin-bottom: 2vw;
     }
 
+    #botaoNovoProdutoDiv {
+
+        margin-top: 8vw;
+        margin-right: 1%;
+    }
+
+    #botaoNovoProduto {
+
+        height: 3vw;
+        font-size: 1vw;
+        background-color: rgb(40, 120, 212);
+        border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
+        border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
+        border-left: none;
+        border-top: none;
+    }
+
+    #icon-NovoProduto {
+
+        width:1.5vw; 
+        margin-right: 0.3vw;
+        margin-bottom: -0.5vw;
+    }
+
 }
 
 
@@ -316,6 +363,29 @@
         margin-bottom: 2vw;
     }
 
+    #botaoNovoProdutoDiv {
+
+        margin-top: 8vw;
+        margin-right: 1%;
+    }
+
+    #botaoNovoProduto {
+
+        height: 3vw;
+        font-size: 1vw;
+        background-color: rgb(40, 120, 212);
+        border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
+        border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
+        border-left: none;
+        border-top: none;
+    }
+
+    #icon-NovoProduto {
+
+        width:1.5vw; 
+        margin-right: 0.3vw;
+        margin-bottom: -0.5vw;
+    }
 }
 
 
@@ -388,4 +458,19 @@
     font-family: monospace;
     font-weight: 1000;
     text-shadow: 0.1vw 0.2vw rgba(0, 0, 0, 0.651);
+}
+
+#botaoNovoProdutoDiv {
+
+    float: right;
+}
+
+#botaoNovoProduto {
+
+    border-radius: 0.1vw;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0.05vw 0.11vw rgba(0, 0, 0, 0.651);
+    cursor: pointer;
 }

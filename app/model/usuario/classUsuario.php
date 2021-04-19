@@ -216,12 +216,12 @@ class Usuario {
     }
 
     //Função que pegao horario e o altera para o nosso fuso horario    
-    function calculoHoraria() {
+    function calculoHorario() {
 
         $data = getdate();
         $ano = $data['year'];
         //Array associativo para os messes do ano em português
-        $mesArray = [1 => 'janeiro', 2 => 'Fevereiro', 3 => 'Março', 4 => 'Abril', 5 => 'Maio', 6 => 'Junho', 7 => 'Julho', 8 => 'Agosto', 9 => 'Setembro', 10 => 'Outubro', 11 => 'Novembro', 12 => 'Dezembro'];
+        $mesArray = [1 => 'Janeiro', 2 => 'Fevereiro', 3 => 'Março', 4 => 'Abril', 5 => 'Maio', 6 => 'Junho', 7 => 'Julho', 8 => 'Agosto', 9 => 'Setembro', 10 => 'Outubro', 11 => 'Novembro', 12 => 'Dezembro'];
         $mes = "NA";
         //foreach que troca o mes escrito em ingles para o português
         foreach($mesArray as $mesNumerico => $mesExtenso) {
@@ -229,7 +229,7 @@ class Usuario {
             $mes = $mesExtenso;
           }  
         }
-        //Verfica se os muntos são de apenas um digito e se caso forem ele adiciona um "0" antes do valor
+        //Verfica se os minutos são de apenas um digito e se caso forem ele adiciona um "0" antes do valor
         if($data['minutes'] < 10) {
           $minutos = "0" . $data['minutes'];
         } else {

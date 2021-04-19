@@ -75,7 +75,7 @@ function cadastrar() {
         $valor = ['cost' => 8];
         $hash = password_hash($senha, PASSWORD_BCRYPT, $valor);
 
-        $dataCadastro = $usuario->calculoHoraria();
+        $dataCadastro = $usuario->calculoHorario();
         
         $insere = $usuario->cadastraUsuario($login,$hash,$permissao,$dataCadastro);
         

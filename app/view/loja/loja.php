@@ -1,10 +1,10 @@
 <?php require "../view/header.php" ?> 
 
 <div id="backgroundLoja">
-    <div class="opcao-menu">
+    <div id="botaoNovoProdutoDiv">
       <a href="../control/redirecionamento.php?action=CadastroProdutos">
-        <button class="botao-menu" id="botao-sobre">
-          <img src="../../assets/img/icons/sobre.png" class="icon-linkMenu">
+        <button id="botaoNovoProduto">
+          <img src="../../assets/img/icons/novo.png" id="icon-NovoProduto">
           Novo Produto
         </button>
       </a>

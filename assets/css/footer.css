@@ -269,6 +269,7 @@
 
     .itens-rodape {
 
+        margin-left: 2.2vw;
         width: 10vw;
     }
 
@@ -384,7 +385,8 @@
 
 .item-rodape {
 
-    transition: transform .30s
+    font-family: monospace;
+    transition: transform .30s;
 }
 
 .item-rodape:hover {
@@ -399,6 +401,7 @@
 
 .titulo-rodape {
 
+    font-family: monospace;
     text-align: center;
     font-weight: 500;
     transition: transform .30s
