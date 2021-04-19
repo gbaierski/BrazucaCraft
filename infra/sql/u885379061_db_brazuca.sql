@@ -60,7 +60,8 @@ CREATE TABLE `usuarios` (
   `nomeUsuario` varchar(255) NOT NULL,
   `permissao` varchar(255) NOT NULL,
   `usuarioLogin` varchar(255) NOT NULL,
-  `usuarioSenha` varchar(255) NOT NULL
+  `usuarioSenha` varchar(255) NOT NULL,
+  `dataCadastro` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --

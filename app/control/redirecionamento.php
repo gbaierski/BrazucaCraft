@@ -1,18 +1,18 @@
 <?php 
 
-function index(){
+function Home(){
 
     $nomePagina = "Home | BrazucaCraft";
     require '../view/home.php';
 }
-function paginaCadastroprodutos(){
+function CadastroProdutos(){
     
     $nomePagina = "Casdatro Produtos | BrazucaCraft";
     $nomeForm = "Cadastro de Produto";
     require '../view/loja/cadastroProdutos.php';
 }
 
-function paginaEditarproduto(){
+function EditarProduto(){
 
     $ai_produto = $_GET['ai_produto'];
     //Consulta no Banco
@@ -25,7 +25,7 @@ function paginaEditarproduto(){
     require '../view/loja/cadastroProdutos.php';
 }
 
-function paginaLoja(){
+function Loja(){
 
     //Consulta no Banco
     require ('..\model\produto\produto.php');          
@@ -59,6 +59,6 @@ if (isset($_GET['action']) and function_exists($_GET['action']) ) {
   
   } else {
   
-    header('location: ..\view\home.php');
+    Home();
   
   }

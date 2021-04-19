@@ -6,22 +6,33 @@ function logar() {
 
       require ('..\..\infra\connection.php');
       require ('..\model\usuario\classUsuario.php');
-    
+
       $usuario = new Usuario();
     
       $login = addslashes($_POST['login']);
       $senha = addslashes($_POST['senha']);
-    
+
       $user = $usuario->loginUsuario($login, $senha);
-    
-      if($user == true) {
+
+      $senhaBanco = $usuario->retornaSenhaUsuario($login);
+      
+      $senhaCripto = password_verify($senha, $senhaBanco[0]);
+
+
+      if($user == true && $senhaCripto == true) {
         session_start();
         $_SESSION['login'] = $login;
-        $_SESSION['senha'] = $senha;
+        $_SESSION['senha'] = $senhaBanco[0];
+        $nome = $usuario->getNomeUsuario($login);
+        $_SESSION['nome'] = $nome;
+        $permissao = $usuario->getPermissaoUsuario($login);
         $_SESSION['permissao'] = $permissao;
-        header('location: ..\view\home.php');
+        $id = $usuario->getIdUsuario($login);
+        $_SESSION['idUsuario'] = $id;
+        
+        header('location: ..\control\redirecionamento.php?action=Home');
       } else {
-        header('location: ..\view\home.php?erro=senha');
+        header('location: ..\control\redirecionamento.php?action=Home&erro=senha');
       }
   }
 }
@@ -34,7 +45,7 @@ function deslogar() {
   $usuario = new Usuario();
   $usuario->deslogarUsuario();
   
-  header('location: ..\view\home.php');
+  header('location: ..\control\redirecionamento.php?action=Home');
 }
 
 function cadastrar() {
@@ -47,30 +58,36 @@ function cadastrar() {
     $usuario = new Usuario();
 
     $login = trim(strip_tags($_POST['login']));
+    //$nome = trim(strip_tags($_POST['nome']));
     $senha = trim(strip_tags($_POST['senha']));
     $senha_repetida = trim(strip_tags($_POST['senha_repetida']));
-
     if ($senha === $senha_repetida) {
         
       $consulta = $usuario->pesquisaUsuario($login);
 
       if ($consulta == false) {
 
-        header('location: ..\view\usuario\cadastroUsuario.php?repetido=senha');
+        header('location: ../control/redirecionamento.php?action=CadastroUsuario&repetido=senha');
       
       } else {
+        $permissao = "Usuario";
+
+        $valor = ['cost' => 8];
+        $hash = password_hash($senha, PASSWORD_BCRYPT, $valor);
+
+        $dataCadastro = $usuario->calculoHoraria();
         
-        $insere = $usuario->cadastraUsuario($login,$senha);
+        $insere = $usuario->cadastraUsuario($login,$hash,$permissao,$dataCadastro);
         
         if ($insere == true) {
         
-          header('location: ..\view\usuario\cadastroUsuario.php?success=cadastrado');
+          header('location: ../control/redirecionamento.php?action=CadastroUsuario&success=cadastrado');
            
         }
       }
     } else {
 
-      header('location: ..\view\usuario\cadastroUsuario.php?erro=senha');
+      header('location: ../control/redirecionamento.php?action=CadastroUsuario&erro=senha');
       
     }
   }
@@ -83,8 +100,52 @@ if (isset($_GET['action']) and function_exists($_GET['action']) ) {
 
 } else {
 
-  header('location: ..\view\home.php');
+  header('location: ..\index.php');
 
 }
+
+//Edita o nome
+function editarNome() {
+
+  if(isset($_POST['editarNome'])) {
+      
+      require ('..\..\infra\connection.php');
+      require ('..\model\usuario\classUsuario.php');
+
+      session_start();
+    
+      $usuario = new Usuario();
+
+      $nome = trim(addslashes($_POST['editarNomeNovo']));
+      $loginPesquisa = $_SESSION['login'];
+
+      $usuario->alteraNomeUsuario($nome,$loginPesquisa);
+      
+      header('location: ..\control\redirecionamento.php?action=Home');
+      
+  }
+}
+
+function editarSenha() {
+
+  if(isset($_POST['editarSenha'])) {
+      
+    require ('..\..\infra\connection.php');
+    require ('..\model\usuario\classUsuario.php');
+
+    session_start();
+  
+    $usuario = new Usuario();
+
+    $senha = trim(addslashes($_POST['editarSenhaNova']));
+    $loginPesquisa = $_SESSION['login'];
+
+    $usuario->alteraSenhaUsuario($senha,$loginPesquisa);
+    
+    header('location: ..\control\redirecionamento.php?action=Home');
+    
+}
+}
+
 
 ?>

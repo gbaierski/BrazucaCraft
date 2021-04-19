@@ -3,7 +3,7 @@
 <body>
   <head>
     <meta charset="UTF-8">
-    <title>Cadastro</title>
+    <title><?=$nomePagina?></title>
   </head>
   <div id="backgroundCadastroUsuario">
 
@@ -24,11 +24,11 @@
     ?>
     <div id="cadastroDiv">
       <div id="tituloCadastroUsuario">Cadastro</div>
-      <form action="..\..\control\usuario.php?action=cadastrar" method="post">
+      <form action="..\control\usuario.php?action=cadastrar" method="post">
 
         <div>
-          <label for="login" class="cadastroUsuarioLabel">Login</label>
-          <input type="text" id="cadastroUsuarioLogin" name="login" required autofocus class="cadastroUsuario">
+          <label for="login" class="cadastroUsuarioLabel">Nick:</label>
+          <input type="text" id="cadastroUsuarioLogin" name="login" required autofocus class="cadastroUsuario" pattern="[a-zA-Z0-9]+">
         </div>
 
         <div>
@@ -40,8 +40,8 @@
           <label for="senha_repetida" class="cadastroUsuarioLabel">Repetir senha:</label>
           <input type="password" id="cadastroUsuarioSenhaRepetida" name="senha_repetida" required class="cadastroUsuario">
         </div>
-        <button type="submit" name="cadastrar" id="cadastroUsuarioContinuar">Continuar</button>
 
+        <button type="submit" name="cadastrar" id="cadastroUsuarioContinuar">Continuar</button>
       </form>
       
       <a href="../control/redirecionamento.php?action=index"><button id="cadastroUsuarioVoltar">Voltar</button></a>

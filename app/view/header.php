@@ -12,7 +12,6 @@
 		<meta charset="utf-8">
 
 		<!-- Css de páginas main -->
-		
 		<link rel="sortcut icon" href="../../assets/img/paginas/home/logo.png" type="image/x-icon" />
 		<link rel="stylesheet" type="text/css" href="../../assets/css/geral.css"/>
 		<link rel="stylesheet" type="text/css" href="../../assets/css/header.css"/>
@@ -53,7 +52,7 @@
         </div>
 
         <div class="opcao-menuMobile">
-          <a href="../control/redirecionamento.php?action=paginacadastroprodutos">
+          <a href="../control/redirecionamento.php?action=CadastroProdutos">
             <button class="botao-menuMobile" id="botao-sobreMobile">
               <img src="../../assets/img/icons/sobre.png" class="icon-linkMenuMobile">
               <div class="texto-linkMenuMobile"> SOBRE </div>
@@ -71,7 +70,7 @@
         </div>
 
         <div id="div-lojaMobile">
-          <a href="../control/redirecionamento.php?action=paginaLoja" >
+          <a href="../control/redirecionamento.php?action=Loja" >
             <button class="botao-menuMobile" id="botao-lojaMobile">
               <div class="texto-linkMenuMobile"> LOJA </div>
             </button>
@@ -108,7 +107,7 @@
               </div>
 
               <div class="opcao-menu">
-                <a href="../control/redirecionamento.php?action=paginacadastroprodutos">
+                <a href="../control/redirecionamento.php?action=CadastroProdutos">
                   <button class="botao-menu" id="botao-sobre">
                     <img src="../../assets/img/icons/sobre.png" class="icon-linkMenu">
                     <div class="texto-linkMenu"> SOBRE </div>
@@ -126,7 +125,7 @@
               </div>
 
               <div id="div-loja">
-                <a href="../control/redirecionamento.php?action=paginaLoja" >
+                <a href="../control/redirecionamento.php?action=Loja" >
                   <button class="botao-menu" id="botao-loja">
                     <img src="../../assets/img/icons/loja.png" class="icon-linkMenu">
                     <div class="texto-linkMenu"> LOJA </div>
@@ -149,13 +148,12 @@
               </a>
             </nav>
 
-            
             <!-- id="head-player" -->
             <?= isset($_SESSION['login']) ?'<div  class="dropdown">
                 <button onclick="abrirDropdown()" id="head-player" class="dropbtn"></button>
                 <div id="myDropdown" class="dropdown-content">
-                  <a href="#" class="dropdownOpcao">Link 1</a>
-                  <a href="#" class="dropdownOpcao">Link 2</a>
+                  <a href="../control/usuario.php?action=deslogar" class="dropdownOpcao">Link 1</a>
+                  <a href="../view/perfil.php"  class="dropdownOpcao">Perfil</a>
                   <a href="../control/usuario.php?action=deslogar" class="dropdownOpcao">Deslogar</a>
                 </div>
               </div>' : '<button id="botao-login">LOGIN</button>'; ?>
@@ -173,7 +171,7 @@
 
                   <div>
                     <label for="login" id="loginModal">LOGIN:</label>
-                    <input type="text" id="login" name="login" class="modalLogin-input">
+                    <input type="text" id="login" name="login" class="modalLogin-input" pattern="[a-zA-Z0-9]+">
                   </div>
 
                   <div>
