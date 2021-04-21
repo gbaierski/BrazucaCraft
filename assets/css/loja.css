@@ -410,6 +410,18 @@
     text-align:center;
 }
 
+.imagem-produto {
+
+    transition-duration: 0.62s;
+    cursor: pointer;
+}
+
+.imagem-produto:hover {
+
+    transform: scale(1.05) rotate(1deg);
+
+}
+
 .preco-produto {
 
     text-align:center;
@@ -427,7 +439,14 @@
     font-weight: 600;
     background-color: rgb(22, 163, 69);
     outline: none;
+    transition: transform .35s;
+    cursor: pointer;
 
+}
+
+.produto-comprar:hover {
+
+    transform: scale(1.05);
 }
 
 .produto-editar {
@@ -435,6 +454,13 @@
     color: white;
     background-color: rgb(22, 163, 69);
     outline: none;
+    transition: transform .35s;
+    cursor: pointer;
+}
+
+.produto-editar:hover {
+
+    transform: scale(1.05);
 }
 
 .produto-deletar {
@@ -442,6 +468,13 @@
     color: white;
     background-color: rgb(224, 44, 20);
     outline: none;
+    transition: transform .35s;
+    cursor: pointer;
+}
+
+.produto-deletar:hover {
+
+    transform: scale(1.05);
 }
 
 .atributos-produto {
@@ -471,5 +504,11 @@
     font-weight: 700;
     color: white;
     text-shadow: 0.05vw 0.11vw rgba(0, 0, 0, 0.651);
+    transition: transform .35s;
     cursor: pointer;
+}
+
+#botaoNovoProduto:hover {
+
+    transform: scale(1.05);
 }

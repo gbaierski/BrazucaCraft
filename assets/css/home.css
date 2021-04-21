@@ -480,7 +480,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     float: left;
-    transition: transform .30s
+    cursor: pointer;
+    transition: transform .30s;
 }
 
 #logo:hover {

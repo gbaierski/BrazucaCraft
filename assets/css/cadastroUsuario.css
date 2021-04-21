@@ -330,6 +330,14 @@
     font-weight: 700;
     color: white;
     background-color: rgb(22, 163, 69);
+    transition: transform .35s;
+    cursor: pointer;
+}
+
+#cadastroUsuarioContinuar:hover {
+
+    transform: scale(1.05);
+
 }
 
 #cadastroUsuarioVoltar {
@@ -340,5 +348,13 @@
     font-weight: 700;
     color: white;
     background-color: rgb(224, 44, 20);
+    transition: transform .35s;
+    cursor: pointer;
+
+}
+
+#cadastroUsuarioVoltar:hover {
+
+    transform: scale(1.05);
 
 }

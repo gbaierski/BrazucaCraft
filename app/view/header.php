@@ -43,7 +43,7 @@
         </div>
 
         <div class="opcao-menuMobile">
-          <a href="">
+          <a href="../control/redirecionamento.php?action=manutencao">
             <button class="botao-menuMobile" id="botao-blogMobile">
               <img src="../../assets/img/icons/blog.png" class="icon-linkMenuMobile">
               <div class="texto-linkMenuMobile"> BLOG </div>
@@ -52,7 +52,7 @@
         </div>
 
         <div class="opcao-menuMobile">
-          <a href="../control/redirecionamento.php?action=CadastroProdutos">
+          <a href="../control/redirecionamento.php?action=manutencao">
             <button class="botao-menuMobile" id="botao-sobreMobile">
               <img src="../../assets/img/icons/sobre.png" class="icon-linkMenuMobile">
               <div class="texto-linkMenuMobile"> SOBRE </div>
@@ -61,7 +61,7 @@
         </div>
 
         <div class="opcao-menuMobile">
-          <a href="">
+          <a href="../control/redirecionamento.php?action=manutencao">
             <button class="botao-menuMobile" id="botao-ajudaMobile">
               <img src="../../assets/img/icons/ajuda.png" class="icon-linkMenuMobile">
               <div class="texto-linkMenuMobile"> AJUDA </div>
@@ -107,7 +107,7 @@
               </div>
 
               <div class="opcao-menu">
-                <a href="../control/redirecionamento.php?action=CadastroProdutos">
+                <a href="../control/redirecionamento.php?action=manutencao">
                   <button class="botao-menu" id="botao-sobre">
                     <img src="../../assets/img/icons/sobre.png" class="icon-linkMenu">
                     <div class="texto-linkMenu"> SOBRE </div>
@@ -116,7 +116,7 @@
               </div>
 
               <div class="opcao-menu">
-                <a href="">
+                <a href="../control/redirecionamento.php?action=manutencao">
                   <button class="botao-menu" id="botao-ajuda">
                     <img src="../../assets/img/icons/ajuda.png" class="icon-linkMenu">
                     <div class="texto-linkMenu"> AJUDA </div>
