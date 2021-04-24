@@ -5,7 +5,7 @@
       <a href="../control/redirecionamento.php?action=CadastroProdutos">
         <button id="botaoNovoProduto">
           <img src="../../assets/img/icons/novo.png" id="icon-NovoProduto">
-          Novo Produto
+          <div id="textoNovoProduto">Novo Produto</div>
         </button>
       </a>
     </div>

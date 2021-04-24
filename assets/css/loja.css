@@ -29,10 +29,10 @@
         width: 80%;
         height: 10vw;
         font-size: 5vw;
-        border-bottom: 1vw solid rgba(10, 10, 10, 0.4);
-        border-right: 1vw solid rgba(10, 10, 10, 0.4);
-        border-top: none;
-        border-left: none;
+        border-bottom: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-left: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.8vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.8vw solid rgba(255, 255, 255, 0.521);
         text-shadow: 0.08vw 0.15vw rgba(0, 0, 0, 0.651);
         margin-left: 10%;
         margin-top: 1vw;
@@ -44,9 +44,9 @@
         height: 5vw;
         font-size: 3.5vw;
         border-bottom: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-top: none;
-        border-left: none;
+        border-left: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.8vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.8vw solid rgba(255, 255, 255, 0.521);
         text-shadow: 0.08vw 0.15vw rgba(0, 0, 0, 0.651);
         margin-left: 22%;
     }
@@ -57,9 +57,9 @@
         height: 5vw;
         font-size: 3.5vw;
         border-bottom: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-top: none;
-        border-left: none;
+        border-left: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.8vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.8vw solid rgba(255, 255, 255, 0.521);
         text-shadow: 0.08vw 0.15vw rgba(0, 0, 0, 0.651);
     }
 
@@ -105,20 +105,27 @@
 
     #botaoNovoProduto {
 
-        height: 3vw;
+        width: 90%;
+        height: 8vw;
         font-size: 1vw;
+        margin-top: 28vw;
         background-color: rgb(40, 120, 212);
-        border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-left: none;
-        border-top: none;
+        border-bottom: 1vw solid rgba(10, 10, 10, 0.4);
+        border-left: 1vw solid rgba(10, 10, 10, 0.4);
+        border-top: 1vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 1vw solid rgba(255, 255, 255, 0.521);
     }
 
     #icon-NovoProduto {
 
-        width:1.5vw; 
+        width:5vw; 
         margin-right: 0.3vw;
         margin-bottom: -0.5vw;
+    }
+
+    #textoNovoProduto {
+
+        display: none;
     }
 }
 
@@ -164,9 +171,9 @@
         height: 6vw;
         font-size: 3vw;
         border-bottom: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-top: none;
-        border-left: none;
+        border-left: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.8vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.8vw solid rgba(255, 255, 255, 0.521);
         text-shadow: 0.08vw 0.15vw rgba(0, 0, 0, 0.651);
         margin-left: 10%;
         margin-top: 1vw;
@@ -178,9 +185,9 @@
         height: 4vw;
         font-size: 2.7vw;
         border-bottom: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-top: none;
-        border-left: none;
+        border-left: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.8vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.8vw solid rgba(255, 255, 255, 0.521);
         text-shadow: 0.08vw 0.15vw rgba(0, 0, 0, 0.651);
         margin-left: 22%;
     }
@@ -191,9 +198,9 @@
         height: 4vw;
         font-size: 2.7vw;
         border-bottom: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-top: none;
-        border-left: none;
+        border-left: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.8vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.8vw solid rgba(255, 255, 255, 0.521);
         text-shadow: 0.08vw 0.15vw rgba(0, 0, 0, 0.651);
     }
 
@@ -238,22 +245,28 @@
 
     #botaoNovoProduto {
 
-        height: 3vw;
+        width: 90%;
+        height: 8vw;
         font-size: 1vw;
+        margin-top: 14vw;
         background-color: rgb(40, 120, 212);
-        border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-left: none;
-        border-top: none;
+        border-bottom: 1vw solid rgba(10, 10, 10, 0.4);
+        border-left: 1vw solid rgba(10, 10, 10, 0.4);
+        border-top: 1vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 1vw solid rgba(255, 255, 255, 0.521);
     }
 
     #icon-NovoProduto {
 
-        width:1.5vw; 
+        width:5vw; 
         margin-right: 0.3vw;
         margin-bottom: -0.5vw;
     }
 
+    #textoNovoProduto {
+
+        display: none;
+    }
 }
 
 
@@ -293,10 +306,10 @@
     .produto-comprar {
 
         font-size: 1.7vw;
-        border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-top: none;
-        border-left: none;
+        border-bottom: 0.27vw solid rgba(10, 10, 10, 0.4);
+        border-left: 0.27vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.27vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.27vw solid rgba(255, 255, 255, 0.521);
         text-shadow: 0.08vw 0.15vw rgba(0, 0, 0, 0.651);
         width: 51.3%;
         height: 3vw;
@@ -309,10 +322,10 @@
         width: 25%;
         height: 3vw;
         font-size: 1.5vw;
-        border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-top: none;
-        border-left: none;
+        border-bottom: 0.27vw solid rgba(10, 10, 10, 0.4);
+        border-left: 0.27vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.27vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.27vw solid rgba(255, 255, 255, 0.521);
         text-shadow: 0.08vw 0.15vw rgba(0, 0, 0, 0.651);
         margin-left: 25%;
     }
@@ -322,10 +335,10 @@
         width: 25%;
         height: 3vw;
         font-size: 1.5vw;
-        border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-top: none;
-        border-left: none;
+        border-bottom: 0.27vw solid rgba(10, 10, 10, 0.4);
+        border-left: 0.27vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.27vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.27vw solid rgba(255, 255, 255, 0.521);
         text-shadow: 0.08vw 0.15vw rgba(0, 0, 0, 0.651);
     }
 
@@ -372,10 +385,10 @@
         height: 3vw;
         font-size: 1vw;
         background-color: rgb(40, 120, 212);
-        border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-left: none;
-        border-top: none;
+        border-bottom: 0.27vw solid rgba(10, 10, 10, 0.4);
+        border-left: 0.27vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.27vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.27vw solid rgba(255, 255, 255, 0.521);
     }
 
     #icon-NovoProduto {
@@ -383,6 +396,12 @@
         width:1.5vw; 
         margin-right: 0.3vw;
         margin-bottom: -0.5vw;
+    }
+
+    #textoNovoProduto {
+    
+        float: right;
+        margin-top: 3%;
     }
 }
 

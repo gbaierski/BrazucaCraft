@@ -6,12 +6,12 @@ body {
 
 ::selection {
 
-    background: rgb(22, 163, 69); /* WebKit/Blink Browsers */
+    background: #2ebe29; /* WebKit/Blink Browsers */
 }
 
   ::-moz-selection {
       
-    background: rgb(22, 163, 69); /* Gecko Browsers */
+    background: #2ebe29; /* Gecko Browsers */
 }
 
 

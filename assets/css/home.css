@@ -337,11 +337,14 @@
     #botao-ip {
 
         width: 32%;
+        height: 4.2vw;
         margin-left: 35%;
-        margin-top: 2.5%;
-        background-color: rgba(10, 10, 10, 0.6);
+        margin-top: 2%;
+        background-color: #2ebe29;
         border-bottom: 0.3vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.3vw solid rgba(10, 10, 10, 0.4);
+        border-left: 0.3vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.3vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.3vw solid rgba(255, 255, 255, 0.521);
     }
 
     #div-players {
@@ -506,15 +509,12 @@
 #botao-ip {
 
     border-radius: 0.3vw;
-    border-left: none;
-    border-top: none;
     transition: transform .30s;
     outline: none;
 }
 
 #botao-ip:hover {
 
-    background-color: rgb(22, 163, 69);
     cursor: pointer;
     transform: scale(0.96)  rotate(0.2deg);
 

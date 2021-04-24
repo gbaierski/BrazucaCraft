@@ -7,7 +7,7 @@
 	
 	<div class="tooltip">
 		<button id="botao-ip" class="botao-ip" onclick="copiarIp()" onmouseout="tirouMouse()">
-			<input type="text" id="ip-home" value="BrazucaCraft.mc.gg" readonly></input>
+			<input type="text" id="ip-home" value="brazucacraft.mc.gg" readonly></input>
 			<span class="tooltiptext" id="myTooltip"><img src="../../assets/img/icons/copiar.png" id="backgroundTooltip"></span>
 		</button>
 	</div>
