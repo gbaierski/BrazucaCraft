@@ -1,5 +1,7 @@
 <?php 
 
+
+
 function Home(){
 
     $nomePagina = "Home | BrazucaCraft";
@@ -48,6 +50,14 @@ function manutencao () {
 
     $nomePagina = "Manutenção | BrazucaCraft";
     require '../view/telaManutencao.php';
+
+}
+
+function Perfil () {
+
+
+    $nomePagina = " | BrazucaCraft";
+    require '../view/perfil.php';
 
 }
 
