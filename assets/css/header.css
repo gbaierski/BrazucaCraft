@@ -190,7 +190,7 @@
         transition-property: all;
         width: 360%;
         height: 15vw;
-        background-color: rgb(248, 29, 14);
+        background-color: rgb(202, 23, 23);
         border-radius: 3px;
         border-bottom: 2vw solid rgba(10, 10, 10, 0.4);
         border-left: 2vw solid rgba(10, 10, 10, 0.4);
@@ -447,7 +447,7 @@
         transition-property: all;
         width: 340%;
         height: 13vw;
-        background-color: rgb(248, 29, 14);
+        background-color: rgb(202, 23, 23);
         border-radius: 3px;
         border-bottom: 2vw solid rgba(10, 10, 10, 0.4);
         border-left: 2vw solid rgba(10, 10, 10, 0.4);
@@ -935,7 +935,7 @@
 
 #botao-loja {
 
-    background-color: rgb(224, 44, 20);
+    background-color: rgb(202, 23, 23);
     border-bottom: 0.27vw solid rgba(10, 10, 10, 0.4);
     border-left: 0.27vw solid rgba(10, 10, 10, 0.4);
     border-top: 0.27vw solid rgba(255, 255, 255, 0.5211);

@@ -4,7 +4,6 @@
 <div class="background-home">
 
 	<div class="clear"></div>
-	
 	<div class="tooltip">
 		<button id="botao-ip" class="botao-ip" onclick="copiarIp()" onmouseout="tirouMouse()">
 			<input type="text" id="ip-home" value="brazucacraft.mc.gg" readonly></input>
@@ -12,10 +11,11 @@
 		</button>
 	</div>
 
+	<div id="div-playersOnline">5.2K <img src="../../assets/img/icons/players.png" id="icon-players"></div></div>
+
 	<div class="clear"></div>
 
-	<div id="div-players">5297<img src="../../assets/img/icons/players.png" id="icon-players"></div>
-	<div id="div-jogadoresOnline">JOGADORES ONLINE</div>
+	<div id="div-copiarIP">CLIQUE PARA COPIAR</div>
 
 	<div class="informacao-home">
 		<a href="https://discord.com/" ><img src="../../assets/img/icons/discord.png" class="redeSocial-home"></a>
