@@ -21,7 +21,7 @@
 
                     <div class="clear"></div>
 
-                    <input type="submit" name="cadastrarProduto" value=" <?= $nomeForm == 'Cadastro de Produto' ? 'Cadastrar' : 'Editar' ?>" id="botao-cadastrarProduto">
+                    <input type="submit" name="cadastrarProduto" value=" <?= $nomeForm == 'Cadastro de Produto' ? 'Cadastrar' : 'Editar' ?>" id="botao-cadastrarProduto" class="verde">
             </form>
     </div>
 </div>

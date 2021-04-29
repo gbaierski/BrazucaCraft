@@ -249,7 +249,6 @@
         height: 8vw;
         font-size: 1vw;
         margin-top: 14vw;
-        background-color: rgb(40, 120, 212);
         border-bottom: 1vw solid rgba(10, 10, 10, 0.4);
         border-left: 1vw solid rgba(10, 10, 10, 0.4);
         border-top: 1vw solid rgba(255, 255, 255, 0.5211);
@@ -384,7 +383,6 @@
 
         height: 3vw;
         font-size: 1vw;
-        background-color: rgb(40, 120, 212);
         border-bottom: 0.27vw solid rgba(10, 10, 10, 0.4);
         border-left: 0.27vw solid rgba(10, 10, 10, 0.4);
         border-top: 0.27vw solid rgba(255, 255, 255, 0.5211);
@@ -456,7 +454,6 @@
     color: white;
     font-family: monospace;
     font-weight: 600;
-    background-color: rgb(22, 163, 69);
     outline: none;
     transition: transform .35s;
     cursor: pointer;
@@ -471,7 +468,6 @@
 .produto-editar {
 
     color: white;
-    background-color: rgb(22, 163, 69);
     outline: none;
     transition: transform .35s;
     cursor: pointer;
@@ -485,7 +481,6 @@
 .produto-deletar {
 
     color: white;
-    background-color: rgb(224, 44, 20);
     outline: none;
     transition: transform .35s;
     cursor: pointer;

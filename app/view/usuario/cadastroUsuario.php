@@ -41,10 +41,10 @@
           <input type="password" id="cadastroUsuarioSenhaRepetida" name="senha_repetida" required class="cadastroUsuario">
         </div>
 
-        <button type="submit" name="cadastrar" id="cadastroUsuarioContinuar">Continuar</button>
+        <button type="submit" name="cadastrar" id="cadastroUsuarioContinuar" class="verde">Continuar</button>
       </form>
       
-      <a href="../control/redirecionamento.php?action=index"><button id="cadastroUsuarioVoltar">Voltar</button></a>
+      <a href="../control/redirecionamento.php?action=index"><button id="cadastroUsuarioVoltar" class="vermelho">Voltar</button></a>
     </div>
   </div>
 

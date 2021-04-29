@@ -71,7 +71,7 @@
 
         <div id="div-lojaMobile">
           <a href="../control/redirecionamento.php?action=Loja" >
-            <button class="botao-menuMobile" id="botao-lojaMobile">
+            <button class="botao-menuMobile vermelho" id="botao-lojaMobile">
               <div class="texto-linkMenuMobile"> LOJA </div>
             </button>
           </a>
@@ -126,7 +126,7 @@
 
               <div id="div-loja">
                 <a href="../control/redirecionamento.php?action=Loja" >
-                  <button class="botao-menu" id="botao-loja">
+                  <button class="botao-menu vermelho" id="botao-loja">
                     <img src="../../assets/img/icons/loja.png" class="icon-linkMenu">
                     <div class="texto-linkMenu"> LOJA </div>
                   </button>
@@ -191,11 +191,11 @@
                     }
                   ?>
 
-                  <input type="submit" name="logar" value="LOGAR" id="botaoLogar">
+                  <input type="submit" name="logar" value="LOGAR" id="botaoLogar" class="verde">
 
                 </form>
 
-                <a href="../control/redirecionamento.php?action=cadastroUsuario"><button id="botaoCadastro">CADASTRO</button></a>
+                <a href="../control/redirecionamento.php?action=cadastroUsuario"><button id="botaoCadastro" class="azul">CADASTRO</button></a>
                 <br>
                 <a href="" id="linkEsqueciSenha">ESQUECI MINHA SENHA</a>
               </div>

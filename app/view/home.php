@@ -5,7 +5,7 @@
 
 	<div class="clear"></div>
 	<div class="tooltip">
-		<button id="botao-ip" class="botao-ip" onclick="copiarIp()" onmouseout="tirouMouse()">
+		<button id="botao-ip" class="botao-ip verde" onclick="copiarIp()" onmouseout="tirouMouse()">
 			<input type="text" id="ip-home" value="brazucacraft.mc.gg" readonly></input>
 			<span class="tooltiptext" id="myTooltip"><img src="../../assets/img/icons/copiar.png" id="backgroundTooltip"></span>
 		</button>
@@ -23,6 +23,31 @@
 		<a href="https://twitter.com/brazucamc" ><img src="../../assets/img/icons/twitter.png" class="redeSocial-home"></a>
 		<a href="https://www.instagram.com/" ><img src="../../assets/img/icons/instagram.png" class="redeSocial-home"></a>
 	</div>
+</div>
+
+
+<div class="borda"></div>
+
+<div class="clear"></div>
+
+<div id="div-SobreBrazuca">
+	<div id="div-Sobre_ModosDeJogo">
+		<div id="titulo-SobreBrazuca">O que é o BrazucaCraft?</div>
+		<p id="descricaoSuperior-SobreBrazuca"  class="descricao-SobreBrazuca">
+		O BrazucaCraft surgiu de uma ideia entre amigos para divertir um servidor no Discord, ainda em 2020. Porém, a construção do servidor tomou maiores e mais elaboradas proporções, onde passou a ser buscada a temática de união entre o modo roleplay e o famoso modo dos minigames. 
+		</p>
+		<br>
+		<p class="descricao-SobreBrazuca">
+		Uma proposta nova no Brasil, nosso servidor pretende chegar para ficar no mercado de servidores de minecraft - assim como buscará a expansão para demais setores. Se quer saber mais da nossa história, clique aqui.
+		</p>
+		<img id="imagem-SobreBrazuca" src="../../assets/img/paginas/home/sobreHome.png">
+	</div>
+</div>
+
+<div class="clear"></div>
+
+<div id="div-ModosDeJogo">
+
 </div>
 
 <div class="clear"></div>

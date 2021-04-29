@@ -3,7 +3,7 @@
 <div id="backgroundLoja">
     <div id="botaoNovoProdutoDiv">
       <a href="../control/redirecionamento.php?action=CadastroProdutos">
-        <button id="botaoNovoProduto">
+        <button id="botaoNovoProduto"  class="azul">
           <img src="../../assets/img/icons/novo.png" id="icon-NovoProduto">
           <div id="textoNovoProduto">Novo Produto</div>
         </button>
@@ -21,11 +21,11 @@
             <div class="descricao-produto"><?=  $produto['descricaoProduto'] ?></div>
         </div>
 
-        <button class="produto-comprar">Comprar</button>
+        <button class="produto-comprar verde">Comprar</button>
 
         <div class="botoesAdmin-produto">
-        <a href="../control/redirecionamento.php?action=EditarProduto&ai_produto=<?= $produto['ai_produto']?>"><button  class="produto-editar">Editar</button></a>
-            <a href="../control/produtos.php?action=deletarProduto&ai_produto=<?= $produto['ai_produto']?>"><button  class="produto-deletar">Deletar</button></a>
+        <a href="../control/redirecionamento.php?action=EditarProduto&ai_produto=<?= $produto['ai_produto']?>"><button  class="produto-editar verde">Editar</button></a>
+            <a href="../control/produtos.php?action=deletarProduto&ai_produto=<?= $produto['ai_produto']?>"><button  class="produto-deletar vermelho">Deletar</button></a>
         </div>
     </div>
 
