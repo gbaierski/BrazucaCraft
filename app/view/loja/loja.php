@@ -1,5 +1,11 @@
 <?php require "../view/header.php" ?> 
 
+<script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+
+<script>
+window.Mercadopago.setPublishableKey("TEST-97ce851d-c5c6-4dfc-b371-5546b05fd3b2");
+</script>
+
 <div id="backgroundLoja">
     <div id="botaoNovoProdutoDiv">
       <a href="../control/redirecionamento.php?action=CadastroProdutos">
@@ -21,7 +27,7 @@
             <div class="descricao-produto"><?=  $produto['descricaoProduto'] ?></div>
         </div>
 
-        <button class="produto-comprar">Comprar</button>
+        <a href="../control/mercadopago.php?action=comprarProduto&ai_produto=<?= $produto['ai_produto']?>"><button class="produto-comprar">Comprar</button></a>
 
         <div class="botoesAdmin-produto">
         <a href="../control/redirecionamento.php?action=EditarProduto&ai_produto=<?= $produto['ai_produto']?>"><button  class="produto-editar">Editar</button></a>

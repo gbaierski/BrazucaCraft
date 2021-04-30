@@ -1,0 +1,7 @@
+{
+    "name": "bzc/mp",
+    "description": "Mercado Pago do BrazucaCraft",
+    "require": {
+        "mercadopago/dx-php": "^2.2"
+    }
+}
