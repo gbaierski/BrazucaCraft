@@ -720,3 +720,89 @@
     font-family: monospace;
 }
 
+.carrosselModosDeJogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+  }
+  
+  .carrosselModosDeJogo .itemCarrossel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vw;
+    height: 17vw;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  .itemCarrossel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .itemCarrossel.ativo {
+    opacity: 1;
+    z-index: 99;
+    box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
+  }
+  
+  .itemCarrossel.anterior {
+    z-index: 2;
+    opacity: 0.25;
+    transform: translate(-125%, -50%);
+  }
+  
+  .itemCarrossel.proximo {
+    z-index: 2;
+    opacity: 0.25;
+    transform: translate(25%, -50%);
+  }
+  
+  .carrosselModosDeJogo .secaoBotoesCarrossel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 275px;
+    z-index: 100;
+  }
+  
+  .secaoBotoesCarrossel .botaoCarrossel {
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    position: relative;
+    opacity: 0.75;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .secaoBotoesCarrossel .botaoCarrossel:hover {
+    opacity: 1;
+  }
+  
+  .secaoBotoesCarrossel .botaoCarrossel:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgb(25, 233, 36);
+    z-index: -99;
+  }
+  
+  .secaoBotoesCarrossel .botaoCarrossel:nth-child(1) {
+    float: left;
+  }
+  
+  .secaoBotoesCarrossel .botaoCarrossel:nth-child(2) {
+    float: right;
+  }

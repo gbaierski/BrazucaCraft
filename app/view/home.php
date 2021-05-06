@@ -47,7 +47,27 @@
 <div class="clear"></div>
 
 <div id="div-ModosDeJogo">
-
+	<div class="carrosselModosDeJogo">
+		<div class="itemCarrossel ativo">
+			<img src="http://via.placeholder.com/500x500">
+		</div>
+		<div class=" itemCarrossel proximo">
+			<img src="http://via.placeholder.com/500x500">
+		</div>
+		<div class="itemCarrossel">
+			<img src="http://via.placeholder.com/500x500">
+		</div>
+		<div class="itemCarrossel">
+			<img src="http://via.placeholder.com/500x500">
+		</div>
+		<div class="itemCarrossel anterior">
+			<img src="http://via.placeholder.com/500x500">
+		</div>
+		<div class="secaoBotoesCarrossel">
+			<div class="botaoCarrossel"></div>
+			<div class="botaoCarrossel"></div>
+		</div>
+	</div>
 </div>
 
 <div class="clear"></div>
@@ -56,4 +76,7 @@
 	<a href="https://discord.com/" id="link-discord"><button id="frase-discord">JÁ CONHECE NOSSO DISCORD!?</button></a>
 	<iframe id="iframe-discord" src="https://discord.com/widget?id=704695441677221898&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 </div>
+
+<script src="../view/outrosJS/carrossel.js"></script>
+
 <?php require 'footer.php'; ?>
