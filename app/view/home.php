@@ -31,7 +31,7 @@
 <div class="clear"></div>
 
 <div id="div-SobreBrazuca">
-	<div id="div-Sobre_ModosDeJogo">
+	<div id="div-Sobre_Novidades">
 		<div id="titulo-SobreBrazuca">O que é o BrazucaCraft?</div>
 		<p id="descricaoSuperior-SobreBrazuca"  class="descricao-SobreBrazuca">
 		O BrazucaCraft surgiu de uma ideia entre amigos para divertir um servidor no Discord, ainda em 2020. Porém, a construção do servidor tomou maiores e mais elaboradas proporções, onde passou a ser buscada a temática de união entre o modo roleplay e o famoso modo dos minigames. 
@@ -46,26 +46,27 @@
 
 <div class="clear"></div>
 
-<div id="div-ModosDeJogo">
-	<div class="carrosselModosDeJogo">
+<div id="div-Novidades">
+	<div id="titulo-Novidades"> Novidades: </div>
+	<div class="carrosselNovidades">
 		<div class="itemCarrossel ativo">
-			<img src="http://via.placeholder.com/500x500">
+			<img src="../../assets/img/updates/update1.jpg">
 		</div>
 		<div class=" itemCarrossel proximo">
-			<img src="http://via.placeholder.com/500x500">
+			<img src="../../assets/img/updates/update2.jpg">
 		</div>
 		<div class="itemCarrossel">
-			<img src="http://via.placeholder.com/500x500">
+			<img src="../../assets/img/updates/update3.jpg">
 		</div>
 		<div class="itemCarrossel">
-			<img src="http://via.placeholder.com/500x500">
+			<img src="../../assets/img/updates/update4.jpg">
 		</div>
 		<div class="itemCarrossel anterior">
-			<img src="http://via.placeholder.com/500x500">
+			<img src="../../assets/img/updates/update5.jpg">
 		</div>
 		<div class="secaoBotoesCarrossel">
-			<div class="botaoCarrossel"></div>
-			<div class="botaoCarrossel"></div>
+			<div class="botaoCarrossel"><img src="../../assets/img/icons/seta.png" class="icon-setaCarrossel"></div>
+			<div class="botaoCarrossel"><img src="../../assets/img/icons/setaVirada.png" class="icon-setaCarrossel"></div>
 		</div>
 	</div>
 </div>
