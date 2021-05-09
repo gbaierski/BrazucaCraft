@@ -185,12 +185,14 @@
                   <?php
                     if (isset($_GET['erro'])) {
 
-                      echo '<h>Senha/Usuario incorretos</h1>';
+                      #echo '<h>Senha/Usuario incorretos</h1>';
 
                       echo "<script>
                         $(document).ready(function(){
                           $('#modal').modal('show');
+                          document.getElementById('senha').classList.add('errada');
                         }); </script>";
+
                     }
                   ?>
 

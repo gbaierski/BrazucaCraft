@@ -44,3 +44,28 @@ body {
 
     background-color: rgb(202, 23, 23);
 }
+/* senha errada, pode mudar de lugar se quiser só botei aqui pra ser facil de achar*/
+.errada {
+    animation-name: shake, glow-red;
+    animation-duration: 0.7s, 0.35s;
+    animation-iteration-count: 1, 2;
+}
+
+@keyframes shake {
+    0%, 20%, 40%, 60%, 80% {
+      transform: translateX(8px);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translateX(-8px);
+    }
+  }
+  
+  @keyframes glow-red {
+    50% {
+      border-color: indianred;
+    }
+  }
