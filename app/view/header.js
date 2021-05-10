@@ -8,7 +8,7 @@ modal.style.display = "block";
 }
 
 span.onclick = function() {
-
+document.getElementById('senha').classList.remove('errada');
 modal.style.display = "none";
 }
 
@@ -144,3 +144,4 @@ function fecharMenu () {
     document.getElementById("menuMobile").removeAttribute("disabled");
   }, 2000);
 }
+

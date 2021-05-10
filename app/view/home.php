@@ -1,7 +1,10 @@
 <?php require 'header.php' ?>
+<!---  Função que roda o scroll lock no site, dentro dela tem um if que funciona apenas em resoluções de monitores --->
+<script src='../view/jquery.onepage-scroll.js'></script>
 
-<script src="../view/jquery.onepage-scroll.js"></script>
-<link rel="stylesheet" type="text/css" href="../../assets/css/onepage-scroll.css"/>
+	
+
+
 
 <section> <!--  Section Tela Inicial -->
 	<div id="logo"></div>
@@ -19,7 +22,7 @@
 		<div class="clear"></div>
 
 		<div id="div-copiarIP">CLIQUE PARA COPIAR</div>
-
+	
 		<div class="informacao-home">
 			<a href="https://discord.com/" ><img src="../../assets/img/icons/discord.png" class="redeSocial-home"></a>
 			<a href="https://www.facebook.com/" ><img src="../../assets/img/icons/facebook.png" class="redeSocial-home"></a>
@@ -55,7 +58,7 @@
 	</div>
 
 </section>
-
+	</div>
 <section> <!--  Section Fim e rodapé -->
 	<div id="div-discord">
 		<a href="https://discord.com/"><div id="imagem-discord"></div></a>
@@ -66,8 +69,15 @@
 	<?php require 'footer.php'; ?>
 </section>
 
+
 <script> //O BAGULHO
-$("#secondBody").onepage_scroll({
+var width = screen.width;
+var height = screen.height;
+function scroll(){
+	//if que pega resolução e caso seja maior que o proposto ele linka o css q faz o scroll funcionar
+	if(width >= 1200 && height >= 751){
+		document.write("<link rel='stylesheet' type='text/css' href='../../assets/css/onepage-scroll.css'/>");
+$(".secondBodyClass").onepage_scroll({
    sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
    easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
                                     // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
@@ -76,13 +86,16 @@ $("#secondBody").onepage_scroll({
    updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
    beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
    afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
-   loop: true,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+   loop: true,                     	// You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
    keyboard: true,                  // You can activate the keyboard controls
    responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
                                     // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
                                     // the browser's width is less than 600, the fallback will kick in.
    direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
-});
+})}else{
+	document.getElementById('secondBody').classList.remove('secondBodyClass');
+}};
+scroll();
 </script>
 
 

@@ -14,6 +14,8 @@
  *
  * ========================================================== */
 
+	if(screen.width >= 1200 && screen.height >= 751){
+
 !function($){
 
   var defaults = {
@@ -424,3 +426,4 @@
 
 
 }(window.jQuery);
+  }

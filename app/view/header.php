@@ -1,5 +1,6 @@
 <?php
 	session_start();
+
 ?>
 
 <!DOCTYPE html>
@@ -80,11 +81,25 @@
           </a>
         </div>
 
-        <div id="secondBody">
+
+                    <!-- Barra do menu mobile -->
+
+                    <nav class="nav-mobile">
+              <div class="menuMobile">
+                  <button class="botao-menuMobile" id="menuMobile" onclick="menuMobile()">
+                    <img src="../../assets/img/icons/menu.png" id="imagem-menuMobile">
+                  </button>
+              </div>
+
+              <a href="../control/redirecionamento.php?action=index" id="link-brazuca-menu">
+                <p class="header-texto" id="texto-brazuca"> BRAZUCA <br> CRAFT</p>
+              </a>
+            </nav>
+            
+        <div id="secondBody" class="secondBodyClass">
           <header class="header">
 
             <!-- Barra do menu desktop -->
-
             <nav class="nav-desktop">
 
               <a href="../control/redirecionamento.php?action=index" id="link-brazuca-menu">
@@ -137,19 +152,6 @@
               </div>
             </nav>
 
-            <!-- Barra do menu mobile -->
-
-            <nav class="nav-mobile">
-              <div class="menuMobile">
-                  <button class="botao-menuMobile" id="menuMobile" onclick="menuMobile()">
-                    <img src="../../assets/img/icons/menu.png" id="imagem-menuMobile">
-                  </button>
-              </div>
-
-              <a href="../control/redirecionamento.php?action=index" id="link-brazuca-menu">
-                <p class="header-texto" id="texto-brazuca"> BRAZUCA <br> CRAFT</p>
-              </a>
-            </nav>
 
             <!-- id="head-player" -->
             <?= isset($_SESSION['login']) ?'<div  class="dropdown">
@@ -193,7 +195,7 @@
                           document.getElementById('senha').classList.add('errada');
                         }); </script>";
 
-                    }
+                      }
                   ?>
 
                   <input type="submit" name="logar" value="LOGAR" id="botaoLogar" class="verde">
@@ -206,12 +208,7 @@
               </div>
 
             </div>
-            <!-- Scripts -->
-      
-            <!--- 
-            Esses dois scripts servem para puxar as bibliotecas de Jquery e bootstrap do google, no momento são necessarias para o funcionamento do modal.
-            Obs: Não está sendo usada nenhuma classe bootstrap porém a biblioteca é necessaria pro Jquery conseguir funcionar.
-            --->
+
             <script src="../view/home.js"></script>
             <script src="../view/header.js"></script>
           </header>
