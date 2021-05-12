@@ -71,7 +71,7 @@
 
         <div id="div-lojaMobile">
           <a href="../control/redirecionamento.php?action=Loja" >
-            <button class="botao-menuMobile vermelho" id="botao-lojaMobile">
+            <button class="vermelho botao-menuMobile " id="botao-lojaMobile">
               <div class="texto-linkMenuMobile"> LOJA </div>
             </button>
           </a>
