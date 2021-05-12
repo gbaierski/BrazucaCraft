@@ -96,7 +96,6 @@
 
         width: 100%;
         height: 80vw;
-        margin-top: 45vw;
     }
 
     #link-discord {
@@ -145,6 +144,70 @@
         border-left: 0.8vw solid rgba(10, 10, 10, 0.4);
         border-top: 0.8vw solid rgba(255, 255, 255, 0.5211);
         border-right: 0.8vw solid rgba(255, 255, 255, 0.521);
+    }
+
+    #div-SobreBrazuca {
+
+        margin-top: 50vw;
+        height: 180vw;
+        background-image: url("../img/paginas/home/backgroundSobre.png");
+        background-size: cover;
+    }
+
+    #div-Sobre_Novidades {
+
+        width: 90%;
+        margin-left: 5%;
+        background-image: url("../img/paginas/home/sobreNovidades.jpg");
+        background-size: cover;
+        height: 200.5vw;
+        border-radius: 0.5vw;
+        padding-top: 10vw;
+        margin-top: 30vw;
+        position: absolute;
+    }
+
+    #imagem-SobreBrazuca {
+        
+        width: 30%;
+        float: right;
+        margin-top: -25vw;
+        margin-right: 3vw;
+    }
+
+    #div-Novidades {
+
+        height: 60vw;
+        background-image: url("../img/paginas/home/backgroundNovidades.png");
+        background-size: cover;
+    }
+
+    #titulo-SobreBrazuca {
+
+        color: white;
+        font-family: monospace;
+        font-weight: 700;
+        font-size: 2.5vw;
+        margin-left: 7%;
+        margin-top: 5vw;
+    }
+
+    #titulo-Novidades {
+
+        color: white;
+        font-family: monospace;
+        position: absolute;
+        font-weight: 700;
+        font-size: 3vw;
+        margin-left: 41vw;
+        margin-top: 5vw;
+        
+
+    }
+
+    #descricaoSuperior-SobreBrazuca {
+
+        margin-top: 3vw;
     }
 }
 
@@ -374,6 +437,16 @@
         margin-left: 5%;
     }
 
+    .borda {
+
+        width: 100%;
+        height: 0.7vw;
+        margin-top: 4vw;
+        background-image: url("../img/paginas/borda.png");
+        background-size: contain;
+        background-repeat: repeat-x;
+    }
+
     #logo {
 
         width: 25vw;
@@ -497,11 +570,11 @@
         margin-top: -4.5vw;
     }
 
-    #div-Sobre_ModosDeJogo {
+    #div-Sobre_Novidades {
 
         width: 70%;
         margin-left: 15%;
-        background-image: url("../img/paginas/home/sobreModosDeJogo.jpg");
+        background-image: url("../img/paginas/home/sobreNovidades.jpg");
         background-size: cover;
         height: 100%;
         border-radius: 0.5vw;
@@ -518,10 +591,10 @@
         margin-right: 3vw;
     }
 
-    #div-ModosDeJogo {
+    #div-Novidades {
 
         height: 54.5vw;
-        background-image: url("../img/paginas/home/backgroundModosJogo.png");
+        background-image: url("../img/paginas/home/backgroundNovidades.png");
         background-size: cover;
     }
 
@@ -533,6 +606,19 @@
         font-size: 2.5vw;
         margin-left: 7%;
         margin-top: 5vw;
+    }
+
+    #titulo-Novidades {
+
+        color: white;
+        font-family: monospace;
+        position: absolute;
+        font-weight: 700;
+        font-size: 3vw;
+        margin-left: 30vw;
+        margin-top: 5vw;
+        
+
     }
 
     #descricaoSuperior-SobreBrazuca {
@@ -720,3 +806,119 @@
     font-family: monospace;
 }
 
+.carrosselNovidades {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+  }
+  
+  .carrosselNovidades .itemCarrossel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24vw;
+    height: 13vw;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+    z-index: -1;
+    opacity: 0;
+    border: 0.3vw solid #d8d8d8;
+  }
+  
+  .itemCarrossel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .itemCarrossel.ativo {
+    width: 34vw;
+    height: 19vw;
+    opacity: 1;
+    z-index: 99;
+    box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
+    transition: transform .28s;
+    transition-property: all;
+  }
+
+  .itemCarrossel.ativo:hover {
+    
+    cursor: pointer;
+    border: 0.3vw solid #34aa2f;
+  }
+  
+  .itemCarrossel.anterior {
+    z-index: 2;
+    opacity: 0.6;
+    transform: translate(-125%, -50%);
+  }
+  
+  .itemCarrossel.proximo {
+    z-index: 2;
+    opacity: 0.6;
+    transform: translate(25%, -50%);
+  }
+  
+  .carrosselNovidades .secaoBotoesCarrossel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 275px;
+    z-index: 100;
+  }
+  
+  .secaoBotoesCarrossel .botaoCarrossel {
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    position: relative;
+    opacity: 1;
+    transition: all 300ms ease-in-out;
+  }
+
+  .secaoBotoesCarrossel .botaoCarrossel{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #008542;
+    z-index: -99;
+    border-bottom: 0.4vw solid rgba(10, 10, 10, 0.212);
+    border-left: 0.4vw solid rgba(10, 10, 10, 0.212);
+    border-top: 0.4vw solid rgba(9, 255, 0, 0.281);
+    border-right: 0.4vw solid rgba(9, 255, 0, 0.281);
+  }
+
+  .secaoBotoesCarrossel .botaoCarrossel:hover {
+    
+    transform: scale(0.95);
+    border-bottom: 0.4vw solid rgba(10, 10, 10, 0.4);
+    border-left: 0.4vw solid rgba(10, 10, 10, 0.4);
+    border-top: 0.4vw solid rgba(255, 255, 255, 0.5211);
+    border-right: 0.4vw solid rgba(255, 255, 255, 0.521);
+  }
+
+  .secaoBotoesCarrossel .botaoCarrossel:nth-child(1) {
+    float: left;
+    margin-left: -33vw;
+    margin-top: -2vw;
+  }
+  
+  .secaoBotoesCarrossel .botaoCarrossel:nth-child(2) {
+
+    margin-left: 29vw;
+    margin-top: -2vw;
+  }
+
+  .icon-setaCarrossel {
+
+    width: 2.2vw;
+    margin-left: 0.7vw;
+    padding-top: 0.6vw;
+  }

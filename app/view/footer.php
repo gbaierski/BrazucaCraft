@@ -64,4 +64,5 @@
 		</div>
 	</div>
 </footer>
+</section>
 </div> <!--secondBody-->

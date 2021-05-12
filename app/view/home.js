@@ -17,4 +17,3 @@ function tirouMouse() {
     var imgTooltip = document.getElementById("backgroundTooltip");
     imgTooltip.src = "../../assets/img/icons/copiar.png";
 }
-

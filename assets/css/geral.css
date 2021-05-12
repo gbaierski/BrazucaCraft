@@ -21,28 +21,18 @@ body {
     clear: both;
 }
 
-.borda {
-
-    width: 100%;
-    height: 0.7vw;
-    margin-top: 4vw;
-    background-image: url("../img/paginas/borda.png");
-    background-size: contain;
-    background-repeat: repeat-x;
-}
-
 .verde {
-    background-color: #34aa2f;
+    background-color: #34aa2f !important;
 }
 
 .azul {
 
-    background-color: rgb(27, 96, 247);
+    background-color: rgb(27, 96, 247) !important;
 }
 
 .vermelho {
 
-    background-color: rgb(202, 23, 23);
+    background-color: rgb(202, 23, 23) !important;
 }
 /* senha errada, pode mudar de lugar se quiser só botei aqui pra ser facil de achar*/
 .errada {

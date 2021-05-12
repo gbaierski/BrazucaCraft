@@ -37,7 +37,7 @@
 
 <section> <!--  Section Sobre -->
 	<div id="div-SobreBrazuca">
-		<div id="div-Sobre_ModosDeJogo">
+		<div id="div-Sobre_Novidades">
 			<div id="titulo-SobreBrazuca">O que é o BrazucaCraft?</div>
 			<p id="descricaoSuperior-SobreBrazuca"  class="descricao-SobreBrazuca">
 			O BrazucaCraft surgiu de uma ideia entre amigos para divertir um servidor no Discord, ainda em 2020. Porém, a construção do servidor tomou maiores e mais elaboradas proporções, onde passou a ser buscada a temática de união entre o modo roleplay e o famoso modo dos minigames. 
@@ -51,24 +51,45 @@
 	</div>
 </section>
 
-<section> <!--  Section Modos de Jogo -->
-
-	<div id="div-ModosDeJogo">
-
+<section> <!--Section Novidades-->
+	<div id="div-Novidades">
+		<div id="div-Sobre_Novidades">
+			<div id="titulo-Novidades"> Novidades: </div>
+			<div class="carrosselNovidades">
+				<div class="itemCarrossel ativo">
+					<img src="../../assets/img/updates/update1.jpg">
+				</div>
+				<div class=" itemCarrossel proximo">
+					<img src="../../assets/img/updates/update2.jpg">
+				</div>
+				<div class="itemCarrossel">
+					<img src="../../assets/img/updates/update3.jpg">
+				</div>
+				<div class="itemCarrossel">
+					<img src="../../assets/img/updates/update4.jpg">
+				</div>
+				<div class="itemCarrossel anterior">
+					<img src="../../assets/img/updates/update5.jpg">
+				</div>
+				<div class="secaoBotoesCarrossel">
+					<div class="botaoCarrossel"><img src="../../assets/img/icons/seta.png" class="icon-setaCarrossel"></div>
+					<div class="botaoCarrossel"><img src="../../assets/img/icons/setaVirada.png" class="icon-setaCarrossel"></div>
+				</div>
+			</div>
+		</div>
 	</div>
-
 </section>
-	</div>
+
+<div class="clear"></div>
+
 <section> <!--  Section Fim e rodapé -->
-	<div id="div-discord">
-		<a href="https://discord.com/"><div id="imagem-discord"></div></a>
-		<a href="https://discord.com/" id="link-discord"><button id="frase-discord">JÁ CONHECE NOSSO DISCORD!?</button></a>
-		<iframe id="iframe-discord" src="https://discord.com/widget?id=704695441677221898&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-	</div>
+<div id="div-discord">
+	<a href="https://discord.com/"><div id="imagem-discord"></div></a>
+	<a href="https://discord.com/" id="link-discord"><button id="frase-discord">JÁ CONHECE NOSSO DISCORD!?</button></a>
+	<iframe id="iframe-discord" src="https://discord.com/widget?id=704695441677221898&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+</div>
 
-	<?php require 'footer.php'; ?>
-</section>
-
+<script src="../view/outrosJS/carrossel.js"></script>
 
 <script> //O BAGULHO
 var width = screen.width;
@@ -98,4 +119,4 @@ $(".secondBodyClass").onepage_scroll({
 scroll();
 </script>
 
-
+<?php require 'footer.php'; ?>
