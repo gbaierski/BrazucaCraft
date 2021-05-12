@@ -12,8 +12,10 @@
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 		<!-- Css de páginas main -->
 		<link rel="sortcut icon" href="../../assets/img/paginas/home/logo.png" type="image/x-icon" />
 		<link rel="stylesheet" type="text/css" href="../../assets/css/geral.css"/>
@@ -46,7 +48,7 @@
         </div>
 
         <div class="opcao-menuMobile">
-          <a href="">
+          <a href="../control/redirecionamento.php?action=manutencao">
             <button class="botao-menuMobile" id="botao-blogMobile">
               <img src="../../assets/img/icons/blog.png" class="icon-linkMenuMobile">
               <div class="texto-linkMenuMobile"> BLOG </div>
@@ -55,7 +57,7 @@
         </div>
 
         <div class="opcao-menuMobile">
-          <a href="#">
+          <a href="../control/redirecionamento.php?action=manutencao">
             <button class="botao-menuMobile" id="botao-sobreMobile">
               <img src="../../assets/img/icons/sobre.png" class="icon-linkMenuMobile">
               <div class="texto-linkMenuMobile"> SOBRE </div>
@@ -64,7 +66,7 @@
         </div>
 
         <div class="opcao-menuMobile">
-          <a href="">
+          <a href="../control/redirecionamento.php?action=manutencao">
             <button class="botao-menuMobile" id="botao-ajudaMobile">
               <img src="../../assets/img/icons/ajuda.png" class="icon-linkMenuMobile">
               <div class="texto-linkMenuMobile"> AJUDA </div>
@@ -74,17 +76,31 @@
 
         <div id="div-lojaMobile">
           <a href="../control/redirecionamento.php?action=Loja" >
-            <button class="botao-menuMobile" id="botao-lojaMobile">
+            <button class="botao-menuMobile vermelho" id="botao-lojaMobile">
               <div class="texto-linkMenuMobile"> LOJA </div>
             </button>
           </a>
         </div>
 
-        <section id="secondBody">
+
+                    <!-- Barra do menu mobile -->
+
+                    <nav class="nav-mobile">
+              <div class="menuMobile">
+                  <button class="botao-menuMobile" id="menuMobile" onclick="menuMobile()">
+                    <img src="../../assets/img/icons/menu.png" id="imagem-menuMobile">
+                  </button>
+              </div>
+
+              <a href="../control/redirecionamento.php?action=index" id="link-brazuca-menu">
+                <p class="header-texto" id="texto-brazuca"> BRAZUCA <br> CRAFT</p>
+              </a>
+            </nav>
+            
+        <div id="secondBody" class="secondBodyClass">
           <header class="header">
 
             <!-- Barra do menu desktop -->
-
             <nav class="nav-desktop">
 
               <a href="../control/redirecionamento.php?action=index" id="link-brazuca-menu">
@@ -129,7 +145,7 @@
 
               <div id="div-loja">
                 <a href="../control/redirecionamento.php?action=Loja" >
-                  <button class="botao-menu" id="botao-loja">
+                  <button class="botao-menu vermelho" id="botao-loja">
                     <img src="../../assets/img/icons/loja.png" class="icon-linkMenu">
                     <div class="texto-linkMenu"> LOJA </div>
                   </button>
@@ -137,19 +153,6 @@
               </div>
             </nav>
 
-            <!-- Barra do menu mobile -->
-
-            <nav class="nav-mobile">
-              <div class="menuMobile">
-                  <button class="botao-menuMobile" id="menuMobile" onclick="menuMobile()">
-                    <img src="../../assets/img/icons/menu.png" id="imagem-menuMobile">
-                  </button>
-              </div>
-
-              <a href="../control/redirecionamento.php?action=index" id="link-brazuca-menu">
-                <p class="header-texto" id="texto-brazuca"> BRAZUCA <br> CRAFT</p>
-              </a>
-            </nav>
 
             <!-- id="head-player" -->
             <?= isset($_SESSION['login']) ?'<div  class="dropdown">
@@ -185,31 +188,27 @@
                   <?php
                     if (isset($_GET['erro'])) {
 
-                      echo '<h>Senha/Usuario incorretos</h1>';
+                      #echo '<h>Senha/Usuario incorretos</h1>';
 
                       echo "<script>
                         $(document).ready(function(){
                           $('#modal').modal('show');
+                          document.getElementById('senha').classList.add('errada');
                         }); </script>";
-                    }
+
+                      }
                   ?>
 
-                  <input type="submit" name="logar" value="LOGAR" id="botaoLogar">
+                  <input type="submit" name="logar" value="LOGAR" id="botaoLogar" class="verde">
 
                 </form>
 
-                <a href="../control/redirecionamento.php?action=cadastroUsuario"><button id="botaoCadastro">CADASTRO</button></a>
+                <a href="../control/redirecionamento.php?action=cadastroUsuario"><button id="botaoCadastro" class="azul">CADASTRO</button></a>
                 <br>
                 <a href="" id="linkEsqueciSenha">ESQUECI MINHA SENHA</a>
               </div>
 
             </div>
-            <!-- Scripts -->
-      
-            <!--- 
-            Esses dois scripts servem para puxar as bibliotecas de Jquery e bootstrap do google, no momento são necessarias para o funcionamento do modal.
-            Obs: Não está sendo usada nenhuma classe bootstrap porém a biblioteca é necessaria pro Jquery conseguir funcionar.
-            --->
 
             <script src="../view/home.js"></script>
             <script src="../view/header.js"></script>

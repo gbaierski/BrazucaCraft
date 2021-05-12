@@ -4,18 +4,18 @@
     
     .div-produto {
 
-        width:45%; 
-        height: 50vw;
+        width:70%; 
+        height: 70vw;
         border-radius: 3px;
-        margin-left: 3%;
+        margin-left: 14%;
         margin-bottom:2vw;
     }
 
     .imagem-produto {
 
+        height:30vw;
         margin-top: 5%;
-        height:25vw; 
-        margin-left:20%;
+        margin-left:28%;
     }
 
     .botoesAdmin-produto {
@@ -27,12 +27,12 @@
     .produto-comprar {
 
         width: 80%;
-        height: 6vw;
-        font-size: 3vw;
+        height: 10vw;
+        font-size: 5vw;
         border-bottom: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-top: none;
-        border-left: none;
+        border-left: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.8vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.8vw solid rgba(255, 255, 255, 0.521);
         text-shadow: 0.08vw 0.15vw rgba(0, 0, 0, 0.651);
         margin-left: 10%;
         margin-top: 1vw;
@@ -41,12 +41,12 @@
     .produto-editar {
 
         width: 30%;
-        height: 4vw;
-        font-size: 2.7vw;
+        height: 5vw;
+        font-size: 3.5vw;
         border-bottom: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-top: none;
-        border-left: none;
+        border-left: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.8vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.8vw solid rgba(255, 255, 255, 0.521);
         text-shadow: 0.08vw 0.15vw rgba(0, 0, 0, 0.651);
         margin-left: 22%;
     }
@@ -54,18 +54,18 @@
     .produto-deletar {
 
         width: 30%;
-        height: 4vw;
-        font-size: 2.7vw;
+        height: 5vw;
+        font-size: 3.5vw;
         border-bottom: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-top: none;
-        border-left: none;
+        border-left: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.8vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.8vw solid rgba(255, 255, 255, 0.521);
         text-shadow: 0.08vw 0.15vw rgba(0, 0, 0, 0.651);
     }
 
     .atributos-produto {
 
-        font-size: 2.5vw;
+        font-size: 4vw;
         text-shadow: 0.1vw 0.2vw rgba(0, 0, 0, 0.651);
     }
 
@@ -89,11 +89,11 @@
     #tituloLoja {
 
         width: 94%;
-        background-color: rgba(0, 0, 0, 0.562);
+        height: 10vw;
         border-radius: 5px;
-        font-size: 4vw;
+        font-size: 8vw;
         margin-left: 2.4%;
-        margin-top: -3vw;
+        margin-top: 10vw;
         margin-bottom: 2vw;
     }
     
@@ -105,20 +105,27 @@
 
     #botaoNovoProduto {
 
-        height: 3vw;
+        width: 90%;
+        height: 8vw;
         font-size: 1vw;
+        margin-top: 28vw;
         background-color: rgb(40, 120, 212);
-        border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-left: none;
-        border-top: none;
+        border-bottom: 1vw solid rgba(10, 10, 10, 0.4);
+        border-left: 1vw solid rgba(10, 10, 10, 0.4);
+        border-top: 1vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 1vw solid rgba(255, 255, 255, 0.521);
     }
 
     #icon-NovoProduto {
 
-        width:1.5vw; 
+        width:5vw; 
         margin-right: 0.3vw;
         margin-bottom: -0.5vw;
+    }
+
+    #textoNovoProduto {
+
+        display: none;
     }
 }
 
@@ -164,9 +171,9 @@
         height: 6vw;
         font-size: 3vw;
         border-bottom: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-top: none;
-        border-left: none;
+        border-left: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.8vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.8vw solid rgba(255, 255, 255, 0.521);
         text-shadow: 0.08vw 0.15vw rgba(0, 0, 0, 0.651);
         margin-left: 10%;
         margin-top: 1vw;
@@ -178,9 +185,9 @@
         height: 4vw;
         font-size: 2.7vw;
         border-bottom: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-top: none;
-        border-left: none;
+        border-left: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.8vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.8vw solid rgba(255, 255, 255, 0.521);
         text-shadow: 0.08vw 0.15vw rgba(0, 0, 0, 0.651);
         margin-left: 22%;
     }
@@ -191,9 +198,9 @@
         height: 4vw;
         font-size: 2.7vw;
         border-bottom: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-top: none;
-        border-left: none;
+        border-left: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.8vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.8vw solid rgba(255, 255, 255, 0.521);
         text-shadow: 0.08vw 0.15vw rgba(0, 0, 0, 0.651);
     }
 
@@ -223,7 +230,6 @@
     #tituloLoja {
 
         width: 94%;
-        background-color: rgba(0, 0, 0, 0.562);
         border-radius: 5px;
         font-size: 4vw;
         margin-left: 2.4%;
@@ -239,22 +245,27 @@
 
     #botaoNovoProduto {
 
-        height: 3vw;
+        width: 90%;
+        height: 8vw;
         font-size: 1vw;
-        background-color: rgb(40, 120, 212);
-        border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-left: none;
-        border-top: none;
+        margin-top: 14vw;
+        border-bottom: 1vw solid rgba(10, 10, 10, 0.4);
+        border-left: 1vw solid rgba(10, 10, 10, 0.4);
+        border-top: 1vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 1vw solid rgba(255, 255, 255, 0.521);
     }
 
     #icon-NovoProduto {
 
-        width:1.5vw; 
+        width:5vw; 
         margin-right: 0.3vw;
         margin-bottom: -0.5vw;
     }
 
+    #textoNovoProduto {
+
+        display: none;
+    }
 }
 
 
@@ -294,10 +305,10 @@
     .produto-comprar {
 
         font-size: 1.7vw;
-        border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-top: none;
-        border-left: none;
+        border-bottom: 0.27vw solid rgba(10, 10, 10, 0.4);
+        border-left: 0.27vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.27vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.27vw solid rgba(255, 255, 255, 0.521);
         text-shadow: 0.08vw 0.15vw rgba(0, 0, 0, 0.651);
         width: 51.3%;
         height: 3vw;
@@ -310,10 +321,10 @@
         width: 25%;
         height: 3vw;
         font-size: 1.5vw;
-        border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-top: none;
-        border-left: none;
+        border-bottom: 0.27vw solid rgba(10, 10, 10, 0.4);
+        border-left: 0.27vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.27vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.27vw solid rgba(255, 255, 255, 0.521);
         text-shadow: 0.08vw 0.15vw rgba(0, 0, 0, 0.651);
         margin-left: 25%;
     }
@@ -323,10 +334,10 @@
         width: 25%;
         height: 3vw;
         font-size: 1.5vw;
-        border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-top: none;
-        border-left: none;
+        border-bottom: 0.27vw solid rgba(10, 10, 10, 0.4);
+        border-left: 0.27vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.27vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.27vw solid rgba(255, 255, 255, 0.521);
         text-shadow: 0.08vw 0.15vw rgba(0, 0, 0, 0.651);
     }
 
@@ -355,7 +366,6 @@
     #tituloLoja {
 
         width: 95%;
-        background-color: rgba(0, 0, 0, 0.562);
         border-radius: 5px;
         font-size: 4vw;
         margin-left: 2.4%;
@@ -373,11 +383,10 @@
 
         height: 3vw;
         font-size: 1vw;
-        background-color: rgb(40, 120, 212);
-        border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
-        border-left: none;
-        border-top: none;
+        border-bottom: 0.27vw solid rgba(10, 10, 10, 0.4);
+        border-left: 0.27vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.27vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.27vw solid rgba(255, 255, 255, 0.521);
     }
 
     #icon-NovoProduto {
@@ -385,6 +394,12 @@
         width:1.5vw; 
         margin-right: 0.3vw;
         margin-bottom: -0.5vw;
+    }
+
+    #textoNovoProduto {
+    
+        float: right;
+        margin-top: 3%;
     }
 }
 
@@ -412,6 +427,18 @@
     text-align:center;
 }
 
+.imagem-produto {
+
+    transition-duration: 0.62s;
+    cursor: pointer;
+}
+
+.imagem-produto:hover {
+
+    transform: scale(1.05) rotate(1deg);
+
+}
+
 .preco-produto {
 
     text-align:center;
@@ -427,23 +454,41 @@
     color: white;
     font-family: monospace;
     font-weight: 600;
-    background-color: rgb(22, 163, 69);
     outline: none;
+    transition: transform .35s;
+    cursor: pointer;
 
+}
+
+.produto-comprar:hover {
+
+    transform: scale(1.05);
 }
 
 .produto-editar {
 
     color: white;
-    background-color: rgb(22, 163, 69);
     outline: none;
+    transition: transform .35s;
+    cursor: pointer;
+}
+
+.produto-editar:hover {
+
+    transform: scale(1.05);
 }
 
 .produto-deletar {
 
     color: white;
-    background-color: rgb(224, 44, 20);
     outline: none;
+    transition: transform .35s;
+    cursor: pointer;
+}
+
+.produto-deletar:hover {
+
+    transform: scale(1.05);
 }
 
 .atributos-produto {
@@ -458,6 +503,7 @@
     font-family: monospace;
     font-weight: 1000;
     text-shadow: 0.1vw 0.2vw rgba(0, 0, 0, 0.651);
+    background-color: rgba(0, 0, 0, 0.562);
 }
 
 #botaoNovoProdutoDiv {
@@ -472,5 +518,11 @@
     font-weight: 700;
     color: white;
     text-shadow: 0.05vw 0.11vw rgba(0, 0, 0, 0.651);
+    transition: transform .35s;
     cursor: pointer;
+}
+
+#botaoNovoProduto:hover {
+
+    transform: scale(1.05);
 }

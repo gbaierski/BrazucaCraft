@@ -190,12 +190,11 @@
         transition-property: all;
         width: 360%;
         height: 15vw;
-        background-color: rgb(248, 29, 14);
         border-radius: 3px;
-        border-bottom: 1.8vw solid rgba(10, 10, 10, 0.4);
-        border-right: 1.8vw solid rgba(10, 10, 10, 0.4);
-        border-left: none;
-        border-top: none;
+        border-bottom: 2vw solid rgba(10, 10, 10, 0.4);
+        border-left: 2vw solid rgba(10, 10, 10, 0.4);
+        border-top: 2vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 2vw solid rgba(255, 255, 255, 0.521);
     }
 
     
@@ -447,12 +446,11 @@
         transition-property: all;
         width: 340%;
         height: 13vw;
-        background-color: rgb(248, 29, 14);
         border-radius: 3px;
-        border-bottom: 1.8vw solid rgba(10, 10, 10, 0.4);
-        border-right: 1.8vw solid rgba(10, 10, 10, 0.4);
-        border-left: none;
-        border-top: none;
+        border-bottom: 2vw solid rgba(10, 10, 10, 0.4);
+        border-left: 2vw solid rgba(10, 10, 10, 0.4);
+        border-top: 2vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 2vw solid rgba(255, 255, 255, 0.521);
     }
 
     #tituloModal {
@@ -543,7 +541,7 @@
 
         width: 8vw;
         height: 3.8vw;
-        font-size: 1.3vw;
+        font-size: 1.25vw;
         margin-top: 0.5vw;
     }
 
@@ -644,7 +642,7 @@
         margin-right: 1%;
         float: right;
         margin-top: 0.5vw;
-        font-size: 1.3vw;
+        font-size: 1.25vw;
     }
 
     #tituloModal {
@@ -851,7 +849,7 @@
 
 .dropdownOpcao:hover {
 
-    background-color: rgb(22, 163, 69);
+    background-color: #34aa2f;
 }
 
 #bodyID {
@@ -884,11 +882,11 @@
 
 #botao-home:hover {
 
-    background-color: rgb(22, 163, 69);
-    border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
-    border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
-    border-left: none;
-    border-top: none;
+    background-color: #34aa2f;
+    border-bottom: 0.27vw solid rgba(10, 10, 10, 0.4);
+    border-left: 0.27vw solid rgba(10, 10, 10, 0.4);
+    border-top: 0.27vw solid rgba(255, 255, 255, 0.5211);
+    border-right: 0.27vw solid rgba(255, 255, 255, 0.521);
 }
 
 #botao-blog {
@@ -898,11 +896,11 @@
 
 #botao-blog:hover {
 
-    background-color: rgb(40, 120, 212);
-    border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
-    border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
-    border-left: none;
-    border-top: none;
+    background-color: rgb(27, 96, 247);
+    border-bottom: 0.27vw solid rgba(10, 10, 10, 0.4);
+    border-left: 0.27vw solid rgba(10, 10, 10, 0.4);
+    border-top: 0.27vw solid rgba(255, 255, 255, 0.5211);
+    border-right: 0.27vw solid rgba(255, 255, 255, 0.521);
 }
 
 #botao-sobre {
@@ -912,11 +910,11 @@
 
 #botao-sobre:hover {
     
-    background-color: rgb(255, 180, 41);
-    border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
-    border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
-    border-left: none;
-    border-top: none;
+    background-color: rgb(255, 146, 21);
+    border-bottom: 0.22vw solid rgba(10, 10, 10, 0.4);
+    border-left: 0.22vw solid rgba(10, 10, 10, 0.4);
+    border-top: 0.22vw solid rgba(255, 255, 255, 0.5211);
+    border-right: 0.22vw solid rgba(255, 255, 255, 0.521);
 }
 
 #botao-ajuda {
@@ -926,20 +924,19 @@
 
 #botao-ajuda:hover {
     
-    background-color: rgb(119, 74, 190);
-    border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
-    border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
-    border-left: none;
-    border-top: none;
+    background-color: rgb(91, 45, 167);
+    border-bottom: 0.27vw solid rgba(10, 10, 10, 0.4);
+    border-left: 0.27vw solid rgba(10, 10, 10, 0.4);
+    border-top: 0.27vw solid rgba(255, 255, 255, 0.5211);
+    border-right: 0.27vw solid rgba(255, 255, 255, 0.521);
 }
 
 #botao-loja {
 
-    background-color: rgb(224, 44, 20);
-    border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
-    border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
-    border-left: none;
-    border-top: none;
+    border-bottom: 0.27vw solid rgba(10, 10, 10, 0.4);
+    border-left: 0.27vw solid rgba(10, 10, 10, 0.4);
+    border-top: 0.27vw solid rgba(255, 255, 255, 0.5211);
+    border-right: 0.27vw solid rgba(255, 255, 255, 0.521);
     transition: transform .25s;
 }
 
@@ -1017,11 +1014,17 @@
     font-family: monospace;
     font-weight: 700;
     color: white;
-    background-color: rgb(22, 163, 69);
-    border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
-    border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
-    border-left: none;
-    border-top: none;
+    border-bottom: 0.27vw solid rgba(10, 10, 10, 0.4);
+    border-left: 0.27vw solid rgba(10, 10, 10, 0.4);
+    border-top: 0.27vw solid rgba(255, 255, 255, 0.5211);
+    border-right: 0.27vw solid rgba(255, 255, 255, 0.521);
+    transition: transform .35s;
+    cursor: pointer;
+}
+
+#botaoLogar:hover { 
+
+    transform: scale(1.05);
 }
 
 #botaoCadastro {
@@ -1029,11 +1032,17 @@
     font-family: monospace;
     font-weight: 700;
     color: white;
-    background-color: rgb(40, 120, 212);;
-    border-bottom: 0.25vw solid rgba(10, 10, 10, 0.4);
-    border-right: 0.25vw solid rgba(10, 10, 10, 0.4);
-    border-left: none;
-    border-top: none;
+    border-bottom: 0.27vw solid rgba(10, 10, 10, 0.4);
+    border-left: 0.27vw solid rgba(10, 10, 10, 0.4);
+    border-top: 0.27vw solid rgba(255, 255, 255, 0.5211);
+    border-right: 0.27vw solid rgba(255, 255, 255, 0.521);
+    transition: transform .35s;
+    cursor: pointer;
+}
+
+#botaoCadastro:hover {
+
+    transform: scale(1.05);
 }
 
 #linkEsqueciSenha {
@@ -1041,6 +1050,11 @@
     color: white;
     text-decoration: none;
     font-family: monospace;
+}
+
+#linkEsqueciSenha:hover {
+
+    color: rgb(225, 225, 225);
 }
 
 #myDropdown {

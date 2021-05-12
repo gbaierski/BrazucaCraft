@@ -58,29 +58,29 @@
 
     #cadastroUsuarioContinuar {
 
-        width: 32%;
-        height: 6vw;
+        width: 33%;
+        height: 8vw;
         font-size: 4vw;
-        margin-right: 18%;
+        margin-right: 17%;
         margin-top: 7vw;
         border-bottom: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-left: none;
-        border-top: none;
+        border-left: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.8vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.8vw solid rgba(255, 255, 255, 0.521);
     }
 
     #cadastroUsuarioVoltar {
 
-        width: 32%;
-        height: 6vw;
+        width: 33%;
+        height: 8vw;
         float: left;
-        margin-left: 17%;
+        margin-left: 16%;
         margin-top: 7vw;
         font-size: 4vw;
         border-bottom: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-left: none;
-        border-top: none;
+        border-left: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.8vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.8vw solid rgba(255, 255, 255, 0.521);
     }
 }
 
@@ -160,9 +160,9 @@
         margin-right: 18%;
         margin-top: 5vw;
         border-bottom: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-left: none;
-        border-top: none;
+        border-left: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.8vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.8vw solid rgba(255, 255, 255, 0.521);
     }
 
     #cadastroUsuarioVoltar {
@@ -174,9 +174,9 @@
         margin-top: 5vw;
         font-size: 3vw;
         border-bottom: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.8vw solid rgba(10, 10, 10, 0.4);
-        border-left: none;
-        border-top: none;
+        border-left: 0.8vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.8vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.8vw solid rgba(255, 255, 255, 0.521);
     }
 }
 
@@ -253,10 +253,10 @@
         font-size: 1.5vw;
         margin-right: 18%;
         margin-top: 1.5vw;
-        border-bottom: 0.3vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.3vw solid rgba(10, 10, 10, 0.4);
-        border-left: none;
-        border-top: none;
+        border-bottom: 0.27vw solid rgba(10, 10, 10, 0.4);
+        border-left: 0.27vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.27vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.27vw solid rgba(255, 255, 255, 0.521);
     }
 
     #cadastroUsuarioVoltar {
@@ -267,10 +267,10 @@
         margin-left: 17%;
         margin-top: 1.5vw;
         font-size: 1.5vw;
-        border-bottom: 0.3vw solid rgba(10, 10, 10, 0.4);
-        border-right: 0.3vw solid rgba(10, 10, 10, 0.4);
-        border-left: none;
-        border-top: none;
+        border-bottom: 0.27vw solid rgba(10, 10, 10, 0.4);
+        border-left: 0.27vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.27vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.27vw solid rgba(255, 255, 255, 0.521);
     }
 }
 
@@ -329,7 +329,14 @@
     text-align: center;
     font-weight: 700;
     color: white;
-    background-color: rgb(22, 163, 69);
+    transition: transform .35s;
+    cursor: pointer;
+}
+
+#cadastroUsuarioContinuar:hover {
+
+    transform: scale(1.05);
+
 }
 
 #cadastroUsuarioVoltar {
@@ -339,6 +346,13 @@
     text-decoration: none;
     font-weight: 700;
     color: white;
-    background-color: rgb(224, 44, 20);
+    transition: transform .35s;
+    cursor: pointer;
+
+}
+
+#cadastroUsuarioVoltar:hover {
+
+    transform: scale(1.05);
 
 }

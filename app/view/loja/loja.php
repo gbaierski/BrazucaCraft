@@ -9,9 +9,9 @@ $usuario->DeclaraUsuario();
   <?php if($usuario->getPermissao() == "Administrador") { ?>
     <div id="botaoNovoProdutoDiv">
       <a href="../control/redirecionamento.php?action=CadastroProdutos">
-        <button id="botaoNovoProduto">
+        <button id="botaoNovoProduto"  class="azul">
           <img src="../../assets/img/icons/novo.png" id="icon-NovoProduto">
-          Novo Produto
+          <div id="textoNovoProduto">Novo Produto</div>
         </button>
       </a>
     </div>
@@ -31,13 +31,13 @@ $usuario->DeclaraUsuario();
         
         <?php if($usuario->getPermissao() == "Administrador") { ?>
 
-          <div class="botoesAdmin-produto">
-          <a href="../control/redirecionamento.php?action=EditarProduto&ai_produto=<?= $produto['ai_produto']?>"><button  class="produto-editar">Editar</button></a>
-          <a href="../control/produtos.php?action=deletarProduto&ai_produto=<?= $produto['ai_produto']?>"><button  class="produto-deletar">Deletar</button></a>
-          </div>
+        <div class="botoesAdmin-produto">
+          <a href="../control/redirecionamento.php?action=EditarProduto&ai_produto=<?= $produto['ai_produto']?>"><button  class="produto-editar verde">Editar</button></a>
+          <a href="../control/produtos.php?action=deletarProduto&ai_produto=<?= $produto['ai_produto']?>"><button  class="produto-deletar vermelho">Deletar</button></a>
+        </div>
 
         <?php } else { ?>
-          <button class="produto-comprar">Comprar</button>
+          <button class="produto-comprar verde">Comprar</button>
         <?php } ?>
     </div>
 

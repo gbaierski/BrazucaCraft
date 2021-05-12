@@ -1,3 +1,263 @@
+/* --------------------------------------- tela celular / tablet --------------------------------------- */
+@media screen and (max-width:750px) {
+
+    #backgroundManutencao {
+
+        width: 100%;
+        height: 235vw;
+    }
+    
+    #botaoManutencaoVoltar {
+
+        width: 80%;
+        height: 10vw;
+        margin-top: 5vw;
+        margin-left: 10%;
+        border-bottom: 0.2vw solid rgba(10, 10, 10, 0.26);
+        border-right: 0.2vw solid rgba(10, 10, 10, 0.26);
+        font-size: 4vw;
+        border-left: none;
+        border-top: none;
+    }
+
+    
+    #textoManutencao {
+
+        font-size: 4vw;
+        padding-top: 60vw;
+    }   
+
+    #textoVoltarHome {
+
+        font-size: 4vw;
+        padding-top: 1vw;
+    }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------- ipad / telas menores --------------------------------------- */
+@media screen and (min-width:751px) and (max-width:1200px) {
+
+   
+    #backgroundManutencao {
+
+        width: 100%;
+        height: 150vw;
+    }
+    
+    #botaoManutencaoVoltar {
+
+        width: 80%;
+        height: 8vw;
+        margin-top: 5vw;
+        margin-left: 10%;
+        border-bottom: 0.2vw solid rgba(10, 10, 10, 0.26);
+        border-right: 0.2vw solid rgba(10, 10, 10, 0.26);
+        font-size: 3vw;
+        border-left: none;
+        border-top: none;
+    }
+
+    
+    #textoManutencao {
+
+        font-size: 3vw;
+        padding-top: 50vw;
+    }   
+
+    #textoVoltarHome {
+
+        font-size: 3vw;
+        padding-top: 1vw;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------- tela monitor 1366x768 ---------------------------------------*/
+@media screen and (min-width:1201px) {
+
+    #backgroundManutencao {
+
+        width: 100%;
+        height: 48.1vw;
+    }
+    
+    #botaoManutencaoVoltar {
+
+        width: 35%;
+        height: 2.5vw;
+        margin-top: 5vw;
+        margin-left: 33%;
+        border-bottom: 0.2vw solid rgba(10, 10, 10, 0.26);
+        border-right: 0.2vw solid rgba(10, 10, 10, 0.26);
+        font-size: 1.5vw;
+        border-left: none;
+        border-top: none;
+    }
+
+    
+    #textoManutencao {
+
+        font-size: 1.5vw;
+        padding-top: 15vw;
+    }   
+
+    #textoVoltarHome {
+
+        font-size: 1.5vw;
+        padding-top: 1vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------- geral ---------------------------------------*/
+
+
+.div-produto {
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0.562);
+    float:left; 
+}
+
+.nome-produto {
+
+    text-align:center;
+}
+
+.imagem-produto {
+
+    transition-duration: 0.62s;
+    cursor: pointer;
+}
+
+.imagem-produto:hover {
+
+    transform: scale(1.05) rotate(1deg);
+
+}
+
+.preco-produto {
+
+    text-align:center;
+}
+
+.descricao-produto {
+    
+    text-align:center;
+}
+
+.produto-comprar {
+
+    color: white;
+    font-family: monospace;
+    font-weight: 600;
+    background-color: rgb(22, 163, 69);
+    outline: none;
+    transition: transform .35s;
+    cursor: pointer;
+
+}
+
+.produto-comprar:hover {
+
+    transform: scale(1.05);
+}
+
+.produto-editar {
+
+    color: white;
+    background-color: rgb(22, 163, 69);
+    outline: none;
+    transition: transform .35s;
+    cursor: pointer;
+}
+
+.produto-editar:hover {
+
+    transform: scale(1.05);
+}
+
+.produto-deletar {
+
+    color: white;
+    background-color: rgb(224, 44, 20);
+    outline: none;
+    transition: transform .35s;
+    cursor: pointer;
+}
+
+.produto-deletar:hover {
+
+    transform: scale(1.05);
+}
+
+.atributos-produto {
+
+    font-family: monospace;
+}
+
+#tituloLoja {
+    
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    font-weight: 1000;
+    text-shadow: 0.1vw 0.2vw rgba(0, 0, 0, 0.651);
+    background-color: rgba(0, 0, 0, 0.562);
+}
+
+#botaoNovoProdutoDiv {
+
+    float: right;
+}
+
+#botaoNovoProduto {
+
+    border-radius: 0.1vw;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0.05vw 0.11vw rgba(0, 0, 0, 0.651);
+    transition: transform .35s;
+    cursor: pointer;
+}
+
+#botaoNovoProduto:hover {
+
+    transform: scale(1.05);
+}
+
+
 body {
     border: none;
     margin: 0px;
@@ -6,26 +266,15 @@ body {
 #backgroundManutencao {
 
     background-image: url(../img/paginas/telaManutencao.jpg);
-    width: 100%;
-    height: 48.1vw
 }
 
 #botaoManutencaoVoltar {
 
-    width: 35%;
-    height: 2.5vw;
-    margin-top: 5vw;
-    margin-left: 33%;
+    outline: none;
     color: white;
     font-family: monospace;
-    font-size: 1.5vw;
     text-shadow: 0.1vw 0.13vw rgba(0, 0, 0, 0.651);
     background-color: #6f6f6f;
-    border-bottom: 0.2vw solid rgba(10, 10, 10, 0.26);
-    border-right: 0.2vw solid rgba(10, 10, 10, 0.26);
-    outline: none;
-    border-left: none;
-    border-top: none;
     transition: transform .30s;
     cursor: pointer;
 }
@@ -37,9 +286,7 @@ body {
 
 #textoManutencao {
 
-    font-size: 1.5vw;
     text-align: center;
-    padding-top: 15vw;
     text-shadow: 0.1vw 0.13vw rgba(0, 0, 0, 0.651);
     color: rgb(175, 175, 175); 
     font-family: monospace;
@@ -47,8 +294,6 @@ body {
 
 #textoVoltarHome {
 
-    font-size: 1.5vw;
-    padding-top: 1vw;
     text-shadow: 0.1vw 0.13vw rgba(0, 0, 0, 0.651);
     text-align: center;
     color: white; 

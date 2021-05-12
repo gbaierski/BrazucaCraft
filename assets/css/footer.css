@@ -391,6 +391,7 @@
 
 .item-rodape:hover {
 
+    color: rgb(225, 225, 225);
     transform: scale(1.1);
 }
 

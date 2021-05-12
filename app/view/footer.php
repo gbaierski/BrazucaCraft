@@ -1,4 +1,4 @@
-	</section> <!--secondBody-->
+
 </body>
 <footer class="rodape" id="footer">
 	<div class="sub-rodape">
@@ -64,3 +64,4 @@
 		</div>
 	</div>
 </footer>
+</div> <!--secondBody-->
