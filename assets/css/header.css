@@ -1061,3 +1061,33 @@
 
     background-color: rgba(0, 0, 0, 0.651);
 }
+
+.tooltipSenha {
+    position: relative;
+    
+  }
+  .tooltiptextSenha:after {
+    border-color: transparent transparent #f00 transparent;
+  }
+  .tooltipSenha .tooltiptextSenha {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    margin-top: 1.25vw;
+    margin-left: -35%;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+
+  }
+  
+  .tooltipSenha:hover .tooltiptextSenha {
+    visibility: visible;
+  }

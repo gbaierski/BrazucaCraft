@@ -166,7 +166,7 @@
             <div id="modal" class="modal">
 
               <div class="modalConteudo">
-                
+
         
                 <span class="fechar"><button class="botao-fechar"></button></span>
                 <div id="tituloModal">LOGIN</div>
@@ -177,11 +177,11 @@
                   <div>
                     <label for="login" id="loginModal">LOGIN:</label>
                     <input type="text" id="login" name="login" class="modalLogin-input" pattern="[a-zA-Z0-9]+">
-                  </div>
-
-                  <div>
+                  </div>  
+                  <div id="div-tooltip">
                     <label for="senha" id="senhaModal">SENHA:</label>
                     <input type="password" id="senha" name="senha" class="modalLogin-input" autocomplete="off">
+                    <span class="tooltiptextSenha">Senha incorreta!</span>
                   </div>
 
                   <?php
@@ -193,6 +193,11 @@
                         $(document).ready(function(){
                           $('#modal').modal('show');
                           document.getElementById('senha').classList.add('errada');
+                          document.getElementById('div-tooltip').classList.add('tooltipSenha');
+
+                          function showMessage(){   
+                           mensagem.style.display = 'block';   
+                          }
                         }); </script>";
 
                       }
@@ -205,8 +210,9 @@
                 <a href="../control/redirecionamento.php?action=cadastroUsuario"><button id="botaoCadastro" class="azul">CADASTRO</button></a>
                 <br>
                 <a href="" id="linkEsqueciSenha">ESQUECI MINHA SENHA</a>
-              </div>
 
+              </div>
+              
             </div>
 
             <script src="../view/home.js"></script>
