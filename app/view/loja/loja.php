@@ -1,12 +1,8 @@
 <?php require "../view/header.php" ?> 
 
-<script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
-
-<script>
-window.Mercadopago.setPublishableKey("TEST-97ce851d-c5c6-4dfc-b371-5546b05fd3b2");
-</script>
 
 <div id="backgroundLoja">
+
     <div id="botaoNovoProdutoDiv">
       <a href="../control/redirecionamento.php?action=CadastroProdutos">
         <button id="botaoNovoProduto">
@@ -17,6 +13,16 @@ window.Mercadopago.setPublishableKey("TEST-97ce851d-c5c6-4dfc-b371-5546b05fd3b2"
     </div>
     <div id="produtos-loja">
         <div id="tituloLoja">LOJA</div>
+        <div class="carrinhocompras">
+             Você Tem <?php     
+             print_r($_SESSION['produtos']);
+             /* if( $_SESSION['Produtos']){ 
+                $carrinho = count($_SESSION['Produtos']);
+               echo $carrinho;
+               }else{ 
+                 echo "0";
+                 } */?> itens no carrinho <a href="../control/carrinhoCompras.php?action=removercarrinho">Limpar SESSION</a>
+        </div>
     <?php foreach ($produtos as $produto) { ?>
 
     <div class="div-produto">
@@ -27,7 +33,7 @@ window.Mercadopago.setPublishableKey("TEST-97ce851d-c5c6-4dfc-b371-5546b05fd3b2"
             <div class="descricao-produto"><?=  $produto['descricaoProduto'] ?></div>
         </div>
 
-        <a href="../control/mercadopago.php?action=comprarProduto&ai_produto=<?= $produto['ai_produto']?>"><button class="produto-comprar">Comprar</button></a>
+        <a href="../control/carrinhoCompras.php?action=adicionarnocarrinho&ai_produto=<?= $produto['ai_produto']?>"><button class="produto-comprar">Adicionar No Carrinho</button></a>
 
         <div class="botoesAdmin-produto">
         <a href="../control/redirecionamento.php?action=EditarProduto&ai_produto=<?= $produto['ai_produto']?>"><button  class="produto-editar">Editar</button></a>

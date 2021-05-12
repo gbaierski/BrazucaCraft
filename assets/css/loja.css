@@ -474,3 +474,14 @@
     text-shadow: 0.05vw 0.11vw rgba(0, 0, 0, 0.651);
     cursor: pointer;
 }
+
+/* --------------------------------------- Mercado Livre / Carrinho --------------------------------------- */
+
+.carrinhocompras{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    font-weight: 1000;
+    text-shadow: 0.1vw 0.2vw rgba(0, 0, 0, 0.651);
+}

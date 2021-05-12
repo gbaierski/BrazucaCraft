@@ -24,6 +24,10 @@ function comprarProduto(){
       $item->unit_price = $produtos['precoProduto'];
       $preference->items = array($item);
       $preference->save();
+      $preference->back_urls = array(
+        "success" => "../control/redirecionamento.php?action=Home"
+    );
+     $preference->auto_return = "approved";
 
       require 'teste.php';
 }

@@ -9,5 +9,7 @@
   data-preference-id="<?php echo $preference->id; ?>">
 </script>
 <img src="../../assets/img/paginas/home/logo.png">
+
+<a href="redirecionamento.php?action=Loja" ><button>Voltar</button></a>
 </body>
-</html>
+</html> 
