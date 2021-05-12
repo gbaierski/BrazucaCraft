@@ -5,6 +5,7 @@ $usuario = new Usuario();
 $usuario->DeclaraUsuario();
 ?> 
 
+
 <div id="backgroundLoja">
   <?php if($usuario->getPermissao() == "Administrador") { ?>
     <div id="botaoNovoProdutoDiv">
@@ -18,6 +19,16 @@ $usuario->DeclaraUsuario();
     <?php } ?>
     <div id="produtos-loja">
         <div id="tituloLoja">LOJA</div>
+        <div class="carrinhocompras">
+             Você Tem <?php     
+             print_r($_SESSION['produtos']);
+             /* if( $_SESSION['Produtos']){ 
+                $carrinho = count($_SESSION['Produtos']);
+               echo $carrinho;
+               }else{ 
+                 echo "0";
+                 } */?> itens no carrinho <a href="../control/carrinhoCompras.php?action=removercarrinho">Limpar SESSION</a>
+        </div>
     <?php foreach ($produtos as $produto) { ?>
 
     <div class="div-produto">
@@ -38,6 +49,7 @@ $usuario->DeclaraUsuario();
 
         <?php } else { ?>
           <button class="produto-comprar verde">Comprar</button>
+          <a href="../control/carrinhoCompras.php?action=adicionarnocarrinho&ai_produto=<?= $produto['ai_produto']?>"><button class="produto-comprar">Adicionar No Carrinho</button></a>
         <?php } ?>
     </div>
 

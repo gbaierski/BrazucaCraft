@@ -159,7 +159,7 @@
                 <button onclick="abrirDropdown()" id="head-player" class="dropbtn"></button>
                 <div id="myDropdown" class="dropdown-content">
                   <a href="../control/usuario.php?action=deslogar" class="dropdownOpcao">Link 1</a>
-                  <a href="../view/perfil.php"  class="dropdownOpcao">Perfil</a>
+                  <a href="../control/redirecionamento.php?action=Perfil"  class="dropdownOpcao">Perfil</a>
                   <a href="../control/usuario.php?action=deslogar" class="dropdownOpcao">Deslogar</a>
                 </div>
               </div>' : '<button id="botao-login">LOGIN</button>'; ?>
