@@ -223,6 +223,10 @@
         font-size: 5vw;
         margin-top: 4vw;
         margin-left: 19%;
+        border-bottom: 1.5vw solid rgba(10, 10, 10, 0.4);
+        border-left: 1.5vw solid rgba(10, 10, 10, 0.4);
+        border-top: 1.5vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 1.5vw solid rgba(255, 255, 255, 0.521);
     }
 
     #botaoCadastro {
@@ -233,6 +237,10 @@
         margin-top: 2vw;
         margin-left: 29%;
         margin-bottom: 2vw;
+        border-bottom: 1.5vw solid rgba(10, 10, 10, 0.4);
+        border-left: 1.5vw solid rgba(10, 10, 10, 0.4);
+        border-top: 1.5vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 1.5vw solid rgba(255, 255, 255, 0.521);
     }
 
     #linkEsqueciSenha {
@@ -478,6 +486,10 @@
         font-size: 3vw;
         margin-top: 3vw;
         margin-left: 19%;
+        border-bottom: 1vw solid rgba(10, 10, 10, 0.4);
+        border-left: 1vw solid rgba(10, 10, 10, 0.4);
+        border-top: 1vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 1vw solid rgba(255, 255, 255, 0.521);
     }
 
     #botaoCadastro {
@@ -488,6 +500,10 @@
         margin-top: 2vw;
         margin-left: 29%;
         margin-bottom: 2vw;
+        border-bottom: 1vw solid rgba(10, 10, 10, 0.4);
+        border-left: 1vw solid rgba(10, 10, 10, 0.4);
+        border-top: 1vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 1vw solid rgba(255, 255, 255, 0.521);
     }
 
     #linkEsqueciSenha {
@@ -670,6 +686,10 @@
         font-size: 1.4vw;
         margin-top: 1.5vw;
         margin-left: 23%;
+        border-bottom: 0.27vw solid rgba(10, 10, 10, 0.4);
+        border-left: 0.27vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.27vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.27vw solid rgba(255, 255, 255, 0.521);
     }
 
     #botaoCadastro {
@@ -679,6 +699,10 @@
         font-size: 1.4vw;
         margin-top: 0.5vw;
         margin-left: 36%;
+        border-bottom: 0.27vw solid rgba(10, 10, 10, 0.4);
+        border-left: 0.27vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.27vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.27vw solid rgba(255, 255, 255, 0.521);
     }
 
     #linkEsqueciSenha {
@@ -1014,10 +1038,6 @@
     font-family: monospace;
     font-weight: 700;
     color: white;
-    border-bottom: 0.27vw solid rgba(10, 10, 10, 0.4);
-    border-left: 0.27vw solid rgba(10, 10, 10, 0.4);
-    border-top: 0.27vw solid rgba(255, 255, 255, 0.5211);
-    border-right: 0.27vw solid rgba(255, 255, 255, 0.521);
     transition: transform .35s;
     cursor: pointer;
 }
@@ -1032,10 +1052,6 @@
     font-family: monospace;
     font-weight: 700;
     color: white;
-    border-bottom: 0.27vw solid rgba(10, 10, 10, 0.4);
-    border-left: 0.27vw solid rgba(10, 10, 10, 0.4);
-    border-top: 0.27vw solid rgba(255, 255, 255, 0.5211);
-    border-right: 0.27vw solid rgba(255, 255, 255, 0.521);
     transition: transform .35s;
     cursor: pointer;
 }
