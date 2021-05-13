@@ -43,6 +43,90 @@
         border-width: 5px;
     }
 
+    .carrosselNovidades {
+
+        top: 40%;
+        left: 50%;
+    }
+
+    .carrosselNovidades .itemCarrossel {
+        
+        width: 38vw;
+        height: 30vw;
+        border: 0.3vw solid #d8d8d8;
+        top: 50%;
+        left: 50%;
+    }
+
+    .itemCarrossel.ativo {
+        
+        width: 85vw;
+        height: 50vw;
+    }
+
+    .carrosselNovidades .secaoBotoesCarrossel {
+        width: 275px;
+        top: 50%;
+        left: 50%;
+    }
+
+    .secaoBotoesCarrossel .botaoCarrossel {
+      
+        font-size: 32px;
+    }
+
+    .secaoBotoesCarrossel .botaoCarrossel {
+
+        top: 50%;
+        left: 50%;
+        width: 50px;
+        height: 50px;
+        border-bottom: 2vw solid rgba(10, 10, 10, 0.212);
+        border-left: 2vw solid rgba(10, 10, 10, 0.212);
+        border-top: 2vw solid rgba(9, 255, 0, 0.281);
+        border-right: 2vw solid rgba(9, 255, 0, 0.281);
+    }
+
+    .secaoBotoesCarrossel .botaoCarrossel:hover {
+    
+        border-bottom: 2vw solid rgba(10, 10, 10, 0.4);
+        border-left: 2vw solid rgba(10, 10, 10, 0.4);
+        border-top: 2vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 2vw solid rgba(255, 255, 255, 0.521);
+    }
+
+    .secaoBotoesCarrossel .botaoCarrossel:nth-child(1) {
+
+        margin-left: -45vw;
+        margin-top: 15vw;
+    }
+
+    .secaoBotoesCarrossel .botaoCarrossel:nth-child(2) {
+
+        margin-left: 29vw;
+        margin-top: 15vw;
+    }
+    
+      .icon-setaCarrossel {
+    
+        width: 6vw;
+        margin-left: 3vw;
+        padding-top: 3vw;
+    }
+
+    .descricao-SobreBrazuca {
+
+        color: white;
+        width: 100%;
+        text-align:left;
+        font-family: monospace;
+        font-size: 4vw;
+        text-indent: 20%;
+        margin-top: 3vw;
+        margin-left: 2%;
+        text-shadow: 0.5vw 0.5vw rgba(0, 0, 0, 0.651);
+    }
+
     #logo {
 
         width: 60vw;
@@ -86,7 +170,7 @@
     #div-copiarIP {
 
         font-size: 4vw;
-        margin-top: -85vw;
+        margin-top: 3vw;
         margin-bottom: 20vw;
         margin-left: 1.2vw;
         text-shadow: 0.6vw 0.6vw rgba(0, 0, 0, 0.651);
@@ -146,40 +230,52 @@
         border-right: 0.8vw solid rgba(255, 255, 255, 0.521);
     }
 
+    
     #div-SobreBrazuca {
 
-        margin-top: 50vw;
-        height: 180vw;
+        height: 220vw;
         background-image: url("../img/paginas/home/backgroundSobre.png");
         background-size: cover;
+        background-position-x: 80%;
     }
 
-    #div-Sobre_Novidades {
+    #div-BackgroundSobre {
 
-        width: 90%;
-        margin-left: 5%;
-        background-image: url("../img/paginas/home/sobreNovidades.jpg");
-        background-size: cover;
-        height: 200.5vw;
+        width: 70%;
+        margin-left: 15%;
+        height: 100%;
         border-radius: 0.5vw;
-        padding-top: 10vw;
-        margin-top: 30vw;
+        padding-top: 2vw;
+        margin-top: 4vw;
+        position: absolute;
+    }
+
+    #div-BackgroundNovidades {
+
+        width: 70%;
+        margin-left: 15%;
+        background-size: cover;
+        height: 100%;
+        border-radius: 0.5vw;
+        padding-top: 2vw;
         position: absolute;
     }
 
     #imagem-SobreBrazuca {
-        
-        width: 30%;
+
+        width: 100%;
         float: right;
-        margin-top: -25vw;
-        margin-right: 3vw;
+        margin-top: 10vw;
+        margin-right: -5vw;
     }
 
     #div-Novidades {
 
-        height: 60vw;
+        height: 180vw;
+        margin-top: -10vw;
         background-image: url("../img/paginas/home/backgroundNovidades.png");
         background-size: cover;
+        background-position-x: 80%;
     }
 
     #titulo-SobreBrazuca {
@@ -187,9 +283,10 @@
         color: white;
         font-family: monospace;
         font-weight: 700;
-        font-size: 2.5vw;
+        font-size: 5vw;
         margin-left: 7%;
-        margin-top: 5vw;
+        margin-top: 10vw;
+        text-shadow: 0.5vw 0.5vw rgba(0, 0, 0, 0.651);
     }
 
     #titulo-Novidades {
@@ -198,17 +295,18 @@
         font-family: monospace;
         position: absolute;
         font-weight: 700;
-        font-size: 3vw;
-        margin-left: 41vw;
-        margin-top: 5vw;
-        
-
+        font-size: 7vw;
+        margin-left: 19vw;
+        margin-top: 35vw;
+        text-shadow: 0.5vw 0.5vw rgba(0, 0, 0, 0.651);
+    
     }
 
     #descricaoSuperior-SobreBrazuca {
 
-        margin-top: 3vw;
+        margin-top: 15vw;
     }
+    
 }
 
 
@@ -267,6 +365,90 @@
         border-width: 5px;
     }
 
+    .carrosselNovidades {
+
+        top: 75%;
+        left: 50%;
+    }
+
+    .carrosselNovidades .itemCarrossel {
+        
+        width: 38vw;
+        height: 30vw;
+        border: 0.3vw solid #d8d8d8;
+        top: 50%;
+        left: 50%;
+    }
+
+    .itemCarrossel.ativo {
+        
+        width: 85vw;
+        height: 50vw;
+    }
+
+    .carrosselNovidades .secaoBotoesCarrossel {
+        width: 275px;
+        top: 50%;
+        left: 50%;
+    }
+
+    .secaoBotoesCarrossel .botaoCarrossel {
+      
+        font-size: 32px;
+    }
+
+    .secaoBotoesCarrossel .botaoCarrossel {
+
+        top: 50%;
+        left: 50%;
+        width: 10vw;
+        height: 10vw;
+        border-bottom: 2vw solid rgba(10, 10, 10, 0.212);
+        border-left: 2vw solid rgba(10, 10, 10, 0.212);
+        border-top: 2vw solid rgba(9, 255, 0, 0.281);
+        border-right: 2vw solid rgba(9, 255, 0, 0.281);
+    }
+
+    .secaoBotoesCarrossel .botaoCarrossel:hover {
+    
+        border-bottom: 2vw solid rgba(10, 10, 10, 0.4);
+        border-left: 2vw solid rgba(10, 10, 10, 0.4);
+        border-top: 2vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 2vw solid rgba(255, 255, 255, 0.521);
+    }
+
+    .secaoBotoesCarrossel .botaoCarrossel:nth-child(1) {
+
+        margin-left: -45vw;
+        margin-top: 15vw;
+    }
+
+    .secaoBotoesCarrossel .botaoCarrossel:nth-child(2) {
+
+        margin-left: 29vw;
+        margin-top: 15vw;
+    }
+    
+      .icon-setaCarrossel {
+    
+        width: 6vw;
+        margin-left: 2vw;
+        padding-top: 2vw;
+    }
+
+    .descricao-SobreBrazuca {
+
+        color: white;
+        width: 100%;
+        text-align:left;
+        font-family: monospace;
+        font-size: 4vw;
+        text-indent: 20%;
+        margin-top: 3vw;
+        margin-left: 2%;
+        text-shadow: 0.5vw 0.5vw rgba(0, 0, 0, 0.651);
+    }
+
     #logo {
 
         width: 45vw;
@@ -310,7 +492,7 @@
     #div-copiarIP {
 
         font-size: 4vw;
-        margin-top: -58vw;
+        margin-top: 2vw;
         margin-bottom: 22vw;
         margin-left: 1.2vw;
         text-shadow: 0.6vw 0.6vw rgba(0, 0, 0, 0.651);
@@ -368,6 +550,83 @@
         border-left: 0.8vw solid rgba(10, 10, 10, 0.4);
         border-top: 0.8vw solid rgba(255, 255, 255, 0.5211);
         border-right: 0.8vw solid rgba(255, 255, 255, 0.521);
+    }
+
+        
+    #div-SobreBrazuca {
+
+        height: 220vw;
+        background-image: url("../img/paginas/home/backgroundSobre.png");
+        background-size: cover;
+        background-position-x: 80%;
+    }
+
+    #div-BackgroundSobre {
+
+        width: 70%;
+        margin-left: 15%;
+        height: 100%;
+        border-radius: 0.5vw;
+        padding-top: 2vw;
+        margin-top: 4vw;
+        position: absolute;
+    }
+
+    #div-BackgroundNovidades {
+
+        width: 70%;
+        margin-left: 15%;
+        background-size: cover;
+        height: 100%;
+        border-radius: 0.5vw;
+        padding-top: 2vw;
+        position: absolute;
+    }
+
+    #imagem-SobreBrazuca {
+
+        width: 100%;
+        float: right;
+        margin-top: 10vw;
+        margin-right: -5vw;
+    }
+
+    #div-Novidades {
+
+        height: 180vw;
+        margin-top: -20vw;
+        background-image: url("../img/paginas/home/backgroundNovidades.png");
+        background-size: cover;
+        background-position-x: 80%;
+    }
+
+    #titulo-SobreBrazuca {
+
+        color: white;
+        font-family: monospace;
+        font-weight: 700;
+        font-size: 5vw;
+        margin-left: 7%;
+        margin-top: 10vw;
+        text-shadow: 0.5vw 0.5vw rgba(0, 0, 0, 0.651);
+    }
+
+    #titulo-Novidades {
+
+        color: white;
+        font-family: monospace;
+        position: absolute;
+        font-weight: 700;
+        font-size: 7vw;
+        margin-left: 19vw;
+        margin-top: 45vw;
+        text-shadow: 0.5vw 0.5vw rgba(0, 0, 0, 0.651);
+    
+    }
+
+    #descricaoSuperior-SobreBrazuca {
+
+        margin-top: 15vw;
     }
 }
 
@@ -447,6 +706,79 @@
         background-repeat: repeat-x;
     }
 
+    .carrosselNovidades {
+        top: 50%;
+        left: 50%;
+    }
+
+    .carrosselNovidades .itemCarrossel {
+        width: 24vw;
+        height: 13vw;
+        border: 0.3vw solid #d8d8d8;
+        top: 50%;
+        left: 50%;
+    }
+
+    .itemCarrossel.ativo {
+        width: 34vw;
+        height: 19vw;
+    }
+
+    .itemCarrossel.ativo:hover {
+
+        border: 0.3vw solid #34aa2f;
+    }
+
+    .carrosselNovidades .secaoBotoesCarrossel {
+        width: 275px;
+        top: 50%;
+        left: 50%;
+    }
+
+    .secaoBotoesCarrossel .botaoCarrossel {
+      
+        font-size: 32px;
+    }
+
+    .secaoBotoesCarrossel .botaoCarrossel {
+
+        top: 50%;
+        left: 50%;
+        width: 50px;
+        height: 50px;
+        border-bottom: 0.4vw solid rgba(10, 10, 10, 0.212);
+        border-left: 0.4vw solid rgba(10, 10, 10, 0.212);
+        border-top: 0.4vw solid rgba(9, 255, 0, 0.281);
+        border-right: 0.4vw solid rgba(9, 255, 0, 0.281);
+    }
+
+    .secaoBotoesCarrossel .botaoCarrossel:hover {
+    
+        border-bottom: 0.4vw solid rgba(10, 10, 10, 0.4);
+        border-left: 0.4vw solid rgba(10, 10, 10, 0.4);
+        border-top: 0.4vw solid rgba(255, 255, 255, 0.5211);
+        border-right: 0.4vw solid rgba(255, 255, 255, 0.521);
+    }
+
+    .secaoBotoesCarrossel .botaoCarrossel:nth-child(1) {
+
+        margin-left: -33vw;
+        margin-top: -2vw;
+    }
+
+    .secaoBotoesCarrossel .botaoCarrossel:nth-child(2) {
+
+        margin-left: 29vw;
+        margin-top: -2vw;
+    }
+    
+      .icon-setaCarrossel {
+    
+        width: 2.2vw;
+        margin-left: 0.7vw;
+        padding-top: 0.6vw;
+    }
+
     #logo {
 
         width: 25vw;
@@ -490,8 +822,7 @@
     #div-copiarIP {
 
         font-size: 1.7vw;
-        margin-top: -6vw;
-        margin-bottom: 1.2vw;
+        margin-top: 1.5vw;
         margin-left: 1.2vw;
         text-shadow: 0.2vw 0.2vw rgba(0, 0, 0, 0.651);
     }
@@ -501,7 +832,6 @@
         width: 101%;
         height:40vw;
         margin-left: -1vw;
-        margin-top: -6.01vw;
     }
 
     #link-discord {
@@ -567,10 +897,9 @@
         height: 110%;
         background-image: url("../img/paginas/home/backgroundSobre.png");
         background-size: cover;
-        margin-top: -4.5vw;
     }
 
-    #div-Sobre_Novidades {
+    #div-BackgroundSobre {
 
         width: 70%;
         margin-left: 15%;
@@ -580,6 +909,18 @@
         border-radius: 0.5vw;
         padding-top: 2vw;
         margin-top: 4vw;
+        position: absolute;
+    }
+
+    #div-BackgroundNovidades {
+
+        width: 70%;
+        margin-left: 15%;
+        background-image: url("../img/paginas/home/sobreNovidades.jpg");
+        background-size: cover;
+        height: 100%;
+        border-radius: 0.5vw;
+        padding-top: 2vw;
         position: absolute;
     }
 
@@ -615,7 +956,7 @@
         position: absolute;
         font-weight: 700;
         font-size: 3vw;
-        margin-left: 30vw;
+        margin-left: 27vw;
         margin-top: 5vw;
         
 
@@ -807,25 +1148,20 @@
 }
 
 .carrosselNovidades {
+
     position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
     user-select: none;
   }
   
   .carrosselNovidades .itemCarrossel {
+
     position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
-    width: 24vw;
-    height: 13vw;
     overflow: hidden;
     transition: all 300ms ease-in-out;
     z-index: -1;
     opacity: 0;
-    border: 0.3vw solid #d8d8d8;
   }
   
   .itemCarrossel img {
@@ -835,8 +1171,6 @@
   }
   
   .itemCarrossel.ativo {
-    width: 34vw;
-    height: 19vw;
     opacity: 1;
     z-index: 99;
     box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
@@ -845,9 +1179,8 @@
   }
 
   .itemCarrossel.ativo:hover {
-    
+
     cursor: pointer;
-    border: 0.3vw solid #34aa2f;
   }
   
   .itemCarrossel.anterior {
@@ -863,17 +1196,15 @@
   }
   
   .carrosselNovidades .secaoBotoesCarrossel {
+
     position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
-    width: 275px;
     z-index: 100;
   }
   
   .secaoBotoesCarrossel .botaoCarrossel {
+
     color: #fff;
-    font-size: 32px;
     cursor: pointer;
     position: relative;
     opacity: 1;
@@ -881,44 +1212,20 @@
   }
 
   .secaoBotoesCarrossel .botaoCarrossel{
+
     content: "";
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 50px;
-    height: 50px;
     background-color: #008542;
     z-index: -99;
-    border-bottom: 0.4vw solid rgba(10, 10, 10, 0.212);
-    border-left: 0.4vw solid rgba(10, 10, 10, 0.212);
-    border-top: 0.4vw solid rgba(9, 255, 0, 0.281);
-    border-right: 0.4vw solid rgba(9, 255, 0, 0.281);
   }
 
   .secaoBotoesCarrossel .botaoCarrossel:hover {
     
     transform: scale(0.95);
-    border-bottom: 0.4vw solid rgba(10, 10, 10, 0.4);
-    border-left: 0.4vw solid rgba(10, 10, 10, 0.4);
-    border-top: 0.4vw solid rgba(255, 255, 255, 0.5211);
-    border-right: 0.4vw solid rgba(255, 255, 255, 0.521);
+
   }
 
   .secaoBotoesCarrossel .botaoCarrossel:nth-child(1) {
+
     float: left;
-    margin-left: -33vw;
-    margin-top: -2vw;
-  }
-  
-  .secaoBotoesCarrossel .botaoCarrossel:nth-child(2) {
-
-    margin-left: 29vw;
-    margin-top: -2vw;
-  }
-
-  .icon-setaCarrossel {
-
-    width: 2.2vw;
-    margin-left: 0.7vw;
-    padding-top: 0.6vw;
   }

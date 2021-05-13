@@ -85,7 +85,12 @@
 
                     <!-- Barra do menu mobile -->
 
-                    <nav class="nav-mobile">
+
+        <div id="secondBody" class="secondBodyClass">
+          <header class="header">
+
+
+          <nav class="nav-mobile">
               <div class="menuMobile">
                   <button class="botao-menuMobile" id="menuMobile" onclick="menuMobile()">
                     <img src="../../assets/img/icons/menu.png" id="imagem-menuMobile">
@@ -97,9 +102,6 @@
               </a>
             </nav>
             
-        <div id="secondBody" class="secondBodyClass">
-          <header class="header">
-
             <!-- Barra do menu desktop -->
             <nav class="nav-desktop">
 
