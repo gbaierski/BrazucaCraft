@@ -452,7 +452,7 @@
 .produto-comprar {
 
     color: white;
-    font-family: monospace;
+    font-family: NotoSans;
     font-weight: 600;
     outline: none;
     transition: transform .35s;
@@ -493,14 +493,14 @@
 
 .atributos-produto {
 
-    font-family: monospace;
+    font-family: NotoSans;
 }
 
 #tituloLoja {
     
     text-align: center;
     color: white;
-    font-family: monospace;
+    font-family: NotoSans;
     font-weight: 1000;
     text-shadow: 0.1vw 0.2vw rgba(0, 0, 0, 0.651);
     background-color: rgba(0, 0, 0, 0.562);
@@ -532,7 +532,7 @@
     background-color: black;
     text-align: center;
     color: white;
-    font-family: monospace;
+    font-family: NotoSans;
     font-weight: 1000;
     text-shadow: 0.1vw 0.2vw rgba(0, 0, 0, 0.651);
 }

@@ -385,7 +385,7 @@
 
 .item-rodape {
 
-    font-family: monospace;
+    font-family: NotoSans;
     transition: transform .30s;
 }
 
@@ -402,7 +402,7 @@
 
 .titulo-rodape {
 
-    font-family: monospace;
+    font-family: NotoSans;
     text-align: center;
     font-weight: 500;
     transition: transform .30s

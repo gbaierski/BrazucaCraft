@@ -298,7 +298,7 @@
 
     font-weight: 600;
     color: white;
-    font-family: monospace;
+    font-family: NotoSans;
 }
 
 #backgroundCadastroUsuario {
@@ -319,13 +319,13 @@
     color: white;
     font-weight: 600;
     text-align: center;
-    font-family: monospace;
+    font-family: NotoSans;
 }
 
 #cadastroUsuarioContinuar {
 
     float: right;
-    font-family: monospace;
+    font-family: NotoSans;
     text-align: center;
     font-weight: 700;
     color: white;
@@ -342,7 +342,7 @@
 #cadastroUsuarioVoltar {
 
     text-align: center;
-    font-family: monospace;
+    font-family: NotoSans;
     text-decoration: none;
     font-weight: 700;
     color: white;

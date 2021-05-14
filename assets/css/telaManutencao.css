@@ -179,7 +179,7 @@
 .produto-comprar {
 
     color: white;
-    font-family: monospace;
+    font-family: NotoSans;
     font-weight: 600;
     background-color: rgb(22, 163, 69);
     outline: none;
@@ -223,14 +223,14 @@
 
 .atributos-produto {
 
-    font-family: monospace;
+    font-family: NotoSans;
 }
 
 #tituloLoja {
     
     text-align: center;
     color: white;
-    font-family: monospace;
+    font-family: NotoSans;
     font-weight: 1000;
     text-shadow: 0.1vw 0.2vw rgba(0, 0, 0, 0.651);
     background-color: rgba(0, 0, 0, 0.562);
@@ -272,7 +272,7 @@ body {
 
     outline: none;
     color: white;
-    font-family: monospace;
+    font-family: NotoSans;
     text-shadow: 0.1vw 0.13vw rgba(0, 0, 0, 0.651);
     background-color: #6f6f6f;
     transition: transform .30s;
@@ -289,7 +289,7 @@ body {
     text-align: center;
     text-shadow: 0.1vw 0.13vw rgba(0, 0, 0, 0.651);
     color: rgb(175, 175, 175); 
-    font-family: monospace;
+    font-family: NotoSans;
 }
 
 #textoVoltarHome {
@@ -297,6 +297,6 @@ body {
     text-shadow: 0.1vw 0.13vw rgba(0, 0, 0, 0.651);
     text-align: center;
     color: white; 
-    font-family: monospace;
+    font-family: NotoSans;
 
 }

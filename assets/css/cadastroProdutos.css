@@ -298,7 +298,7 @@
 
 .label-cadastroProduto {
 
-    font-family: monospace;
+    font-family: NotoSans;
     color: white;
 }
 
@@ -328,7 +328,7 @@
 
 #cadastroProduto-titulo {
 
-    font-family: monospace;
+    font-family: NotoSans;
     color:white;
 }
 
@@ -345,7 +345,7 @@
 #botao-cadastrarProduto {
 
     font-weight: 700;
-    font-family: monospace;
+    font-family: NotoSans;
     color: white;
     cursor: pointer;
     transition: transform .35s;

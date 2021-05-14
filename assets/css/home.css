@@ -119,7 +119,7 @@
         color: white;
         width: 100%;
         text-align:left;
-        font-family: monospace;
+        font-family: NotoSans;
         font-size: 4vw;
         text-indent: 20%;
         margin-top: 3vw;
@@ -281,7 +281,7 @@
     #titulo-SobreBrazuca {
 
         color: white;
-        font-family: monospace;
+        font-family: NotoSans;
         font-weight: 700;
         font-size: 5vw;
         margin-left: 7%;
@@ -292,7 +292,7 @@
     #titulo-Novidades {
 
         color: white;
-        font-family: monospace;
+        font-family: NotoSans;
         position: absolute;
         font-weight: 700;
         font-size: 7vw;
@@ -441,7 +441,7 @@
         color: white;
         width: 100%;
         text-align:left;
-        font-family: monospace;
+        font-family: NotoSans;
         font-size: 4vw;
         text-indent: 20%;
         margin-top: 3vw;
@@ -603,7 +603,7 @@
     #titulo-SobreBrazuca {
 
         color: white;
-        font-family: monospace;
+        font-family: NotoSans;
         font-weight: 700;
         font-size: 5vw;
         margin-left: 7%;
@@ -614,7 +614,7 @@
     #titulo-Novidades {
 
         color: white;
-        font-family: monospace;
+        font-family: NotoSans;
         position: absolute;
         font-weight: 700;
         font-size: 7vw;
@@ -689,7 +689,7 @@
         color: white;
         width: 50%;
         text-align:left;
-        font-family: monospace;
+        font-family: NotoSans;
         font-size: 1.3vw;
         text-indent: 20%;
         margin-top: -1vw;
@@ -942,7 +942,7 @@
     #titulo-SobreBrazuca {
 
         color: white;
-        font-family: monospace;
+        font-family: NotoSans;
         font-weight: 700;
         font-size: 2.5vw;
         margin-left: 7%;
@@ -952,7 +952,7 @@
     #titulo-Novidades {
 
         color: white;
-        font-family: monospace;
+        font-family: NotoSans;
         position: absolute;
         font-weight: 700;
         font-size: 3vw;
@@ -1048,7 +1048,7 @@
     color: white;
     background-color: transparent;
     border: none;
-    font-family: monospace;
+    font-family: NotoSans;
     text-decoration: none;
     text-align: center;
     font-weight: 700;
@@ -1074,7 +1074,7 @@
 
     color: white;
     font-weight: 700;
-    font-family: monospace;
+    font-family: NotoSans;
     text-decoration: none;
     text-align: center;
 }
@@ -1083,7 +1083,7 @@
 
     color: white;
     font-weight: 700;
-    font-family: monospace;
+    font-family: NotoSans;
     text-decoration: none;
     text-align: center;
 }
@@ -1108,7 +1108,7 @@
 #frase-discord {
 
     float: left;
-    font-family: monospace;
+    font-family: NotoSans;
     font-weight:bolder;
     color: white;
     border: none;
@@ -1144,7 +1144,7 @@
     background-color: #008542;
     position: block;
     color: white;
-    font-family: monospace;
+    font-family: NotoSans;
 }
 
 .carrosselNovidades {

@@ -797,7 +797,7 @@
     background-image: url('../img/icons/fechar.png');
     background-size: cover;
     border: none;
-    font-family: monospace;
+    font-family: NotoSans;
     text-align: center;
     float: right;
     font-weight: 1000;
@@ -892,7 +892,7 @@
     float: left; 
     color: white; 
     font-weight: 700; 
-    font-family: monospace;
+    font-family: NotoSans;
     text-shadow: 0.08vw 0.15vw rgba(0, 0, 0, 0.651);
     text-decoration: none;
     text-align: center;
@@ -1015,27 +1015,27 @@
 
     text-align: center;
     color: white;
-    font-family: monospace;
+    font-family: NotoSans;
     font-weight: 550;
 }
 
 #loginModal {
 
     color: white;
-    font-family: monospace;
+    font-family: NotoSans;
     font-weight: 550;
 }
 
 #senhaModal {
 
     color: white;
-    font-family: monospace;
+    font-family: NotoSans;
     font-weight: 550;
 }
 
 #botaoLogar {
 
-    font-family: monospace;
+    font-family: NotoSans;
     font-weight: 700;
     color: white;
     transition: transform .35s;
@@ -1049,7 +1049,7 @@
 
 #botaoCadastro {
 
-    font-family: monospace;
+    font-family: NotoSans;
     font-weight: 700;
     color: white;
     transition: transform .35s;
@@ -1065,7 +1065,7 @@
 
     color: white;
     text-decoration: none;
-    font-family: monospace;
+    font-family: NotoSans;
 }
 
 #linkEsqueciSenha:hover {

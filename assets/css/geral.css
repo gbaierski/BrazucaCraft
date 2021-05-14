@@ -54,8 +54,13 @@ body {
     }
   }
   
-  @keyframes glow-red {
-    50% {
-      border-color: indianred;
-    }
+@keyframes glow-red {
+  50% {
+    border-color: indianred;
   }
+}
+
+@font-face {
+  font-family: NotoSans;
+  src: url("../font/NotoSans-Bold.ttf");
+}
