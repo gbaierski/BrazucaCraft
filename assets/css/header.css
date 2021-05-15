@@ -628,7 +628,7 @@
     #texto-brazuca {
 
         margin-top: -0.01vw;
-        font-size: 2vw;
+        font-size: 1.6vw;
     }
 
     #link-brazuca-menu {
@@ -696,7 +696,7 @@
 
         width: 24%;
         height: 2.2vw;
-        font-size: 1.4vw;
+        font-size: 1.2vw;
         margin-top: 0.5vw;
         margin-left: 36%;
         border-bottom: 0.27vw solid rgba(10, 10, 10, 0.4);
@@ -764,6 +764,7 @@
 
 .texto-linkMenu {
 
+    font-family: NotoSans_Bold;
     float: right;
 }
 
@@ -892,7 +893,7 @@
     float: left; 
     color: white; 
     font-weight: 700; 
-    font-family: NotoSans;
+    font-family: NotoSans_Bold;
     text-shadow: 0.08vw 0.15vw rgba(0, 0, 0, 0.651);
     text-decoration: none;
     text-align: center;
@@ -993,6 +994,7 @@
     background-color: transparent;
     text-shadow: 0.05vw 0.11vw rgba(0, 0, 0, 0.651);
     cursor: pointer;
+    font-family: NotoSans_Bold;
 }
 
 #botao-login:hover{
@@ -1015,21 +1017,21 @@
 
     text-align: center;
     color: white;
-    font-family: NotoSans;
+    font-family: NotoSans_Bold;
     font-weight: 550;
 }
 
 #loginModal {
 
     color: white;
-    font-family: NotoSans;
+    font-family: NotoSans_Bold;
     font-weight: 550;
 }
 
 #senhaModal {
 
     color: white;
-    font-family: NotoSans;
+    font-family: NotoSans_Bold;
     font-weight: 550;
 }
 

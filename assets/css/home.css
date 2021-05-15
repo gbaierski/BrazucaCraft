@@ -281,7 +281,7 @@
     #titulo-SobreBrazuca {
 
         color: white;
-        font-family: NotoSans;
+        font-family: NotoSans_Bold;
         font-weight: 700;
         font-size: 5vw;
         margin-left: 7%;
@@ -292,7 +292,7 @@
     #titulo-Novidades {
 
         color: white;
-        font-family: NotoSans;
+        font-family: NotoSans_Bold;
         position: absolute;
         font-weight: 700;
         font-size: 7vw;
@@ -790,6 +790,7 @@
     #ip-home {
 
         font-size: 2.5vw;
+        margin-top: -0.5vw;
         text-shadow: 0.2vw 0.18vw rgba(0, 0, 0, 0.651);
     }
 
