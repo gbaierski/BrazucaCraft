@@ -218,6 +218,20 @@ class Usuario {
         return $data;
     }
 
+    function getCompraDia() {
+        $data = '';
+
+        $sql = "SELECT Valor FROM historicocompradia";
+        $exec = mysqli_query($this->conexao->getConnection(), $sql);
+
+        while ($row = mysqli_fetch_array($exec)) {
+            $data = $data . '"' . $row['Valor'] . '",';
+        }
+
+        $data = trim($data,",");
+        return $data;
+    }
+
     //Função que pegao horario e o altera para o nosso fuso horario    
     function calculoHorario() {
 

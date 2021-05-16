@@ -184,23 +184,23 @@
                   <div id="div-tooltip">
                     <label for="senha" id="senhaModal">SENHA:</label>
                     <input type="password" id="senha" name="senha" class="modalLogin-input" autocomplete="off">
-                    <span class="tooltiptextSenha">Senha incorreta!</span>
+                    <span id="tooltiptextSenhaId" class="tooltiptextSenha" class="displaySenhaErro">Senha incorreta!</span>
                   </div>
 
                   <?php
                     if (isset($_GET['erro'])) {
-
-                      #echo '<h>Senha/Usuario incorretos</h1>';
 
                       echo "<script>
                         $(document).ready(function(){
                           $('#modal').modal('show');
                           document.getElementById('senha').classList.add('errada');
                           document.getElementById('div-tooltip').classList.add('tooltipSenha');
+                          document.getElementById('tooltiptextSenhaId').classList.remove('displaySenhaErro');
 
-                          function showMessage(){   
-                           mensagem.style.display = 'block';   
-                          }
+                          let mensagem = document.querySelector('.tooltiptextSenha') ;
+                           
+                          mensagem.style.display = 'block';   
+                          
                         }); </script>";
 
                       }
@@ -217,7 +217,8 @@
               </div>
               
             </div>
-
+            
             <script src="../view/home.js"></script>
             <script src="../view/header.js"></script>
           </header>
+          

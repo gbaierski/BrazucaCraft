@@ -144,4 +144,3 @@ function fecharMenu () {
     document.getElementById("menuMobile").removeAttribute("disabled");
   }, 2000);
 }
-
