@@ -1064,12 +1064,15 @@
 
 .tooltipSenha {
     position: relative;
-    
   }
   .tooltiptextSenha:after {
     border-color: transparent transparent #f00 transparent;
   }
+  .tooltiptextSenha{
+    display: none;
+  }
   .tooltipSenha .tooltiptextSenha {
+    display: none;
     visibility: hidden;
     width: 120px;
     background-color: black;
