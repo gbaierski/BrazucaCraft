@@ -27,6 +27,13 @@ function EditarProduto(){
     require '../view/loja/cadastroProdutos.php';
 }
 
+function homeLoja(){
+
+    $nomePagina = "Loja | BrazucaCraft";
+    require ('../view/loja/homeloja.php');
+
+}
+
 function Loja(){
 
     //Consulta no Banco

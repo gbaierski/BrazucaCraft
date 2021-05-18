@@ -1,0 +1,119 @@
+.tituloItensLoja {
+
+    color: white;
+    font-family: NotoSans_Bold;
+    font-size: 1.7vw;
+    float: right;
+    margin-right: 2vw;
+    margin-top: 1vw;
+    text-shadow: 0.1vw 0.2vw rgba(0, 0, 0, 0.651);
+}
+
+#fadeLoja {
+    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.849), rgb(0, 0, 0), rgb(0, 0, 0));
+    width: 100%;
+    height: 60vw;
+}
+
+#textoVip {
+
+    color: white;
+    font-family: NotoSans_Bold;
+    font-size: 3vw;
+    float: left;
+    margin-top: 7vw;
+    margin-left: 4vw;
+    text-shadow: 0.1vw 0.2vw rgba(0, 0, 0, 0.651);
+}
+
+#categoriasLoja {
+
+    width: 100%;
+    height: 60vw;
+    padding-top: 15vw;
+    background-image: url("../img/paginas/cadastroUsuario/backgroundCadastroUsuario.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#backgroundVips {
+
+    width: 75%;
+    height: 20vw;
+    background-image: url("../../assets/img/paginas/loja/backgroundLoja.jpg");
+    background-size: cover;
+    margin-left: 12.5vw;
+    transition: transform .28s;
+}
+
+#backgroundVips:hover { 
+
+    transform: scale(1.05);
+    transition: transform .28s;
+    cursor: pointer;
+}
+
+#vips {
+
+    width: 100%;
+    height: 20vw;
+    background-image: linear-gradient( to right, rgba(17, 207, 0, 0.603), rgba(0, 238, 59, 0.103) );
+}
+
+
+#cosmeticos {
+
+    width: 30%;
+    height: 30vw;
+    margin-top: 3vw;
+    margin-left: 12.5vw;
+    float: left;
+    background-color: rgb(37, 96, 204);
+    background-image: linear-gradient( to right, rgb(17, 20, 243), rgb(0, 103, 238) );
+    transition: transform .28s;
+}
+
+#cosmeticos:hover { 
+
+    transform: scale(1.05);
+    transition: transform .28s;
+    cursor: pointer;
+}
+
+#boosters {
+
+    float: left;
+    width: 42%;
+    height: 13.5vw;
+    margin-top: 3vw;
+    margin-left: 3vw;
+    background-color: rgb(255, 238, 0);
+    background-image: linear-gradient( to right, #eb9412, rgb(255, 217, 0) );
+    transition: transform .28s;
+}
+
+#boosters:hover { 
+
+    transform: scale(1.05);
+    transition: transform .28s;
+    cursor: pointer;
+}
+
+#parceiros {
+
+    float: left;
+    width: 42%;
+    height: 13.5vw;
+    margin-top: 3vw;
+    margin-left: 3vw;
+    background-color: rgb(17, 207, 0);
+    background-image: linear-gradient(to right,rgb(17, 207, 0), rgb(0, 238, 59));
+    transition: transform .28s;
+}
+
+#parceiros:hover { 
+
+    transform: scale(1.05);
+    transition: transform .28s;
+    cursor: pointer;
+}
