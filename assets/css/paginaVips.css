@@ -1,0 +1,13 @@
+.colunaVip {
+
+    width: 20%;
+    margin-left: 5%;
+    height: 35vw;
+    background-color: white;
+}
+
+#colunasVip {
+    padding-top: 10vw;
+    width: 100%;
+    height: 50vw;
+}

@@ -9,29 +9,19 @@
     text-shadow: 0.1vw 0.2vw rgba(0, 0, 0, 0.651);
 }
 
-#fadeLoja {
-    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.849), rgb(0, 0, 0), rgb(0, 0, 0));
-    width: 100%;
-    height: 60vw;
-}
+.itemLoja:hover {
 
-#textoVip {
-
-    color: white;
-    font-family: NotoSans_Bold;
-    font-size: 3vw;
-    float: left;
-    margin-top: 7vw;
-    margin-left: 4vw;
-    text-shadow: 0.1vw 0.2vw rgba(0, 0, 0, 0.651);
+    transform: scale(1.05);
+    transition: transform .28s;
+    cursor: pointer;
 }
 
 #categoriasLoja {
 
     width: 100%;
-    height: 60vw;
+    height: 90vw;
     padding-top: 15vw;
-    background-image: url("../img/paginas/cadastroUsuario/backgroundCadastroUsuario.jpg");
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.849), rgb(0, 0, 0), rgb(0, 0, 0)), url("../img/paginas/loja/backgroundHomeLoja.jpg");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -40,24 +30,16 @@
 
     width: 75%;
     height: 20vw;
-    background-image: url("../../assets/img/paginas/loja/backgroundLoja.jpg");
+    background: linear-gradient(90deg,#09861a,rgba(30,140,240,0) 85%),url("https://storage.googleapis.com/assets.originrealms.com/static/store/seasonal/cosmo/bg.jpg");
     background-size: cover;
     margin-left: 12.5vw;
     transition: transform .28s;
-}
-
-#backgroundVips:hover { 
-
-    transform: scale(1.05);
-    transition: transform .28s;
-    cursor: pointer;
 }
 
 #vips {
 
     width: 100%;
     height: 20vw;
-    background-image: linear-gradient( to right, rgba(17, 207, 0, 0.603), rgba(0, 238, 59, 0.103) );
 }
 
 
@@ -73,14 +55,7 @@
     transition: transform .28s;
 }
 
-#cosmeticos:hover { 
-
-    transform: scale(1.05);
-    transition: transform .28s;
-    cursor: pointer;
-}
-
-#boosters {
+#moedas {
 
     float: left;
     width: 42%;
@@ -92,14 +67,7 @@
     transition: transform .28s;
 }
 
-#boosters:hover { 
-
-    transform: scale(1.05);
-    transition: transform .28s;
-    cursor: pointer;
-}
-
-#parceiros {
+#boosters {
 
     float: left;
     width: 42%;
@@ -111,9 +79,72 @@
     transition: transform .28s;
 }
 
-#parceiros:hover { 
+#caixasMisteriosas {
 
-    transform: scale(1.05);
+    background-color: rgb(119, 16, 93);
+    background-image: linear-gradient(to right,rgb(119, 16, 93), rgb(187, 25, 146));
+    width: 36%;
+    height: 25vw;
+    margin-left: 12.5vw;
+    margin-top: 3vw;
+    float: left;
     transition: transform .28s;
-    cursor: pointer;
+}
+
+#parceiros {
+
+    background-color: rgb(136, 14, 14);
+    background-image: linear-gradient(to right,rgb(136, 14, 14), rgb(199, 25, 25));
+    width: 36%;
+    height: 12vw;
+    margin-left: 3vw;
+    margin-top: 3vw;
+    float: left;
+    transition: transform .28s;
+}
+
+#unban {
+
+    background-color: rgb(97, 97, 97);
+    background-image: linear-gradient(to right,rgb(29, 31, 49), rgb(45, 78, 110));
+    width: 36%;
+    height: 10vw;
+    margin-left: 3vw;
+    margin-top: 3vw;
+    float: left;
+    transition: transform .28s;
+}
+
+#textoVip {
+
+    color: white;
+    font-family: NotoSans_Bold;
+    font-size: 3vw;
+    float: left;
+    margin-top: 7vw;
+    margin-left: 4vw;
+    text-shadow: 0.1vw 0.2vw rgba(0, 0, 0, 0.651);
+}
+
+#textoCosmeticos {
+
+    margin-top: -25vw;
+}
+
+#imagemCosmeticos {
+
+    width: 70%;
+}
+
+#imagemMoedas {
+
+    width: 30%;
+    margin-left: 2vw;
+}
+
+#imagemBoosters {
+
+    width: 30%;
+    margin-top: 0.5vw;
+    margin-left: 1vw;
 }

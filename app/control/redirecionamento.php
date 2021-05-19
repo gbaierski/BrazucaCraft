@@ -68,6 +68,12 @@ function Perfil () {
 
 }
 
+function paginaVips () {
+
+    $nomePagina = "Vips | BrazucaCraft";
+    require '../view/loja/paginaVips.php';
+}
+
 
 //Gerenciador de Rotas
 if (isset($_GET['action']) and function_exists($_GET['action']) ) {

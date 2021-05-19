@@ -27,6 +27,7 @@
 
 		<link rel="stylesheet" type="text/css" href="../../assets/css/loja.css"/>
     <link rel="stylesheet" type="text/css" href="../../assets/css/homeloja.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/paginaVips.css"/>
     <link rel="stylesheet" type="text/css" href="../../assets/css/cadastroProdutos.css"/>
     <link rel="stylesheet" type="text/css" href="../../assets/css/cadastroUsuario.css"/>
 
