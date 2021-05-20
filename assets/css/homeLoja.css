@@ -19,11 +19,32 @@
 #categoriasLoja {
 
     width: 100%;
-    height: 90vw;
-    padding-top: 15vw;
+    height: 100vw;
+    padding-top: 10vw;
     background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.849), rgb(0, 0, 0), rgb(0, 0, 0)), url("../img/paginas/loja/backgroundHomeLoja.jpg");
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+#tituloHomeLoja {
+
+    font-family: NotoSans_Bold;
+    color: white;
+    text-align: center;
+    font-size: 4vw;
+    margin-bottom: 5vw;
+    text-shadow: 0.1vw 0.2vw rgba(0, 0, 0, 0.651);
+}
+
+#voltarParaHomeLoja {
+
+    margin-left: 5%;
+    margin-top: 4.5vw;
+}
+
+#voltarParaHomeLoja:hover {
+
+    background-color: #34aa2f ;
 }
 
 #backgroundVips {
