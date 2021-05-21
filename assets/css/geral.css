@@ -60,7 +60,7 @@ body {
   transition: background-color 0.5s, color 0.5s;
   color: #00000080;
   cursor: pointer;
-  border-color: rgba(0, 0, 0, 0.507);
+  border-color: rgba(0, 0, 0, 0.616);
 }
 
 @keyframes shake {
