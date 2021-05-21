@@ -30,6 +30,10 @@
     <link rel="stylesheet" type="text/css" href="../../assets/css/paginaVips.css"/>
     <link rel="stylesheet" type="text/css" href="../../assets/css/paginaBoosters.css"/>
     <link rel="stylesheet" type="text/css" href="../../assets/css/paginaCaixas.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/paginaCosmeticos.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/paginaMoedas.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/paginaParceiros.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/paginaUnban.css"/>
     <link rel="stylesheet" type="text/css" href="../../assets/css/cadastroProdutos.css"/>
     <link rel="stylesheet" type="text/css" href="../../assets/css/cadastroUsuario.css"/>
 

@@ -1,7 +1,11 @@
 <?php require "../view/header.php"; ?> 
 
-<section id="colunasCosmeticos">
+<section id="colunasParceiros">
+    <a href="../control/redirecionamento.php?action=homeLoja">
+        <button class="botaoVoltar" id="voltarParaLojaParceiros">Voltar para a Loja</button>
+    </a>
 
+    <div id="tituloParceiros"> Parceiros</div>
 
 </section>
 

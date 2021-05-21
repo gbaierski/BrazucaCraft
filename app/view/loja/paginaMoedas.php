@@ -1,7 +1,11 @@
 <?php require "../view/header.php"; ?> 
 
-<section id="colunasCosmeticos">
+<section id="colunasMoedas">
+    <a href="../control/redirecionamento.php?action=homeLoja">
+        <button class="botaoVoltar" id="voltarParaLojaMoedas">Voltar para a Loja</button>
+    </a>
 
+    <div id="tituloMoedas"> Moedas</div>
 
 </section>
 
