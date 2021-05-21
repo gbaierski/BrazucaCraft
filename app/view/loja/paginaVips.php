@@ -8,7 +8,7 @@
 
     <div id="tituloVips"> Vips BrazucaCraft</div>
 
-    <div class="colunaVip">
+    <div class="produtoVip">
         <div class="imagemVip" style="background-color: rebeccapurple;"></div>
         <div class="tituloProdutoVip">VIP PODRE</div>
         <div class="conteudoVip">
@@ -25,7 +25,7 @@
         <button class="botaoComprarVip">R$ 10,00</button>
     </div>
 
-    <div class="colunaVip">
+    <div class="produtoVip">
         <div class="imagemVip" style="background-color: red;"></div>
         <div class="tituloProdutoVip">VIP BÁSICO</div>
         <div class="conteudoVip">
@@ -42,7 +42,7 @@
         <button class="botaoComprarVip">R$ 20,00</button>
     </div>
 
-    <div class="colunaVip">
+    <div class="produtoVip">
         <div class="imagemVip" style="background-color: green;"></div>
         <div class="tituloProdutoVip">VIP MÉDIO</div>
         <div class="conteudoVip">
@@ -59,7 +59,7 @@
         <button class="botaoComprarVip">R$ 40,00</button>
     </div>
 
-    <div class="colunaVip">
+    <div class="produtoVip">
         <div class="imagemVip" style="background-color: blue;"></div>
         <div class="tituloProdutoVip">VIP BRABO</div>
         <div class="conteudoVip">

@@ -1,3 +1,78 @@
+.produtoBooster {
+
+    width: 17%;
+    height: 25vw;
+    border-radius: 10px;
+    background-color: #181818;
+    margin-left: 6.25%;
+    margin-bottom: 5vw;
+    float: left;
+}
+
+.botaoComprarBooster {
+
+    background-color: #34aa2f;
+    border-radius: 7px;
+    color: white;
+    font-family: NotoSans_Bold;
+    background-color: rgb(24, 24, 24);
+    border: #505050 1.3px solid;
+    width: 40%;
+    height: 4vw;
+    margin-left: 29%;
+    margin-top: 1vw;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.botaoComprarBooster:hover {
+
+    background-color: #34aa2f;;
+    transition: background-color 0.5s, color 0.5s;
+    color: #000000bb;
+    cursor: pointer;
+    border-color: rgba(0, 0, 0, 0.616);
+}
+
+.imagemBooster {
+
+    width: 80%;
+    margin-left: 10%;
+    height: 13vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tituloBooster {
+
+    width: 100%;
+    font-size: 1.4vw;
+    color: white;
+    font-family: NotoSans_Bold;
+    text-align: center;
+}
+
+.descricaoBooster {
+
+    width: 90%;
+    margin-left: 5%;
+    height: 3vw;
+    margin-top: 1vw;
+    font-size: 1.2vw;
+    color: white;
+    font-family: NotoSans;
+    text-align: center;
+}
+
+.duracaoBooster {
+
+    width: 100%;
+    margin-top: 1vw;
+    font-size: 1.2vw;
+    color: white;
+    font-family: NotoSans_Bold;
+    text-align: center;
+}
+
 #colunasBoosters {
 
     padding-top: 10vw;
