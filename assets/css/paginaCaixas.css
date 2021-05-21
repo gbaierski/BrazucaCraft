@@ -1,3 +1,154 @@
+.produtoCaixa {
+
+    width: 85%;
+    height: 20vw;
+    border-radius: 10px;
+    background-color: #181818;
+    margin-left: 6.25%;
+    margin-bottom: 5vw;
+    float: left;
+}
+
+.botaoComprarCaixa {
+
+    background-color: #34aa2f;
+    border-radius: 7px;
+    font-size: 1.3vw;
+    color: white;
+    font-family: NotoSans_Bold;
+    background-color: rgb(24, 24, 24);
+    border: #505050 1.3px solid;
+    width: 25%;
+    height: 4vw;
+    margin-left: 2.5vw;
+    margin-top: 3.5vw;
+    transition: background-color 0.5s, color 0.5s;
+    float: left;
+}
+
+.botaoComprarCaixa:hover {
+
+    background-color: #34aa2f;;
+    transition: background-color 0.5s, color 0.5s;
+    color: #000000bb;
+    cursor: pointer;
+    border-color: rgba(0, 0, 0, 0.616);
+}
+
+.imagemCaixa {
+
+    width: 20%;
+    margin-left: 5%;
+    margin-top: 2%;
+    float: left;
+}
+
+.tituloCaixa {
+
+    width: 70%;
+    font-size: 2vw;
+    margin-top: 0.5vw;
+    color: white;
+    font-family: NotoSans_Bold;
+    text-align: center;
+}
+
+.dropsCaixa {
+
+    width: 40%;
+    height: 14vw;
+    margin-top: 1vw;
+    margin-left: 2.5vw;
+    float: left;
+}
+
+.dropCaixa {
+
+    width: 5.5vw;
+    height: 5.5vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    float: left;
+    transition: transform .30s
+}
+
+.dropCaixa:hover {
+
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform .30s
+}
+
+.normal {
+
+    background-image: linear-gradient(to right,rgb(41, 189, 194), rgb(67, 143, 214));
+}
+
+.raro {
+
+    background-image: linear-gradient(to right,rgb(64, 163, 51), rgb(83, 228, 47));
+}
+
+.epico {
+    
+    background-image: linear-gradient(to right,rgb(212, 33, 33), rgb(177, 20, 20));
+}
+
+.lendario {
+
+    background-image: linear-gradient(to right,rgb(174, 33, 209), rgb(49, 151, 247));
+}
+
+.divQuantidadeCaixas {
+
+    width: 10%;
+    height: 5vw;
+    margin-left: 10%;
+    margin-top: 1vw;
+    float: left;
+}
+
+.quantidadeCaixa {
+
+    color: white;
+    font-family: NotoSans_Bold;
+    text-align: center;
+    background-color: #181818;
+    outline: none;
+    width: 3.5vw;
+    height: 2.5vw;
+    font-size: 1.5vw;
+    margin-left: 2%;
+    margin-top: 1%;
+    float: left;
+}
+
+.quantidadeCaixa::-webkit-outer-spin-button,
+.quantidadeCaixa::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+.botaoNumeroCaixas {
+
+    float: left;
+    margin-top: 0.5vw;
+    transition: transform .30s
+}
+
+.botaoNumeroCaixas:hover {
+
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform .30s
+}
+
+.icon-setaNumeroCaixas {
+
+    width: 2vw;
+}
+
+
 #colunasCaixas {
 
     padding-top: 10vw;
