@@ -1,3 +1,81 @@
+
+.produtoUnban {
+
+    width: 25vw;
+    height: 25vw;
+    border-radius: 6px;
+    background-color: rgb(24, 24, 24);
+    margin-left: 37%;
+    margin-top: 4vw;
+}
+
+.imagemUnban {
+
+    width: 80%;
+    margin-left: 10%;
+}
+
+.tituloUnban {
+
+    color: white;
+    font-family: NotoSans_Bold;
+    text-align: center;
+}
+
+.descricaoUnban {
+
+    color: white;
+    font-family: NotoSans;
+    text-align: center;
+}
+
+.botaoComprarUnban {
+
+    background-color: #34aa2f;
+    border-radius: 7px;
+    color: white;
+    font-family: NotoSans_Bold;
+    background-color: rgb(24, 24, 24);
+    border: #505050 1.3px solid;
+    width: 70%;
+    height: 4vw;
+    margin-left: 15%;
+    margin-top: 0.5vw;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+
+.botaoComprarUnban:hover {
+
+    background-color: #34aa2f;;
+    transition: background-color 0.5s, color 0.5s;
+    color: #000000bb;
+    cursor: pointer;
+    border-color: rgba(0, 0, 0, 0.616);
+}
+
+
+#botaoUnban {
+
+    width: 30%;
+    height: 3vw;
+    color: white;
+    font-family: NotoSans_Bold;
+    background-color: rgb(24, 24, 24);
+    border-radius: 6px;
+    border: #505050 1.3px solid;
+    outline: none;
+    margin-left: 34%;
+    transition: border .30s;
+}
+
+#botaoUnban:hover {
+
+    cursor: pointer;
+    transition: border .30s;
+    border: #c40e0e 1.3px solid;
+}
+
 #colunasUnban {
 
     padding-top: 10vw;
