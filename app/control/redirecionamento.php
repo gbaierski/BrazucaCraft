@@ -61,6 +61,13 @@ function Perfil () {
 
 }
 
+function Ajuda () {
+
+    $nomePagina = "Ajuda | BrazucaCraft";
+    require '../view/ajuda.php';
+
+}
+
 
 //Gerenciador de Rotas
 if (isset($_GET['action']) and function_exists($_GET['action']) ) {

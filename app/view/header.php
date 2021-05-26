@@ -24,7 +24,7 @@
 		<link rel="stylesheet" type="text/css" href="../../assets/css/footer.css"/>
 
 		<!-- Css das outras páginas -->
-
+		<link rel="stylesheet" type="text/css" href="../../assets/css/ajuda.css"/>
 		<link rel="stylesheet" type="text/css" href="../../assets/css/loja.css"/>
     <link rel="stylesheet" type="text/css" href="../../assets/css/cadastroProdutos.css"/>
     <link rel="stylesheet" type="text/css" href="../../assets/css/cadastroUsuario.css"/>
@@ -66,7 +66,7 @@
         </div>
 
         <div class="opcao-menuMobile">
-          <a href="../control/redirecionamento.php?action=manutencao">
+          <a href="../control/redirecionamento.php?action=Ajuda">
             <button class="botao-menuMobile" id="botao-ajudaMobile">
               <img src="../../assets/img/icons/ajuda.png" class="icon-linkMenuMobile">
               <div class="texto-linkMenuMobile"> AJUDA </div>
