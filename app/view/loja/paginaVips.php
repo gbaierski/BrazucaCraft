@@ -9,8 +9,8 @@
     <div id="tituloVips"> Vips BrazucaCraft</div>
 
     <div class="produtoVip">
-        <div class="imagemVip" style="background-color: rebeccapurple;"></div>
-        <div class="tituloProdutoVip">VIP PODRE</div>
+        <div class="imagemVip" style="background-color: yellow;"></div>
+        <div class="tituloProdutoVip">VIP CANARINHO</div>
         <div class="conteudoVip">
             <?php
             $beneficiosVip = ['Terreno rank B','R$ 1000,00', '3 Caixas Misteriosas', '2 Cosméticos', '3 emojis'];
@@ -26,8 +26,8 @@
     </div>
 
     <div class="produtoVip">
-        <div class="imagemVip" style="background-color: red;"></div>
-        <div class="tituloProdutoVip">VIP BÁSICO</div>
+        <div class="imagemVip" style="background-color: brown;"></div>
+        <div class="tituloProdutoVip">VIP ARIRANHA</div>
         <div class="conteudoVip">
             <?php
             $beneficiosVip = ['Terreno rank A','R$ 2000,00', '4 Caixas Misteriosas', '2 Cosméticos', '3 emojis'];
@@ -43,11 +43,11 @@
     </div>
 
     <div class="produtoVip">
-        <div class="imagemVip" style="background-color: green;"></div>
-        <div class="tituloProdutoVip">VIP MÉDIO</div>
+        <div class="imagemVip" style="background-color: orange;"></div>
+        <div class="tituloProdutoVip">VIP JAGUAR</div>
         <div class="conteudoVip">
             <?php
-            $beneficiosVip = ['Terreno rank A+','R$ 3000,00', '10 Caixas Misteriosas', '7 Cosméticos', '3 emojis'];
+            $beneficiosVip = ['Terreno rank A+','R$ 3000,00', '10 Caixas Misteriosas', '7 Cosméticos', '5 emojis'];
 
             foreach ($beneficiosVip as $beneficio) {
 
@@ -58,23 +58,18 @@
         </div>
         <button class="botaoComprarVip">R$ 40,00</button>
     </div>
+    
+    <div id="passeBatalha">
+        <div id="tituloPasse">PASSE DE BATALHA</div>
+        <div id="temporadaPasse">TEMPORADA 1</div>
 
-    <div class="produtoVip">
-        <div class="imagemVip" style="background-color: blue;"></div>
-        <div class="tituloProdutoVip">VIP BRABO</div>
-        <div class="conteudoVip">
-            <?php
-            $beneficiosVip = ['Terreno rank S','R$ 10000,00', '15 Caixas Misteriosas', '10 Cosméticos', '7 emojis'];
-
-            foreach ($beneficiosVip as $beneficio) {
-
-                echo $beneficio;
-                echo '</br>';
-            }
-            ?>
-        </div>
-        <button class="botaoComprarVip">R$ 100,00</button>
+        <button id="botaoComprarPasse">R$ 15,00</button>
+        
+        <div class="clear"></div>
+        
+        <div id="visualizarRecompensasPasse">VISUALIZAR RECOMPENSAS </div>
     </div>
+       
     
 </section>
 
