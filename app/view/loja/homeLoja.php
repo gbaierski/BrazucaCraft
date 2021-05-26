@@ -41,20 +41,21 @@
 
         <a href="../control/redirecionamento.php?action=paginaCaixas">
             <div id="caixasMisteriosas" class="itemLoja">
+                <img src="../../assets/img/paginas/loja/caixasMisteriosasBackground.png" id="imagemCaixa">
                 <div class="tituloItensLoja" id="textoCaixas">CAIXAS MISTERIOSAS</div>
             </div>
         </a>
 
         <a href="../control/redirecionamento.php?action=paginaParceiros">
             <div id="parceiros" class="itemLoja">
-
+                <img src="../../assets/img/paginas/loja/parceirosBackground.png" id="imagemParceiros">
                 <div class="tituloItensLoja" id="textoParceiros">PARCEIROS</div>
             </div> 
         </a>
 
         <a href="../control/redirecionamento.php?action=paginaUnban">
             <div id="unban" class="itemLoja">
-
+                <img src="../../assets/img/paginas/loja/unbanBackground.png" id="imagemUnban">
                 <div class="tituloItensLoja" id="textoUnban">UNBAN</div>
             </div> 
         </a>

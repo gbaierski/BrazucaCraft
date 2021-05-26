@@ -152,6 +152,12 @@
     margin-top: -25vw;
 }
 
+#textoCaixas {
+
+    margin-top: -23vw;
+}
+
+
 #imagemCosmeticos {
 
     width: 70%;
@@ -168,4 +174,25 @@
     width: 30%;
     margin-top: 0.5vw;
     margin-left: 1vw;
+}
+
+#imagemCaixa {
+
+    width: 60%;
+    margin-top: 2.5vw;
+    margin-left: 2vw;
+}
+
+#imagemUnban {
+
+    width: 25%;
+    margin-top: 0.5vw;
+    margin-left: 2vw;
+}
+
+#imagemParceiros {
+
+    width: 25%;
+    margin-top: 0.5vw;
+    margin-left: 2vw;
 }
