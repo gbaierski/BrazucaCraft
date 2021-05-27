@@ -15,9 +15,9 @@ require "../view/header.php";
          <br><br><br><br><br><br><br>
         <div class="carrinhocompras">
           <?php
-          $aux = $_SESSION['produtos'];
-          $ai_produto = $aux[6];
-          print_r( $ai_produto);     
+          //$aux = $_SESSION['produtos'];
+          //$ai_produto = $aux[6];
+          print_r( $_SESSION['produtos']);     
           /*Consulta no Banco
           require ('..\model\produto\produto.php');          
           $produto = new Produto;    

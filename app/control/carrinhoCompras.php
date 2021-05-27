@@ -17,7 +17,7 @@ function adicionarnocarrinho(){
         $_SESSION['produtos'][$produtos['ai_produto']]['quantidade']+=1;
         header('location:../control/redirecionamento.php?action=Loja');
     }else{
-     $_SESSION ['produtos'][$produtos['ai_produto']] = ['quantidade' => 1];
+     $_SESSION ['produtos'][$produtos['ai_produto']] = ['idProduto' => $produtos['ai_produto'],'quantidade' => 1];
      header('location:../control/redirecionamento.php?action=Loja');
    
     }
