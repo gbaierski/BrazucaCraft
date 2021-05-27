@@ -90,4 +90,8 @@
 	<section>
 			<div id="div-Ajuda" style="height:30vw;">
 			</div>
+
+
+	<script src="../view/outrosJS/carrossel.js"></script>
+	<script src="../view/homeScroll.js"></script><!--Esse include deve estar sempre abaixo das sections e dentro da Home-->
 <?php require 'footer.php'; ?>

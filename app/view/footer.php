@@ -1,4 +1,3 @@
-
 </body>
 <footer class="rodape" id="footer">
 	<div class="sub-rodape">
@@ -65,8 +64,4 @@
 	</div>
 </footer>
 </section>
-
 </div> <!--secondBody-->
-
-<script src="../view/outrosJS/carrossel.js"></script>
-<script src="../view/homeScroll.js"></script><!--Esse include deve estar sempre abaixo das sections-->
