@@ -18,15 +18,18 @@ width: 4vw;
     width: 100%;
 }
 
+.botaoDropdownAjuda {
+    width: 100%;
+}
 
 .conteudoDropdownAjuda {
     margin-top: 3vw;
-    margin-right: 40%;
-    margin-left: 40%;
     display: none;
     background-color: #f1f1f1;
     min-width: 100px;
     z-index: 1;
+    width: 70%;
+    margin-left: 15%;
 }
 
 .show {display:block;}
