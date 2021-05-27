@@ -831,7 +831,8 @@
     #div-discord {
 
         width: 101%;
-        height:40vw;
+        height:48.1vw;
+        background-position-x: 45%;
         margin-left: -1vw;
     }
 
@@ -842,10 +843,10 @@
 
     #iframe-discord {
 
-        width:23vw; 
-        height:28vw; 
-        margin-top: -23.5vw;
-        margin-left: 75vw;
+        width:25vw; 
+        height:30vw; 
+        margin-top: -20vw;
+        margin-left: 69vw;
     }
 
     #frase-discord {
@@ -1135,7 +1136,6 @@
 #imagem-discord:hover {
 
     transform: scale(0.98)  rotate(-0.2deg);
-    cursor: pointer;
 }
 
 #div-playersOnline{
