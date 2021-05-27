@@ -1,0 +1,114 @@
+.produtoPacoteDivulgacao {
+
+    width: 25%;
+    height: 25vw;
+    border-radius: 10px;
+    background-color: #181818;
+    margin-left: 6.25%;
+    margin-bottom: 5vw;
+    float: left;
+}
+
+.botaoComprarPacoteDivulgacao {
+
+    background-color: #34aa2f;
+    border-radius: 7px;
+    font-size: 1vw ;
+    color: white;
+    font-family: NotoSans_Bold;
+    background-color: rgb(24, 24, 24);
+    border: #505050 1.3px solid;
+    width: 40%;
+    height: 4vw;
+    margin-left: 29%;
+    margin-top: 0.5vw;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.botaoComprarPacoteDivulgacao:hover {
+
+    background-color: #34aa2f;;
+    transition: background-color 0.5s, color 0.5s;
+    color: #000000bb;
+    cursor: pointer;
+    border-color: rgba(0, 0, 0, 0.616);
+}
+
+.imagemPacoteDivulgacao {
+
+    width: 100%;
+    height: 20vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.nomePacoteDivulgacao {
+
+    width: 100%;
+    font-size: 1.4vw;
+    color: white;
+    font-family: NotoSans_Bold;
+    text-align: center;
+}
+
+.secaoParceiro {
+
+    width: 12%;
+    height: 12vw;
+    margin-left: 6.6%;
+    margin-bottom: 3vw;
+    float: left;
+    transition: transform .28s;
+}
+
+.secaoParceiro:hover {
+
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform .28s;
+}
+
+.imagemParceiro {
+
+    width: 100%;
+}
+
+#colunasParceiros {
+
+    padding-top: 10vw;
+    width: 100%;
+    height: 50vw;
+}
+
+
+#tituloPacotes {
+    
+    font-family: NotoSans_Bold;
+    color: white;
+    text-align: center;
+    font-size: 3vw;
+    margin-bottom: 7vw;
+    text-shadow: 0.1vw 0.2vw rgba(0, 0, 0, 0.651);
+}
+
+#tituloParceiros {
+    
+    font-family: NotoSans_Bold;
+    color: white;
+    text-align: center;
+    font-size: 3vw;
+    margin-top: 3vw;
+    margin-bottom: 5vw;
+    text-shadow: 0.1vw 0.2vw rgba(0, 0, 0, 0.651);
+}
+
+#voltarParaLojaParceiros {
+
+    margin-left: 2%;
+    margin-top: 4.5vw;
+}
+
+#voltarParaLojaParceiros:hover {
+
+    background-color: rgb(199, 25, 25);
+}
