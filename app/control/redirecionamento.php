@@ -61,6 +61,13 @@ function Perfil () {
 
 }
 
+function CarrinhoCompras() {
+
+    $nomePagina = " Carrinho | BrazucaCraft";
+    require '../view/loja/paginacarrinhoCompras.php';
+
+}
+
 
 //Gerenciador de Rotas
 if (isset($_GET['action']) and function_exists($_GET['action']) ) {

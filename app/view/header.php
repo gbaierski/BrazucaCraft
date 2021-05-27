@@ -144,7 +144,17 @@
                   </button>
                 </a>
               </div>
-
+              <!-- Carrinho de compras -->
+              <?php if(isset($_SESSION['produtos'])) : ?>
+              <div class="opcao-menu">
+              <a href="../control/redirecionamento.php?action=CarrinhoCompras">
+              <button class="botao-menu" id="botao-loja">
+              <img src="../../assets/img/icons/carrinhocompras.png" class="icon-linkMenu">
+              </button>
+                </a>
+              </div>
+              <?php endif ?> 
+              <!-- Carrinho de compras -->
               <div id="div-loja">
                 <a href="../control/redirecionamento.php?action=Loja" >
                   <button class="botao-menu vermelho" id="botao-loja">

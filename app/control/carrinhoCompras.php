@@ -1,5 +1,10 @@
+<?php
+if(session_id() == '') {
+  session_start();
+}
+?> 
 <?php 
-include '../view/header.php'; 
+
 
 function adicionarnocarrinho(){
     $ai_produto = $_GET['ai_produto'];
@@ -10,8 +15,10 @@ function adicionarnocarrinho(){
     //Consulta no Banco Fim
     if ( isset($_SESSION['produtos']) && array_key_exists($produtos['ai_produto'], $_SESSION['produtos'])){
         $_SESSION['produtos'][$produtos['ai_produto']]['quantidade']+=1;
+        header('location:../control/redirecionamento.php?action=Loja');
     }else{
      $_SESSION ['produtos'][$produtos['ai_produto']] = ['quantidade' => 1];
+     header('location:../control/redirecionamento.php?action=Loja');
    
     }
 
@@ -20,6 +27,7 @@ function adicionarnocarrinho(){
 
 function removercarrinho(){
   unset($_SESSION['produtos']);
+  header('location: ../control/redirecionamento.php?action=CarrinhoCompras');
 }
 
 
