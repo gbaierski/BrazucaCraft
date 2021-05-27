@@ -26,6 +26,14 @@
 		<!-- Css das outras páginas -->
 
 		<link rel="stylesheet" type="text/css" href="../../assets/css/loja.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/homeloja.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/paginaVips.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/paginaBoosters.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/paginaCaixas.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/paginaCosmeticos.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/paginaMoedas.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/paginaParceiros.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/paginaUnban.css"/>
     <link rel="stylesheet" type="text/css" href="../../assets/css/cadastroProdutos.css"/>
     <link rel="stylesheet" type="text/css" href="../../assets/css/cadastroUsuario.css"/>
 
@@ -75,7 +83,7 @@
         </div>
 
         <div id="div-lojaMobile">
-          <a href="../control/redirecionamento.php?action=Loja" >
+          <a href="../control/redirecionamento.php?action=homeLoja" >
             <button class="vermelho botao-menuMobile " id="botao-lojaMobile">
               <div class="texto-linkMenuMobile"> LOJA </div>
             </button>
@@ -156,7 +164,7 @@
               <?php endif ?> 
               <!-- Carrinho de compras -->
               <div id="div-loja">
-                <a href="../control/redirecionamento.php?action=Loja" >
+                <a href="../control/redirecionamento.php?action=homeLoja" >
                   <button class="botao-menu vermelho" id="botao-loja">
                     <img src="../../assets/img/icons/loja.png" class="icon-linkMenu">
                     <div class="texto-linkMenu"> LOJA </div>

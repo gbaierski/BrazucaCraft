@@ -52,7 +52,7 @@
 <section> <!--Section Novidades-->
 	<div id="div-Novidades">
 		<div id="div-BackgroundNovidades">
-			<div id="titulo-Novidades"> Novidades: </div>
+			<div id="titulo-Novidades"> Novidades </div>
 			<div class="carrosselNovidades">
 				<div class="itemCarrossel ativo">
 					<img src="../../assets/img/updates/update1.jpg">
