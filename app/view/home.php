@@ -45,6 +45,9 @@
 			Uma proposta nova no Brasil, nosso servidor pretende chegar para ficar no mercado de servidores de minecraft - assim como buscará a expansão para demais setores. Se quer saber mais da nossa história, clique aqui.
 			</p>
 			<img id="imagem-SobreBrazuca" src="../../assets/img/paginas/home/sobreHome.png">
+
+			<div class="notaMojang" id="notaPortugues"><b>IMPORTANTE: NÃO é um produto oficial do Minecraft. NÃO é aprovado e nem associado à Mojang.</b></div>
+			<div class="notaMojang"><b>IMPORTANT: NOT official Minecraft product. NOT approved by or associated with Mojang.</b></div>
 		</div>
 	</div>
 </section>
@@ -88,7 +91,13 @@
 		</div>
 	</section>
 	<section>
-			<div id="div-Ajuda" style="height:30vw;">
+			<div id="div-Ajuda">
+				<div id="parteAjuda">
+					<img id="imagemAjuda" src="../../assets/img/paginas/home/logo.png">
+					<div id="tituloAjuda">Precisa de ajuda?</div>
+					<div id="textoAjuda"> Caso esteja com algum problema relacionado ao nosso servidor ou à nosso site, clique no botão <b>"Preciso de ajuda"</b>. Caso deseje informações relacionadas à parcerias ou nossos termos, por favor consulte nosso <b>rodapé</b> (seção abaixo).</div>
+					<button id="botaoSecaoAjuda">Preciso de Ajuda</button>
+				</div>
 			</div>
 
 

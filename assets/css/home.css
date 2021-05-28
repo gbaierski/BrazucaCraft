@@ -1153,9 +1153,9 @@
     position: absolute;
     transform: translate(-50%, -50%);
     user-select: none;
-  }
-  
-  .carrosselNovidades .itemCarrossel {
+}
+
+.carrosselNovidades .itemCarrossel {
 
     position: absolute;
     transform: translate(-50%, -50%);
@@ -1163,70 +1163,161 @@
     transition: all 300ms ease-in-out;
     z-index: -1;
     opacity: 0;
-  }
-  
-  .itemCarrossel img {
+}
+
+.itemCarrossel img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  
-  .itemCarrossel.ativo {
+}
+
+.itemCarrossel.ativo {
     opacity: 1;
     z-index: 99;
     box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
     transition: transform .28s;
     transition-property: all;
-  }
+}
 
-  .itemCarrossel.ativo:hover {
+.itemCarrossel.ativo:hover {
 
     cursor: pointer;
-  }
-  
-  .itemCarrossel.anterior {
+}
+
+.itemCarrossel.anterior {
     z-index: 2;
     opacity: 0.6;
     transform: translate(-125%, -50%);
-  }
-  
-  .itemCarrossel.proximo {
+}
+
+.itemCarrossel.proximo {
     z-index: 2;
     opacity: 0.6;
     transform: translate(25%, -50%);
-  }
-  
-  .carrosselNovidades .secaoBotoesCarrossel {
+}
+
+.carrosselNovidades .secaoBotoesCarrossel {
 
     position: absolute;
     transform: translate(-50%, -50%);
     z-index: 100;
-  }
-  
-  .secaoBotoesCarrossel .botaoCarrossel {
+}
+
+.secaoBotoesCarrossel .botaoCarrossel {
 
     color: #fff;
     cursor: pointer;
     position: relative;
     opacity: 1;
     transition: all 300ms ease-in-out;
-  }
+}
 
-  .secaoBotoesCarrossel .botaoCarrossel{
+.secaoBotoesCarrossel .botaoCarrossel{
 
     content: "";
     position: absolute;
     background-color: #008542;
     z-index: -99;
-  }
+}
 
-  .secaoBotoesCarrossel .botaoCarrossel:hover {
-    
+.secaoBotoesCarrossel .botaoCarrossel:hover {
+
     transform: scale(0.95);
 
-  }
+}
 
-  .secaoBotoesCarrossel .botaoCarrossel:nth-child(1) {
+.secaoBotoesCarrossel .botaoCarrossel:nth-child(1) {
 
     float: left;
-  }
+}
+
+.notaMojang {
+
+    color: white;
+    font-family: NotoSans;
+    font-size: 1.1vw;
+    text-align: center;
+    margin-top: 0.4vw;
+}
+
+#notaPortugues {
+    
+    margin-top: 3vw;
+}
+
+#div-Ajuda {
+
+    height: 26vw;
+    padding-top: 4vw;
+    background: linear-gradient(90deg,#00000083,rgba(30,140,240,0) 85%),url("../img/paginas/home/div_ajuda.jpg");
+    background-position-x: cover;
+}
+
+#parteAjuda {
+
+    width: 80%;
+    height: 20vw;
+    margin-left: 10%;
+    background: linear-gradient(90deg,#222222,rgb(48, 61, 70) 85%);
+    transition: transform .28s;
+}
+
+#parteAjuda:hover {
+
+    transform: scale(1.02);
+    transition: transform .28s;
+}
+
+#imagemAjuda {
+
+    width: 20%;
+    margin-left: 7%;
+    margin-top: 2vw;
+    float: left;
+}
+
+#tituloAjuda {
+
+    color:white;
+    font-family: NotoSans_Bold;
+    font-size: 2vw;
+    float: left;
+    margin-left: 3%;
+    margin-top: 2vw;
+}
+
+#textoAjuda {
+
+    width: 60%;
+    margin-top: 2vw;
+    text-align: justify;
+    color:white;
+    font-family: NotoSans;
+    font-size: 1vw;
+    margin-left: 3%;
+    float: left;
+}
+
+#botaoSecaoAjuda {
+
+    font-size: 1.2vw ;
+    border-radius: 7px;
+    color: white;
+    font-family: NotoSans_Bold;
+    background-color: rgb(24, 24, 24);
+    border: #505050 1.3px solid;
+    width: 30%;
+    height: 4vw;
+    margin-top: 2vw;
+    margin-left: 3%;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#botaoSecaoAjuda:hover {
+
+    background-color: #2f60aa;;
+    transition: background-color 0.5s, color 0.5s;
+    color: #000000bb;
+    cursor: pointer;
+    border-color: rgba(0, 0, 0, 0.616);
+}
