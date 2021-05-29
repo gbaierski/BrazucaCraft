@@ -68,6 +68,12 @@ function Ajuda () {
 
 }
 
+function AjudaMensagem() {
+
+    $nomePagina = "Ajuda | BrazucaCraft";
+    require '../view/ajudaMensagem.php';
+    
+}
 
 //Gerenciador de Rotas
 if (isset($_GET['action']) and function_exists($_GET['action']) ) {
