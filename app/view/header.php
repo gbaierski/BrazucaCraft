@@ -74,7 +74,7 @@
         </div>
 
         <div class="opcao-menuMobile">
-          <a href="../control/redirecionamento.php?action=Ajuda">
+          <a href="../control/redirecionamento.php?action=ajuda">
             <button class="botao-menuMobile" id="botao-ajudaMobile">
               <img src="../../assets/img/icons/ajuda.png" class="icon-linkMenuMobile">
               <div class="texto-linkMenuMobile"> AJUDA </div>
@@ -145,7 +145,7 @@
               </div>
 
               <div class="opcao-menu">
-                <a href="../control/redirecionamento.php?action=manutencao">
+                <a href="../control/redirecionamento.php?action=ajuda">
                   <button class="botao-menu" id="botao-ajuda">
                     <img src="../../assets/img/icons/ajuda.png" class="icon-linkMenu">
                     <div class="texto-linkMenu"> AJUDA </div>

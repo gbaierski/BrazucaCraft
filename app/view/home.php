@@ -96,7 +96,7 @@
 					<img id="imagemAjuda" src="../../assets/img/paginas/home/logo.png">
 					<div id="tituloAjuda">Precisa de ajuda?</div>
 					<div id="textoAjuda"> Caso esteja com algum problema relacionado ao nosso servidor ou à nosso site, clique no botão <b>"Preciso de ajuda"</b>. Caso deseje informações relacionadas à parcerias ou nossos termos, por favor consulte nosso <b>rodapé</b> (seção abaixo).</div>
-					<button id="botaoSecaoAjuda">Preciso de Ajuda</button>
+					<a href="../control/redirecionamento.php?action=ajuda"><button id="botaoSecaoAjuda">Preciso de Ajuda</button></a>
 				</div>
 			</div>
 

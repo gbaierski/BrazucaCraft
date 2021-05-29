@@ -1,47 +1,48 @@
 #botaoAjudaSite {
     float: left;
-    margin-left: 43%;
-    margin-top:18%;
-    height: 6.7vw;
-    width: 6.7vw;
-    background-color: white;
+    margin-left: 28%;
+    margin-top: 5%;
+    height: 20vw;
+    width: 20%;
+    background-color: rgb(91, 45, 167);
+    border-radius: 0.5vw;
     text-align: center;
+    z-index: 1;
 }
 
 #botaoAjudaSite.active{
-    transform: translate(607px, -210px);
-    opacity: 0.5;
-    height: 2.7vw;
-    width: 2.7vw;   
+    transform: translate(47.4vw, -2vw);
+    opacity: 1;
+    height: 2.5vw;
+    width: 2.5vw;
+    color: transparent; 
+    color: transparent;
+    background-image:url("../img/icons/fechar.png");
+    background-size: cover;
+    z-index: 1;
 }
 
 #botaoAjudaJogo {
     float: right;
-    margin-right: 43%;
-    margin-top:18%;
-    height: 6.7vw;
-    width: 6.7vw;
-    background-color: white;
+    margin-right: 28%;
+    margin-top:5%;
+    height: 20vw;
+    width: 20%;
+    background-color: rgb(91, 45, 167);
+    border-radius: 0.5vw;
     text-align: center;
+    z-index: -1;
 }
 
 #botaoAjudaJogo.active{
-    transform: translate(393px, -210px);
-    opacity: 0.5;
-    height: 2.7vw;
-    width: 2.7vw;
-    background-image: url("../img/paginas/header/head-steve.jpg");
-    background-repeat: no-repeat;
+    transform: translate(5.7vw, -2vw);
+    opacity: 1;
+    height: 2.5vw;
+    width: 2.5vw;
+    color: transparent;
+    background-image:url("../img/icons/fechar.png");
     background-size: cover;
-
-
-
-}
-
-#caixaDropdownAjuda {
-    position: absolute;
-    display: inline-block;
-    width: 100%;    
+    z-index: -1;
 }
 
 #dropdownSite{
@@ -57,21 +58,95 @@
     color: white;
 }
 
+#tituloPaginaAjuda {
+
+    width: 100%;
+    padding-top: 10vw;
+    font-size: 2.5vw;
+    color: white;
+    text-align: center;
+    font-family: NotoSans_Bold;
+}
+
+#voltarParaHomeAjuda {
+
+    margin-left: 5%;
+    margin-top: 8vw;
+}
+
+#voltarParaHomeAjuda:hover {
+
+    background-color: rgb(91, 45, 167);
+}
+
+#secaoPaginaAjuda {
+
+    height: 35vw;
+}
+
+.textoBotaoAjuda {
+
+    color: white;
+    font-family: NotoSans_Bold;
+    font-size: 2vw;
+    margin-top: 1vw;
+    transition: transform 0.4s;
+}
+
+.textoBotaoAjuda:hover {
+
+    transform: scale(1.05);
+    transition: transform 0.4s;
+}
+
+.imagemBotaoAjuda {
+
+    width: 55%;
+    margin-top: 4vw;
+    transition: transform 0.4s;
+}
+
+.imagemBotaoAjuda:hover {
+
+    transform: scale(1.05);
+    transition: transform 0.4s;
+}
+
+
 .dropdownAjuda{
+
     width: 80%;
     margin-left: 10%;
     height: 100%; 
-    background-color: gray;
+    background-color: rgb(24, 24, 24);
+    margin-bottom: 5vw;
+    border-radius: 0.4vw;
 }
 
 .botaoDropdownAjuda {
-    transition-duration: 2s;
+
     width: 100%;
+    height: 3vw;
+    font-size: 1.2vw;
+    background-color: rgb(24, 24, 24);
+    color: white;
     margin-bottom: 0.2%;
+    font-family: NotoSans;
+    border-radius: 0.4vw;
+    border: #505050 1.3px solid;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.botaoDropdownAjuda:hover {
+
+    transition: background-color 0.5s, color 0.5s;
+    background-color: rgb(91, 45, 167);
+    cursor: pointer;
 }
 
 .conteudoDropdownAjuda {
     margin-top: 2.5vw;
+    margin-bottom: 5vw;
     width: 70%;
     margin-left: 15%;
     opacity: 0;
@@ -108,9 +183,49 @@
 
 .textoDropdown {
     width: 75%;
-    margin-left: 15%;
+    margin-left: 12.5%;
     text-align: center;
-    color: aliceblue;
+    color: white;
+}
+
+.botaoFecharDropdownAjuda {
+
+    width: 10%;
+    margin-left: 45%;
+    color: white;
+    font-family: NotoSans_Bold;
+    font-size: 0.95vw;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 1vw;
+}
+
+.botaoNaoConseguiuAjuda {
+
+    background-color: #505050;
+    width: 40%;
+    margin-left: 30%;
+    margin-bottom: 1vw;
+    text-align: center;
+    padding-top: 1vw;
+    height: 2.5vw;
+    border-radius: 0.5vw;
+    font-family: NotoSans_Bold;
+    font-size: 1.1vw;
+    color: white;
+    transition: transform .28s, background-color 0.5s, color 0.5s;
+}
+
+.botaoNaoConseguiuAjuda:hover {
+
+    background-color: rgb(91, 45, 167);
+    transform: scale(0.98);
+    transition: transform .28s, background-color 0.5s, color 0.5s;
+}
+
+.linkNaoConseguiuAjuda {
+
+    text-decoration: none;
 }
 
 .show {display:block;}

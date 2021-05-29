@@ -124,14 +124,14 @@ function CarrinhoCompras() {
 
 }
 
-function Ajuda () {
+function ajuda () {
 
     $nomePagina = "Ajuda | BrazucaCraft";
     require '../view/ajuda.php';
 
 }
 
-function AjudaMensagem() {
+function ajudaMensagem() {
 
     $nomePagina = "Ajuda | BrazucaCraft";
     require '../view/ajudaMensagem.php';
