@@ -20,14 +20,13 @@ $usuario->DeclaraUsuario();
     <div id="produtos-loja">
         <div id="tituloLoja">LOJA</div>
         <div class="carrinhocompras">
-             Você Tem <?php     
-             print_r($_SESSION['produtos']);
-             /* if( $_SESSION['Produtos']){ 
-                $carrinho = count($_SESSION['Produtos']);
+            <?php
+             if(isset( $_SESSION['produtos'])){ 
+                $carrinho = count($_SESSION['produtos']);
                echo $carrinho;
                }else{ 
                  echo "0";
-                 } */?> itens no carrinho <a href="../control/carrinhoCompras.php?action=removercarrinho">Limpar SESSION</a>
+                 } ?> itens no carrinho <a href="../control/redirecionamento.php?action=CarrinhoCompras">Ver no Carrinho de Compras</a>
         </div>
     <?php foreach ($produtos as $produto) { ?>
 

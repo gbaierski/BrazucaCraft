@@ -130,7 +130,7 @@ function editarProduto(){
   header('location: redirecionamento.php?action=Loja');
 }
 
-function uploadImagens(){
+/*function uploadImagens(){
 
   if(isset($_FILES['imagemProduto']['name']) && $_FILES["imagemProduto"]["error"] == 0)
     {
@@ -173,7 +173,7 @@ function uploadImagens(){
       echo "Você não enviou nenhum arquivo!";
     }
 
-}
+}*/
 
 //Gerenciador de Rotas
 if (isset($_GET['action']) and function_exists($_GET['action']) ) {
