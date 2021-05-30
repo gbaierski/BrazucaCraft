@@ -40,12 +40,12 @@
             ?>
 
         </div>
-        <button class="botaoComprarCaixa">R$ 5,00</button>
+        <button class="botaoComprarCaixa" id="botaoComprarCaixa_1">R$ 5,00</button>
 
         <div class="divQuantidadeCaixas">
-            <div class="botaoNumeroCaixas" id="botaoDiminuirCaixa"><img src="../../assets/img/icons/seta.png" class="icon-setaNumeroCaixas"></div>
-            <input type="number" class="quantidadeCaixa" min="1" max="1000" value="1" readonly>
-            <div class="botaoNumeroCaixas" id="botaoAumentarCaixa"><img src="../../assets/img/icons/setaVirada.png" class="icon-setaNumeroCaixas"></div>
+            <div class="botaoNumeroCaixas" id="botaoDiminuirCaixa_1" onclick="diminuiQtdCaixa('1', 5)"><img src="../../assets/img/icons/seta.png" class="icon-setaNumeroCaixas"></div>
+            <input type="number" class="quantidadeCaixa" id="quantidadeCaixa_1" min="1" max="100" value="1" readonly>
+            <div class="botaoNumeroCaixas" id="botaoAumentarCaixa_1" onclick="aumentaQtdCaixa('1', 5)"><img src="../../assets/img/icons/setaVirada.png" class="icon-setaNumeroCaixas"></div>
         </div>
        
     </div>
@@ -89,17 +89,61 @@
             ?>
 
         </div>
-        <button class="botaoComprarCaixa">R$ 10,00</button>
+        <button class="botaoComprarCaixa" id="botaoComprarCaixa_2">R$ 10,00</button>
 
         <div class="divQuantidadeCaixas">
-            <div class="botaoNumeroCaixas" id="botaoDiminuirCaixa"><img src="../../assets/img/icons/seta.png" class="icon-setaNumeroCaixas"></div>
-            <input type="number" class="quantidadeCaixa" min="1" max="1000" value="1" readonly>
-            <div class="botaoNumeroCaixas" id="botaoAumentarCaixa"><img src="../../assets/img/icons/setaVirada.png" class="icon-setaNumeroCaixas"></div>
+            <div class="botaoNumeroCaixas" id="botaoDiminuirCaixa_2" onclick="diminuiQtdCaixa('2', 10)"><img src="../../assets/img/icons/seta.png" class="icon-setaNumeroCaixas"></div>
+            <input type="number" class="quantidadeCaixa" id="quantidadeCaixa_2" min="1" max="100" value="1" readonly>
+            <div class="botaoNumeroCaixas" id="botaoAumentarCaixa_2" onclick="aumentaQtdCaixa('2', 10)"><img src="../../assets/img/icons/setaVirada.png" class="icon-setaNumeroCaixas"></div>
         </div>
        
     </div>
 
 </section>
+
+<script>
+
+    function alteraPrecoProduto (preco, elemento, qtd) {
+
+        if(qtd == 0) {
+
+            document.getElementById(elemento).innerHTML = 'R$ ' + preco +',00'
+        } else {
+            var calculo =  'R$ ' + preco * qtd + ',00'
+            document.getElementById(elemento).innerHTML = calculo
+        }
+    }
+
+    function aumentaQtdCaixa(caixa, preco) {
+
+        var elemento = 'botaoComprarCaixa_'+ caixa
+        var qtdCaixa = document.getElementById("quantidadeCaixa_" + caixa);
+        var qtd = parseInt(qtdCaixa.value) + 1;
+
+        if (qtd <= 100) {
+            qtdCaixa.value = qtd
+        } else {
+            qtdCaixa.value = 100
+        }
+
+        alteraPrecoProduto(preco, elemento, qtd, 5)
+    }
+
+    function diminuiQtdCaixa(caixa, preco) {
+
+        var elemento = 'botaoComprarCaixa_'+ caixa
+        var qtdCaixa = document.getElementById("quantidadeCaixa_" + caixa);
+        var qtd = parseInt(qtdCaixa.value) - 1;
+
+        if (qtd >= 1) {
+            qtdCaixa.value = qtd
+        } else {
+            qtdCaixa.value = 1
+        }
+        alteraPrecoProduto(preco, elemento, qtd)
+    }
+
+</script>
 
 <div class="clear"></div>
 

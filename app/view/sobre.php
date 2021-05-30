@@ -2,10 +2,10 @@
 
 require ('header.php'); 
 
-$diretores = ['Davidorp','HimaruBlack','PaulinPaulera','Komlow','SrDog_'];
+$diretores = ['Davidorp','HimaruBlack','PaulinPaulera','KOMLOW','SrDog_'];
 $gerentes = ['Kyoichi'];
 $gestores = ['LucasLukey'];
-$devsJogo = ['Steve','Rok','Carmello'];
+$devsJogo = ['JLFranco','Rok','Carmello'];
 $devsWeb = ['Asky_NT', 'TheSoethe', 'Pisle'];
 $builders = ['SrDougk','Priih_'];
 $admins = ['Steve','Steve','Steve','Steve','Steve','Steve','Steve','Steve','Steve',];
