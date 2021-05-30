@@ -27,7 +27,7 @@ require 'header.php';
             4 => ["Por que o João é tão verminoso", "SIM"]];
 
             foreach ($consulta as $problemas => $problema) {
-                echo '<button id="problemaSite_'.$problemas.'" class="botaoDropdownAjuda" onclick="abrirOpcaoSite('.$problemas.')">'.$problema[0].'</button>';
+                echo '<button id="problemaSite_'.$problemas.'" class="botaoDropdownOpcaoAjuda" onclick="abrirOpcaoSite('.$problemas.')">'.$problema[0].'</button>';
                 echo '<div id="dropdownOpcaoSite_'.$problemas.'" class="conteudoDropdownOpcao">                
                             <h3 class="textoDropdown">'.$problema[1].'</h3>
                             <a href="../view/ajudaMensagem.php?problema='.$problemas.'" class="linkNaoConseguiuAjuda"><div class="botaoNaoConseguiuAjuda">Não consegui resolver</div></a>
@@ -49,10 +49,10 @@ require 'header.php';
             4 => ["Problema D Jogo", "HHHH"]];
 
             foreach ($consulta as $problemas => $problema) {
-                echo '<button id="problemaJogo_'.$problemas.'" class="botaoDropdownAjuda" onclick="abrirOpcaoJogo('.$problemas.')">'.$problema[0].'</button>';
+                echo '<button id="problemaJogo_'.$problemas.'" class="botaoDropdownOpcaoAjuda" onclick="abrirOpcaoJogo('.$problemas.')">'.$problema[0].'</button>';
                 echo '<div id="dropdownOpcaoJogo_'.$problemas.'" class="conteudoDropdownOpcao">                
                         <h3 class="textoDropdown">'.$problema[1].'</h3>
-                        <a href="../view/ajudaMensagem.php?action='.$problemas.'" class="linkNaoConseguiuAjuda"><div class="botaoNaoConseguiuAjuda">Não consegui resolver</div></a>
+                        <a href="../view/ajudaMensagem.php?problema='.$problemas.'" class="linkNaoConseguiuAjuda"><div class="botaoNaoConseguiuAjuda">Não consegui resolver</div></a>
                         <div class="botaoFecharDropdownAjuda" onclick="fecharOpcaoJogo('.$problemas.')">Fechar</div>
                         </div>';
             }
