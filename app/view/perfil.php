@@ -52,21 +52,21 @@ if($usuario->getPermissao() == "Usuario") {
   $dataPlayer = $usuario->getPlayerAtivo();
   $dataCompraDia = $usuario->getCompraDia();
   ?>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
 
-  <div style="width: 100%; height:280px">
-    <canvas id="playerAtivoAno" style="background-color: white;"></canvas>
+  <a href="../control/redirecionamento.php?action=index">
+    <button class="botaoVoltar" id="voltarParaHomePerfil">Voltar para a Home</button>
+  </a>
+
+  <div class="tituloPerfil">Tela de Gestão</div>
+
+  <div id="graficoPlayersAtivosAno" class="graficoGestao">
+    <canvas id="playersAtivoAno" class="conteudoGraficoGestao"></canvas>
   </div>
-  <div style="width: 100%; height:280px">
-    <canvas id="playerAtivoMes" style="background-color: white;"></canvas>
+  <div id="graficoPlayersAtivosMes" class="graficoGestao">
+    <canvas id="playersAtivoMes" class="conteudoGraficoGestao"></canvas>
   </div>
-  <div style="width: 100%; height:280px">
-    <canvas id="comprasGanhosMes" style="background-color: white;"></canvas>
+  <div  id="graficoComprasGanhosMes" class="graficoGestao">
+    <canvas id="comprasGanhosMes" class="conteudoGraficoGestao"></canvas>
   </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -74,31 +74,16 @@ if($usuario->getPermissao() == "Usuario") {
 <script>
 
 $(function () {
-            var ctx = document.getElementById("playerAtivoAno").getContext('2d');
+            var ctx = document.getElementById("playersAtivoAno").getContext('2d');
             var data = {
                 datasets: [{
                     label: 'Players Ativos no ano',
                     data: [ <?php echo $dataPlayer; ?> ],
                     backgroundColor: [
-                        '#3c8dbc',
-                        '#f56954',
-                        '#f39c12',
+                        '#2ebe29',
                     ],
                 }],
-                labels: [
-                  'Janeiro',
-                  'Fevereiro',
-                  'Março',
-                  'Abril',
-                  'Maio',
-                  'Junho',
-                  'Julho',
-                  'Agosto',
-                  'Setembro',
-                  'Outubro',
-                  'Novembro',
-                  'Dezembro'
-                ]
+                labels: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro']
             };
             var myDoughnutChart = new Chart(ctx, {
                 type: 'line',
@@ -120,54 +105,18 @@ $(function () {
                     label: 'Ganhos do mes',
                     data: [ <?php echo $dataCompraDia; ?> ],
                     backgroundColor: [
-                        '#3c8dbc',
-                        '#f56954',
-                        '#f39c12',
+                      'rgb(255, 146, 21)',
                     ],
                   },
                   {
                     label: 'Compras do mes',
                     data: [ <?php echo $dataPlayer; ?> ],
                     backgroundColor: [
-                        '#3c8dbc',
-                        '#f56954',
-                        '#f39c12',
+                      '#2ebe29',
                     ],
                   }  
                 ],
-                labels: [
-                    '1',
-                    '2',
-                    '3',
-                    '4',
-                    '5',
-                    '6',
-                    '7',
-                    '8',
-                    '9',
-                    '10',
-                    '11',
-                    '12',
-                    '13',
-                    '14',
-                    '15',
-                    '16',
-                    '17',
-                    '18',
-                    '19',
-                    '20',
-                    '21',
-                    '22',
-                    '23',
-                    '24',
-                    '25',
-                    '26',
-                    '27',
-                    '28',
-                    '29',
-                    '30',
-                    '31'
-                ]
+                labels: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31']
             };
             var myDoughnutChart_2 = new Chart(ctx_2, {
                 type: 'bar',
@@ -183,51 +132,17 @@ $(function () {
                 }
             });
 
-            var ctx_3 = document.getElementById("playerAtivoMes").getContext('2d');
+            var ctx_3 = document.getElementById("playersAtivoMes").getContext('2d');
             var data_3 = {
                 datasets: [{
                     label: 'Players ativos no mes',
                     data: [ <?php echo $dataPlayer; ?> ],
                     backgroundColor: [
-                        '#3c8dbc',
-                        '#f56954',
-                        '#f39c12',
+                      '#2ebe29',
                     ],
                   } 
                 ],
-                labels: [
-                    '1',
-                    '2',
-                    '3',
-                    '4',
-                    '5',
-                    '6',
-                    '7',
-                    '8',
-                    '9',
-                    '10',
-                    '11',
-                    '12',
-                    '13',
-                    '14',
-                    '15',
-                    '16',
-                    '17',
-                    '18',
-                    '19',
-                    '20',
-                    '21',
-                    '22',
-                    '23',
-                    '24',
-                    '25',
-                    '26',
-                    '27',
-                    '28',
-                    '29',
-                    '30',
-                    '31'
-                ]
+                labels: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31']
             };
             var myDoughnutChart_3 = new Chart(ctx_3, {
                 type: 'bar',
@@ -248,4 +163,8 @@ $(function () {
 <?php
 }
 ?>
+
+<div class="clear"></div>
+
+<?php require 'footer.php'; ?>
 

@@ -37,6 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../../assets/css/paginaUnban.css"/>
     <link rel="stylesheet" type="text/css" href="../../assets/css/cadastroProdutos.css"/>
     <link rel="stylesheet" type="text/css" href="../../assets/css/cadastroUsuario.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/perfil.css"/>
 
     </head>
     <body id="bodyID">

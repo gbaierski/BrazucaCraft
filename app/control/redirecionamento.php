@@ -23,10 +23,9 @@ function manutencao () {
 
 function Perfil () {
 
-
-    $nomePagina = " | BrazucaCraft";
+    $nomePagina = " Perfil | BrazucaCraft";
     require '../view/perfil.php';
-
+    
 }
 
 

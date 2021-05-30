@@ -1,0 +1,33 @@
+.tituloPerfil {
+
+    color: white;
+    font-family: NotoSans_Bold;
+    font-size: 2.5vw;
+    text-align: center;
+    padding-top: 10vw;
+    margin-bottom: 5vw;
+}
+
+.graficoGestao {
+
+    width: 80%; 
+    height: 15vw;
+    margin-left: 10%;
+    margin-bottom: 5vw;
+}
+
+.conteudoGraficoGestao {
+
+    background-color: rgb(24, 24, 24); 
+}
+
+#voltarParaHomePerfil {
+
+    margin-left: 5%;
+    margin-top: 8vw;
+}
+
+#voltarParaHomePerfil:hover {
+
+    background-color: #2ebe29;
+}
