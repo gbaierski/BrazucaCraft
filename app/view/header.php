@@ -38,6 +38,7 @@
     <link rel="stylesheet" type="text/css" href="../../assets/css/cadastroProdutos.css"/>
     <link rel="stylesheet" type="text/css" href="../../assets/css/cadastroUsuario.css"/>
     <link rel="stylesheet" type="text/css" href="../../assets/css/perfil.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/sobre.css"/>
 
     </head>
     <body id="bodyID">
@@ -67,7 +68,7 @@
         </div>
 
         <div class="opcao-menuMobile">
-          <a href="../control/redirecionamento.php?action=manutencao">
+          <a href="../control/redirecionamento.php?action=sobre">
             <button class="botao-menuMobile" id="botao-sobreMobile">
               <img src="../../assets/img/icons/sobre.png" class="icon-linkMenuMobile">
               <div class="texto-linkMenuMobile"> SOBRE </div>
@@ -138,7 +139,7 @@
               </div>
 
               <div class="opcao-menu">
-                <a href="../control/redirecionamento.php?action=manutencao">
+                <a href="../control/redirecionamento.php?action=sobre">
                   <button class="botao-menu" id="botao-sobre">
                     <img src="../../assets/img/icons/sobre.png" class="icon-linkMenu">
                     <div class="texto-linkMenu"> SOBRE </div>

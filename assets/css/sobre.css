@@ -1,0 +1,148 @@
+#voltarParaHomeSobre {
+
+    margin-left: 5%;
+    margin-top: 8vw;
+}
+
+#voltarParaHomeSobre:hover {
+
+    background-color: rgb(255, 146, 21);
+}
+
+#tituloPaginaSobre {
+
+    font-size: 2.5vw;
+    color: white;
+    text-align: center;
+    font-family: NotoSans_Bold;
+    padding-top: 10vw;
+    margin-bottom: 5vw;
+}
+
+#descricaoHistoricaSobre {
+
+    width: 70%;
+    height: 20vw;
+    margin-left: 15%;
+    color: white;
+    font-size: 1.3vw;
+    font-family: NotoSans;
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+#equipeBrazucaSobre {
+
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 4vw;
+    background-color: rgb(24, 24, 24);
+    margin-bottom: 10vw;
+    border-radius: 0.5vw;
+    float: left;
+}
+
+#tituloEquipeBrazuca {
+
+    font-size: 2vw;
+    color: white;
+    text-align: center;
+    font-family: NotoSans_Bold;
+    padding-top: 2vw;
+    margin-bottom: 5vw;
+}
+
+#diretoresBrazuca {
+
+    width: 50%;
+    margin-left: 25%;
+    height: 15vw;
+    float: left;
+    border-radius: 0.5vw;
+    background-image: linear-gradient( to right, #750000, #b70c0e );
+}
+
+#gerentesBrazuca {
+
+    background-image: linear-gradient( to right, #2f0064, #bf00ff );
+}
+
+#gestoresBrazuca {
+
+    background-image: linear-gradient( to right, #a00043, #ff00df );
+}
+
+#devJogoBrazuca {
+
+    background-image: linear-gradient( to right, #00557c, #37d9de );
+}
+
+#devWebBrazuca {
+
+    background-image: linear-gradient( to right, #0045ac, #008fac );
+}
+
+#buildersBrazuca {
+
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 4vw;
+    height: 22vw;
+    float: left;
+    border-radius: 0.5vw;
+    background-image: linear-gradient( to right, #059619, #28ea5b );
+}
+
+#administradoresBrazuca {
+
+    width: 65%;
+    margin-left: 17.5%;
+    margin-top: 4vw;
+    height: 23vw;
+    float: left;
+    border-radius: 0.5vw;
+    background-image: linear-gradient( to right, #861a1a, #e43333 );
+}
+
+#moderadoresBrazuca {
+
+    width: 65%;
+    margin-left: 17.5%;
+    margin-top: 4vw;
+    height: 23vw;
+    float: left;
+    border-radius: 0.5vw;
+    background-image: linear-gradient( to right, #0f774c, #11b987 );
+}
+
+#ajudantesBrazuca {
+
+    width: 50%;
+    margin-left: 25%;
+    height: 15vw;
+    margin-top: 4vw;
+    margin-bottom: 5vw;
+    float: left;
+    border-radius: 0.5vw;
+    background-image: linear-gradient( to right, #c78100, #ffca00 );
+}
+.equipesBrazuca {
+
+    width: 40%;
+    margin-left: 6.5%;
+    margin-top: 4vw;
+    float: left;
+    height: 15vw;
+    border-radius: 0.5vw;
+    background-color: rebeccapurple;
+}
+
+.tituloEquipeBrazuca {
+
+    font-size: 1.7vw;
+    color: rgba(0, 0, 0, 0.582);
+    text-align: center;
+    font-family: NotoSans_Bold;
+    padding-top: 1vw;
+    margin-bottom: 2vw;
+}

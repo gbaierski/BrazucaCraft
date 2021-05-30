@@ -28,6 +28,13 @@ function Perfil () {
     
 }
 
+function sobre () {
+
+    $nomePagina = " Sobre | BrazucaCraft";
+    require '../view/sobre.php';
+    
+}
+
 
 
 
