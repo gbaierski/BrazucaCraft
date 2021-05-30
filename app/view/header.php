@@ -25,6 +25,7 @@
 
 		<!-- Css das outras páginas -->
 		<link rel="stylesheet" type="text/css" href="../../assets/css/ajuda.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/ajudaSuporte.css"/>
 		<link rel="stylesheet" type="text/css" href="../../assets/css/loja.css"/>
     <link rel="stylesheet" type="text/css" href="../../assets/css/homeloja.css"/>
     <link rel="stylesheet" type="text/css" href="../../assets/css/paginaVips.css"/>

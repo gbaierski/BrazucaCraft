@@ -131,10 +131,10 @@ function ajuda () {
 
 }
 
-function ajudaMensagem() {
+function ajudaSuporte() {
 
     $nomePagina = "Ajuda | BrazucaCraft";
-    require '../view/ajudaMensagem.php';
+    require '../view/ajudaSuporte.php';
     
 }
 
