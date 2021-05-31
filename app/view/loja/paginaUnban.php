@@ -9,8 +9,7 @@
 
     <button id="botaoUnban" onclick="abrirBotaoUnban()">Como funciona o UnBan?</button>
     <div id="sobreUnban" class="hide" style="width:50%; text-align:center; margin-left:25%; color:white; margin-top:1.4vw;">
-    Olha mano, tu fez merda e foi banido. Agora se tu quiser jogar denovo
-    adivinha, VAI TER QUE PAGAR IMBECIL.
+    Texto de Banimento
     </div>
 
     <div class="produtoUnban">

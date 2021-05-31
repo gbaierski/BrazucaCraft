@@ -12,7 +12,7 @@ $consulta = [
     3 => ["Jovem de 20 anos fica rico usando está tecnica", "Um jovem de 20 anos chamado The Soethe ganha a vida jogando no bixo, investindo esse dinheiro na bolsa de valores
     e usando o dinheiro ganho para jogar na trimania. Em entrevista ele afirma: Somente para os praticantes da foda. Percebe-se que são essas as palavras de alguem com uma
     mente muito além da propria idade. Agora ele desistiu de ficar rico e quer ajudar VOCÊ a ficar rico também, quer saber como? Arrasta pra cima."], 
-    4 => ["Por que o João é tão verminoso", "SIM"],
+    4 => ["Texto aleatório", "SIM"],
     5 => ["Problema A Jogo", "EEEE"],
     6 => ["Problema B Jogo", "FFFF"], 
     7 => ["Problema C Jogo", "GGGG"], 

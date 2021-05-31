@@ -3,9 +3,9 @@
 require ('header.php'); 
 
 $diretores = ['Davidorp','HimaruBlack','PaulinPaulera','KOMLOW','SrDog_'];
-$gerentes = ['Kyoichi'];
+$gerentes = ['Kyoichi_'];
 $gestores = ['LucasLukey'];
-$devsJogo = ['JLFranco','Rok','Carmello'];
+$devsJogo = ['JLFranco_JJ','Rokzin','LucasTSu'];
 $devsWeb = ['Asky_NT', 'TheSoethe', 'Pisle'];
 $builders = ['SrDougk','Priih_'];
 $admins = ['Steve','Steve','Steve','Steve','Steve','Steve','Steve','Steve','Steve',];
