@@ -82,7 +82,7 @@
 
 	<div class="clear"></div>
 
-	<!--  Section Fim e rodapé -->
+
 	<section>
 		<div id="div-discord">
 			<div id="imagem-discord"></div>
@@ -90,6 +90,116 @@
 			<iframe id="iframe-discord" src="https://discord.com/widget?id=704695441677221898&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 		</div>
 	</section>
+
+	<div class="clear"></div>
+
+	<section>
+		<div id="div-Equipes">
+		<!DOCTYPE html>
+
+		<style>
+
+
+		</style>
+		</head>
+		<body>
+
+		<div id="slideEquipe">
+
+		<?php
+
+			$membrosStaff = [1 => 'Davidorp', 2 =>'HimaruBlack', 3 =>'PaulinPaulera', 4 =>'KOMLOW', 5 =>'SrDog_', 6 =>'Kyoichi_', 7 =>'LucasLukey', 8 =>'JLFranco_JJ', 9 =>'Asky_NT'];
+			$descricaoMebros = [1 => 'Brabo teste teste testetestetestetestetestetestetestetesteteste teste testetesteteste teste testetestetestetesteteste teste', 2 =>'Brabo2', 3 =>'Brabo3', 4 =>'Brabo4', 5 =>'Brabo5', 6 =>'Brabo6', 7 =>'Brabo7', 8 =>'Brabo8', 9 =>'Brabo9'];
+			
+			function pegarHead($nick) {
+
+				$url = "https://api.mojang.com/users/profiles/minecraft/" . $nick;
+
+				$json = file_get_contents($url);
+				$player = json_decode($json);
+				
+				$head = "https://crafatar.com/avatars/". $player->id . "?size=100";
+				return $head;
+
+			}
+
+			function pegarBody($nick) {
+
+				$url = "https://api.mojang.com/users/profiles/minecraft/" . $nick;
+
+				$json = file_get_contents($url);
+				$player = json_decode($json);
+				
+				$head = "https://crafatar.com/renders/body/". $player->id . "?size=100";
+				return $head;
+
+			}
+			
+		?>
+
+<?php foreach($membrosStaff as $staff) { ?>
+
+		<?php $bodyStaff = pegarBody($staff); ?>
+		<div class="slideEquipe fadeEquipe">
+			<img src="<?= $bodyStaff ?>" style="width:20%; margin-left: 30%; margin-bottom: 3vw;">
+			<div class="descricaoMembroStaff" style="color: white; width:50%; float: right; text-align: center;">
+				<?php 
+					$posicao = array_search($staff, $membrosStaff);
+					echo $descricaoMebros[$posicao];
+				?>
+			</div>
+			<div class="nickStaff"><?= $staff ?></div>
+		</div>
+
+<?php } ?>
+		<a class="anteriorEquipe" onclick="plusSlides(-1)"><img src="../../assets/img/icons/seta.png" class="icon-setaCarrosselEquipe"></a>
+		<a class="proximoEquipe" onclick="plusSlides(1)"><img src="../../assets/img/icons/setaVirada.png" class="icon-setaCarrosselEquipe"></a>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+			<?php
+				foreach($membrosStaff as $staff) {
+					$head = pegarHead($staff);
+					echo '<span class="ponto" onclick="currentSlide('. array_search($staff, $membrosStaff).')"><img src="'.$head.'" style="width: 100%"></span>'; 
+				} 
+			 ?> 
+		</div>
+
+		<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("slideEquipe");
+		var pontos = document.getElementsByClassName("ponto");
+		if (n > slides.length) {slideIndex = 1}    
+		if (n < 1) {slideIndex = slides.length}
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		}
+		for (i = 0; i < pontos.length; i++) {
+			pontos[i].className = pontos[i].className.replace(" equipeAtivo", "");
+		}
+		slides[slideIndex-1].style.display = "block";  
+		pontos[slideIndex-1].className += " equipeAtivo";
+		}
+		</script>
+
+		</div>
+	</section>
+
+	<!--  Section Fim e rodapé -->
 	<section>
 			<div id="div-Ajuda">
 				<div id="parteAjuda">

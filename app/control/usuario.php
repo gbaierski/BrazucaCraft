@@ -145,6 +145,19 @@ function editarSenha() {
     header('location: ..\control\redirecionamento.php?action=Home');
     
 }
+
+function pegarHead($nick) {
+
+  $url = "https://api.mojang.com/users/profiles/minecraft/" . $nick;
+
+  $json = file_get_contents($url);
+  $player = json_decode($json);
+  
+  $head = "https://crafatar.com/avatars/". $player->id . "?size=100";
+  return $head;
+
+}
+
 }
 
 
