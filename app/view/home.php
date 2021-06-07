@@ -2,10 +2,6 @@
 <!---  Função que roda o scroll lock no site, dentro dela tem um if que funciona apenas em resoluções de monitores --->
 <script src='../view/jquery.onepage-scroll.js'></script>
 
-	
-
-
-
 	<section> <!--  Section Tela Inicial -->
 		<div id="logo"></div>
 		<div class="background-home">
@@ -94,23 +90,25 @@
 	<div class="clear"></div>
 
 	<section>
-		<div id="div-Equipes">
-		<!DOCTYPE html>
-
-		<style>
-
-
-		</style>
-		</head>
-		<body>
-
+		<div id="tituloSlideEquipe">Conheça nossa equipe!</div>
 		<div id="slideEquipe">
 
 		<?php
 
 			$membrosStaff = [1 => 'Davidorp', 2 =>'HimaruBlack', 3 =>'PaulinPaulera', 4 =>'KOMLOW', 5 =>'SrDog_', 6 =>'Kyoichi_', 7 =>'LucasLukey', 8 =>'JLFranco_JJ', 9 =>'Asky_NT'];
-			$descricaoMebros = [1 => 'Brabo teste teste testetestetestetestetestetestetestetesteteste teste testetesteteste teste testetestetestetesteteste teste', 2 =>'Brabo2', 3 =>'Brabo3', 4 =>'Brabo4', 5 =>'Brabo5', 6 =>'Brabo6', 7 =>'Brabo7', 8 =>'Brabo8', 9 =>'Brabo9'];
-			
+			$descricaoMembros = [1 => 'Brabo teste teste testetesteteste testetestetestetestete steteste teste testetesteteste teste testetestetestetesteteste teste', 2 =>'Brabo2', 3 =>'Brabo3', 4 =>'Brabo4', 5 =>'Brabo5', 6 =>'Brabo6', 7 =>'Brabo7', 8 =>'Brabo8', 9 =>'Brabo9'];
+			$titulosMembros = [
+				1 => ['titulo' => 'Diretor', 'cor' => '#be0000'], 
+				2 => ['titulo' => 'Diretor', 'cor' => '#be0000'], 
+				3 => ['titulo' => 'Diretor', 'cor' => '#be0000'], 
+				4 => ['titulo' => 'Diretor', 'cor' => '#be0000'], 
+				5 => ['titulo' => 'Diretor', 'cor' => '#be0000'], 
+				6 => ['titulo' => 'Gerente', 'cor' => '#5400b4'],
+				7 => ['titulo' => 'Gestor', 'cor' => '#e4005f'],
+				8 => ['titulo' => 'Líder da equipe Dev - Servidor', 'cor' => '#37deac'],
+				9 => ['titulo' => 'Líder da equipe Dev - Site', 'cor' => '#0086f3'],
+			];
+
 			function pegarHead($nick) {
 
 				$url = "https://api.mojang.com/users/profiles/minecraft/" . $nick;
@@ -137,21 +135,18 @@
 			
 		?>
 
-<?php foreach($membrosStaff as $staff) { ?>
+<?php foreach($membrosStaff as $key => $staff) { ?>
 
 		<?php $bodyStaff = pegarBody($staff); ?>
 		<div class="slideEquipe fadeEquipe">
-			<img src="<?= $bodyStaff ?>" style="width:20%; margin-left: 30%; margin-bottom: 3vw;">
-			<div class="descricaoMembroStaff" style="color: white; width:50%; float: right; text-align: center;">
-				<?php 
-					$posicao = array_search($staff, $membrosStaff);
-					echo $descricaoMebros[$posicao];
-				?>
-			</div>
+			<img src="<?= $bodyStaff ?>" class="imagemMembroEquipeHome">
+			<div class="tituloMembroEquipe"  style="color: <?= $titulosMembros[$key]['cor']?>"><?= $titulosMembros[$key]['titulo']?></div>
+			<div class="descricaoMembroStaff" style=""> <?= $descricaoMembros[$key]; ?></div>
 			<div class="nickStaff"><?= $staff ?></div>
 		</div>
 
 <?php } ?>
+		<div class="clear"></div>
 		<a class="anteriorEquipe" onclick="plusSlides(-1)"><img src="../../assets/img/icons/seta.png" class="icon-setaCarrosselEquipe"></a>
 		<a class="proximoEquipe" onclick="plusSlides(1)"><img src="../../assets/img/icons/setaVirada.png" class="icon-setaCarrosselEquipe"></a>
 
@@ -162,41 +157,12 @@
 			<?php
 				foreach($membrosStaff as $staff) {
 					$head = pegarHead($staff);
-					echo '<span class="ponto" onclick="currentSlide('. array_search($staff, $membrosStaff).')"><img src="'.$head.'" style="width: 100%"></span>'; 
+					echo '<span class="ponto" onclick="currentSlide('. array_search($staff, $membrosStaff).')"><img src="'.$head.'" class="headStafferHome"></span>'; 
 				} 
 			 ?> 
 		</div>
-
-		<script>
-		var slideIndex = 1;
-		showSlides(slideIndex);
-
-		function plusSlides(n) {
-		showSlides(slideIndex += n);
-		}
-
-		function currentSlide(n) {
-		showSlides(slideIndex = n);
-		}
-
-		function showSlides(n) {
-		var i;
-		var slides = document.getElementsByClassName("slideEquipe");
-		var pontos = document.getElementsByClassName("ponto");
-		if (n > slides.length) {slideIndex = 1}    
-		if (n < 1) {slideIndex = slides.length}
-		for (i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none";  
-		}
-		for (i = 0; i < pontos.length; i++) {
-			pontos[i].className = pontos[i].className.replace(" equipeAtivo", "");
-		}
-		slides[slideIndex-1].style.display = "block";  
-		pontos[slideIndex-1].className += " equipeAtivo";
-		}
-		</script>
-
-		</div>
+		<div id="restanteEquipeHome"><a id="linkRestanteEquipe" href="../control/redirecionamento.php?action=sobre">Conheça o restante da nossa equipe aqui!</a></div>
+		
 	</section>
 
 	<!--  Section Fim e rodapé -->
@@ -210,7 +176,7 @@
 				</div>
 			</div>
 
-
-	<script src="../view/outrosJS/carrossel.js"></script>
+	<script src="../view/outrosJS/slideEquipe.js"></script>
+	<script src="../view/outrosJS/carrosselNovidades.js"></script>
 	<script src="../view/outrosJS/homeScroll.js"></script><!--Esse include deve estar sempre abaixo das sections e dentro da Home-->
 <?php require 'footer.php'; ?>

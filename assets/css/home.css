@@ -1329,7 +1329,38 @@
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 8vw;
+    margin-top: 5vw;
+}
+
+#tituloSlideEquipe {
+
+    color: white;
+    font-family: NotoSans_Bold;
+    text-align: center;
+    font-size: 2.5vw;
+    margin-top: 1.5vw;
+}
+
+#restanteEquipeHome {
+
+    width: 100%;
+    margin-top: 1.3vw;
+    text-align: center;
+}
+
+#linkRestanteEquipe {
+
+    text-decoration: none;
+    color: white;
+    font-size: 1.3vw;
+    font-family: NotoSans;
+    transition: color 0.5s;
+}
+
+#linkRestanteEquipe:hover {
+
+    color: #34aa2f;
+    transition: color 0.5s;
 }
 
 /* proximoEquipe & anteriorEquipeious buttons */
@@ -1378,12 +1409,14 @@
 /* Caption text */
 .nickStaff {
 
+    font-family: NotoSans_Bold;
     color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
+    font-size: 1.4vw;
+    margin-left: 15%;
+    margin-top: -2vw;
     position: absolute;
-    bottom: 8px;
-    width: 100%;
+    width: 30%;
+    float: left;
     text-align: center;
 }
 
@@ -1426,4 +1459,38 @@ animation-duration: 1.5s;
     width: 2vw;
     margin-top: -0.5vw;
     margin-left: -0.5vw;
+}
+
+.imagemMembroEquipeHome {
+
+    width:20%; 
+    margin-top: 1vw;
+    margin-left: 20%; 
+    margin-bottom: 2vw; 
+    float: left;
+}
+
+.tituloMembroEquipe {
+
+    font-size: 1.4vw;
+    width:50%; 
+    float: right; 
+    text-align: center;
+    font-family: NotoSans_Bold;
+}
+
+.descricaoMembroStaff {
+
+    color: white; 
+    width: 45%;
+    margin-left: 12.5%; 
+    float: left; 
+    text-align: center; 
+    margin-top: 1vw;
+    font-family: NotoSans;
+}
+
+.headStafferHome {
+
+    width: 100%;
 }
