@@ -2,10 +2,6 @@
 <!---  Função que roda o scroll lock no site, dentro dela tem um if que funciona apenas em resoluções de monitores --->
 <script src='../view/jquery.onepage-scroll.js'></script>
 
-	
-
-
-
 	<section> <!--  Section Tela Inicial -->
 		<div id="logo"></div>
 		<div class="background-home">
@@ -82,7 +78,7 @@
 
 	<div class="clear"></div>
 
-	<!--  Section Fim e rodapé -->
+
 	<section>
 		<div id="div-discord">
 			<div id="imagem-discord"></div>
@@ -90,6 +86,86 @@
 			<iframe id="iframe-discord" src="https://discord.com/widget?id=704695441677221898&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 		</div>
 	</section>
+
+	<div class="clear"></div>
+
+	<section>
+		<div id="tituloSlideEquipe">Conheça nossa equipe!</div>
+		<div id="slideEquipe">
+
+		<?php
+
+			$membrosStaff = [1 => 'Davidorp', 2 =>'HimaruBlack', 3 =>'PaulinPaulera', 4 =>'KOMLOW', 5 =>'SrDog_', 6 =>'Kyoichi_', 7 =>'LucasLukey', 8 =>'JLFranco_JJ', 9 =>'Asky_NT'];
+			$descricaoMembros = [1 => 'Brabo teste teste testetesteteste testetestetestetestete steteste teste testetesteteste teste testetestetestetesteteste teste', 2 =>'Brabo2', 3 =>'Brabo3', 4 =>'Brabo4', 5 =>'Brabo5', 6 =>'Brabo6', 7 =>'Brabo7', 8 =>'Brabo8', 9 =>'Brabo9'];
+			$titulosMembros = [
+				1 => ['titulo' => 'Diretor', 'cor' => '#be0000'], 
+				2 => ['titulo' => 'Diretor', 'cor' => '#be0000'], 
+				3 => ['titulo' => 'Diretor', 'cor' => '#be0000'], 
+				4 => ['titulo' => 'Diretor', 'cor' => '#be0000'], 
+				5 => ['titulo' => 'Diretor', 'cor' => '#be0000'], 
+				6 => ['titulo' => 'Gerente', 'cor' => '#5400b4'],
+				7 => ['titulo' => 'Gestor', 'cor' => '#e4005f'],
+				8 => ['titulo' => 'Líder da equipe Dev - Servidor', 'cor' => '#37deac'],
+				9 => ['titulo' => 'Líder da equipe Dev - Site', 'cor' => '#0086f3'],
+			];
+
+			function pegarHead($nick) {
+
+				$url = "https://api.mojang.com/users/profiles/minecraft/" . $nick;
+
+				$json = file_get_contents($url);
+				$player = json_decode($json);
+				
+				$head = "https://crafatar.com/avatars/". $player->id . "?size=100";
+				return $head;
+
+			}
+
+			function pegarBody($nick) {
+
+				$url = "https://api.mojang.com/users/profiles/minecraft/" . $nick;
+
+				$json = file_get_contents($url);
+				$player = json_decode($json);
+				
+				$head = "https://crafatar.com/renders/body/". $player->id . "?size=100";
+				return $head;
+
+			}
+			
+		?>
+
+<?php foreach($membrosStaff as $key => $staff) { ?>
+
+		<?php $bodyStaff = pegarBody($staff); ?>
+		<div class="slideEquipe fadeEquipe">
+			<img src="<?= $bodyStaff ?>" class="imagemMembroEquipeHome">
+			<div class="tituloMembroEquipe"  style="color: <?= $titulosMembros[$key]['cor']?>"><?= $titulosMembros[$key]['titulo']?></div>
+			<div class="descricaoMembroStaff" style=""> <?= $descricaoMembros[$key]; ?></div>
+			<div class="nickStaff"><?= $staff ?></div>
+		</div>
+
+<?php } ?>
+		<div class="clear"></div>
+		<a class="anteriorEquipe" onclick="plusSlides(-1)"><img src="../../assets/img/icons/seta.png" class="icon-setaCarrosselEquipe"></a>
+		<a class="proximoEquipe" onclick="plusSlides(1)"><img src="../../assets/img/icons/setaVirada.png" class="icon-setaCarrosselEquipe"></a>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+			<?php
+				foreach($membrosStaff as $staff) {
+					$head = pegarHead($staff);
+					echo '<span class="ponto" onclick="currentSlide('. array_search($staff, $membrosStaff).')"><img src="'.$head.'" class="headStafferHome"></span>'; 
+				} 
+			 ?> 
+		</div>
+		<div id="restanteEquipeHome"><a id="linkRestanteEquipe" href="../control/redirecionamento.php?action=sobre">Conheça o restante da nossa equipe aqui!</a></div>
+		
+	</section>
+
+	<!--  Section Fim e rodapé -->
 	<section>
 			<div id="div-Ajuda">
 				<div id="parteAjuda">
@@ -100,7 +176,7 @@
 				</div>
 			</div>
 
-
-	<script src="../view/outrosJS/carrossel.js"></script>
+	<script src="../view/outrosJS/slideEquipe.js"></script>
+	<script src="../view/outrosJS/carrosselNovidades.js"></script>
 	<script src="../view/outrosJS/homeScroll.js"></script><!--Esse include deve estar sempre abaixo das sections e dentro da Home-->
 <?php require 'footer.php'; ?>

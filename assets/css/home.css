@@ -831,7 +831,7 @@
     #div-discord {
 
         width: 101%;
-        height:48.1vw;
+        height:49vw;
         background-position-x: 45%;
         margin-left: -1vw;
     }
@@ -1320,4 +1320,177 @@
     color: #000000bb;
     cursor: pointer;
     border-color: rgba(0, 0, 0, 0.616);
+}
+
+/* Slideshow container */
+#slideEquipe {
+        
+    width: 60%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vw;
+}
+
+#tituloSlideEquipe {
+
+    color: white;
+    font-family: NotoSans_Bold;
+    text-align: center;
+    font-size: 2.5vw;
+    margin-top: 1.5vw;
+}
+
+#restanteEquipeHome {
+
+    width: 100%;
+    margin-top: 1.3vw;
+    text-align: center;
+}
+
+#linkRestanteEquipe {
+
+    text-decoration: none;
+    color: white;
+    font-size: 1.3vw;
+    font-family: NotoSans;
+    transition: color 0.5s;
+}
+
+#linkRestanteEquipe:hover {
+
+    color: #34aa2f;
+    transition: color 0.5s;
+}
+
+/* proximoEquipe & anteriorEquipeious buttons */
+.anteriorEquipe, .proximoEquipe {
+
+    cursor: pointer;
+    position: absolute;
+    top: 104%;
+    width: 1vw;
+    height: 1vw;
+    padding: 1vw;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    content: "";
+    background-color: #008542;
+    transform: scale(0.95);
+    color: #fff;
+    opacity: 1;
+    transition: all 300ms ease-in-out;
+    border-bottom: 0.4vw solid rgba(10, 10, 10, 0.212);
+    border-left: 0.4vw solid rgba(10, 10, 10, 0.212);
+    border-top: 0.4vw solid rgba(9, 255, 0, 0.281);
+    border-right: 0.4vw solid rgba(9, 255, 0, 0.281);
+}
+
+/* Position the "proximoEquipe button" to the right */
+.proximoEquipe {
+
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.anteriorEquipe:hover, .proximoEquipe:hover {
+
+    border-bottom: 0.4vw solid rgba(10, 10, 10, 0.4);
+    border-left: 0.4vw solid rgba(10, 10, 10, 0.4);
+    border-top: 0.4vw solid rgba(255, 255, 255, 0.5211);
+    border-right: 0.4vw solid rgba(255, 255, 255, 0.521);
+}
+
+/* Caption text */
+.nickStaff {
+
+    font-family: NotoSans_Bold;
+    color: #f2f2f2;
+    font-size: 1.4vw;
+    margin-left: 15%;
+    margin-top: -2vw;
+    position: absolute;
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+
+/* The pontos/bullets/indicators */
+.ponto {
+
+    cursor: pointer;
+    width: 3vw;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.equipeAtivo, .ponto:hover {
+background-color: #34aa2f;
+}
+
+/* Fading animation */
+.fadeEquipe {
+    
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.icon-setaCarrosselEquipe {
+
+    width: 2vw;
+    margin-top: -0.5vw;
+    margin-left: -0.5vw;
+}
+
+.imagemMembroEquipeHome {
+
+    width:20%; 
+    margin-top: 1vw;
+    margin-left: 20%; 
+    margin-bottom: 2vw; 
+    float: left;
+}
+
+.tituloMembroEquipe {
+
+    font-size: 1.4vw;
+    width:50%; 
+    float: right; 
+    text-align: center;
+    font-family: NotoSans_Bold;
+}
+
+.descricaoMembroStaff {
+
+    color: white; 
+    width: 45%;
+    margin-left: 12.5%; 
+    float: left; 
+    text-align: center; 
+    margin-top: 1vw;
+    font-family: NotoSans;
+}
+
+.headStafferHome {
+
+    width: 100%;
 }
