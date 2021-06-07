@@ -40,7 +40,7 @@
             ?>
 
         </div>
-        <button class="botaoComprarCaixa">R$ 5,00</button>
+        <button class="botaoComprarCaixa">COMPRAR</button>
 
         <div class="divQuantidadeCaixas">
             <div class="botaoNumeroCaixas" id="botaoDiminuirCaixa"><img src="../../assets/img/icons/seta.png" class="icon-setaNumeroCaixas"></div>

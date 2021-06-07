@@ -44,7 +44,7 @@
     <div class="produtoCosmetico">
         <img class="imagemCosmetico" src="../../assets/img/paginas/home/backgroundHome.png">
         <div class="nomeCosmetico">Machado infestado</div>
-        <button class="botaoComprarCosmetico">R$ 5,00</button>
+        <button class="botaoComprarCosmetico">COMPRAR</button>
     </div>
 
     <div class="produtoCosmetico">

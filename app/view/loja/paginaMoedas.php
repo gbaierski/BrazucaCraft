@@ -10,7 +10,7 @@
     <div class="produtoMoeda">
         <img class="imagemMoeda" src="../../assets/img/paginas/home/backgroundHome.png">
         <div class="quantidadeMoeda">500 MOEDAS</div>
-        <button class="botaoComprarMoeda">R$ 5,00</button>
+        <button class="botaoComprarMoeda">COMPRAR</button>
     </div>
 
     <div class="produtoMoeda">

@@ -12,7 +12,7 @@
         <div class="tituloBooster">Booster de XP</div>
         <div class="descricaoBooster">Dobra a experiência obtida</div>
         <div class="duracaoBooster">12 horas</div>
-        <button class="botaoComprarBooster">R$ 10,00</button>
+        <button class="botaoComprarBooster">COMPRAR</button>
     </div>
 
     <div class="produtoBooster">

@@ -22,7 +22,7 @@
             }
             ?>
         </div>
-        <a href="../control/carrinhoCompras.php?action=adicionarnocarrinho&ai_produto=<?= 7?>"><button class="botaoComprarVip">R$ 10,00</button></a>
+        <a href="../control/carrinhoCompras.php?action=adicionarnocarrinho&ai_produto=<?= 7?>"><button class="botaoComprarVip">COMPRAR</button></a>
     </div>
 
     <div class="produtoVip">
