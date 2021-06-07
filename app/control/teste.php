@@ -10,6 +10,6 @@
 </script>
 <img src="../../assets/img/paginas/home/logo.png">
 
-<a href="redirecionamento.php?action=Loja" ><button>Voltar</button></a>
+<a href="redirecionamento.php?action=paginaVips" ><button>Voltar</button></a>
 </body>
 </html> 

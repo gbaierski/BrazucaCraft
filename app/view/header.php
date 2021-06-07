@@ -127,7 +127,7 @@
               </div>
 
               <div class="opcao-menu">
-                <a href="../control/redirecionamento.php?action=manutencao">
+                <a href="../control/redirecionamento.php?action=Loja">
                   <button class="botao-menu" id="botao-blog">
                     <img src="../../assets/img/icons/blog.png" class="icon-linkMenu">
                     <div class="texto-linkMenu"> BLOG </div>

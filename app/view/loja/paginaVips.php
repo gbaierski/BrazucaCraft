@@ -13,16 +13,16 @@
         <div class="tituloProdutoVip">VIP CANARINHO</div>
         <div class="conteudoVip">
             <?php
-            $beneficiosVip = ['Terreno rank B','R$ 1000,00', '3 Caixas Misteriosas', '2 Cosméticos', '3 emojis'];
+            $produtos = ['TamanhoTerreno' => 'Terreno rank B', 'Dinheiro' =>'R$ 1000,00', 'Caixas' =>'3 Caixas Misteriosas', 'Cosmesticos' =>'2 Cosméticos', 'emojis' =>'3 emojis'];
 
-            foreach ($beneficiosVip as $beneficio) {
+            foreach ($produtos as $beneficio) {
 
                 echo $beneficio;
                 echo '</br>';
             }
             ?>
         </div>
-        <button class="botaoComprarVip">R$ 10,00</button>
+        <a href="../control/carrinhoCompras.php?action=adicionarnocarrinho&ai_produto=<?= 7?>"><button class="botaoComprarVip">R$ 10,00</button></a>
     </div>
 
     <div class="produtoVip">

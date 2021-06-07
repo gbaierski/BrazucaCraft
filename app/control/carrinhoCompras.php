@@ -15,10 +15,10 @@ function adicionarnocarrinho(){
     //Consulta no Banco Fim
     if ( isset($_SESSION['produtos']) && array_key_exists($produtos['ai_produto'], $_SESSION['produtos'])){
         $_SESSION['produtos'][$produtos['ai_produto']]['quantidade']+=1;
-        header('location:../control/redirecionamento.php?action=Loja');
+        header('location:../control/redirecionamento.php?action=paginaVips');
     }else{
-     $_SESSION ['produtos'][$produtos['ai_produto']] = ['idProduto' => $produtos['ai_produto'],'quantidade' => 1];
-     header('location:../control/redirecionamento.php?action=Loja');
+     $_SESSION ['produtos'][$produtos['ai_produto']] = ['idProduto' => $produtos['ai_produto'],'quantidade' => 1 , 'NomeProduto'=> $produtos['nomeProduto'], 'PrecoProduto' => $produtos['precoProduto'] ];
+     header('location:../control/redirecionamento.php?action=paginaVips');
    
     }
 
