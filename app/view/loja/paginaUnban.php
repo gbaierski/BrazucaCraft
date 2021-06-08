@@ -13,7 +13,7 @@
         <img class="imagemUnban" src="../../assets/img/paginas/home/logo.png">
         <div class="tituloUnban">Unban 1</div>
         <div class="descricaoUnban">Retira seu banimento permanentemente</div>
-        <button class="botaoComprarUnban">R$ 30,00</button>
+        <button class="botaoComprarUnban">COMPRAR</button>
     </div>
 </section>
 

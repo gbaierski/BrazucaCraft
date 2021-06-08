@@ -1,8 +1,9 @@
 <?php 
 
-function comprarProduto($nomeProduto, $precoProduto){
+function comprarProduto(){
       
-     // $ai_produto = $_GET['ai_produto'];
+      $ai_produto = $_GET['ai_produto'];
+      
      //Consulta no Banco
      // require ('..\model\produto\produto.php');          
      // $produto = new Produto;    

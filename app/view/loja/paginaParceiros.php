@@ -10,7 +10,7 @@
     <div class="produtoPacoteDivulgacao">
         <img class="imagemPacoteDivulgacao" src="../../assets/img/paginas/home/backgroundHome.png">
         <div class="nomePacoteDivulgacao">PACOTE BÁSICO</div>
-        <button class="botaoComprarPacoteDivulgacao">R$ 25,00</button>
+        <button class="botaoComprarPacoteDivulgacao">COMPRAR</button>
     </div>
 
     <div class="produtoPacoteDivulgacao">
