@@ -55,18 +55,23 @@
 			<div class="carrosselNovidades">
 				<div class="itemCarrossel ativo">
 					<img src="../../assets/img/updates/update1.jpg">
+					Jungle Update
 				</div>
 				<div class=" itemCarrossel proximo">
 					<img src="../../assets/img/updates/update2.jpg">
+					Badlands Update
 				</div>
 				<div class="itemCarrossel">
 					<img src="../../assets/img/updates/update3.jpg">
+					Nether Update
 				</div>
 				<div class="itemCarrossel">
 					<img src="../../assets/img/updates/update4.jpg">
+					Mega Taiga Update
 				</div>
 				<div class="itemCarrossel anterior">
 					<img src="../../assets/img/updates/update5.jpg">
+					Dark Forest Update
 				</div>
 				<div class="secaoBotoesCarrossel">
 					<div class="botaoCarrossel"><img src="../../assets/img/icons/seta.png" class="icon-setaCarrossel"></div>

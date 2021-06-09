@@ -714,19 +714,28 @@
     .carrosselNovidades .itemCarrossel {
         width: 24vw;
         height: 13vw;
-        border: 0.3vw solid #d8d8d8;
         top: 50%;
         left: 50%;
+        color: transparent;
+        font-family: NotoSans;
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    .itemCarrossel img {
+
+        border: 0.3vw solid #d8d8d8;
+    }
+
+    .itemCarrossel.ativo img:hover {
+
+        border: 0.3vw solid #34aa2f;
     }
 
     .itemCarrossel.ativo {
         width: 34vw;
         height: 19vw;
-    }
-
-    .itemCarrossel.ativo:hover {
-
-        border: 0.3vw solid #34aa2f;
+        color: white;
     }
 
     .carrosselNovidades .secaoBotoesCarrossel {
@@ -762,13 +771,13 @@
 
     .secaoBotoesCarrossel .botaoCarrossel:nth-child(1) {
 
-        margin-left: -33vw;
+        margin-left: -31vw;
         margin-top: -2vw;
     }
 
     .secaoBotoesCarrossel .botaoCarrossel:nth-child(2) {
 
-        margin-left: 29vw;
+        margin-left: 27vw;
         margin-top: -2vw;
     }
     
@@ -1153,6 +1162,7 @@
     position: absolute;
     transform: translate(-50%, -50%);
     user-select: none;
+    height: 30vw;
 }
 
 .carrosselNovidades .itemCarrossel {
@@ -1166,15 +1176,15 @@
 }
 
 .itemCarrossel img {
-    width: 100%;
-    height: 100%;
+
+    width: 85%;
+    height: 80%;
     object-fit: cover;
 }
 
 .itemCarrossel.ativo {
     opacity: 1;
     z-index: 99;
-    box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
     transition: transform .28s;
     transition-property: all;
 }
