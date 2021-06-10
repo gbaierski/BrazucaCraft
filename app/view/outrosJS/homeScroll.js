@@ -5,7 +5,7 @@ function scroll(){
 	//if que pega resolução e caso seja maior que o proposto ele linka o css q faz o scroll funcionar
 	if(width >= 1200 && height >= 751){
 		document.write("<link rel='stylesheet' type='text/css' href='../../assets/css/onepage-scroll.css'/>");
-$(".secondBodyClass").onepage_scroll({
+$(".homeScrollClass").onepage_scroll({
    sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
    easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
                                     // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
@@ -21,6 +21,6 @@ $(".secondBodyClass").onepage_scroll({
                                     // the browser's width is less than 600, the fallback will kick in.
    direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
 })}else{
-	document.getElementById('secondBody').classList.remove('secondBodyClass');
+	document.getElementById('homeScroll').classList.remove('homeScrollClass');
 }};
 scroll();

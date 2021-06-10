@@ -238,8 +238,9 @@
               </div>
               
             </div>
-            
+            </div> <!-- tive que fechar o second body aqui pq se fechar junto com o rodapé ele buga -->
             <script src="../view/home.js"></script>
             <script src="../view/header.js"></script>
           </header>
+        <div id="homeScroll" class="homeScrollClass">
           

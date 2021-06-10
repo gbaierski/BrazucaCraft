@@ -1111,3 +1111,12 @@
   .tooltipSenha:hover .tooltiptextSenha {
     visibility: visible;
   }
+
+  .esconderHeader {
+    opacity: 0;
+  }
+
+  .mostraHeader {
+    opacity: 1;
+  }
+
