@@ -32,7 +32,9 @@ function logar() {
         
         header('location: ..\control\redirecionamento.php?action=Home');
       } else {
-        header('location: ..\control\redirecionamento.php?action=Home&erro=senha');
+        session_start();
+        $local = $_SESSION['local'];
+        header($local.'&erro=senha');
       }
   }
 }

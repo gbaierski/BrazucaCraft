@@ -148,9 +148,13 @@ function ajudaSuporte() {
 if (isset($_GET['action']) and function_exists($_GET['action']) ) {
 
     call_user_func($_GET['action']);
+    session_start();
+    $_SESSION['local'] = "Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
   
   } else {
-  
+    session_start();
+    $_SESSION['local'] = "Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+
     Home();
   
   }
