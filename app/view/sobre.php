@@ -8,21 +8,11 @@ $gestores = ['LucasLukey'];
 $devsJogo = ['JLFranco_JJ','Rokzin','LucasTSu'];
 $devsWeb = ['Asky_NT', 'TheSoethe', 'Pisle'];
 $builders = ['SrDougk','Priih_'];
-$admins = ['Steve','Steve','Steve','Steve','Steve','Steve','Steve','Steve','Steve',];
-$moderadores = ['Steve','Steve','Steve','Steve','Steve','Steve','Steve'];
+$admins = ['Steve'];
+$moderadores = ['Steve'];
 $ajudantes = ['Uragan'];
 
-function pegarHead($nick) {
-
-    $url = "https://api.mojang.com/users/profiles/minecraft/" . $nick;
-
-    $json = file_get_contents($url);
-    $player = json_decode($json);
-    
-    $head = "https://crafatar.com/avatars/". $player->id . "?size=100";
-    return $head;
-
-}
+include ('../control/getSkin.php');
 
 ?>
 
@@ -113,7 +103,7 @@ Aqui deve haver uma descrição com uma contextualização mais "histórica" do 
     <div id="administradoresBrazuca">
         <div class="tituloEquipeBrazuca">Administradores</div>
         <?php foreach($admins as $admin) { ?>
-            <div class="dadosMembro espacoHead5">
+            <div class="dadosMembro espacoHead1">
                 <?php $headPlayer = pegarHead($admin)?>
                 <img class="headSobre" src="<?=$headPlayer?>">
                 <div class="nickSobre"><?=$admin?></div>
@@ -124,7 +114,7 @@ Aqui deve haver uma descrição com uma contextualização mais "histórica" do 
     <div id="moderadoresBrazuca">
         <div class="tituloEquipeBrazuca">Moderadores</div>
         <?php foreach($moderadores as $moderador) { ?>
-            <div class="dadosMembro espacoHead5">
+            <div class="dadosMembro espacoHead1">
                 <?php $headPlayer = pegarHead($moderador)?>
                 <img class="headSobre" src="<?=$headPlayer?>">
                 <div class="nickSobre"><?=$moderador?></div>

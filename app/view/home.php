@@ -114,30 +114,7 @@
 				9 => ['titulo' => 'Líder da equipe Dev - Site', 'cor' => '#0086f3'],
 			];
 
-			function pegarHead($nick) {
-
-				$url = "https://api.mojang.com/users/profiles/minecraft/" . $nick;
-
-				$json = file_get_contents($url);
-				$player = json_decode($json);
-				
-				$head = "https://crafatar.com/avatars/". $player->id . "?size=100";
-				return $head;
-
-			}
-
-			function pegarBody($nick) {
-
-				$url = "https://api.mojang.com/users/profiles/minecraft/" . $nick;
-
-				$json = file_get_contents($url);
-				$player = json_decode($json);
-				
-				$head = "https://crafatar.com/renders/body/". $player->id . "?size=100";
-				return $head;
-
-			}
-			
+			include ('../control/getSkin.php');
 		?>
 
 <?php foreach($membrosStaff as $key => $staff) { ?>
